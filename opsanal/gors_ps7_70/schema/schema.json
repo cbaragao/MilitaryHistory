@@ -1,0 +1,167 @@
+
+    {
+    "dataset": "gors",
+    "table": "ps7",
+    "data": [ 
+        {
+            "title": "DATE",
+            "id": "DATE",
+            "field_group": "FIELD",
+            "length": 6,
+            "code": "N/A",
+            "data_values": "Alphanumeric",
+            "definition": "Publication date of the operational report",
+            "definition_file": ""
+        },
+        {
+            "title": "DATAT",
+            "id": "DATAT",
+            "field_group": "FIELD",
+            "length": 1,
+            "code": "N/A",
+            "data_values": "Alphanumeric",
+            "definition": "Publication date of the operational report",
+            "definition_file": ""
+        },
+        {
+            "title": "SERAL",
+            "id": "SERAL",
+            "field_group": "FIELD",
+            "length": 3,
+            "code": "N/A",
+            "data_values": "Alphanumeric",
+            "definition": "Record sequence number within the operational report",
+            "definition_file": ""
+        },
+        {
+            "title": "CORP",
+            "id": "CORP",
+            "field_group": "FIELD",
+            "length": 1,
+            "code": "N/A",
+            "data_values": "Alphanumeric",
+            "definition": "Corps tactical zone in which the action occurred",
+            "definition_file": ""
+        },
+        {
+            "title": "PART",
+            "id": "PART",
+            "field_group": "FIELD",
+            "length": 1,
+            "code": "N/A",
+            "data_values": "Alphanumeric",
+            "definition": "Major force of the action",
+            "definition_file": ""
+        },
+        {
+            "title": "PCN",
+            "id": "PCN",
+            "field_group": "FIELD",
+            "length": 3,
+            "code": "N/A",
+            "data_values": "Alphanumeric",
+            "definition": "Periodic set number; created by the NIPSTRAN program",
+            "definition_file": ""
+        },
+        {
+            "title": "PSSQ7",
+            "id": "PSSQ7",
+            "field_group": "FIELD",
+            "length": 4,
+            "code": "N/A",
+            "data_values": "Alphanumeric",
+            "definition": "Subset sequence number used for periodic set identification; created by the NIPSTRAN",
+            "definition_file": ""
+        },
+        {
+            "title": "VSZ7",
+            "id": "VSZ7",
+            "field_group": "FIELD",
+            "length": 4,
+            "code": "N/A",
+            "data_values": "Numeric",
+            "definition": "Indicates number of characters in the logical record's variable field; the field will contain zeros if there is no variable field for a logical record; created by the NIPSTRAN program",
+            "definition_file": ""
+        },
+        {
+            "title": "LCTZ1",
+            "id": "LCTZ1",
+            "field_group": "FIELD",
+            "length": 4,
+            "code": "N/A",
+            "data_values": "Numeric",
+            "definition": "Value for corps tactical zone 1",
+            "definition_file": ""
+        },
+        {
+            "title": "LCTZ2",
+            "id": "LCTZ2",
+            "field_group": "FIELD",
+            "length": 4,
+            "code": "N/A",
+            "data_values": "Numeric",
+            "definition": "Value for corps tactical zone 2",
+            "definition_file": ""
+        },
+        {
+            "title": "LCTZ3",
+            "id": "LCTZ3",
+            "field_group": "FIELD",
+            "length": 4,
+            "code": "N/A",
+            "data_values": "Numeric",
+            "definition": "Value for corps tactical zone 3",
+            "definition_file": ""
+        },
+        {
+            "title": "LCTZ4",
+            "id": "LCTZ4",
+            "field_group": "FIELD",
+            "length": 4,
+            "code": "N/A",
+            "data_values": "Numeric",
+            "definition": "Value for corps tactical zone 4",
+            "definition_file": ""
+        },
+        {
+            "title": "SLINS",
+            "id": "SLINS",
+            "field_group": "FIELD",
+            "length": 3,
+            "code": "N/A",
+            "data_values": "Alphanumeric",
+            "definition": "Sequence number for subsets of periodic set 7",
+            "definition_file": ""
+        },
+        {
+            "title": "LNAT",
+            "id": "LNAT",
+            "field_group": "FIELD",
+            "length": 1,
+            "code": "N/A",
+            "data_values": "Alphanumeric",
+            "definition": "Force or nationality to which the subset entry is applicable",
+            "definition_file": "gsvcs.json"
+        },
+        {
+            "title": "LTYPE",
+            "id": "LTYPE",
+            "field_group": "FIELD",
+            "length": 1,
+            "code": "N/A",
+            "data_values": "Alphanumeric",
+            "definition": "Type of information in the subset",
+            "definition_file": "gtyps.json"
+        },
+        {
+            "title": "LNATI",
+            "id": "LNATI",
+            "field_group": "FIELD",
+            "length": 1,
+            "code": "N/A",
+            "data_values": "Alphanumeric",
+            "definition": "Force or nationality inflicting a loss",
+            "definition_file": "gsvcs.json"
+        }
+        ]
+    }

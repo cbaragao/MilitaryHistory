@@ -1,0 +1,422 @@
+{
+    "table": "province codes by town",
+    "table_index": 4,
+    "datasource": "CIDGA",
+    "data" : [
+        {
+            "town": "AN LAC",
+            "code": "10",
+            "province": "DARLAC"
+        },
+        {
+            "town": "BA TO",
+            "code": "05",
+            "province": "QUANG NGAI"
+        },
+        {
+            "town": "BA XOAI",
+            "code": "47",
+            "province": "CHAU DOC"
+        },
+        {
+            "town": "BEN ME THOUT",
+            "code": "10",
+            "province": "DARLAC"
+        },
+        {
+            "town": "BEN HET",
+            "code": "06",
+            "province": "KONTUM"
+        },
+        {
+            "town": "BEN HOA",
+            "code": "25",
+            "province": "BIEN HOA"
+        },
+        {
+            "town": "BEN SOI",
+            "code": "22",
+            "province": "TAY NINH"
+        },
+        {
+            "town": "BINH THANH THON",
+            "code": "28",
+            "province": "KIEN TUONG"
+        },
+        {
+            "town": "BU DOP",
+            "code": "14",
+            "province": "PHUOC LONG"
+        },
+        {
+            "town": "BU PRANG",
+            "code": "13",
+            "province": "QUANG DUC"
+        },
+        {
+            "town": "BUNARD",
+            "code": "14",
+            "province": "PHUOC LONG"
+        },
+        {
+            "town": "BUON BLECH",
+            "code": "10",
+            "province": "DARLAC"
+        },
+        {
+            "town": "CAI CAI",
+            "code": "28",
+            "province": "KIEN TUONG"
+        },
+        {
+            "town": "CAN THO",
+            "code": "35",
+            "province": "PHONG DINH"
+        },
+        {
+            "town": "CAO LANH",
+            "code": "29",
+            "province": "KIEN PHONG"
+        },
+        {
+            "town": "CHAU DUC",
+            "code": "47",
+            "province": "CHAU DOC"
+        },
+        {
+            "town": "CHI LINH",
+            "code": "21",
+            "province": "BINH LONG"
+        },
+        {
+            "town": "CUNG SON",
+            "code": "09",
+            "province": "PHU YEN"
+        },
+        {
+            "town": "DA NANG",
+            "code": "03",
+            "province": "QUANG NAM"
+        },
+        {
+            "town": "DAK PEK",
+            "code": "06",
+            "province": "KONTUM"
+        },
+        {
+            "town": "DAK SEANG",
+            "code": "06",
+            "province": "KONTUM"
+        },
+        {
+            "town": "DAK TO",
+            "code": "06",
+            "province": "KONTUM"
+        },
+        {
+            "town": "DON PHUC",
+            "code": "29",
+            "province": "KIEN PHONG"
+        },
+        {
+            "town": "DONG BA THIN",
+            "code": "11",
+            "province": "KHANH HOA"
+        },
+        {
+            "town": "DONG TRE",
+            "code": "09",
+            "province": "PHU YEN"
+        },
+        {
+            "town": "DONG XOAI",
+            "code": "14",
+            "province": "PHYOC LONG"
+        },
+        {
+            "town": "DUC CO",
+            "code": "08",
+            "province": "PLEIKU"
+        },
+        {
+            "town": "DUC HOA",
+            "code": "42",
+            "province": "HAU NGHLIA"
+        },
+        {
+            "town": "DUC HUE",
+            "code": "42",
+            "province": "HAU NGHLIA"
+        },
+        {
+            "town": "DUC LAP",
+            "code": "11",
+            "province": "KHANH HOA"
+        },
+        {
+            "town": "DUC PHONG",
+            "code": "14",
+            "province": "PHUOC LONG"
+        },
+        {
+            "town": "GIA VUC",
+            "code": "05",
+            "province": "QUANG NGAI"
+        },
+        {
+            "town": "HA TAY",
+            "code": "07",
+            "province": "BINH DINH"
+        },
+        {
+            "town": "HA THANH",
+            "code": "05",
+            "province": "QUANG NGAI"
+        },
+        {
+            "town": "HIEP HOA",
+            "code": "42",
+            "province": "HAU NGHLIA"
+        },
+        {
+            "town": "HON QUAN",
+            "code": "21",
+            "province": "BINH LONG"
+        },
+        {
+            "town": "LOC NINH",
+            "code": "21",
+            "province": "BINH LONG"
+        },
+        {
+            "town": "LONG HAI",
+            "code": "26",
+            "province": "PHUOC TUY"
+        },
+        {
+            "town": "LUONG SON",
+            "code": "17",
+            "province": "BINH THUAN"
+        },
+        {
+            "town": "MA DA",
+            "code": "29",
+            "province": "KIEN PHONG"
+        },
+        {
+            "town": "MANG BUK",
+            "code": "06",
+            "province": "KONTUM"
+        },
+        {
+            "town": "MINH LONG",
+            "code": "05",
+            "province": "QUANG NGAI"
+        },
+        {
+            "town": "MINH THANH",
+            "code": "21",
+            "province": "BINH LONG"
+        },
+        {
+            "town": "MOC HOA",
+            "code": "28",
+            "province": "KIEN TUONG"
+        },
+        {
+            "town": "MY DINH II",
+            "code": "28",
+            "province": "KIEN TUONG"
+        },
+        {
+            "town": "MY PHUOC TAY",
+            "code": "30",
+            "province": "DINH TUONG"
+        },
+        {
+            "town": "NHA TRANG",
+            "code": "11",
+            "province": "KHANH HOA"
+        },
+        {
+            "town": "NHON CO",
+            "code": "13",
+            "province": "QUANG DUC"
+        },
+        {
+            "town": "NUI DA BEN",
+            "code": "22",
+            "province": "TAY NINH"
+        },
+        {
+            "town": "PHU QUOC",
+            "code": "36",
+            "province": "KIEN GIANG"
+        },
+        {
+            "town": "PHU TUC",
+            "code": "41",
+            "province": "PHU BON"
+        },
+        {
+            "town": "PLATEU GI",
+            "code": "06",
+            "province": "KONTUM"
+        },
+        {
+            "town": "PLEI DJERENG",
+            "code": "08",
+            "province": "PLEIKU"
+        },
+        {
+            "town": "PLEIME",
+            "code": "08",
+            "province": "PLEIKU"
+        },
+        {
+            "town": "PLEI MRONG",
+            "code": "08",
+            "province": "PLEIKU"
+        },
+        {
+            "town": "PLEIKU",
+            "code": "08",
+            "province": "PLEIKU"
+        },
+        {
+            "town": "POLEI KLENG",
+            "code": "06",
+            "province": "KONTUM"
+        },
+        {
+            "town": "QUI NHON",
+            "code": "07",
+            "province": "BINH BINH"
+        },
+        {
+            "town": "SAIGON",
+            "code": "24",
+            "province": "GIA DINH"
+        },
+        {
+            "town": "SONG BE",
+            "code": "14",
+            "province": "PHUOC LONG"
+        },
+        {
+            "town": "TAN RAI",
+            "code": "15",
+            "province": "LAM DONG"
+        },
+        {
+            "town": "TAY NINH",
+            "code": "22",
+            "province": "TAY NINH"
+        },
+        {
+            "town": "THAN TRI",
+            "code": "28",
+            "province": "KIEN TUONG"
+        },
+        {
+            "town": "THIEN NGON",
+            "code": "22",
+            "province": "TAY NINH"
+        },
+        {
+            "town": "THIEN PHUCC",
+            "code": "04",
+            "province": "QUANG TIN"
+        },
+        {
+            "town": "THUONG DUC",
+            "code": "03",
+            "province": "QUANG NAM"
+        },
+        {
+            "town": "THUONG THO",
+            "code": "29",
+            "province": "KIEN PHONG"
+        },
+        {
+            "town": "TIEU ATAR",
+            "code": "08",
+            "province": "PLEIKU"
+        },
+        {
+            "town": "TO CHU",
+            "code": "36",
+            "province": "KIEN GIANG"
+        },
+        {
+            "town": "TONG LE CHON",
+            "code": "21",
+            "province": "BINH LONG"
+        },
+        {
+            "town": "TRA BONG",
+            "code": "05",
+            "province": "QUANG NGAI"
+        },
+        {
+            "town": "TRA CU",
+            "code": "42",
+            "province": "HAU NGHLIA"
+        },
+        {
+            "town": "TRANG PHU",
+            "code": "10",
+            "province": "DARLAC"
+        },
+        {
+            "town": "TRANG SUP",
+            "code": "22",
+            "province": "TAY NINH"
+        },
+        {
+            "town": "TRUNG DUNG",
+            "code": "11",
+            "province": "KHANH HOA"
+        },
+        {
+            "town": "TUYEN NHON",
+            "code": "28",
+            "province": "KIEN TUONG"
+        },
+        {
+            "town": "VINH CANH",
+            "code": "07",
+            "province": "BINH DINH"
+        },
+        {
+            "town": "VINH GIA",
+            "code": "47",
+            "province": "CHAU DOC"
+        },
+        {
+            "town": "VINH THANH",
+            "code": "07",
+            "province": "BINH DINH"
+        },
+        {
+            "town": "KATUM",
+            "code": "22",
+            "province": "TAY NINH"
+        },
+        {
+            "town": "KHAM DUC",
+            "code": "04",
+            "province": "QUANG TIN"
+        },
+        {
+            "town": "KINH QUAN II",
+            "code": "28",
+            "province": "KIEN TUONG"
+        },
+        {
+            "town": "KONTUM",
+            "code": "06",
+            "province": "KONTUM"
+        }
+    ]
+}

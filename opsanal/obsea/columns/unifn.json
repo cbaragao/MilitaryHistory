@@ -1,0 +1,18 @@
+{
+    "dataset": "obsea",
+    "column_id": "UNIFN",
+    "column": "Unit Function",
+    "definition": "Specifies the function of the enemy unit.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "M",
+            "value": "Main"
+        },
+        {
+            "code": "L",
+            "value": "Local"
+        }
+    ]
+}

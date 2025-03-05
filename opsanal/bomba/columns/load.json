@@ -1,0 +1,38 @@
+{
+    "dataset": "BOMBA",
+    "column_id": "LOAD",
+    "column": "Load Type Code",
+    "definition": "This field contains a code for the category of ordnance expended.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "IRON BOMBS"
+        },
+        {
+            "code": "2",
+            "value": "BULLETS"
+        },
+        {
+            "code": "3",
+            "value": "ROCKETS"
+        },
+        {
+            "code": "4",
+            "value": "INC/NAPALM"
+        },
+        {
+            "code": "5",
+            "value": "ANTIPERSONNEL/CBU"
+        },
+        {
+            "code": "6",
+            "value": "OTHER"
+        },
+        {
+            "code": "7",
+            "value": "MINES"
+        }
+    ]
+}

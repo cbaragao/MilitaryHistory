@@ -1,0 +1,87 @@
+{
+    "dataset": "VNDBA",
+    "table": "Friendly Activity At the Time of VC Action",
+    "definition": "Friendly Activity At the Time of VC Action",
+    "data": [
+        {
+            "code": "10",
+            "value": "On Reconnaissance"
+        },
+        {
+            "code": "11",
+            "value": "On Patrol"
+        },
+        {
+            "code": "12",
+            "value": "On Guard Duty"
+        },
+        {
+            "code": "13",
+            "value": "On Work Party"
+        },
+        {
+            "code": "21",
+            "value": "Reinf Hamlet Under Attack"
+        },
+        {
+            "code": "22",
+            "value": "Reinf A Unit Under Attack"
+        },
+        {
+            "code": "23",
+            "value": "Evacuating Casualties"
+        },
+        {
+            "code": "24",
+            "value": "On Escort"
+        },
+        {
+            "code": "50",
+            "value": "Transporting Supplies"
+        },
+        {
+            "code": "51",
+            "value": "Transporting Arms/Ammo"
+        },
+        {
+            "code": "52",
+            "value": "Transporting Troops"
+        },
+        {
+            "code": "70",
+            "value": "In NRL Hamlet"
+        },
+        {
+            "code": "71",
+            "value": "In NRL Hamlet Under Const"
+        },
+        {
+            "code": "72",
+            "value": "In Village"
+        },
+        {
+            "code": "73",
+            "value": "In Hamlet"
+        },
+        {
+            "code": "74",
+            "value": "In Watchtower"
+        },
+        {
+            "code": "75",
+            "value": "In Military Post"
+        },
+        {
+            "code": "76",
+            "value": "In a Bivouac"
+        },
+        {
+            "code": "77",
+            "value": "In a Convoy"
+        },
+        {
+            "code": "78",
+            "value": "On a Bus"
+        }
+    ]
+}

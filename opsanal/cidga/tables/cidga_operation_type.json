@@ -1,0 +1,31 @@
+{
+    "table": "operation type",
+    "table_index": 2,
+    "datasource": "CIDGA",
+    "data" : [
+        {
+            "code": "AM",
+            "operation_type": "Ambush"
+        },
+        {
+            "code": "AT",
+            "operation_type": "Attack"
+        },
+        {
+            "code": "BA",
+            "operation_type": "Block Action"
+        },
+        {
+            "code": "CP",
+            "operation_type": "Combat Patrols"
+        },
+        {
+            "code": "EA",
+            "operation_type": "Escort Action"
+        },
+        {
+            "code": "RP",
+            "operation_type": "Reconnaissance Patrols"
+        }
+    ]
+}

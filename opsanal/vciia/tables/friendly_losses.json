@@ -1,0 +1,111 @@
+{
+    "dataset": "VCIIA",
+    "table": "Friendly Losses",
+    "definition": "Friendly Losses and Unit Codes - Code applicable to FKIAC, FWIAC, FMIAC, and FUNIT Fields",
+    "data": [
+        {
+            "code": "A",
+            "value": "RVNAF"
+        },
+        {
+            "code": "B",
+            "value": "RF"
+        },
+        {
+            "code": "C",
+            "value": "PF"
+        },
+        {
+            "code": "D",
+            "value": "HAMLET MILITIA"
+        },
+        {
+            "code": "E",
+            "value": "RVN CIVIL OFFICIAL"
+        },
+        {
+            "code": "F",
+            "value": "RVN CIVILIANS"
+        },
+        {
+            "code": "G",
+            "value": "US MILITARY"
+        },
+        {
+            "code": "H",
+            "value": "US CIVILIANS"
+        },
+        {
+            "code": "I",
+            "value": "POLICE"
+        },
+        {
+            "code": "J",
+            "value": "CIDG"
+        },
+        {
+            "code": "K",
+            "value": "COMBAT YOUTH"
+        },
+        {
+            "code": "L",
+            "value": "VNSF"
+        },
+        {
+            "code": "M",
+            "value": "USMC PERS"
+        },
+        {
+            "code": "N",
+            "value": "USN PERS"
+        },
+        {
+            "code": "P",
+            "value": "USA PERS"
+        },
+        {
+            "code": "R",
+            "value": "USAF PERS"
+        },
+        {
+            "code": "T",
+            "value": "KOREAN"
+        },
+        {
+            "code": "U",
+            "value": "UNKNOWN"
+        },
+        {
+            "code": "V",
+            "value": "THAI"
+        },
+        {
+            "code": "W",
+            "value": "AUSTRALIAN"
+        },
+        {
+            "code": "X",
+            "value": "NEW ZEALANDER"
+        },
+        {
+            "code": "Y",
+            "value": "FILIPINO"
+        },
+        {
+            "code": "Z",
+            "value": "RD PERS"
+        },
+        {
+            "code": "1",
+            "value": "VNN"
+        },
+        {
+            "code": "2",
+            "value": "VNAF"
+        },
+        {
+            "code": "3",
+            "value": "VNMC"
+        }
+    ]
+}

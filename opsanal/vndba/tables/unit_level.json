@@ -1,0 +1,59 @@
+{
+    "dataset": "VNDBA",
+    "table": "Unit Level",
+    "definition": "Level of unit in organizational hierarchy",
+    "data": [
+        {
+            "code": "Z",
+            "value": "Corps"
+        },
+        {
+            "code": "D",
+            "value": "Division"
+        },
+        {
+            "code": "X",
+            "value": "Battle GP"
+        },
+        {
+            "code": "R",
+            "value": "Regiment"
+        },
+        {
+            "code": "B",
+            "value": "Battalion"
+        },
+        {
+            "code": "C",
+            "value": "Company"
+        },
+        {
+            "code": "P",
+            "value": "Platoon"
+        },
+        {
+            "code": "A",
+            "value": "Squad"
+        },
+        {
+            "code": "G",
+            "value": "Brigade"
+        },
+        {
+            "code": "Q",
+            "value": "Squadron"
+        },
+        {
+            "code": "T",
+            "value": "Troop"
+        },
+        {
+            "code": "M",
+            "value": "Team"
+        },
+        {
+            "code": "Y",
+            "value": "Battery"
+        }
+    ]
+}

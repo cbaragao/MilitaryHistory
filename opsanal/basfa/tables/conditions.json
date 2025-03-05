@@ -1,0 +1,23 @@
+{
+    "dataset": "BASFA",
+    "table": "CONDS",
+    "definition": "These fields contain the condition of the base area for the given month.",
+    "data": [
+        {
+            "code": "A",
+            "value": "Active"
+        },
+        {
+            "code": "I",
+            "value": "Inactive"
+        },
+        {
+            "code": "N",
+            "value": "Neutralized"
+        },
+        {
+            "code": "D",
+            "value": "Deleted"
+        }
+    ]
+}

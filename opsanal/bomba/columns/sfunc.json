@@ -1,0 +1,34 @@
+{
+    "dataset": "BOMBA",
+    "column_id": "SFUNC",
+    "column": "Sortie Function",
+    "definition": "This field contains a code for sortie function; only the attack functions 01-06 are in the file. ",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "01",
+            "value": "STRIKE"
+        },
+        {
+            "code": "02",
+            "value": "FLAK SUPPRESSION"
+        },
+        {
+            "code": "03",
+            "value": "AIR INTERDICTION"
+        },
+        {
+            "code": "04",
+            "value": "ARMED RECCE"
+        },
+        {
+            "code": "05",
+            "value": "CLOSE AIR SUPPORT"
+        },
+        {
+            "code": "06",
+            "value": "DIRECT AIR SUPPORT"
+        }
+    ]
+}

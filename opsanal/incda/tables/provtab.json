@@ -1,0 +1,207 @@
+{
+    "dataset": "INCDA",
+    "table": "PROVTAB",
+    "definition": "Province Codes",
+    "data": [
+        {
+            "code": "91",
+            "value": "Hue"
+        },
+        {
+            "code": "01",
+            "value": "Quang Tri"
+        },
+        {
+            "code": "02",
+            "value": "Thua Thien"
+        },
+        {
+            "code": "03",
+            "value": "Quang Nam"
+        },
+        {
+            "code": "92",
+            "value": "Danang"
+        },
+        {
+            "code": "04",
+            "value": "Quang Tin"
+        },
+        {
+            "code": "05",
+            "value": "Quang Ngai"
+        },
+        {
+            "code": "07",
+            "value": "Binh Dinh"
+        },
+        {
+            "code": "09",
+            "value": "Pho Bon"
+        },
+        {
+            "code": "10",
+            "value": "Phu Yen"
+        },
+        {
+            "code": "06",
+            "value": "Kontum"
+        },
+        {
+            "code": "08",
+            "value": "Pleiku"
+        },
+        {
+            "code": "93",
+            "value": "Cam Ranh"
+        },
+        {
+            "code": "94",
+            "value": "Dalat"
+        },
+        {
+            "code": "11",
+            "value": "Darlac"
+        },
+        {
+            "code": "12",
+            "value": "Khanh Hoa"
+        },
+        {
+            "code": "13",
+            "value": "Ninh Thuan"
+        },
+        {
+            "code": "14",
+            "value": "Tuyen Duc"
+        },
+        {
+            "code": "15",
+            "value": "Quang Duc"
+        },
+        {
+            "code": "16",
+            "value": "Lam Dong"
+        },
+        {
+            "code": "17",
+            "value": "Binh Thuan"
+        },
+        {
+            "code": "21",
+            "value": "Phuoc Long"
+        },
+        {
+            "code": "22",
+            "value": "Binh Long"
+        },
+        {
+            "code": "23",
+            "value": "Binh Duong"
+        },
+        {
+            "code": "18",
+            "value": "Binh Tuy"
+        },
+        {
+            "code": "19",
+            "value": "Long Khanh"
+        },
+        {
+            "code": "26",
+            "value": "Bien Hoa"
+        },
+        {
+            "code": "27",
+            "value": "Phuoc Tuy"
+        },
+        {
+            "code": "95",
+            "value": "Vung Tau"
+        },
+        {
+            "code": "24",
+            "value": "Tay Ninh"
+        },
+        {
+            "code": "25",
+            "value": "Hau Nghia"
+        },
+        {
+            "code": "28",
+            "value": "Long An"
+        },
+        {
+            "code": "29",
+            "value": "Gia Dinh"
+        },
+        {
+            "code": "96",
+            "value": "Saigon"
+        },
+        {
+            "code": "30",
+            "value": "Go Cong"
+        },
+        {
+            "code": "33",
+            "value": "Dinh Tuong"
+        },
+        {
+            "code": "34",
+            "value": "Kien Hoa"
+        },
+        {
+            "code": "35",
+            "value": "Vinh Binh"
+        },
+        {
+            "code": "36",
+            "value": "Vinh Long"
+        },
+        {
+            "code": "37",
+            "value": "An Giang"
+        },
+        {
+            "code": "46",
+            "value": "Sadec"
+        },
+        {
+            "code": "38",
+            "value": "Kien Giang"
+        },
+        {
+            "code": "39",
+            "value": "Cuong Thien"
+        },
+        {
+            "code": "40",
+            "value": "Phong Dinh"
+        },
+        {
+            "code": "41",
+            "value": "Ba Xuyen"
+        },
+        {
+            "code": "42",
+            "value": "An Xuyen"
+        },
+        {
+            "code": "43",
+            "value": "Bac Lieu"
+        },
+        {
+            "code": "31",
+            "value": "Kien Tuong"
+        },
+        {
+            "code": "32",
+            "value": "Kien Phong"
+        },
+        {
+            "code": "44",
+            "value": "Chau Doc"
+        }
+    ]
+}

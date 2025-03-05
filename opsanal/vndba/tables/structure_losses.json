@@ -1,0 +1,55 @@
+{
+    "dataset": "VNDBA",
+    "table": "Structure Losses",
+    "definition": "Structure lost by type of Structure",
+    "data": [
+        {
+            "code": "A",
+            "value": "CIV ADM OFF"
+        },
+        {
+            "code": "B",
+            "value": "BRIDGE"
+        },
+        {
+            "code": "C",
+            "value": "BASE"
+        },
+        {
+            "code": "H",
+            "value": "HOUSE"
+        },
+        {
+            "code": "I",
+            "value": "BUNKER"
+        },
+        {
+            "code": "K",
+            "value": "BLOCKHOUSE"
+        },
+        {
+            "code": "L",
+            "value": "BUILDING"
+        },
+        {
+            "code": "P",
+            "value": "POST"
+        },
+        {
+            "code": "S",
+            "value": "SEC FENCING"
+        },
+        {
+            "code": "T",
+            "value": "OUTPOST"
+        },
+        {
+            "code": "U",
+            "value": "UNSPECIFIED"
+        },
+        {
+            "code": "W",
+            "value": "WATCHTOWER"
+        }
+    ]
+}

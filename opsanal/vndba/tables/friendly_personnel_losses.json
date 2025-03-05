@@ -1,0 +1,111 @@
+{
+    "dataset": "VNDBA",
+    "table": "Friendly Personnel Losses",
+    "definition": "Friendly Personnel Losses and Unit Codes to Friendly Service",
+    "data": [
+        {
+            "code": "A",
+            "value": "RVNAF"
+        },
+        {
+            "code": "B",
+            "value": "RF"
+        },
+        {
+            "code": "C",
+            "value": "PF"
+        },
+        {
+            "code": "D",
+            "value": "Hamlet Militia"
+        },
+        {
+            "code": "E",
+            "value": "RVN Civil Official"
+        },
+        {
+            "code": "F",
+            "value": "RVN Civilians"
+        },
+        {
+            "code": "G",
+            "value": "US Military"
+        },
+        {
+            "code": "H",
+            "value": "US Civilians"
+        },
+        {
+            "code": "I",
+            "value": "Police"
+        },
+        {
+            "code": "J",
+            "value": "CIDG"
+        },
+        {
+            "code": "K",
+            "value": "Combat Youth"
+        },
+        {
+            "code": "L",
+            "value": "VNSF"
+        },
+        {
+            "code": "M",
+            "value": "USMC Pers"
+        },
+        {
+            "code": "N",
+            "value": "USN Pers"
+        },
+        {
+            "code": "P",
+            "value": "USA Pers"
+        },
+        {
+            "code": "R",
+            "value": "USAF Pers"
+        },
+        {
+            "code": "T",
+            "value": "Korean"
+        },
+        {
+            "code": "U",
+            "value": "Unknown"
+        },
+        {
+            "code": "V",
+            "value": "Thai"
+        },
+        {
+            "code": "W",
+            "value": "Australian"
+        },
+        {
+            "code": "X",
+            "value": "New Zealander"
+        },
+        {
+            "code": "Y",
+            "value": "Filipino"
+        },
+        {
+            "code": "Z",
+            "value": "RD Pers"
+        },
+        {
+            "code": "1",
+            "value": "VNN"
+        },
+        {
+            "code": "2",
+            "value": "VNAF"
+        },
+        {
+            "code": "3",
+            "value": "VNMC"
+        }
+    ]
+}

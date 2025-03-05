@@ -1,0 +1,35 @@
+{
+    "dataset": "VNDBA",
+    "table": "Friendly Unit Type",
+    "definition": "Definition of type of friendly unit recorded in the dataset",
+    "data": [
+        {
+            "code": "B",
+            "value": "BN"
+        },
+        {
+            "code": "C",
+            "value": "CO"
+        },
+        {
+            "code": "D",
+            "value": "DIV"
+        },
+        {
+            "code": "P",
+            "value": "PLAT"
+        },
+        {
+            "code": "R",
+            "value": "REGT"
+        },
+        {
+            "code": "S",
+            "value": "SQD"
+        },
+        {
+            "code": "U",
+            "value": "UNKN"
+        }
+    ]
+}

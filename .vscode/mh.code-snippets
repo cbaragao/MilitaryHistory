@@ -1,0 +1,68 @@
+{
+	// Place your MilitaryHistory workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+
+
+	// }
+	"Column definition": {
+		"scope": "json",
+		"prefix": "coldef",
+		"body": [
+		"{\n\t\"table\": \"$1\",\n\t\"column_id\": \"$2\",\n\t\"column\": \"$3\",\n\t\"definition\": \"$4\",\n\t\"field/group\": \"$5\",\n\t\"length\": $6,\n\t\"data\": [\n\t\t{\n\t\t\t\"code\": \"$7\",\n\t\t\t\"value\": \"$8\"\n\t\t},\n\t\t{\n\t\t\t\"code\": \"$9\",\n\t\t\t\"value\": \"$10\"\n\t\t},\n\t\t{\n\t\t\t\"code\": \"$11\",\n\t\t\t\"value\": \"$12\"\n\t\t},\n\t\t{\n\t\t\t\"code\": \"$13\",\n\t\t\t\"value\": \"$14\"\n\t\t},\n\t\t{\n\t\t\t\"code\": \"$15\",\n\t\t\t\"value\": \"$16\"\n\t\t}\n\t]\n}"
+ ],
+		"description": "Define a column in json"
+	},
+
+	"Additional column definition":{
+		"scope": "json",
+		"prefix": "addcoldef",
+		"body":[",\n{\n\t\"code\": \"$1\",\n\t\"value\": \"$2\"\n}"],
+		"description": "Add a column value to the column definition json"
+	},
+	"Table Definition": {
+		"scope": "json",
+		"prefix": "tabledef",
+		"body": "{\n\t\"dataset\": \"$1\",\n\t\"table\": \"$2\",\n\t\"definition\": \"$3\",\n\t\"data\": [\n\t\t{\n\t\t\t\"code\": \"$4\",\n\t\t\t\"value\": \"$5\"\n\t\t},\n\t\t{\n\t\t\t\"code\": \"$6\",\n\t\t\t\"value\": \"$7\"\n\t\t},\n\t\t{\n\t\t\t\"code\": \"$8\",\n\t\t\t\"value\": \"$9\"\n\t\t},\n\t\t{\n\t\t\t\"code\": \"$10\",\n\t\t\t\"value\": \"$11\"\n\t\t},\n\t\t{\n\t\t\t\"code\": \"$12\",\n\t\t\t\"value\": \"$13\"\n\t\t}\n\t]\n}",
+		"description": "Add a dimenstion table definition json"
+	},
+	"Schema Definition": {
+		"scope": "json",
+		"prefix": "schemadef",
+		"body": [
+			"{\n\t\"dataset\": \"$1\",\n\t\"table\": \"$2\",\n\t\"data\": [ \n\t\t\t{\n\t\t\t\t\"title\": \"$3\",\n\t\t\t\t\"id\": \"$4\",\n\t\t\t\t\"field_group\": \"$5\",\n\t\t\t\t\"length\": $6,\n\t\t\t\t\"code\": \"$7\",\n\t\t\t\t\"data_values\": \"$8\",\n\t\t\t\t\"definition\": \"$9\",\n\t\t\t\t\"periodic_set\": \"$10\",\n\t\t\t\t\"definition_file\": \"$11\"\n\t\t\t}\n\t\t]\n\t}"
+		]
+	},
+	"Additional Schema Definition": {
+		"scope": "json",
+		"prefix": "addschdef",
+		"body": [
+			",\n{\n\t\"title\": \"$1\",\n\t\"id\": \"$2\",\n\t\"field_group\": \"$3\",\n\t\"length\": $4,\n\t\"code\": \"$5\",\n\t\"data_values\": \"$6\",\n\t\"definition\": \"$7\",\n\t\"periodic_set\": \"$8\",\n\t\"definition_file\": \"$9\"\n}"
+		]
+	},
+	"Definition File": {
+		"scope": "json",
+		"prefix": "deffile",
+		"body": [
+			",\n\"definition_file\": \"$1\""
+		]
+	},
+	"Periodic Set": {
+		"scope": "json",
+		"prefix": "periodicset",
+		"body": ",\n\"periodic_set\": \"$1\""
+	}
+
+}

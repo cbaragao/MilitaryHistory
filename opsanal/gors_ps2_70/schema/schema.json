@@ -1,0 +1,137 @@
+
+    {
+    "dataset": "gors",
+    "table": "ps2",
+    "data": [ 
+            {
+                "title": "DATE",
+                "id": "DATE",
+                "field_group": "FIELD",
+                "length": 6,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Publication date of the operational report",
+                "definition_file": ""
+            },
+            {
+                "title": "DATAT",
+                "id": "DATAT",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Basic description of recorded incident/operation",
+                "definition_file": ""
+            },
+            {
+                "title": "SERAL",
+                "id": "SERAL",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Record sequence number within the operation report",
+                "definition_file": ""
+            },
+            {
+                "title": "CORP",
+                "id": "CORP",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Corps tactical zone in which the action occurred",
+                "definition_file": ""
+            },
+            {
+                "title": "PART",
+                "id": "PART",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Major force of the action",
+                "definition_file": ""
+            },
+            {
+                "title": "PCN",
+                "id": "PCN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Periodic set number; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "PSSQ2",
+                "id": "PSSQ2",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Subset sequence number used for periodic sets identification; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "VSZ2",
+                "id": "VSZ2",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Indicates the number of characters in the logical record's variable field; the field will contain zeros if there is no variable field for a logical record; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "SSLIN",
+                "id": "SSLIN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Sequence number for subsets of periodic set 2",
+                "definition_file": ""
+            },
+            {
+                "title": "UTM",
+                "id": "UTM",
+                "field_group": "FIELD",
+                "length": 8,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Universal tactical mercator (UTM) coordinates of the location of the action",
+                "definition_file": ""
+            },
+            {
+                "title": "TYPAT",
+                "id": "TYPAT",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Type of operation for enemy incidents; if starts with 'U' then it is type of operation for small unit actions",
+                "definition_file": "actns.json; fwops.json"
+            },
+            {
+                "title": "OBJEC",
+                "id": "OBJEC",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Objective of enemy initiated incident",
+                "definition_file": "objes.json"
+            },
+            {
+                "title": "OBJDS",
+                "id": "OBJDS",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Enemy incident descriptive phrase",
+                "definition_file": "obdes.json"
+            }
+        ]
+    }

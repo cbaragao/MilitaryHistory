@@ -1,0 +1,38 @@
+{
+    "table": "seafa",
+    "column_id": "CNTRY",
+    "column": "Country",
+    "definition": "This field identifies the unit's nationality.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "AU",
+            "value": "AUSTRALIA"
+        },
+        {
+            "code": "KS",
+            "value": "REPUBLIC OF KOREA"
+        },
+        {
+            "code": "NZ",
+            "value": "NEW ZEALAND"
+        },
+        {
+            "code": "PH",
+            "value": "PHILIPPINES"
+        },
+        {
+            "code": "TH",
+            "value": "THAILAND"
+        },
+        {
+            "code": "US",
+            "value": "UNITED STATES"
+        },
+        {
+            "code": "VS",
+            "value": "REPUBLIC OF VIETNAM"
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "dataset": "gors",
+    "table": "fwszs",
+    "definition": "Unit Size",
+    "data": [
+        {
+            "code": "F",
+            "value": "Fire Team"
+        },
+        {
+            "code": "S",
+            "value": "Squad"
+        },
+        {
+            "code": "P",
+            "value": "Platoon"
+        },
+        {
+            "code": "C",
+            "value": "Company"
+        },
+        {
+            "code": "B",
+            "value": "Battalion"
+        },
+        {
+            "code": "R",
+            "value": "Regiment"
+        },
+        {
+            "code": "G",
+            "value": "Brigade"
+        },
+        {
+            "code": "D",
+            "value": "Division"
+        },
+        {
+            "code": "A",
+            "value": "Squadron"
+        },
+        {
+            "code": "E",
+            "value": "Element"
+        },
+        {
+            "code": "X",
+            "value": "Unit"
+        },
+        {
+            "code": "Z",
+            "value": "Patrol"
+        },
+        {
+            "code": "U",
+            "value": "Unknown"
+        },
+        {
+            "code": "I",
+            "value": "Individual"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "dataset": "TIRSA",
+    "table": "Means Used",
+    "data": [
+        {
+            "code": "10",
+            "value": "SHOOTING"
+        },
+        {
+            "code": "20",
+            "value": "BOMBING"
+        },
+        {
+            "code": "30",
+            "value": "GRENADE"
+        },
+        {
+            "code": "40",
+            "value": "MINE"
+        },
+        {
+            "code": "50",
+            "value": "BOOBY TRAP"
+        },
+        {
+            "code": "90",
+            "value": "FORCE/FEAR"
+        },
+        {
+            "code": "99",
+            "value": "OTHER"
+        }
+    ]
+}

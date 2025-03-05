@@ -1,0 +1,30 @@
+{
+    "dataset": "hr01",
+    "column_id": "SIZIC",
+    "column": "Action Size",
+    "definition": "Identifies the unit size of the action being reported.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "SS",
+            "value": "Scout/Sniper"
+        },
+        {
+            "code": "FT",
+            "value": "Fire Team"
+        },
+        {
+            "code": "SQ",
+            "value": "Squad"
+        },
+        {
+            "code": "PT",
+            "value": "Platoon"
+        },
+        {
+            "code": "CO",
+            "value": "Company"
+        }
+    ]
+}

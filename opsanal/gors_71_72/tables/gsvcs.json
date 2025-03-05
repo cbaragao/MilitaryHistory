@@ -1,0 +1,159 @@
+{
+    "dataset": "gors",
+    "table": "gsvcs",
+    "definition": "Force/Nationality",
+    "data": [
+        {
+            "code": "S",
+            "value": "Australia"
+        },
+        {
+            "code": "P",
+            "value": "Philippines"
+        },
+        {
+            "code": "X",
+            "value": "N. Vietnam"
+        },
+        {
+            "code": "O",
+            "value": "Free World"
+        },
+        {
+            "code": "H",
+            "value": "N. Zealand"
+        },
+        {
+            "code": "F",
+            "value": "U.S. Comb."
+        },
+        {
+            "code": "C",
+            "value": "Rep. China"
+        },
+        {
+            "code": "4",
+            "value": "Cambodia"
+        },
+        {
+            "code": "V",
+            "value": "Viet Cong"
+        },
+        {
+            "code": "J",
+            "value": "Air Force"
+        },
+        {
+            "code": "D",
+            "value": "Coast Grd"
+        },
+        {
+            "code": "5",
+            "value": "Chi Comm"
+        },
+        {
+            "code": "T",
+            "value": "Thailand"
+        },
+        {
+            "code": "B",
+            "value": "Combined"
+        },
+        {
+            "code": "L",
+            "value": "Laotian"
+        },
+        {
+            "code": "M",
+            "value": "Marine"
+        },
+        {
+            "code": "Z",
+            "value": "ANZAC"
+        },
+        {
+            "code": "U",
+            "value": "USA"
+        },
+        {
+            "code": "K",
+            "value": "ROK"
+        },
+        {
+            "code": "E",
+            "value": "Enemy"
+        },
+        {
+            "code": "A",
+            "value": "RVN"
+        },
+        {
+            "code": "3",
+            "value": "VNSF"
+        },
+        {
+            "code": "2",
+            "value": "CIDG"
+        },
+        {
+            "code": "W",
+            "value": "Army"
+        },
+        {
+            "code": "R",
+            "value": "VNMC"
+        },
+        {
+            "code": "Q",
+            "value": "VNAF"
+        },
+        {
+            "code": "N",
+            "value": "Navy"
+        },
+        {
+            "code": "6",
+            "value": "PFF"
+        },
+        {
+            "code": "I",
+            "value": "VNN"
+        },
+        {
+            "code": "1",
+            "value": "RF"
+        },
+        {
+            "code": "Y",
+            "value": "PF"
+        },
+        {
+            "code": "G",
+            "value": "Unspecified"
+        },
+        {
+            "code": "%",
+            "value": "Hamlet Militia"
+        },
+        {
+            "code": "#",
+            "value": "RVN Civ. Official"
+        },
+        {
+            "code": "7",
+            "value": "RVN Civilians"
+        },
+        {
+            "code": "8",
+            "value": "US Civilains"
+        },
+        {
+            "code": "9",
+            "value": "Combat Youth"
+        },
+        {
+            "code": "0",
+            "value": "RD Cadre"
+        }
+    ]
+}

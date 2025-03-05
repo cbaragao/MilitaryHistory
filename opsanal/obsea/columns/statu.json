@@ -1,0 +1,22 @@
+{
+    "dataset": "obsea",
+    "column_id": "STATU",
+    "column": "Status",
+    "definition": "Specifies the status of the enemy unit as determined by the intelligence community.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "Confirmed"
+        },
+        {
+            "code": "2",
+            "value": "Probable"
+        },
+        {
+            "code": "3",
+            "value": "Possible"
+        }  
+    ]
+}

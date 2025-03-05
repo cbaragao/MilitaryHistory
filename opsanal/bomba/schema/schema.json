@@ -1,0 +1,292 @@
+{
+  "dataset": "BOMBA",
+  "table": "BOMBA",
+  "data": [
+    {
+      "title": "Year",
+      "id": "YEAR",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "This field indicates the last two digits of the year in which the mission occurred, i.e., for 1968.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "Month",
+      "id": "MONTH",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "This field indicates the two-digit code for the month in which the mission occurred, i.e., 01 for January.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "Date",
+      "id": "DATE",
+      "field_group": "GROUP",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "This group contains the above two fields to include the year and month in which the mission occurred.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "Target Country",
+      "id": "CNTRY",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "VN, VS, TH, UN",
+      "data_values": "VN: NORTH VIETNAM, VS: SOUTH VIETNAM, TH: THAILAND, UN: UNKNOWN",
+      "definition": "This field contains a two-character code for the target country.",
+      "periodic_set": "control",
+      "definition_file": "cntry.json"
+    },
+    {
+      "title": "Unique Record Control",
+      "id": "CNTRL",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "This field contains a machine-generated number between 0001 and 99999 which ensures unique identification of the record. It is reinitialized to 00001 for each new month.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "Record Identifier",
+      "id": "RECID",
+      "field_group": "GROUP",
+      "length": 11,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "This group contains the Date, Cntry, and Cntrl elements for file record identification.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "Service",
+      "id": "SERV",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "A, J, M, N, V, W",
+      "data_values": "A: ARVN; J: USAF; M: USMC; N: USN; V: VNAF; W: ARMY",
+      "definition": "This field contains an alphabetic code for the launch service.",
+      "periodic_set": "fixed",
+      "definition_file": "serv.json"
+    },
+    {
+      "title": "Aircraft",
+      "id": "STMAC",
+      "field_group": "FIELD",
+      "length": 8,
+      "code": "N/A",
+      "data_values": "Alphabetic",
+      "definition": "This field contains the type, model, and series (TMS) of the sortie aircraft.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Target Type",
+      "id": "TTYPE",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "See Table 1",
+      "definition": "This field contains a code for the general type of target attacked.",
+      "periodic_set": "fixed",
+      "definition_file": "bomba_target_type_codes.json"
+    },
+    {
+      "title": "Sortie Function",
+      "id": "SFUNC",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "01, 02, 03, 04, 05, 06",
+      "data_values": "01: STRIKE; 02: FLAK SUPPRESSION; 03: AIR INTERDICTION; 04: ARMED RECCE; 05: CLOSE AIR SUPPORT; 06: DIRECT AIR SUPPORT",
+      "definition": "This field contains a code for sortie function; only the attack functions 01-06 are in the file.",
+      "periodic_set": "fixed",
+      "definition_file": "sfunc.json"
+    },
+    {
+      "title": "Corps Area/Route Package",
+      "id": "CORPS",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "N/A",
+      "data_values": "See Table 2",
+      "definition": "This field contains a code for Corps Tactical Zone or Route Package.",
+      "periodic_set": "fixed",
+      "definition_file": "bomba_corps_route_package_codes.json"
+    },
+    {
+      "title": "Province",
+      "id": "PROVN",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "See Table 3",
+      "definition": "This field contains a code for the province area in South Vietnam.",
+      "periodic_set": "fixed",
+      "definition_file": "bomba_province_codes.json"
+    },
+    {
+      "title": "Prime/Secondary Indicator",
+      "id": "PRIME",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "1,2",
+      "data_values": "1: PRIMARY; 2: SECONDARY",
+      "definition": "This field contains a 1 or 2 to indicate primary or secondary target.",
+      "periodic_set": "fixed",
+      "definition_file": "prime.json"
+    },
+    {
+      "title": "Multi-Sortie Indicator",
+      "id": "SMULT",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "N/A",
+      "data_values": "Alphabetic",
+      "definition": "This field will contain an M to indicate that this sortie has been counted elsewhere in the file against a different target or with a different sortie function. It is intended to avoid multiple counts of sorties flown.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Time of Day",
+      "id": "TODAY",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "M,D,E,N",
+      "data_values": "M: DAWN; D: DAY; E: DUSK; N: NIGHT",
+      "definition": "This field contains a code indicating the time of day of the mission.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Target Control",
+      "id": "TCNTL",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "N/A",
+      "data_values": "See Table 4",
+      "definition": "This field contains a code describing the type of control in the target area used to direct the attacking aircraft to the target.",
+      "periodic_set": "fixed",
+      "definition_file": "bomba_target_control_codes.json"
+    },
+    {
+      "title": "Sorties",
+      "id": "SORTS",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "N/A",
+      "data_values": "NUMERIC",
+      "definition": "This field contains the total number of aircraft involved. ",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Flying Hours",
+      "id": "HOURS",
+      "field_group": "FIELD",
+      "length": 6,
+      "code": "N/A",
+      "data_values": "NUMERIC",
+      "definition": "This field contains, to the nearest tenth of an hour, the total flying hours for the aircraft involved. ",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Target Element",
+      "id": "TARG",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "See Table 1",
+      "definition": "This field contains a code indicating the specific type of target element which was actually attacked.",
+      "periodic_set": "1",
+      "definition_file": "bomba_target_type_codes.json"
+    },
+    {
+      "title": "Damage Description Code",
+      "id": "DCODE",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "N/A",
+      "data_values": "See Table 5",
+      "definition": "This field contains a code indicating the extent of damage to the target element.",
+      "periodic_set": "1",
+      "definition_file": "bomba_damage_codes.json"
+    },
+    {
+      "title": "Group for Set One",
+      "id": "GRP1",
+      "field_group": "GROUP",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "This group contains the TARG and DCODE fields described above.",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Passes",
+      "id": "PASS",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "N/A",
+      "data_values": "NUMERIC",
+      "definition": "This field contains the total number of individual passes at the target. If no passes are reported in CACTA, are assumed to be one per attack aircraft, i.e., the number of attacks. ",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Attacks",
+      "id": "TACKS",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "N/A",
+      "data_values": "NUMERIC",
+      "definition": "This field contains the total attacking the target specified in TARG.",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Results",
+      "id": "RSLTS",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "NUMERIC",
+      "definition": "This field contains the number of target elements which are affected as described in DCODE.",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Load Type Code",
+      "id": "LOAD",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "1,2,3,4,5,6,7",
+      "data_values": "LOAD.json",
+      "definition": "This field contains a code for the category of ordnance expended.",
+      "periodic_set": "2",
+      "definition_file": "load.json"
+    },
+    {
+      "title": "Load Tonnage",
+      "id": "POUND",
+      "field_group": "FIELD",
+      "length": 9,
+      "code": "N/A",
+      "data_values": "NUMERIC",
+      "definition": "This field contains, to the nearest tenth of a pound, the total ordnance expended (delivered or jettisoned) during the mission.",
+      "periodic_set": "2",
+      "definition_file": ""
+    }
+  ]
+}

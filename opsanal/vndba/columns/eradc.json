@@ -1,0 +1,46 @@
+{
+    "dataset": "VNDBA",
+    "column_id": "ERADC",
+    "column": "Enemy Radio Losses Code",
+    "definition": "Code indicates type of radio lost by the enemy.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "Telephone"
+        },
+        {
+            "code": "2",
+            "value": "1HT"
+        },
+        {
+            "code": "3",
+            "value": "ANPRC-6"
+        },
+        {
+            "code": "4",
+            "value": "ANPRC-10"
+        },
+        {
+            "code": "5",
+            "value": "ANPRC-9"
+        },
+        {
+            "code": "6",
+            "value": "TR-20"
+        },
+        {
+            "code": "7",
+            "value": "TR-6"
+        },
+        {
+            "code": "U",
+            "value": "UNSPEC"
+        },
+        {
+            "code": "BLANK",
+            "value": "*******"
+        }
+    ]
+}

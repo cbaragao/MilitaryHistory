@@ -1,0 +1,155 @@
+{
+    "dataset": "VCIIA",
+    "table": "Enemy Actions",
+    "definition": "Description of the enemy actions",
+    "data": [
+        {
+            "code": "A1",
+            "value": "AGGR ARMED ATTACKS"
+        },
+        {
+            "code": "A2",
+            "value": "ATTACKED"
+        },
+        {
+            "code": "A3",
+            "value": "AMBUSHED"
+        },
+        {
+            "code": "A4",
+            "value": "ENGAGED"
+        },
+        {
+            "code": "A5",
+            "value": "ASSAULTED"
+        },
+        {
+            "code": "E1",
+            "value": "COVERTLY ENTERED"
+        },
+        {
+            "code": "E2",
+            "value": "OVERTLY ENTERED"
+        },
+        {
+            "code": "E3",
+            "value": "ENTERED"
+        },
+        {
+            "code": "H1",
+            "value": "AGGREG HARRASSMENTS"
+        },
+        {
+            "code": "H2",
+            "value": "CONDUCTED HAR FIRE"
+        },
+        {
+            "code": "H3",
+            "value": "BOMBED"
+        },
+        {
+            "code": "H4",
+            "value": "HARRASSED"
+        },
+        {
+            "code": "H5",
+            "value": "FIRED ON"
+        },
+        {
+            "code": "H6",
+            "value": "THREW GRENADE AT"
+        },
+        {
+            "code": "M1",
+            "value": "MINED"
+        },
+        {
+            "code": "M2",
+            "value": "STOPPED"
+        },
+        {
+            "code": "M3",
+            "value": "BLOCKED"
+        },
+        {
+            "code": "M4",
+            "value": "DESTROYED"
+        },
+        {
+            "code": "M5",
+            "value": "DAMAGED"
+        },
+        {
+            "code": "M6",
+            "value": "STOLE"
+        },
+        {
+            "code": "M7",
+            "value": "BURNED"
+        },
+        {
+            "code": "M8",
+            "value": "BOOBY TRAPPED"
+        },
+        {
+            "code": "M9",
+            "value": "DET EXPLOSIVES AGAINST"
+        },
+        {
+            "code": "P1",
+            "value": "AGG ACTS PROPAGANDA"
+        },
+        {
+            "code": "P2",
+            "value": "PROPAGANDIZED"
+        },
+        {
+            "code": "P3",
+            "value": "LECTURED"
+        },
+        {
+            "code": "P4",
+            "value": "DISTRIB. LEAFLETS"
+        },
+        {
+            "code": "P5",
+            "value": "DEMONSTRATED"
+        },
+        {
+            "code": "S1",
+            "value": "AGGR ACTS OF SABOTAGE"
+        },
+        {
+            "code": "S2",
+            "value": "SABOTAGED"
+        },
+        {
+            "code": "S3",
+            "value": "SABOTAGED WITH EXP"
+        },
+        {
+            "code": "T1",
+            "value": "AGG ACTS OF TERROR"
+        },
+        {
+            "code": "T2",
+            "value": "TERRORIZED"
+        },
+        {
+            "code": "T3",
+            "value": "ASSASSINATED" 
+        },
+        {
+            "code": "T4",
+            "value": "MURDERED"
+        },
+        {
+            "code": "T5",
+            "value": "KIDNAPPED"
+        },
+        {
+            "code": "T6",
+            "value": "CAPTURED"
+        }
+    ]
+}

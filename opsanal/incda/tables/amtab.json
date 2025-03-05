@@ -1,0 +1,123 @@
+{
+    "dataset": "INCDA",
+    "table": "AMTAB",
+    "definition": "Type of Ammunition Received",
+    "data": [
+        {
+            "code": "01",
+            "value": "82 MM Mortar"
+        },
+        {
+            "code": "02",
+            "value": "130 MM Artillery"
+        },
+        {
+            "code": "03",
+            "value": "122 MM Rocket"
+        },
+        {
+            "code": "04",
+            "value": "Small Arms/Auto Weapon"
+        },
+        {
+            "code": "05",
+            "value": "75 MM RR"
+        },
+        {
+            "code": "06",
+            "value": "60 MM/82 MM Mortar"
+        },
+        {
+            "code": "07",
+            "value": "60 MM Mortar"
+        },
+        {
+            "code": "08",
+            "value": "Artillery"
+        },
+        {
+            "code": "09",
+            "value": "AT-3 Missile"
+        },
+        {
+            "code": "10",
+            "value": "Mortar"
+        },
+        {
+            "code": "11",
+            "value": "Mine"
+        },
+        {
+            "code": "12",
+            "value": "50 Cal Small Arms"
+        },
+        {
+            "code": "13",
+            "value": "82 MM/120 MM Mortar"
+        },
+        {
+            "code": "14",
+            "value": "Grenade"
+        },
+        {
+            "code": "15",
+            "value": "60 MM/75 MM RR"
+        },
+        {
+            "code": "16",
+            "value": "82 MM/75 MM RR"
+        },
+        {
+            "code": "17",
+            "value": "B-40 Rocket"
+        },
+        {
+            "code": "18",
+            "value": "Unknown Type"
+        },
+        {
+            "code": "19",
+            "value": "120 MM Mortar"
+        },
+        {
+            "code": "20",
+            "value": "107 MM Rocket"
+        },
+        {
+            "code": "21",
+            "value": "SA-7"
+        },
+        {
+            "code": "22",
+            "value": "M-79 Grenade"
+        },
+        {
+            "code": "23",
+            "value": "100 MM Artillery"
+        },
+        {
+            "code": "24",
+            "value": "82 MM Mortar/130 MM Artillery"
+        },
+        {
+            "code": "25",
+            "value": "60 MM/M-79 Grenade"
+        },
+        {
+            "code": "26",
+            "value": "57 MM RR"
+        },
+        {
+            "code": "27",
+            "value": "82 MM/57 MM RR"
+        },
+        {
+            "code": "28",
+            "value": "82 MM/100 MM Artillery"
+        },
+        {
+            "code": "29",
+            "value": "82 MM/155 MM Artillery"
+        }
+    ]
+}

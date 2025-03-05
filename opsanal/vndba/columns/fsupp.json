@@ -1,0 +1,42 @@
+{
+    "dataset": "VNDBA",
+    "column_id": "FSUPP",
+    "column": "Friendly Type of Support",
+    "definition": "Code indicates type of support received by the friendly force involved in the incident.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "A",
+            "value": "Air Strike"
+        },
+        {
+            "code": "C",
+            "value": "Armored Car"
+        },
+        {
+            "code": "F",
+            "value": "Flareship"
+        },
+        {
+            "code": "G",
+            "value": "Artillery"
+        },
+        {
+            "code": "M",
+            "value": "Mortar"
+        },
+        {
+            "code": "N",
+            "value": "NAV Craft"
+        },
+        {
+            "code": "P",
+            "value": "Troop Air"
+        },
+        {
+            "code": "T",
+            "value": "Tank(s)"
+        }
+    ]
+}

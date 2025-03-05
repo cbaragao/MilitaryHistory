@@ -1,0 +1,62 @@
+{
+    "dataset": "hr01",
+    "column_id": "TYPIC",
+    "column": "Action Type",
+    "definition": "Identifies the type of action being reported.",
+    "field/group": "FIELD",
+    "length": 3,
+    "data": [
+        {
+            "code": "AMB",
+            "value": "Ambush"
+        },
+        {
+            "code": "CDD",
+            "value": "Command-Detonated Explosive Device"
+        },
+        {
+            "code": "CLR",
+            "value": "Clearing"
+        },
+        {
+            "code": "CMB",
+            "value": "Combat Patrol"
+        },
+        {
+            "code": "S/D",
+            "value": "Search & Destroy"
+        },
+        {
+            "code": "SEC",
+            "value": "Security"
+        },
+        {
+            "code": "S/S",
+            "value": "Scout/Sniper"
+        },
+        {
+            "code": "REC",
+            "value": "Reconnaissance"
+        },
+        {
+            "code": "DEF",
+            "value": "Defense"
+        },
+        {
+            "code": "L/P",
+            "value": "Listening Post"
+        },
+        {
+            "code": "NCD",
+            "value": "Non-Command Detonated Explosive Device"
+        },
+        {
+            "code": "O/P",
+            "value": "Outpost"
+        },
+        {
+            "code": "PER",
+            "value": "Perimeter"
+        }
+    ]
+}

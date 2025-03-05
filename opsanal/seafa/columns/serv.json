@@ -1,0 +1,18 @@
+{
+    "table": "seafa",
+    "column_id": "SERV",
+    "column": "Service",
+    "definition": "This field identifies the unit's service.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "M",
+            "value": "MARINE"
+        },
+        {
+            "code": "w",
+            "value": "ARMY"
+        }
+    ]
+}

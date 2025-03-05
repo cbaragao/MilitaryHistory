@@ -1,0 +1,18 @@
+{
+    "dataset": "obsea",
+    "column_id": "ACTY",
+    "column": "Activity",
+    "definition": "Indicates whether the enemy unit is currently active or inactive.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "A",
+            "value": "Active"
+        },
+        {
+            "code": "I",
+            "value": "Inactive"
+        }
+    ]
+}

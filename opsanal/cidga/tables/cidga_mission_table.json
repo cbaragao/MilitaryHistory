@@ -1,0 +1,107 @@
+{
+    "table": "mission",
+    "table_index": 1,
+    "datasource": "CIDGA",
+    "data" : [
+        {
+            "code": "CC",
+            "mission": "Command and Control/C+C"
+
+        },
+        {
+            "code": "CIDG",
+            "mission": "Civilian Irregular Defense Group"
+
+        },
+        {
+            "code": "MF",
+            "mission": "MIKE Force/MF"
+
+        },
+        {
+            "code": "MSF",
+            "mission": "Mobile Strike Force (Formerly Mike Force)"
+
+        },
+        {
+            "code": "MGF",
+            "mission": "Mobile Guerrilla Force"
+
+        },
+        {
+            "code": "S",
+            "mission": "Sector"
+
+        },
+        {
+            "code": "SS",
+            "mission": "Subsector"
+
+        },
+        {
+            "code": "SPS",
+            "mission": "Special Sector"
+
+        },
+        {
+            "code": "BS",
+            "mission": "Border Surveillance"
+
+        },
+        {
+            "code": "TRNG",
+            "mission": "Training/CIDG Trng/Training Center/TC"
+
+        },
+        {
+            "code": "RADR",
+            "mission": "Radio Relay/Rad Relay"
+
+        },
+        {
+            "code": "CSF",
+            "mission": "Camp Strike Force"
+
+        },
+        {
+            "code": "OMEG",
+            "mission": "OMEGA/Proj OMEGA"
+
+        },
+        {
+            "code": "SIGM",
+            "mission": "SIGMA/Sig Spt"
+
+        },
+        {
+            "code": "DELT",
+            "mission": "DELTA/Proj DELTA"
+
+        },
+        {
+            "code": "SPT",
+            "mission": "Support"
+
+        },
+        {
+            "code": "LNO",
+            "mission": "LNO"
+
+        },
+        {
+            "code": "RS",
+            "mission": "MACV Recondo School"
+
+        },
+        {
+            "code": "NOTD",
+            "mission": "Not Deployed"
+
+        },
+        {
+            "code": "LSN",
+            "mission": "Liaison"
+
+        }
+    ]
+}

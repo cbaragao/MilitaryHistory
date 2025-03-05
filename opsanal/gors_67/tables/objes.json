@@ -1,0 +1,303 @@
+{
+    "dataset": "gors",
+    "table": "objes",
+    "definition": "Action Objectives",
+    "data": [
+        {
+            "code": "01",
+            "value": "GUARD POST"
+        },
+        {
+            "code": "02",
+            "value": "COMMAND POST"
+        },
+        {
+            "code": "03",
+            "value": "TRAINING CENTER"
+        },
+        {
+            "code": "04",
+            "value": "HEADQUARTERS"
+        },
+        {
+            "code": "05",
+            "value": "DISTRICT CAPITOL"
+        },
+        {
+            "code": "06",
+            "value": "PROVINCE CAPITOL"
+        },
+        {
+            "code": "07",
+            "value": "DISTRICT TOWN"
+        },
+        {
+            "code": "08",
+            "value": "MARKET"
+        },
+        {
+            "code": "09",
+            "value": "SCHOOL"
+        },
+        {
+            "code": "10",
+            "value": "MILITARY POST"
+        },
+        {
+            "code": "11",
+            "value": "OUTPOST"
+        },
+        {
+            "code": "12",
+            "value": "BASE"
+        },
+        {
+            "code": "14",
+            "value": "AIRFIELD"
+        },
+        {
+            "code": "15",
+            "value": "WATCHTOWER"
+        },
+        {
+            "code": "16",
+            "value": "BLOCKHOUSE"
+        },
+        {
+            "code": "17",
+            "value": "MILITARY FACILITY"
+        },
+        {
+            "code": "18",
+            "value": "CAMP"
+        },
+        {
+            "code": "19",
+            "value": "BIVOUAC"
+        },
+        {
+            "code": "22",
+            "value": "SECURITY FENCE"
+        },
+        {
+            "code": "29",
+            "value": "R.D. PERS"
+        },
+        {
+            "code": "30",
+            "value": "HAMLET"
+        },
+        {
+            "code": "31",
+            "value": "VILLAGE"
+        },
+        {
+            "code": "32",
+            "value": "VILLAGE OFFICE"
+        },
+        {
+            "code": "33",
+            "value": "DISTRICT OFFICE"
+        },
+        {
+            "code": "35",
+            "value": "LAND DEV CNTR"
+        },
+        {
+            "code": "36",
+            "value": "HOUSE"
+        },
+        {
+            "code": "37",
+            "value": "BUILDING"
+        },
+        {
+            "code": "38",
+            "value": "CHURCH"
+        },
+        {
+            "code": "39",
+            "value": "CIVIL FACILITIES"
+        },
+        {
+            "code": "42",
+            "value": "HELICOPTER"
+        },
+        {
+            "code": "45",
+            "value": "AIRCRAFT"
+        },
+        {
+            "code": "49",
+            "value": "LANDING ZONE"
+        },
+        {
+            "code": "50",
+            "value": "MOTOR CONVOY"
+        },
+        {
+            "code": "51",
+            "value": "TRUCK"
+        },
+        {
+            "code": "52",
+            "value": "BUS"
+        },
+        {
+            "code": "53",
+            "value": "AUTO"
+        },
+        {
+            "code": "54",
+            "value": "JEEP"
+        },
+        {
+            "code": "55",
+            "value": "TRAIN"
+        },
+        {
+            "code": "57",
+            "value": "VEHICLE"
+        },
+        {
+            "code": "58",
+            "value": "ARMORED CAR"
+        },
+        {
+            "code": "60",
+            "value": "SAMPAN"
+        },
+        {
+            "code": "61",
+            "value": "JUNK"
+        },
+        {
+            "code": "62",
+            "value": "BOAT"
+        },
+        {
+            "code": "63",
+            "value": "NAVAL CRAFT"
+        },
+        {
+            "code": "64",
+            "value": "SHIP"
+        },
+        {
+            "code": "70",
+            "value": "ROAD"
+        },
+        {
+            "code": "71",
+            "value": "VEHICLE BRIDGE"
+        },
+        {
+            "code": "72",
+            "value": "RAILROAD BRIDGE"
+        },
+        {
+            "code": "73",
+            "value": "BRIDGE"
+        },
+        {
+            "code": "74",
+            "value": "RAILROAD TRACKS"
+        },
+        {
+            "code": "75",
+            "value": "RAIL FACILITIES"
+        },
+        {
+            "code": "76",
+            "value": "COMM. LINES"
+        },
+        {
+            "code": "77",
+            "value": "COMM. FACILITIES"
+        },
+        {
+            "code": "78",
+            "value": "CANAL"
+        },
+        {
+            "code": "79",
+            "value": "WATERWAYS"
+        },
+        {
+            "code": "80",
+            "value": "VILLAGE OFFICIAL"
+        },
+        {
+            "code": "81",
+            "value": "HAMLET OFFICIAL"
+        },
+        {
+            "code": "82",
+            "value": "CIVIL OFFICIAL"
+        },
+        {
+            "code": "83",
+            "value": "CIVILIAN"
+        },
+        {
+            "code": "84",
+            "value": "INHABITANT"
+        },
+        {
+            "code": "85",
+            "value": "MILITARY UNIT"
+        },
+        {
+            "code": "86",
+            "value": "MILITARY PERS"
+        },
+        {
+            "code": "87",
+            "value": "POLICE"
+        },
+        {
+            "code": "88",
+            "value": "COMPY OR LRGR UNIT"
+        },
+        {
+            "code": "89",
+            "value": "UNIT LS THAN COMPY"
+        },
+        {
+            "code": "90",
+            "value": "FIREARMS/AMMO"
+        },
+        {
+            "code": "91",
+            "value": "FOODSTUFFS"
+        },
+        {
+            "code": "92",
+            "value": "LIVESTOCK"
+        },
+        {
+            "code": "93",
+            "value": "MEDICAL SUPPLIES"
+        },
+        {
+            "code": "94",
+            "value": "AREA"
+        },
+        {
+            "code": "95",
+            "value": "CONST EQUIP"
+        },
+        {
+            "code": "96",
+            "value": "POWER LINES"
+        },
+        {
+            "code": "97",
+            "value": "CULVERT"
+        },
+        {
+            "code": "98",
+            "value": "TANK"
+        }
+    ]
+}

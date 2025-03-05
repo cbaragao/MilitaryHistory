@@ -1,0 +1,271 @@
+{
+    "dataset": "SEAFA",
+    "table": "Locations",
+    "definition": "This field identifies the Viet Cong Military Region (VCMR) in which the unit is located. Data for this field is derived from the province in which the unit is reported to be located. Conversion from province to VCMR is as shown in Table 1 Chapter 7.",
+    "data": [
+        {
+            "province_name": "QUANG TRI",
+            "province_code": "101",
+            "viet_cong_military_region": "11",
+            "corps_area": "1"
+        },
+        {
+            "province_name": "THUA TRIEN",
+            "province_code": "102",
+            "viet_cong_military_region": "11",
+            "corps_area": "1"
+        },
+        {
+            "province_name": "QUANG NAM",
+            "province_code": "103",
+            "viet_cong_military_region": "05",
+            "corps_area": "1"
+        },
+        {
+            "province_name": "QUANG TIN",
+            "province_code": "104",
+            "viet_cong_military_region": "05",
+            "corps_area": "1"
+        },
+        {
+            "province_name": "QUANG NGAI",
+            "province_code": "105",
+            "viet_cong_military_region": "05",
+            "corps_area": "1"
+        },
+        {
+            "province_name": "BINH DINH",
+            "province_code": "106",
+            "viet_cong_military_region": "05",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "KONTUM",
+            "province_code": "107",
+            "viet_cong_military_region": "05",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "PLEIKU",
+            "province_code": "108",
+            "viet_cong_military_region": "05",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "PHU BON",
+            "province_code": "109",
+            "viet_cong_military_region": "05",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "PHU YEN",
+            "province_code": "110",
+            "viet_cong_military_region": "05",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "KHANH HOA",
+            "province_code": "111",
+            "viet_cong_military_region": "05",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "NINH THUAN",
+            "province_code": "112",
+            "viet_cong_military_region": "06",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "DARLAC",
+            "province_code": "113",
+            "viet_cong_military_region": "05",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "QUANG DUC",
+            "province_code": "114",
+            "viet_cong_military_region": "10",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "TUYEN DUC",
+            "province_code": "115",
+            "viet_cong_military_region": "06",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "LAM DONG",
+            "province_code": "116",
+            "viet_cong_military_region": "06",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "BINH THUAN",
+            "province_code": "117",
+            "viet_cong_military_region": "06",
+            "corps_area": "2"
+        },
+        {
+            "province_name": "BINH TUY",
+            "province_code": "118",
+            "viet_cong_military_region": "06",
+            "corps_area": "3"
+        },
+        {
+            "province_name": "PHUOC LONG",
+            "province_code": "119",
+            "viet_cong_military_region": "10",
+            "corps_area": "3"
+        },
+        {
+            "province_name": "SA DEC",
+            "province_code": "120",
+            "viet_cong_military_region": "03",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "BINH LONG",
+            "province_code": "121",
+            "viet_cong_military_region": "10",
+            "corps_area": "3"
+        },
+        {
+            "province_name": "LONG KHANH",
+            "province_code": "122",
+            "viet_cong_military_region": "01",
+            "corps_area": "3"
+        },
+        {
+            "province_name": "PHUOC TUY",
+            "province_code": "123",
+            "viet_cong_military_region": "01",
+            "corps_area": "3"
+        },
+        {
+            "province_name": "BIEN HOA",
+            "province_code": "124",
+            "viet_cong_military_region": "01",
+            "corps_area": "3"
+        },
+        {
+            "province_name": "TAY NINH",
+            "province_code": "125",
+            "viet_cong_military_region": "01",
+            "corps_area": "3"
+        },
+        {
+            "province_name": "BINH DUONG",
+            "province_code": "126",
+            "viet_cong_military_region": "01",
+            "corps_area": "3"
+        },
+        {
+            "province_name": "HAU NGHIA",
+            "province_code": "127",
+            "viet_cong_military_region": "02",
+            "corps_area": "3"
+        },
+        {
+            "province_name": "LONG AN",
+            "province_code": "128",
+            "viet_cong_military_region": "02",
+            "corps_area": "3"
+        },
+        {
+            "province_name": "GIA DINH",
+            "province_code": "129",
+            "viet_cong_military_region": "01",
+            "corps_area": "3"
+        },
+        {
+            "province_name": "KIEN TUONG",
+            "province_code": "130",
+            "viet_cong_military_region": "02",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "DINH TUONG",
+            "province_code": "131",
+            "viet_cong_military_region": "02",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "GO CONG",
+            "province_code": "132",
+            "viet_cong_military_region": "02",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "KIEN HOA",
+            "province_code": "133",
+            "viet_cong_military_region": "02",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "KIEN PHONG",
+            "province_code": "134",
+            "viet_cong_military_region": "02",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "CHAU DOC",
+            "province_code": "135",
+            "viet_cong_military_region": "02",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "AN GIANG",
+            "province_code": "136",
+            "viet_cong_military_region": "02",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "KIEN GIANG",
+            "province_code": "137",
+            "viet_cong_military_region": "03",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "VINH BINH",
+            "province_code": "138",
+            "viet_cong_military_region": "03",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "BINH LONG",
+            "province_code": "139",
+            "viet_cong_military_region": "03",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "PHONG DINH",
+            "province_code": "140",
+            "viet_cong_military_region": "03",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "CHUONG THIEN",
+            "province_code": "141",
+            "viet_cong_military_region": "03",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "BA XUYEN",
+            "province_code": "142",
+            "viet_cong_military_region": "03",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "BAC LIEU",
+            "province_code": "143",
+            "viet_cong_military_region": "03",
+            "corps_area": "4"
+        },
+        {
+            "province_name": "AN XUYEN",
+            "province_code": "144",
+            "viet_cong_military_region": "03",
+            "corps_area": "4"
+        }
+    ]
+}

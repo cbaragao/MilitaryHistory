@@ -1,0 +1,42 @@
+{
+    "dataset": "VCIIA",   
+    "column_id": "REGON",
+    "column": "REGION",
+    "definition": "Identifies the Viet Cong Military region in which the incident occurred.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "01",
+            "value": "REGION 1"
+        },
+        {
+            "code": "02",
+            "value": "REGION 2"
+        },
+        {
+            "code": "03",
+            "value": "REGION 3"
+        },
+        {
+            "code": "04",
+            "value": "REGION 4"
+        },
+        {
+            "code": "05",
+            "value": "REGION 5"
+        },
+        {
+            "code": "06",
+            "value": "REGION 6"
+        },
+        {
+            "code": "10",
+            "value": "REGION 10"
+        },
+        {
+            "code": "11",
+            "value": "REGION 11"
+        }
+    ]
+}

@@ -1,0 +1,205 @@
+
+    {
+    "dataset": "gors_1971_1972",
+    "table": "fixed",
+    "data": [ 
+            {
+                "title": "DATE",
+                "id": "DATE",
+                "field_group": "FIELD",
+                "length": 6,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Publication date of the operational report"
+            },
+            {
+                "title": "DATAT",
+                "id": "DATAT",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Basic description of the recorded incident/operation"
+            },
+            {
+                "title": "SERAL",
+                "id": "SERAL",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Record sequence number within the operational report"
+            },
+            {
+                "title": "CORP",
+                "id": "CORP",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Corps tactical zone in which the action occurred"
+            },
+            {
+                "title": "PART",
+                "id": "PART",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Major force of the action"
+            },
+            {
+                "title": "PCN",
+                "id": "PCN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Periodic set number; created by the NIPSTRAN program"
+            },
+            {
+                "title": "SC0",
+                "id": "SC0",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Subset control group in the key for a specific logical record; created by the NIPSTRAN program"
+            },
+            {
+                "title": "VSZ",
+                "id": "VSZ",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Indicates number of characters in the logical record's variable field; the field will contain zeros if there is no variable field for a logical record; created by the NIPSTRAN program"
+            },
+            {
+                "title": "OPDAY",
+                "id": "OPDAY",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Number of days of operation in one week"
+            },
+            {
+                "title": "CTDAY",
+                "id": "CTDAY",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Number of days of operation in one week where an enemy was involved"
+            },
+            {
+                "title": "FNATL",
+                "id": "FNATL",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Force or nationality controlling the action"
+            },
+            {
+                "title": "CNTRY",
+                "id": "CNTRY",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Country in whuich an action is located"
+            },
+            {
+                "title": "OPNAM",
+                "id": "OPNAM",
+                "field_group": "FIELD",
+                "length": 25,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Operation name"
+            },
+            {
+                "title": "OPCOD",
+                "id": "OPCOD",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Operation type"
+            },
+            {
+                "title": "UDATE",
+                "id": "UDATE",
+                "field_group": "FIELD",
+                "length": 5,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Date of last update (Julian)"
+            },
+            {
+                "title": "PRVC1",
+                "id": "PRVC1",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Vietnam province 1 in which the action was located"
+            },
+            {
+                "title": "PRVC2",
+                "id": "PRVC2",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Vietnam province 2 in which the action was located"
+            },
+            {
+                "title": "PRVC3",
+                "id": "PRVC3",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Vietnam province 3 in which the action was located"
+            },
+            {
+                "title": "DTEI",
+                "id": "DTEI",
+                "field_group": "FIELD",
+                "length": 7,
+                "code": "N/A",
+                "data_values": "Decimal",
+                "definition": "Date of initiation of the operation, action or incident (YYMMDD)"
+            },
+            {
+                "title": "HOURI",
+                "id": "HOURI",
+                "field_group": "FIELD",
+                "length": 5,
+                "code": "N/A",
+                "data_values": "Decimal",
+                "definition": "Local time of initiation of operation action or incident (HHHH)"
+            },
+            {
+                "title": "DTET",
+                "id": "DTET",
+                "field_group": "FIELD",
+                "length": 7,
+                "code": "N/A",
+                "data_values": "Decimal",
+                "definition": "Date of termination of operation (YYMMDD)"
+            },
+            {
+                "title": "HOURT",
+                "id": "HOURT",
+                "field_group": "FIELD",
+                "length": 5,
+                "code": "N/A",
+                "data_values": "Decimal",
+                "definition": "Local time of termination of operation (HHHHH)"
+            }
+        ]
+    }

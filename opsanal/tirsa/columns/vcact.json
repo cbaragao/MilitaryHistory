@@ -1,0 +1,42 @@
+{
+    "dataset": "TIRSA",
+    "column_id": "VCACT",
+    "column": "Enemy Action Code",
+    "definition": "The specific objectives involved in the incident.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "10",
+            "value": "Assassination, Selective"
+        },
+        {
+            "code": "11",
+            "value": "Assassination, General"
+        },
+        {
+            "code": "20",
+            "value": "Abduction, Selective"
+        },
+        {
+            "code": "21",
+            "value": "Abduction, General"
+        },
+        {
+            "code": "30",
+            "value": "Wounded"
+        },
+        {
+            "code": "40",
+            "value": "Damaged"
+        },
+        {
+            "code": "50",
+            "value": "Destroyed"
+        },
+        {
+            "code": "90",
+            "value": "Terrorism/Harrassment"
+        }
+    ]
+}

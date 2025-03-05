@@ -1,0 +1,187 @@
+
+    {
+    "dataset": "gors",
+    "table": "ps3",
+    "data": [ 
+            {
+                "title": "DATE",
+                "id": "DATE",
+                "field_group": "FIELD",
+                "length": 6,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Publication date of the operational report",
+                "definition_file": ""
+            },
+            {
+                "title": "DATAT",
+                "id": "DATAT",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Basic description of recorded incident/operation",
+                "definition_file": ""
+            },
+            {
+                "title": "SERAL",
+                "id": "SERAL",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Record sequence number within the operational report",
+                "definition_file": ""
+            },
+            {
+                "title": "CORP",
+                "id": "CORP",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Corps tactical zone in which the action occurred",
+                "definition_file": ""
+            },
+            {
+                "title": "PART",
+                "id": "PART",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Major force of the action",
+                "definition_file": ""
+            },
+            {
+                "title": "PCN",
+                "id": "PCN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Periodic set number; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "PSSQ3",
+                "id": "PSSQ3",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Subset sequence number used for periodic set identification; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "VSZ3",
+                "id": "VSZ3",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Indicates number of characters in the logical record's variable field; the field will contain zeros if there is no variable field for a logical record; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "NOOF",
+                "id": "NOOF",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "umber of units of size indicated by field SMTH for unnamed or unidentified units",
+                "definition_file": ""
+            },
+            {
+                "title": "LINFS",
+                "id": "LINFS",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Line number of subsets of periodic set 3",
+                "definition_file": ""
+            },
+            {
+                "title": "SVNAT",
+                "id": "SVNAT",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Force or nationality of the unit participating in the action",
+                "definition_file": "gsvcs.json"
+            },
+            {
+                "title": "SMTH",
+                "id": "SMTH",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Size of unnamed or unidentified unit",
+                "definition_file": "fwszs.json"
+            },
+            {
+                "title": "COMPY",
+                "id": "COMPY",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Company designation",
+                "definition_file": ""
+            },
+            {
+                "title": "BNID",
+                "id": "BNID",
+                "field_group": "FIELD",
+                "length": 10,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Battalion identification",
+                "definition_file": ""
+            },
+            {
+                "title": "BRDES",
+                "id": "BRDES",
+                "field_group": "FIELD",
+                "length": 10,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Brigade identification",
+                "definition_file": ""
+            },
+            {
+                "title": "DVDES",
+                "id": "DVDES",
+                "field_group": "FIELD",
+                "length": 10,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Division identification",
+                "definition_file": ""
+            },
+            {
+                "title": "MVRSP",
+                "id": "MVRSP",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Indicates if the unit is a maneuver or support type",
+                "definition_file": ""
+            },
+            {
+                "title": "RESAC",
+                "id": "RESAC",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Unit is active or reserve",
+                "definition_file": ""
+            }
+        ]
+    }

@@ -1,0 +1,42 @@
+{
+    "dataset": "obsea",
+    "column_id": "UNCAT",
+    "column": "Unit Category",
+    "definition": "Contains a category designation for the unit.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "Maneuver"
+        },
+        {
+            "code": "2",
+            "value": "Combat Support"
+        },
+        {
+            "code": "3",
+            "value": "Administrative Service"
+        },
+        {
+            "code": "4",
+            "value": "Irregular"
+        },
+        {
+            "code": "5",
+            "value": "Political"
+        },
+        {
+            "code": "6",
+            "value": "Guerrilla"
+        },
+        {
+            "code": "7",
+            "value": "Self Def Force"
+        },
+        {
+            "code": "8",
+            "value": "Sec Self Def Force"
+        }
+    ]
+}

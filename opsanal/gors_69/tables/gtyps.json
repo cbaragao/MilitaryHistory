@@ -1,0 +1,67 @@
+{
+    "dataset": "gors",
+    "table": "gtyps",
+    "definition": "Corps Area Data Type",
+    "data": [
+        {
+            "code": "D",
+            "value": "KIA"
+        },
+        {
+            "code": "E",
+            "value": "WIA"
+        },
+        {
+            "code": "F",
+            "value": "MIA"
+        },
+        {
+            "code": "G",
+            "value": "INDIVIDUAL"
+        },
+        {
+            "code": "H",
+            "value": "CREW SERVED"
+        },
+        {
+            "code": "I",
+            "value": "MIL HOI C HANH"
+        },
+        {
+            "code": "J",
+            "value": "POL CADRE"
+        },
+        {
+            "code": "K",
+            "value": "OTHER CIV"
+        },
+        {
+            "code": "N",
+            "value": "NO. OF BATT"
+        },
+        {
+            "code": "O",
+            "value": "COMBAT OPS"
+        },
+        {
+            "code": "P",
+            "value": "SECURITY"
+        },
+        {
+            "code": "Q",
+            "value": "TRAINING"
+        },
+        {
+            "code": "R",
+            "value": "RESERVE"
+        },
+        {
+            "code": "S",
+            "value": "RD/PAC"
+        },
+        {
+            "code": "T",
+            "value": "OTHER MSNS"
+        }
+    ]
+}

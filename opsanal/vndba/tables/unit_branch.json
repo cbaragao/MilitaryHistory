@@ -1,0 +1,139 @@
+{
+    "dataset": "VNDBA",
+    "table": "Unit Branch",
+    "definition": "Definition of Unit Branches",
+    "data": [
+        {
+            "code": "HQ",
+            "value": "Headquarters"
+        },
+        {
+            "code": "IN",
+            "value": "Infantry"
+        },
+        {
+            "code": "RA",
+            "value": "Ranger"
+        },
+        {
+            "code": "AB",
+            "value": "Airborne"
+        },
+        {
+            "code": "SF",
+            "value": "Special Forces"
+        },
+        {
+            "code": "SC",
+            "value": "Scout"
+        },
+        {
+            "code": "SN",
+            "value": "Intelligence"
+        },
+        {
+            "code": "RC",
+            "value": "Reconnaissance"
+        },
+        {
+            "code": "RE",
+            "value": "Recon (M114)"
+        },
+        {
+            "code": "HO",
+            "value": "Howitzer (105)"
+        },
+        {
+            "code": "HW",
+            "value": "Howitzer (155)"
+        },
+        {
+            "code": "HA",
+            "value": "Artillery (UNSP)"
+        },
+        {
+            "code": "HR",
+            "value": "Mortar (4.2)"
+        },
+        {
+            "code": "HN",
+            "value": "Mortar (81MM)"
+        },
+        {
+            "code": "HM",
+            "value": "Mortar (UNSPEC)"
+        },
+        {
+            "code": "WP",
+            "value": "Heavy Weapons"
+        },
+        {
+            "code": "AC",
+            "value": "Armed Cav (M113)"
+        },
+        {
+            "code": "AR",
+            "value": "Armored Car"
+        },
+        {
+            "code": "TA",
+            "value": "Tank"
+        },
+        {
+            "code": "TR",
+            "value": "Training"
+        },
+        {
+            "code": "VF",
+            "value": "Vehicle"
+        },
+        {
+            "code": "JU",
+            "value": "Junk-Coast Force"
+        },
+        {
+            "code": "PS",
+            "value": "PSYWAR"
+        },
+        {
+            "code": "CA",
+            "value": "Civic Action"
+        },
+        {
+            "code": "RG",
+            "value": "River Assault GP"
+        },
+        {
+            "code": "RP",
+            "value": "River Patrol"
+        },
+        {
+            "code": "BO",
+            "value": "Boat-Regnl-Force"
+        },
+        {
+            "code": "GU",
+            "value": "Guerilla"
+        },
+        {
+            "code": "LF",
+            "value": "Local Force"
+        },
+        {
+            "code": "MF",
+            "value": "Main Force"
+        },
+        {
+            "code": "PR",
+            "value": "Province"
+        },
+        {
+            "code": "SE",
+            "value": "Sector"
+        },
+        {
+            "code": "RE",
+            "value": "Regional"
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+{
+    "dataset": "VNDBA",
+    "table": "Type of Action",
+    "definition": "Type of action recorded in the dataset",
+    "data": [
+        {
+            "code": "A1",
+            "value": "Aggr Armed Attacks"
+        },
+        {
+            "code": "A2",
+            "value": "Attacked"
+        },
+        {
+            "code": "A3",
+            "value": "Ambushed"
+        },
+        {
+            "code": "A4",
+            "value": "Engaged"
+        },
+        {
+            "code": "A5",
+            "value": "Assaulted"
+        },
+        {
+            "code": "E1",
+            "value": "Covertly Entered"
+        },
+        {
+            "code": "E2",
+            "value": "Overtly Entered"
+        },
+        {
+            "code": "E3",
+            "value": "Entered"
+        },
+        {
+            "code": "H1",
+            "value": "Aggreg Harrassments"
+        },
+        {
+            "code": "H2",
+            "value": "Conducted Har Fire"
+        },
+        {
+            "code": "H3",
+            "value": "Bombed"
+        },
+        {
+            "code": "H4",
+            "value": "Harrassed"
+        },
+        {
+            "code": "H5",
+            "value": "Fired On"
+        },
+        {
+            "code": "H6",
+            "value": "Threw Grenade At"
+        },
+        {
+            "code": "M1",
+            "value": "Mined"
+        },
+        {
+            "code": "M2",
+            "value": "Stopped"
+        },
+        {
+            "code": "M3",
+            "value": "Blocked"
+        },
+        {
+            "code": "M4",
+            "value": "Destroyed"
+        },
+        {
+            "code": "M5",
+            "value": "Damaged"
+        },
+        {
+            "code": "M6",
+            "value": "Stole"
+        },
+        {
+            "code": "M7",
+            "value": "Burned"
+        },
+        {
+            "code": "M8",
+            "value": "Booby Trapped"
+        },
+        {
+            "code": "M9",
+            "value": "Det Explosives Against"
+        },
+        {
+            "code": "P1",
+            "value": "Agg Acts Propraganda"
+        },
+        {
+            "code": "P2",
+            "value": "Propangandized"
+        },
+        {
+            "code": "P3",
+            "value": "Lectured"
+        },
+        {
+            "code": "P4",
+            "value": "Distrib. Leaflets"
+        },
+        {
+            "code": "P5",
+            "value": "Demonstrated"
+        },
+        {
+            "code": "S1",
+            "value": "Aggr Acts of Sabotage"
+        },
+        {
+            "code": "S2",
+            "value": "Sabotaged"
+        },
+        {
+            "code": "S3",
+            "value": "Sabotaged with Exp"
+        },
+        {
+            "code": "T1",
+            "value": "Agg Acts of Terror"
+        },
+        {
+            "code": "T2",
+            "value": "Terrorized"
+        },
+        {
+            "code": "T3",
+            "value": "Assassinated"
+        },
+        {
+            "code": "T4",
+            "value": "Murdered"
+        },
+        {
+            "code": "T5",
+            "value": "Kidnapped"
+        },
+        {
+            "code": "T6",
+            "value": "Captured"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "dataset": "VNDBA",
+    "column_id": "EWEAS",
+    "column": "Enemy Weapon Losses Source",
+    "definition": "Country of manufacture of weapons lost by the enemy",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "A",
+            "value": "U.S."
+        },
+        {
+            "code": "B",
+            "value": "BLOC"
+        },
+        {
+            "code": "C",
+            "value": "CHICOM"
+        },
+        {
+            "code": "F",
+            "value": "FRENCH"
+        },
+        {
+            "code": "G",
+            "value": "GERMAN"
+        },
+        {
+            "code": "H",
+            "value": "HOME MADE"
+        },
+        {
+            "code": "S",
+            "value": "SOVIET"
+        },
+        {
+            "code": "U",
+            "value": "UNSPEC"
+        },
+        {
+            "code": "BLANK",
+            "value": "*******"
+        }
+    ]
+}

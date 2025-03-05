@@ -1,0 +1,34 @@
+{
+    "dataset": "BOMBA",
+    "column_id": "SERV",
+    "column": "Service",
+    "definition": "This field contains an alphabetic code for the launch service.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "A",
+            "value": "ARVN"
+        },
+        {
+            "code": "J",
+            "value": "USAF"
+        },
+        {
+            "code": "M",
+            "value": "USMC"
+        },
+        {
+            "code": "N",
+            "value": "USN"
+        },
+        {
+            "code": "V",
+            "value": "VNAF"
+        },
+        {
+            "code": "W",
+            "value": "ARMY"
+        }
+    ]
+}

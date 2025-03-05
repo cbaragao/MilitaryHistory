@@ -1,0 +1,311 @@
+{
+    "dataset": "BASFA",
+    "table": "CPRVS",
+    "definition": "Province code defined for the BASFA dataset",
+    "data": [
+        {
+            "code": "101",
+            "value": "QUANG TRI"
+        },
+        {
+            "code": "102",
+            "value": "THUA THIEN"
+        },
+        {
+            "code": "103",
+            "value": "QUANG NAM"
+        },
+        {
+            "code": "104",
+            "value": "QUANG TIN"
+        },
+        {
+            "code": "105",
+            "value": "QUANG NGAI"
+        },
+        {
+            "code": "106",
+            "value": "BINH DINH"
+        },
+        {
+            "code": "107",
+            "value": "KONTUM"
+        },
+        {
+            "code": "108",
+            "value": "PLEIKU"
+        },
+        {
+            "code": "109",
+            "value": "PHU BON"
+        },
+        {
+            "code": "110",
+            "value": "PHU YEN"
+        },
+        {
+            "code": "111",
+            "value": "KHANH HOA"
+        },
+        {
+            "code": "112",
+            "value": "NINH THUAN"
+        },
+        {
+            "code": "113",
+            "value": "DARLAC"
+        },
+        {
+            "code": "114",
+            "value": "QUANG DUC"
+        },
+        {
+            "code": "115",
+            "value": "TUYEN DUC"
+        },
+        {
+            "code": "116",
+            "value": "LAM DONG"
+        },
+        {
+            "code": "117",
+            "value": "BINH THUAN"
+        },
+        {
+            "code": "118",
+            "value": "BINH TUY"
+        },
+        {
+            "code": "119",
+            "value": "PHUOC LONG"
+        },
+        {
+            "code": "120",
+            "value": "SA DEC"
+        },
+        {
+            "code": "121",
+            "value": "BINH LONG"
+        },
+        {
+            "code": "122",
+            "value": "LONG KHANH"
+        },
+        {
+            "code": "123",
+            "value": "PHUOC TUY"
+        },
+        {
+            "code": "124",
+            "value": "BIEN HOA"
+        },
+        {
+            "code": "125",
+            "value": "TAY NINH"
+        },
+        {
+            "code": "126",
+            "value": "BINH DUONG"
+        },
+        {
+            "code": "127",
+            "value": "HAU NGHIA"
+        },
+        {
+            "code": "128",
+            "value": "LONG AN"
+        },
+        {
+            "code": "129",
+            "value": "GIA DINH"
+        },
+        {
+            "code": "130",
+            "value": "KIEN TUONG"
+        },
+        {
+            "code": "131",
+            "value": "DINH TUONG"
+        },
+        {
+            "code": "132",
+            "value": "GO CONG"
+        },
+        {
+            "code": "133",
+            "value": "KIEN HOA"
+        },
+        {
+            "code": "134",
+            "value": "KIEN PHONG"
+        },
+        {
+            "code": "135",
+            "value": "CHAU DOC"
+        },
+        {
+            "code": "136",
+            "value": "AN GIANG"
+        },
+        {
+            "code": "137",
+            "value": "KIEN GIANG"
+        },
+        {
+            "code": "138",
+            "value": "VINH BINH"
+        },
+        {
+            "code": "139",
+            "value": "VINH LONG"
+        },
+        {
+            "code": "140",
+            "value": "PHONG DINH"
+        },
+        {
+            "code": "141",
+            "value": "CHUONG THIEN"
+        },
+        {
+            "code": "142",
+            "value": "BA XUYEN"
+        },
+        {
+            "code": "143",
+            "value": "BAC LIEU"
+        },
+        {
+            "code": "144",
+            "value": "AN XUYEN"
+        },
+        {
+            "code": "145",
+            "value": "CON SON ISLAND"
+        },
+        {
+            "code": "201",
+            "value": "LA CHAU"
+        },
+        {
+            "code": "202",
+            "value": "SON LA"
+        },
+        {
+            "code": "203",
+            "value": "NGHIA LO"
+        },
+        {
+            "code": "204",
+            "value": "LAO KAY"
+        },
+        {
+            "code": "205",
+            "value": "HA GIANG"
+        },
+        {
+            "code": "206",
+            "value": "CAO BANG"
+        },
+        {
+            "code": "207",
+            "value": "YEN BAY"
+        },
+        {
+            "code": "208",
+            "value": "TUYEN QUANG"
+        },
+        {
+            "code": "209",
+            "value": "BAC KAN"
+        },
+        {
+            "code": "210",
+            "value": "PHU THO"
+        },
+        {
+            "code": "211",
+            "value": "VINH PHUC"
+        },
+        {
+            "code": "212",
+            "value": "THAI NGUYEN"
+        },
+        {
+            "code": "213",
+            "value": "LANG SON"
+        },
+        {
+            "code": "214",
+            "value": "HA BAC"
+        },
+        {
+            "code": "215",
+            "value": "QUANG NINH"
+        },
+        {
+            "code": "216",
+            "value": "HAI DUONG"
+        },
+        {
+            "code": "217",
+            "value": "HUNG YEN"
+        },
+        {
+            "code": "218",
+            "value": "THAI BINH"
+        },
+        {
+            "code": "219",
+            "value": "HAI PHONG"
+        },
+        {
+            "code": "220",
+            "value": "HOA BINH"
+        },
+        {
+            "code": "221",
+            "value": "SON TAY"
+        },
+        {
+            "code": "222",
+            "value": "HA DONG"
+        },
+        {
+            "code": "223",
+            "value": "HANOI"
+        },
+        {
+            "code": "224",
+            "value": "HA DAM"
+        },
+        {
+            "code": "225",
+            "value": "NAM DINH"
+        },
+        {
+            "code": "226",
+            "value": "NINH BINH"
+        },
+        {
+            "code": "227",
+            "value": "THANH HAO"
+        },
+        {
+            "code": "228",
+            "value": "NGHE AN"
+        },
+        {
+            "code": "229",
+            "value": "HA TINH"
+        },
+        {
+            "code": "230",
+            "value": "QUANG BINH"
+        },
+        {
+            "code": "231",
+            "value": "VINH LINH"
+        }
+    ]
+}

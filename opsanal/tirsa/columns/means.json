@@ -1,0 +1,38 @@
+{
+    "dataset": "TIRSA",
+    "column_id": "MEANS",
+    "column": "Means Used Code",
+    "definition": "The specific means used during execution of the incident.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "10",
+            "value": "Shooting"
+        },
+        {
+            "code": "20",
+            "value": "Bombing"
+        },
+        {
+            "code": "30",
+            "value": "Grenade"
+        },
+        {
+            "code": "40",
+            "value": "Mine"
+        },
+        {
+            "code": "50",
+            "value": "Booby Trap"
+        },
+        {
+            "code": "90",
+            "value": "Force/Fear"
+        },
+        {
+            "code": "99",
+            "value": "Other"
+        }
+    ]
+}

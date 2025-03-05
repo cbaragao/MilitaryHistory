@@ -1,0 +1,223 @@
+{
+    "table": "province codes",
+    "table_index": 3,
+    "datasource": "BOMBA",
+    "data" : [
+        {
+            "code": "00",
+            "province": "UNKNOWN"
+        }, 
+        {
+            "code": "01",
+            "province": "QUANG TRI"
+        }, 
+        {
+            "code": "02",
+            "province": "THUA THIEN"
+        }, 
+        {
+            "code": "03",
+            "province": "QUANG NAM"
+        }, 
+        {
+            "code": "04",
+            "province": "QUANG TIN"
+        }, 
+        {
+            "code": "05",
+            "province": "QUANG NGAI"
+        }, 
+        {
+            "code": "06",
+            "province": "KONTUM"
+        }, 
+        {
+            "code": "07",
+            "province": "BINH DINH"
+        }, 
+        {
+            "code": "08",
+            "province": "PLEIKU"
+        }, 
+        {
+            "code": "09",
+            "province": "PHU YEN"
+        }, 
+        {
+            "code": "10",
+            "province": "DARLAC"
+        }, 
+        {
+            "code": "11",
+            "province": "KHANH HOA"
+        }, 
+        {
+            "code": "12",
+            "province": "TUYEN DUC"
+        }, 
+        {
+            "code": "13",
+            "province": "QUANG DUC"
+        }, 
+        {
+            "code": "14",
+            "province": "PHUOC LONG"
+        }, 
+        {
+            "code": "15",
+            "province": "LAM DONG"
+        }, 
+        {
+            "code": "16",
+            "province": "NINH THUAN"
+        }, 
+        {
+            "code": "17",
+            "province": "BINH THUAN"
+        }, 
+        {
+            "code": "18",
+            "province": "BINH TUY"
+        }, 
+        {
+            "code": "19",
+            "province": "LONG KHANH"
+        }, 
+        {
+            "code": "20",
+            "province": "PHUOC THANH"
+        }, 
+        {
+            "code": "21",
+            "province": "BINH LONG"
+        }, 
+        {
+            "code": "22",
+            "province": "TAY NING"
+        }, 
+        {
+            "code": "23",
+            "province": "BINH DUONG"
+        }, 
+        {
+            "code": "24",
+            "province": "GIA DINH"
+        }, 
+        {
+            "code": "25",
+            "province": "BIEN HOA"
+        }, 
+        {
+            "code": "26",
+            "province": "PHUOC TUY"
+        }, 
+        {
+            "code": "27",
+            "province": "LONG AN"
+        }, 
+        {
+            "code": "28",
+            "province": "KIEN TUONG"
+        }, 
+        {
+            "code": "29",
+            "province": "KIEN PHONG"
+        }, 
+        {
+            "code": "30",
+            "province": "DINH TUONG"
+        }, 
+        {
+            "code": "31",
+            "province": "AN GIANG"
+        }, 
+        {
+            "code": "32",
+            "province": "VINH LONG"
+        }, 
+        {
+            "code": "33",
+            "province": "KIEN HOA"
+        }, 
+        {
+            "code": "34",
+            "province": "VINH BINH"
+        }, 
+        {
+            "code": "35",
+            "province": "PHONG DINH"
+        }, 
+        {
+            "code": "36",
+            "province": "KIEN GIANG"
+        }, 
+        {
+            "code": "37",
+            "province": "CHUONG THIEN"
+        }, 
+        {
+            "code": "38",
+            "province": "BA XUYEN"
+        }, 
+        {
+            "code": "39",
+            "province": "AN XUYEN"
+        }, 
+        {
+            "code": "40",
+            "province": "CON SON"
+        }, 
+        {
+            "code": "41",
+            "province": "PHU BON"
+        }, 
+        {
+            "code": "42",
+            "province": "HAU NGHIA"
+        }, 
+        {
+            "code": "43",
+            "province": "GO CONG"
+        }, 
+        {
+            "code": "44",
+            "province": "BAC LIEU"
+        }, 
+        {
+            "code": "45",
+            "province": "TRUNG PHON"
+        }, 
+        {
+            "code": "46",
+            "province": "SA DEC"
+        }, 
+        {
+            "code": "47",
+            "province": "CHAU :OC"
+        }, 
+        {
+            "code": "48",
+            "province": "HAUT CHHLONG"
+        }, 
+        {
+            "code": "49",
+            "province": "PHU QUOC ISLAND"
+        }, 
+        {
+            "code": "50",
+            "province": "DMZ"
+        }, 
+        {
+            "code": "51",
+            "province": "BUFFER ZONE"
+        }, 
+        {
+            "code": "60",
+            "province": "MUD RIVER"
+        }, 
+        {
+            "code": "61",
+            "province": "DUMP TRUCK"
+        } 
+    ]
+}

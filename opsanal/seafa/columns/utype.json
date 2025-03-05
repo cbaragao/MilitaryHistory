@@ -1,0 +1,38 @@
+{
+    "table": "seafa",
+    "column_id": "UTYPE",
+    "column": "Unit Type Code",
+    "definition": "Simplified unit type code.",
+    "field/group": "FIELD",
+    "length": 3,
+    "data": [
+        {
+            "code": "C01",
+            "value": "INFANTRY"
+        },
+        {
+            "code": "C02",
+            "value": "AIRBORNE INF"
+        },
+        {
+            "code": "C03",
+            "value": "AIRMOBILE INF"
+        },
+        {
+            "code": "C04",
+            "value": "MECHANIZED INF"
+        },
+        {
+            "code": "C05",
+            "value": "ARMORED CAVALRY"
+        },
+        {
+            "code": "C06",
+            "value": "TANK"
+        },
+        {
+            "code": "C09",
+            "value": "UNDETERMINED"
+        }
+    ]
+}

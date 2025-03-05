@@ -1,0 +1,149 @@
+{
+    "dataset": "INCDA",
+    "table": "Periodic Set 1",
+    "data": [ 
+            {
+                "title": "Year",
+                "id": "YEAR",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Year of report",
+                "periodic_set": "1",
+                "definition_file": ""
+            },
+            {
+                "title": "Month",
+                "id": "MONTH",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Month of report",
+                "periodic_set": "1",
+                "definition_file": ""
+            },
+            {
+                "title": "Day",
+                "id": "DAY",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Day of report",
+                "periodic_set": "1",
+                "definition_file": ""
+            },
+            {
+                "title": "Sequence Number",
+                "id": "INSEQ",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Sequence Number",
+                "periodic_set": "1",
+                "definition_file": ""
+            },
+            {
+                "title": "PCN",
+                "id": "PCN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "System Generated",
+                "periodic_set": "1",
+                "definition_file": ""
+            },
+            {
+                "title": "PSSQ1",
+                "id": "PSSQ1",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "System Generated",
+                "periodic_set": "1",
+                "definition_file": ""
+            },
+            {
+                "title": "VSZ1",
+                "id": "VSZ1",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "Numeric",
+                "data_values": "N/A",
+                "definition": "System Generated",
+                "periodic_set": "1",
+                "definition_file": ""
+            },
+            {
+                "title": "Number Destroyed",
+                "id": "NODES",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Number destroyed",
+                "periodic_set": "1",
+                "definition_file": ""
+            },
+            {
+                "title": "Number Damaged",
+                "id": "NODAM",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Number damaged",
+                "periodic_set": "1",
+                "definition_file": ""
+            },
+            {
+                "title": "Number Captured/Missing",
+                "id": "NOCAP",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Number captured or missing",
+                "periodic_set": "1",
+                "definition_file": ""
+            },
+            {
+                "title": "L Sequence Number",
+                "id": "LSEQ",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Sequence Number",
+                "periodic_set": "1",
+                "definition_file": ""
+            },
+            {
+                "title": "Loss Nationality",
+                "id": "LNAT",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Loss nationality",
+                "periodic_set": "1",
+                "definition_file": "natab.json"
+            },
+            {
+                "title": "Loss Code",
+                "id": "LOSCD",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Loss code",
+                "periodic_set": "1",
+                "definition_file": "lctab.json"
+            }
+        ]
+    }

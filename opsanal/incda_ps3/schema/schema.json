@@ -1,0 +1,138 @@
+{
+    "dataset": "INCDA",
+    "table": "Periodic Set 3",
+    "data": [ 
+            {
+                "title": "Year",
+                "id": "YEAR",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Year of report",
+                "periodic_set": "3",
+                "definition_file": ""
+            },
+            {
+                "title": "Month",
+                "id": "MONTH",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Month of report",
+                "periodic_set": "3",
+                "definition_file": ""
+            },
+            {
+                "title": "Day",
+                "id": "DAY",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Day of report",
+                "periodic_set": "3",
+                "definition_file": ""
+            },
+            {
+                "title": "Sequence Number",
+                "id": "INSEQ",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Sequence Number",
+                "periodic_set": "3",
+                "definition_file": ""
+            },
+            {
+                "title": "PCN",
+                "id": "PCN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "System Generated",
+                "periodic_set": "3",
+                "definition_file": ""
+            },
+            {
+                "title": "PSSQ3",
+                "id": "PSSQ3",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "System Generated",
+                "periodic_set": "3",
+                "definition_file": ""
+            },
+            {
+                "title": "VSZ3",
+                "id": "VSZ3",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "System Generated",
+                "periodic_set": "3",
+                "definition_file": ""
+            },
+            {
+                "title": "O Sequence Number",
+                "id": "OSEQ",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Sequence Number",
+                "periodic_set": "3",
+                "definition_file": ""
+            },
+            {
+                "title": "Msg Originator",
+                "id": "ORIG",
+                "field_group": "FIELD",
+                "length": 10,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Message originator",
+                "periodic_set": "3",
+                "definition_file": ""
+            },
+            {
+                "title": "DTG of Message",
+                "id": "ODTG",
+                "field_group": "FIELD",
+                "length": 10,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Date Time Group of Message",
+                "periodic_set": "3",
+                "definition_file": ""
+            },
+            {
+                "title": "MTYPE",
+                "id": "MTYPE",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "MTYPE",
+                "periodic_set": "3",
+                "definition_file": "mtab.json"
+            },
+            {
+                "title": "Msg Serial Number",
+                "id": "MSER",
+                "field_group": "FIELD",
+                "length": 5,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "OJCS Serial Number",
+                "periodic_set": "3",
+                "definition_file": ""
+            }
+        ]
+    }

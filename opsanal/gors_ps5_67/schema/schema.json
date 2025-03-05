@@ -1,0 +1,217 @@
+
+    {
+    "dataset": "gors",
+    "table": "ps5",
+    "data": [ 
+            {
+                "title": "DATE",
+                "id": "DATE",
+                "field_group": "FIELD",
+                "length": 6,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Publication date of the operational report",
+                "definition_file": ""
+            },
+            {
+                "title": "DATAT",
+                "id": "DATAT",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Basic description of recorded incident/operation",
+                "definition_file": ""
+            },
+            {
+                "title": "SERAL",
+                "id": "SERAL",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Record sequence number within the operation report",
+                "definition_file": ""
+            },
+            {
+                "title": "CORP",
+                "id": "CORP",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Corps tactical zone in which the action occurred",
+                "definition_file": ""
+            },
+            {
+                "title": "PART",
+                "id": "PART",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Major force of the action",
+                "definition_file": ""
+            },
+            {
+                "title": "PCN",
+                "id": "PCN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Period set number; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "PSSQ5",
+                "id": "PSSQ5",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Subset sequence number used for periodic set identification; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "VSZ5",
+                "id": "VSZ5",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Indicates number of characters in the logical record's variable field; the field will contain zeros if there is no variable field for a logical record; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "IACTS",
+                "id": "IACTS",
+                "field_group": "FIELD",
+                "length": 5,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Total number of small unit actions",
+                "definition_file": ""
+            },
+            {
+                "title": "IWCTD",
+                "id": "IWCTD",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "umber of small unit actions with day contact from OPREP-4 Paragraph C1 or total number with contact from Paragraph C4",
+                "definition_file": ""
+            } ,
+            {
+                "title": "IWOCT",
+                "id": "IWOCT",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Number of small unit actions with night contact from OPREP-4 Paragraph C1 or total number without contact from Paragraph C4",
+                "definition_file": ""
+            } ,
+            {
+                "title": "IATT",
+                "id": "IATT",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Total number of VC attacks or ambushes",
+                "definition_file": ""
+            },
+            {
+                "title": "ITERR",
+                "id": "ITERR",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Total number of VC incidents of terrorism",
+                "definition_file": ""
+            },
+            {
+                "title": "ISABT",
+                "id": "ISABT",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Total number of VC acts of sabotage",
+                "definition_file": ""
+            },
+            {
+                "title": "IPROP",
+                "id": "IPROP",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Total number of propaganda incidents",
+                "definition_file": ""
+            },
+            {
+                "title": "IHARR",
+                "id": "IHARR",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Total number of harassment attacks",
+                "definition_file": ""
+            },
+            {
+                "title": "IAA",
+                "id": "IAA",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Total number of anti-aircraft incidents",
+                "definition_file": ""
+            },
+            {
+                "title": "SFLIN",
+                "id": "SFLIN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Sequence number for subsets of periodic set 5",
+                "definition_file": ""
+            },
+            {
+                "title": "INATL",
+                "id": "INATL",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Force or nationality for summary",
+                "definition_file": "gsvcs.json"
+            },
+            {
+                "title": "ISIZE",
+                "id": "ISIZE",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Unit size code",
+                "definition_file": "fwszs.json"
+            },
+            {
+                "title": "ICTZ",
+                "id": "ICTZ",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Corps tactical zone in which the incidents occurred",
+                "definition_file": ""
+            }
+        ]
+    }

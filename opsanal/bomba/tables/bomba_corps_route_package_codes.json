@@ -1,0 +1,63 @@
+{
+    "table": "corps/route package codes",
+    "table_index": 2,
+    "datasource": "BOMBA",
+    "data" : [
+        {
+            "code": "1",
+            "value": "I"
+        },
+        {
+            "code": "2",
+            "value": "II"
+        },
+        {
+            "code": "3",
+            "value": "III"
+        },
+        {
+            "code": "4",
+            "value": "IV"
+        },
+        {
+            "code": "5",
+            "value": "V"
+        },
+        {
+            "code": "6",
+            "value": "VIA"
+        },
+        {
+            "code": "7",
+            "value": "VIB"
+        },
+        {
+            "code": "A",
+            "value": "A"
+        },
+        {
+            "code": "B",
+            "value": "B"
+        },
+        {
+            "code": "C",
+            "value": "C"
+        },
+        {
+            "code": "D",
+            "value": "D"
+        },
+        {
+            "code": "E",
+            "value": "E"
+        },
+        {
+            "code": "F",
+            "value": "F"
+        },
+        {
+            "code": "G",
+            "value": "G"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "dataset": "TIRSA",
+    "column_id": "CORPS",
+    "column": "Corps Area",
+    "definition": "The corps tactical zone within which the reported incident occurred. Must be entered.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "1st Corps Tactical Zone"
+        },
+        {
+            "code": "2",
+            "value": "2nd Corps Tactical Zone"
+        },
+        {
+            "code": "3",
+            "value": "3rd Corps Tactical Zone"
+        },
+        {
+            "code": "4",
+            "value": "4th Corps Tactical Zone"
+        }
+    ]
+}

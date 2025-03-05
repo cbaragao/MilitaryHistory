@@ -1,0 +1,87 @@
+{
+    "dataset": "gors",
+    "table": "obdes",
+    "definition": "Objective Description",
+    "data": [
+        {
+            "code": "75",
+            "value": "In a Mil Post"
+        },
+        {
+            "code": "74",
+            "value": "In a Watch TWR"
+        },
+        {
+            "code": "71",
+            "value": "NRL Ham Const"
+        },
+        {
+            "code": "23",
+            "value": "Evac Casualty"
+        },
+        {
+            "code": "22",
+            "value": "Reinforce Unt"
+        },
+        {
+            "code": "21",
+            "value": "Reinforce Ham"
+        },
+        {
+            "code": "13",
+            "value": "On a Work Party"
+        },
+        {
+            "code": "76",
+            "value": "In a Bivouac"
+        },
+        {
+            "code": "72",
+            "value": "In a Village"
+        },
+        {
+            "code": "52",
+            "value": "Trans Troops"
+        },
+        {
+            "code": "50",
+            "value": "Trans Supply"
+        },
+        {
+            "code": "12",
+            "value": "On a Guard Duty"
+        },
+        {
+            "code": "77",
+            "value": "In a Convoy"
+        },
+        {
+            "code": "73",
+            "value": "In a Hamlet"
+        },
+        {
+            "code": "70",
+            "value": "In NRL Ham"
+        },
+        {
+            "code": "51",
+            "value": "Trans Arms/Ammo"
+        },
+        {
+            "code": "24",
+            "value": "On Escort"
+        },
+        {
+            "code": "11",
+            "value": "On Patrol"
+        },
+        {
+            "code": "78",
+            "value": "On a bus"
+        },
+        {
+            "code": "10",
+            "value": "On Recon"
+        }
+    ]
+}

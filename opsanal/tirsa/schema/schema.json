@@ -1,0 +1,346 @@
+{
+  "dataset": "TIRSA",
+  "table": "TIRSA",
+  "data": [
+    
+    {
+      "title": "Message Year and Month",
+      "id": "MYM",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "Alpha",
+      "data_values": "YY = last 2 digits of year; MM = 2 digit month",
+      "definition": "This is the highest order field in the control field.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "Message Week",
+      "id": "WEEK",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Alpha",
+      "data_values": "01-52",
+      "definition": "This field is also part of the control set and the week of the year the incident was reported.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "Incident Number",
+      "id": "SRONO",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "Alpha",
+      "data_values": "Incident Number",
+      "definition": "The incident number designates a single incident and is unique within the report week.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "Corps Area",
+      "id": "CORPS",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "1,2,3,4",
+      "data_values": "CORPS.json",
+      "definition": "The corps tactical zone within which the reported incident occurred. Must be entered.",
+      "periodic_set": "fixed",
+      "definition_file": "corps.json"
+    },
+    {
+      "title": "Province",
+      "id": "PROVN",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Alpha",
+      "data_values": "province_codes.json",
+      "definition": "The province within which the reported incident occurred. This table corresponds to that used by HES/HAMLA. Must be entered.",
+      "periodic_set": "fixed",
+      "definition_file": "province_codes.json"
+    },
+    {
+      "title": "District",
+      "id": "DIST",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Alpha",
+      "data_values": "See HES/HAMLA code. Zero if unknown.",
+      "definition": "Where known, the district within which the reported incident occurred. May be '0'.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Village",
+      "id": "VILGE",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Alpha",
+      "data_values": "See HES/HAMLA code. Zero if unknown.",
+      "definition": "Where known, the village in which the reported incident occurred. May be '0'.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Hamlet",
+      "id": "HAMLT",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Alpha",
+      "data_values": "See HES/HAMLA code. Zero if unknown.",
+      "definition": "The hamlet in which the reported incident occurred. May be '0'.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Year",
+      "id": "YEAR",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Alpha",
+      "data_values": "The last two digits of the year during which the reported incident occurred.",
+      "definition": "N/A",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Month",
+      "id": "MONTH",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Alpha",
+      "data_values": "2-digit month code",
+      "definition": "The month during which the reported incident occurred.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Day",
+      "id": "DAY",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Alpha",
+      "data_values": "The calendar day of the month.",
+      "definition": "The day of the month on which the reported incident occurred.", 
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Time of Day",
+      "id": "TODAY",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "Alpha",
+      "data_values": "The 24-hour clock time at which the reported incident occurred; or 'day', 'nite', or 'UNK'",
+      "definition": "N/A",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "UTM Coordinates",
+      "id": "UTMC",
+      "field_group": "FIELD",
+      "length": 8,
+      "code": "N/A",
+      "data_values": "N/A",
+      "definition": "The UTM coordinate of the incident.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Near Indicator",
+      "id": "NEAR",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "Alpha",
+      "data_values": "Blank: UTM coordinate is for the referenced hamlet; *: USID code is nearest population center to site of the incident",
+      "definition": "N/A",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Quarter of Year",
+      "id": "QTR",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "Alpha",
+      "data_values": "Quarter of Year (1-4)",
+      "definition": "Quarter of year during which the reported incident occurred.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Prioritized Means",
+      "id": "PMEANS",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Alpha",
+      "data_values": "N/A",
+      "definition": "The content of this field is determined after an examination of all the subsets of a unique incident's VCACT field. The means associated with the VCACT value that is placed in the PACT field becomes the PMEANS value.",
+      "periodic_set": "fixed",
+      "definition_file": "means_used.json"
+    },
+    {
+      "title": "Prioritized Action",
+      "id": "PACT",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Alpha",
+      "data_values": "N/A",
+      "definition": "After the examination of all the subsets, this field is supplied with the VCACT of the highest priority according to the above order. The highest priority VCACT becomes the PACT value.",
+      "periodic_set": "fixed",
+      "definition_file": "action_codes.json"
+    },
+    {
+      "title": "Prioritized Objective",
+      "id": "POBJ",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "Alpha",
+      "data_values": "N/A",
+      "definition": "This field is the objective that was associated in the subset with the highest priority VCACT. The VCOBJ associated with the VCACT value placed in the PACT field becomes the POBJ value.",
+      "periodic_set": "fixed",
+      "definition_file": "objectives.json"
+    },
+    {
+      "title": "Size of Attacking Force",
+      "id": "ESTRT",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "1,2,3,4,5,9",
+      "data_values": "ESTRT.json",
+      "definition": "The estimated size of the attacking force involved in the incident.",
+      "periodic_set": "fixed",
+      "definition_file": "estrt.json"
+    },
+    {
+      "title": "Segment Count",
+      "id": "SGCNT",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Numeric",
+      "data_values": "Dynamic, 1 through 12",
+      "definition": "The number of segments contained in a single reported incident. Multiple segments occur when any single incident reflects more than one means used, objective type, or type of action.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Period Set Counter",
+      "id": "PSC",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "N/A",
+      "data_values": "N/A",
+      "definition": "Unknown"
+    },
+    {
+      "title": "Primary Subfield Indicator",
+      "id": "PRIME",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Numeric",
+      "data_values": "Dynamic, 1 through 12",
+      "definition": "This field indicates the relative importance of each segment within a single incident and is the same as the sequential order of the segment in which it appears.",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Means Used Code",
+      "id": "MEANS",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "10,20,30,40,50,90,99",
+      "data_values": "MEANS.json",
+      "definition": "The specific means used during execution of the incident.",
+      "periodic_set": "1",
+      "definition_file": "means.json"
+    },
+    {
+      "title": "Enemy Objective Code",
+      "id": "VCOBJ",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "Alpha",
+      "data_values": "objectives.json",
+      "definition": "The specific objectives involved in the incident.",
+      "periodic_set": "1",
+      "definition_file": "objectives.json"
+    },
+    {
+      "title": "Enemy Action Code",
+      "id": "VCACT",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "10,11,20,21,30,40,50,90",
+      "data_values": "VCACT.json",
+      "definition": "N/A",
+      "periodic_set": "1",
+      "definition_file": "vcact.json"
+    },
+    {
+      "title": "Count of Killed, Wounded, Damaged, or Destroyed",
+      "id": "RSCNT",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "Numeric",
+      "data_values": "Dynamic",
+      "definition": "This field shows the number of human casualties or damage or destruction of property in each segment of a given incident.",
+      "periodic_set": "1",
+      "definition_file": ""
+    },    
+    {
+      "title": "Primary Subfield Indicator 2",
+      "id": "PRIME2",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Numeric",
+      "data_values": "Dynamic, 1 through 12",
+      "definition": "This field indicates the relative importance of each segment within a single incident and is the same as the sequential order of the segment in which it appears.",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Means Used Code 2",
+      "id": "MEANS2",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "10,20,30,40,50,90,99",
+      "data_values": "MEANS.json",
+      "definition": "The specific means used during execution of the incident.",
+      "periodic_set": "1",
+      "definition_file": "means.json"
+    },
+    {
+      "title": "Enemy Objective Code 2",
+      "id": "VCOBJ2",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "Alpha",
+      "data_values": "objectives.json",
+      "definition": "The specific objectives involved in the incident.",
+      "periodic_set": "1",
+      "definition_file": "objectives.json"
+    },
+    {
+      "title": "Enemy Action Code 2",
+      "id": "VCACT2",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "10,11,20,21,30,40,50,90",
+      "data_values": "VCACT.json",
+      "definition": "N/A",
+      "periodic_set": "1",
+      "definition_file": "vcact.json"
+    },
+    {
+      "title": "Count of Killed, Wounded, Damaged, or Destroyed 2",
+      "id": "RSCNT",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "Numeric",
+      "data_values": "Dynamic",
+      "definition": "This field shows the number of human casualties or damage or destruction of property in each segment of a given incident.",
+      "periodic_set": "1",
+      "definition_file": ""
+    }
+  ]
+}

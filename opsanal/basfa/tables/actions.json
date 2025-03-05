@@ -1,0 +1,23 @@
+{
+    "dataset": "BASFA",
+    "table": "ACTNS",
+    "definition": "These fields contain a code indicating what type of action(s) took place against the base area in the given month.",
+    "data": [
+        {
+            "code": "C",
+            "value": "Combat Sweep/S&D and Recon"
+        },
+        {
+            "code": "P",
+            "value": "Penetrated"
+        },
+        {
+            "code": "R",
+            "value": "Recon"
+        },
+        {
+            "code": "S",
+            "value": "S&D/Combat Sweep"
+        }
+    ]
+}

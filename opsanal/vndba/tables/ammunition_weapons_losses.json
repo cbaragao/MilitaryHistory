@@ -1,0 +1,251 @@
+{
+    "dataset": "VNDBA",
+    "table": "Ammunition and Weapons Losses",
+    "definition": "Ammunition and Weapons Lost by Type",
+    "data": [
+        {
+            "code": "B1",
+            "value": "100=BMB"
+        },
+        {
+            "code": "B2",
+            "value": "250=BMB"
+        },
+        {
+            "code": "B5",
+            "value": "500=BMB"
+        },
+        {
+            "code": "B7",
+            "value": "750=BMB"
+        },
+        {
+            "code": "B9",
+            "value": "1000=BMB"
+        },
+        {
+            "code": "F1",
+            "value": "120=FRAG"
+        },
+        {
+            "code": "F2",
+            "value": "220=FRAG"
+        },
+        {
+            "code": "F3",
+            "value": "260=FRAG"
+        },
+        {
+            "code": "G2",
+            "value": "20MM"
+        },
+        {
+            "code": "G5",
+            "value": "50-CAL.ME"
+        },
+        {
+            "code": "G7",
+            "value": "7.62MM"
+        },
+        {
+            "code": "I1",
+            "value": "INCJEL"
+        },
+        {
+            "code": "I2",
+            "value": "100-WP"
+        },
+        {
+            "code": "M1",
+            "value": "60M ME"
+        },
+        {
+            "code": "M2",
+            "value": "81/82M ME"
+        },
+        {
+            "code": "M3",
+            "value": "105/4.2ME"
+        },
+        {
+            "code": "R1",
+            "value": "ROCKET"
+        },
+        {
+            "code": "R2",
+            "value": "57 RR ME"
+        },
+        {
+            "code": "R3",
+            "value": "75 RR ME"
+        },
+        {
+            "code": "R4",
+            "value": "40/3.5 ME"
+        },
+        {
+            "code": "Z1",
+            "value": "LAZY-D"
+        },
+        {
+            "code": "Z2",
+            "value": "CBU-2A"
+        },
+        {
+            "code": "Z3",
+            "value": "BUTFLY"
+        },
+        {
+            "code": "Z4",
+            "value": "FLARES"
+        },
+        {
+            "code": "01",
+            "value": "SM ARMS"
+        },
+        {
+            "code": "02",
+            "value": "PISTOLS"
+        },
+        {
+            "code": "03",
+            "value": "CARBINES"
+        },
+        {
+            "code": "04",
+            "value": "RIFLES"
+        },
+        {
+            "code": "05",
+            "value": "M1 RIFLES"
+        },
+        {
+            "code": "06",
+            "value": "SHOTGUNS"
+        },
+        {
+            "code": "07",
+            "value": "MAS-36"
+        },
+        {
+            "code": "08",
+            "value": "XM-16 E1"
+        },
+        {
+            "code": "09",
+            "value": "US-17"
+        },
+        {
+            "code": "20",
+            "value": "AUTO RIF"
+        },
+        {
+            "code": "21",
+            "value": "BAR"
+        },
+        {
+            "code": "22",
+            "value": "AR-15"
+        },
+        {
+            "code": "30",
+            "value": "SUBMACH"
+        },
+        {
+            "code": "31",
+            "value": "THMSN SUB"
+        },
+        {
+            "code": "32",
+            "value": "MAT-49"
+        },
+        {
+            "code": "33",
+            "value": "K50 SUBM"
+        },
+        {
+            "code": "40",
+            "value": "MACH GUNS"
+        },
+        {
+            "code": "41",
+            "value": "30 CAL MG"
+        },
+        {
+            "code": "42",
+            "value": "50 CAL MG"
+        },
+        {
+            "code": "50",
+            "value": "MORTARS"
+        },
+        {
+            "code": "51",
+            "value": "60MM MORT"
+        },
+        {
+            "code": "52",
+            "value": "81MM MORT"
+        },
+        {
+            "code": "60",
+            "value": "REC RIFLE"
+        },
+        {
+            "code": "61",
+            "value": "105MM RR"
+        },
+        {
+            "code": "62",
+            "value": "57MM RR"
+        },
+        {
+            "code": "63",
+            "value": "75MM RR"
+        },
+        {
+            "code": "70",
+            "value": "ARTILLERY"
+        },
+        {
+            "code": "80",
+            "value": "MINES"
+        },
+        {
+            "code": "81",
+            "value": "WAT MINE"
+        },
+        {
+            "code": "82",
+            "value": "A/P MINE"
+        },
+        {
+            "code": "83",
+            "value": "A/T MINE"
+        },
+        {
+            "code": "90",
+            "value": "GRENADES"
+        },
+        {
+            "code": "91",
+            "value": "HAND GREN"
+        },
+        {
+            "code": "92",
+            "value": "RIF GREN"
+        },
+        {
+            "code": "93",
+            "value": "GREN LNCH"
+        },
+        {
+            "code": "95",
+            "value": "RKT LNCH"
+        },
+        {
+            "code": "99",
+            "value": "99 UNKNOWN"
+        }
+    ]
+}

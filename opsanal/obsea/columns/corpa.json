@@ -1,0 +1,26 @@
+{
+    "dataset": "obsea",
+    "column_id": "CORPA",
+    "column": "Corps Tactical Zone",
+    "definition": "Specifies the corps tactical zone of operation of the enemy unit during the indicated time period.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "1st Corp"
+        },
+        {
+            "code": "2",
+            "value": "2nd Corp"
+        },
+        {
+            "code": "3",
+            "value": "3rd Corp"
+        },
+        {
+            "code": "4",
+            "value": "4th Corp"
+        }
+    ]
+}

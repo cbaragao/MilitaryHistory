@@ -1,0 +1,26 @@
+{
+    "dataset": "obsea",
+    "column_id": "Corps",
+    "column": "Corps Tactical Zone",
+    "definition": "Indicates the corps tactical zone within which the enemy unit is currently operating.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "1st Corps"
+        },
+        {
+            "code": "2",
+            "value": "2nd Corps"
+        },
+        {
+            "code": "3",
+            "value": "3rd Corps"
+        },
+        {
+            "code": "4",
+            "value": "4th Corps"
+        }
+    ]
+}

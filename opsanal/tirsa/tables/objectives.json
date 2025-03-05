@@ -1,0 +1,279 @@
+{
+    "dataset": "TIRSA",
+    "table": "Objectives",
+    "definition": "This table appears to define the objective of an attack.",
+    "data": [
+        {
+            "code": "100",
+            "value": "GOVERNMENT OFFICIAL"
+        },
+        {
+            "code": "110",
+            "value": "G.O./NATIONAL LEVEL"
+        },
+        {
+            "code": "120",
+            "value": "G.O./CORPS LEVEL"
+        },
+        {
+            "code": "121",
+            "value": "CORPS DIRECTOR/NP"
+        },
+        {
+            "code": "130",
+            "value": "G.O./PROVINCE LEVEL"
+        },
+        {
+            "code": "131",
+            "value": "PROVINCE CHIEF"
+        },
+        {
+            "code": "132",
+            "value": "PROV POLICE CHIEF"
+        },
+        {
+            "code": "140",
+            "value": "G.O./DIST LEVEL"
+        },
+        {
+            "code": "141",
+            "value": "DISTRICT CHIEF"
+        },
+        {
+            "code": "142",
+            "value": "DIST. POLICE CHIEF"
+        },
+        {
+            "code": "150",
+            "value": "G.O./VILLAGE LEVEL"
+        },
+        {
+            "code": "151",
+            "value": "VILLAGE CHIEF"
+        },
+        {
+            "code": "160",
+            "value": "G.O./HAMLET LEVEL"
+        },
+        {
+            "code": "161",
+            "value": "HAMLET CHIEF"
+        },
+        {
+            "code": "200",
+            "value": "GOVERNMENT EMPLOYEE"
+        },
+        {
+            "code": "210",
+            "value": "G.E./NATIONAL LEVEL"
+        },
+        {
+            "code": "220",
+            "value": "G.E./CORPS LEVEL"
+        },
+        {
+            "code": "230",
+            "value": "G.E./PROVINCE LEVEL"
+        },
+        {
+            "code": "240",
+            "value": "SCHOOL TEACHER"
+        },
+        {
+            "code": "250",
+            "value": "NATIONAL POLICE"
+        },
+        {
+            "code": "251",
+            "value": "N.P./NATIONAL LEVEL"
+        },
+        {
+            "code": "252",
+            "value": "NP/CORPS LEVEL"
+        },
+        {
+            "code": "253",
+            "value": "NPFF"
+        },
+        {
+            "code": "260",
+            "value": "ORD WORKER"
+        },
+        {
+            "code": "261",
+            "value": "TRUONG SON"
+        },
+        {
+            "code": "300",
+            "value": "GENERAL POPULACE"
+        },
+        {
+            "code": "310",
+            "value": "NEWS MEDIA EXECUTIVE"
+        },
+        {
+            "code": "320",
+            "value": "PROMINENT CITIZEN"
+        },
+        {
+            "code": "321",
+            "value": "ELECTION CANDIDATE"
+        },
+        {
+            "code": "390",
+            "value": "OTHER"
+        },
+        {
+            "code": "391",
+            "value": "HOI CHANH"
+        },
+        {
+            "code": "392",
+            "value": "COMBAT YOUTH"
+        },
+        {
+            "code": "393",
+            "value": "REFUGEE"
+        },
+        {
+            "code": "394",
+            "value": "PSDF"
+        },
+        {
+            "code": "399",
+            "value": "CIVILIAN"
+        },
+        {
+            "code": "400",
+            "value": "GOVERNMENT FACILITY"
+        },
+        {
+            "code": "401",
+            "value": "RAILWAY FACILITY"
+        },
+        {
+            "code": "402",
+            "value": "VEHICLE/GOV."
+        },
+        {
+            "code": "403",
+            "value": "WATERCRAFT/GOV."
+        },
+        {
+            "code": "410",
+            "value": "POLICE FACILITY"
+        },
+        {
+            "code": "411",
+            "value": "HEADQUARTERS/STATION"
+        },
+        {
+            "code": "412",
+            "value": "DIOCC/PIC"
+        },
+        {
+            "code": "413",
+            "value": "NPFF BASE"
+        },
+        {
+            "code": "414",
+            "value": "DETENTION FACILITY"
+        },
+        {
+            "code": "420",
+            "value": "SC"
+        },
+        {
+            "code": "421",
+            "value": "HOSP/MED. FACILITY"
+        },
+        {
+            "code": "422",
+            "value": "CHIEU HOSPITAL"
+        },
+        {
+            "code": "423",
+            "value": "PRISON"
+        },
+        {
+            "code": "424",
+            "value": "REFUGEE CENTER"
+        },
+        {
+            "code": "425",
+            "value": "CORDS FACILITY"
+        },
+        {
+            "code": "426",
+            "value": "ROAD"
+        },
+        {
+            "code": "427",
+            "value": "BRIDGE"
+        },
+        {
+            "code": "500",
+            "value": "CIVILIAN FACILITIES"
+        },
+        {
+            "code": "501",
+            "value": "CIV./PRIVATE VEHICLE"
+        },
+        {
+            "code": "502",
+            "value": "CIV./COMMER VEHICLE"
+        },
+        {
+            "code": "503",
+            "value": "CIV./WATERCRAFT"
+        },
+        {
+            "code": "504",
+            "value": "MARKET"
+        },
+        {
+            "code": "505",
+            "value": "CIV./HOSP/MED. FACILITY"
+        },
+        {
+            "code": "506",
+            "value": "PAGODA/CHURCH"
+        },
+        {
+            "code": "507",
+            "value": "DWELLING"
+        },
+        {
+            "code": "600",
+            "value": "MILITARY FACILITIES"
+        },
+        {
+            "code": "910",
+            "value": "PROPAGANDA"
+        },
+        {
+            "code": "920",
+            "value": "RECRUITING"
+        },
+        {
+            "code": "930",
+            "value": "ILLEGAL TAXATION"
+        },
+        {
+            "code": "940",
+            "value": "CONFISCATION-FOODS"
+        },
+        {
+            "code": "950",
+            "value": "CONFISCATION-DRUGS"
+        },
+        {
+            "code": "960",
+            "value": "CONFISCATION ARMS"
+        },
+        {
+            "code": "999",
+            "value": "OBJECTIVE UNSPECIFIED"
+        }
+    ]
+}

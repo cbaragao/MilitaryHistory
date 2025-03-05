@@ -1,0 +1,127 @@
+{
+    "dataset": "INCDA",
+    "table": "Periodic Set 2",
+    "data": [ 
+            {
+                "title": "Year",
+                "id": "YEAR",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Year of report",
+                "periodic_set": "2",
+                "definition_file": ""
+            },
+            {
+                "title": "Month",
+                "id": "MONTH",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Month of report",
+                "periodic_set": "2",
+                "definition_file": ""
+            },
+            {
+                "title": "Day",
+                "id": "DAY",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Day of report",
+                "periodic_set": "2",
+                "definition_file": ""
+            },
+            {
+                "title": "Sequence Number",
+                "id": "INSEQ",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Sequence number",
+                "periodic_set": "2",
+                "definition_file": ""
+            },
+            {
+                "title": "PCN",
+                "id": "PCN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "System Generated",
+                "periodic_set": "2",
+                "definition_file": ""
+            },
+            {
+                "title": "PSSQ2",
+                "id": "PSSQ2",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "System Generated",
+                "periodic_set": "2",
+                "definition_file": ""
+            },
+            {
+                "title": "VSZ2",
+                "id": "VSZ2",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "System Generated",
+                "periodic_set": "2",
+                "definition_file": ""
+            },
+            {
+                "title": "Quantity Ammo Received",
+                "id": "QTYRCD",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Number of rounds received",
+                "periodic_set": "2",
+                "definition_file": ""
+            },
+            {
+                "title": "Force I.D.",
+                "id": "FORID",
+                "field_group": "FIELD",
+                "length": 20,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Identification of the friendly force involved in the incident",
+                "periodic_set": "2",
+                "definition_file": ""
+            },
+            {
+                "title": "Support I.D.",
+                "id": "SUPID",
+                "field_group": "FIELD",
+                "length": 20,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Identification of the friendly supporting force, if any",
+                "periodic_set": "2",
+                "definition_file": ""
+            },
+            {
+                "title": "Type Received",
+                "id": "TYPRCD",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Type of ammunition received",
+                "periodic_set": "2",
+                "definition_file": "amtab.json"
+            }
+        ]
+    }

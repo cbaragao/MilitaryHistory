@@ -1,0 +1,75 @@
+{
+    "dataset": "VNDBA",
+    "table": "Friendly Unit Service",
+    "definition": "Designation of Friendly Unit Service",
+    "data": [
+        {
+            "code": "A",
+            "value": "RVNAF"
+        },
+        {
+            "code": "J",
+            "value": "CIDG"
+        },
+        {
+            "code": "B",
+            "value": "RF-CG"
+        },
+        {
+            "code": "C",
+            "value": "PFSDC"
+        },
+        {
+            "code": "K",
+            "value": "YOUTH"
+        },
+        {
+            "code": "D",
+            "value": "HMIL"
+        },
+        {
+            "code": "G",
+            "value": "U.S."
+        },
+        {
+            "code": "P",
+            "value": "PMIL"
+        },
+        {
+            "code": "T",
+            "value": "KORE"
+        },
+        {
+            "code": "V",
+            "value": "VNAF"
+        },
+        {
+            "code": "R",
+            "value": "ARVN"
+        },
+        {
+            "code": "N",
+            "value": "VNN"
+        },
+        {
+            "code": "M",
+            "value": "VNMC"
+        },
+        {
+            "code": "1",
+            "value": "USAF"
+        },
+        {
+            "code": "2",
+            "value": "USA"
+        },
+        {
+            "code": "3",
+            "value": "USN"
+        },
+        {
+            "code": "4",
+            "value": "USMC"
+        }
+    ]
+}

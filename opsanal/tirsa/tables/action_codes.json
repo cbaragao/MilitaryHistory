@@ -1,0 +1,39 @@
+{
+    "dataset": "TIRSA",
+    "table": "ACTION CODES",
+    "definition": "Type of action in the TIRSA dataset",
+    "data": [
+        {
+            "code": "10",
+            "value": "ASSASSINATION/SELECT"
+        },
+        {
+            "code": "11",
+            "value": "ASSASSINATION/GENERAL"
+        },
+        {
+            "code": "20",
+            "value": "ABDUCTION/SELECT"
+        },
+        {
+            "code": "21",
+            "value": "ABDUCTION/GENERAL"
+        },
+        {
+            "code": "30",
+            "value": "WOUNDED"
+        },
+        {
+            "code": "40",
+            "value": "DAMAGED"
+        },
+        {
+            "code": "50",
+            "value": "DESTROYED"
+        },
+        {
+            "code": "90",
+            "value": "TERRORISM/HARASSMENT"
+        }
+    ]
+}

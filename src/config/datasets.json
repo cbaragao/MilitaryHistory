@@ -1,0 +1,432 @@
+{
+  "dataset": "Datasets",
+  "table": "Master",
+  "data": [
+    {
+      "basfa": {
+        "NAID": "2573252",
+        "file_name": "BASFA.TR.DAT.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-330/BASFA/BASFA.TR.DAT.txt",
+        "catalog_url": "https://catalog.archives.gov/id/2573252",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "bomba": {
+        "NAID": "UNKNOWN",
+        "file_name": "not applicable",
+        "url": "not applicable",
+        "catalog_url": "not applicable",
+        "available_online": false,
+        "delimiter": "not applicable"
+      },
+      "cidga": {
+        "NAID": "UNKNOWN",
+        "file_name": "not applicable",
+        "url": "not applicable",
+        "catalog_url": "not applicable",
+        "available_online": false,
+        "delimiter": "not applicable"
+      },
+      "hr01a": {
+        "NAID": "UNKNOWN",
+        "file_name": "not applicable",
+        "url": "not applicable",
+        "catalog_url": "not applicable",
+        "available_online": false,
+        "delimiter": "not applicable"
+      },
+      "obsea": {
+        "NAID": "UNKNOWN",
+        "file_name": "not applicable",
+        "url": "not applicable",
+        "catalog_url": "not applicable",
+        "available_online": false,
+        "delimiter": "not applicable"
+      },
+      "seafa": {
+        "NAID": "602104",
+        "file_name": "RG330.SEAFA.Y6672.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-330/SEAFA/RG330.SEAFA.Y6672.txt",
+        "catalog_url": "https://catalog.archives.gov/id/602104",
+        "available_online": true,
+        "delimiter": "pipe"
+      },
+      "tirsa": {
+        "NAID": "7423670",
+        "file_name": "RG330.TIRSA.Y6773.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-330/TIRSA/RG330.TIRSA.Y6773.txt",
+        "catalog_url": "https://catalog.archives.gov/id/7423670",
+        "available_online": true,
+        "delimiter": "pipe"
+      },
+      "vciia": {
+        "NAID": "600133",
+        "file_name": "VCIIA.AR.FIX.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-330/VCIIA/VCIIA.AR.FIX.txt",
+        "catalog_url": "https://catalog.archives.gov/id/600133",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "vndba": {
+        "NAID": "5927921",
+        "file_name": "not applicable",
+        "url": "not applicable",
+        "catalog_url": "https://catalog.archives.gov/id/5927921",
+        "available_online": true,
+        "delimiter": "not applicable"
+      },
+      "gors_67": {
+        "NAID": "40978559",
+        "file_name": "GORS67.AR.FIX.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS67.AR.FIX.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978559",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps1_67": {
+        "NAID": "40978559",
+        "file_name": "GORS67.AR.PS1.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS67.AR.PS1.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978559",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps2_67": {
+        "NAID": "40978559",
+        "file_name": "GORS67.AR.PS2.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS67.AR.PS2.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978559",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps3_67": {
+        "NAID": "40978559",
+        "file_name": "GORS67.AR.PS3.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS67.AR.PS3.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978559",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps4_67": {
+        "NAID": "40978559",
+        "file_name": "GORS67.AR.PS4.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS67.AR.PS4.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978559",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps5_67": {
+        "NAID": "40978559",
+        "file_name": "GORS67.AR.PS5.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS67.AR.PS5.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978559",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps6_67": {
+        "NAID": "40978559",
+        "file_name": "GORS67.AR.PS6.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS67.AR.PS6.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978559",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps7_67": {
+        "NAID": "40978559",
+        "file_name": "GORS67.AR.PS7.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS67.AR.PS7.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978559",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_68": {
+        "NAID": "40978560",
+        "file_name": "GORS68.AR.FIX.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS68.AR.FIX.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978560",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps1_68": {
+        "NAID": "40978560",
+        "file_name": "GORS68.AR.PS1.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS68.AR.PS1.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978560",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps2_68": {
+        "NAID": "40978560",
+        "file_name": "GORS68.AR.PS2.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS68.AR.PS2.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978560",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps3_68": {
+        "NAID": "40978560",
+        "file_name": "GORS68.AR.PS3.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS68.AR.PS3.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978560",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps4_68": {
+        "NAID": "40978560",
+        "file_name": "GORS68.AR.PS4.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS68.AR.PS4.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978560",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps5_68": {
+        "NAID": "40978560",
+        "file_name": "GORS68.AR.PS5.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS68.AR.PS5.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978560",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps6_68": {
+        "NAID": "40978560",
+        "file_name": "GORS68.AR.PS6.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS68.AR.PS6.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978560",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps7_68": {
+        "NAID": "40978560",
+        "file_name": "GORS68.AR.PS7.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS68.AR.PS7.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978560",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_69": {
+        "NAID": "40978561",
+        "file_name": "GORS69.AR.FX.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS69.AR.FIX.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978561",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps1_69": {
+        "NAID": "40978561",
+        "file_name": "GORS69.AR.P1.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS69.AR.PS1.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978561",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps2_69": {
+        "NAID": "40978561",
+        "file_name": "GORS69.AR.P2.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS69.AR.PS2.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978561",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps3_69": {
+        "NAID": "40978561",
+        "file_name": "GORS69.AR.P3.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS69.AR.PS3.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978561",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps4_69": {
+        "NAID": "40978561",
+        "file_name": "GORS69.AR.P4.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS69.AR.PS4.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978561",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps5_69": {
+        "NAID": "40978561",
+        "file_name": "GORS69.AR.P5.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS69.AR.PS5.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978561",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps6_69": {
+        "NAID": "40978561",
+        "file_name": "GORS69.AR.P6.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS69.AR.PS6.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978561",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps7_69": {
+        "NAID": "40978561",
+        "file_name": "GORS69.AR.P7.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS69.AR.PS7.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978561",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_70": {
+        "NAID": "40978562",
+        "file_name": "GORS70.AR.FX.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS70.AR.FIX.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978562",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps1_70": {
+        "NAID": "40978562",
+        "file_name": "GORS70.AR.P1.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS70.AR.PS1.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978562",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps2_70": {
+        "NAID": "40978562",
+        "file_name": "GORS70.AR.P2.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS70.AR.PS2.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978562",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps3_70": {
+        "NAID": "40978562",
+        "file_name": "GORS70.AR.P3.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS70.AR.PS3.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978562",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps4_70": {
+        "NAID": "40978562",
+        "file_name": "GORS70.AR.P4.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS70.AR.PS4.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978562",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps5_70": {
+        "NAID": "40978562",
+        "file_name": "GORS70.AR.P5.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS70.AR.PS5.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978562",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps6_70": {
+        "NAID": "40978562",
+        "file_name": "GORS70.AR.P6.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS70.AR.PS6.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978562",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps7_70": {
+        "NAID": "40978562",
+        "file_name": "GORS70.AR.P7.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS70.AR.PS7.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978562",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_71_72": {
+        "NAID": "40978563",
+        "file_name": "GORS7172.AR.FX.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS7172.AR.FX.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978563",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps1_71_72": {
+        "NAID": "40978563",
+        "file_name": "GORS7172.AR.P1.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS7172.AR.P1.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978563",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps2_71_72": {
+        "NAID": "40978563",
+        "file_name": "GORS7172.AR.P2.txt,",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS7172.AR.P2.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978563",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps3_71_72": {
+        "NAID": "40978563",
+        "file_name": "GORS7172.AR.P3.txt,",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS7172.AR.P3.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978563",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps4_71_72": {
+        "NAID": "40978563",
+        "file_name": "GORS7172.AR.P4.txt,",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS7172.AR.P4.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978563",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps5_71_72": {
+        "NAID": "40978563",
+        "file_name": "GORS7172.AR.P5.txt,",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS7172.AR.P5.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978563",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps6_71_72": {
+        "NAID": "40978563",
+        "file_name": "GORS7172.AR.P6.txt,",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS7172.AR.P6.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978563",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "gors_ps7_71_72": {
+        "NAID": "40978563",
+        "file_name": "GORS7172.AR.P7.txt,",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/GORS/GORS7172.AR.P7.txt",
+        "catalog_url": "https://catalog.archives.gov/id/40978563",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "incda":{
+        "NAID":"2569432",
+        "file_name":"INCDA.AR.FIX",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/32/5694/2569432/content/arcmedia/electronic-records/rg-218/INCDA/INCDA.AR.FIX",
+        "catalog_url": "https://catalog.archives.gov/id/2569432",
+        "available_online": true,
+        "delimiter": "width"
+      },      
+      "incda_ps1":{
+        "NAID":"2569433",
+        "file_name":"INCDA.AR.PER1",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/33/5694/2569433/content/arcmedia/electronic-records/rg-218/INCDA/INCDA.AR.PER1",
+        "catalog_url": "https://catalog.archives.gov/id/2569433",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "incda_ps2":{
+        "NAID":"2569435",
+        "file_name":"INCDA.AR.PER2",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/35/5694/2569435/content/arcmedia/electronic-records/rg-218/INCDA/INCDA.AR.PER2",
+        "catalog_url": "https://catalog.archives.gov/id/2569435",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "incda_ps3":{
+        "NAID":"2569436",
+        "file_name":"INCDA.AR.PER3",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/36/5694/2569436/content/arcmedia/electronic-records/rg-218/INCDA/INCDA.AR.PER3",
+        "catalog_url": "https://catalog.archives.gov/id/2569436",
+        "available_online": true,
+        "delimiter": "width"
+      }
+    }
+  ]
+}

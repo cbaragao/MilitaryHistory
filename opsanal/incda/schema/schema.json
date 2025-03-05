@@ -1,0 +1,238 @@
+{
+    "dataset": "INCDA",
+    "table": "INCDA",
+    "data": [ 
+            {
+                "title": "Year",
+                "id": "YEAR",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Year of cease-fire violation",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "Month",
+                "id": "MONTH",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Month of cease-fire violation",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "Day",
+                "id": "DAY",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Day of cease-fire violation",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "Sequence Number",
+                "id": "INSEQ",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Locally Assigned Sequence Number",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "PCN",
+                "id": "PCN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "System Generated",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "SC0",
+                "id": "SC0",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "System Generated",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "VSZ",
+                "id": "VSZ",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "System Generated",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "Coordinates",
+                "id": "ILOC",
+                "field_group": "FIELD",
+                "length": 15,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "UTM Coordinates of cease fire violation",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "Number of Incidents",
+                "id": "NOINC",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Number of Incidents",
+                "periodic_set": "fixed",
+                "definition_file": "catab.json"
+            },
+            {
+                "title": "Category of Incident",
+                "id": "CAT",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Category of the Incident",
+                "periodic_set": "fixed",
+                "definition_file": "catab.json"
+            },
+            {
+                "title": "Type of Action",
+                "id": "TYPAC",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Type of Action",
+                "periodic_set": "fixed",
+                "definition_file": "typac.json"
+            },
+            {
+                "title": "Country",
+                "id": "CNTRY",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Country",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "Region",
+                "id": "REGION",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Region",
+                "periodic_set": "fixed",
+                "definition_file": "mrtab.json"
+            },
+            {
+                "title": "Province Code",
+                "id": "PROV",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Province code",
+                "periodic_set": "fixed",
+                "definition_file": "provtab.json"
+            },
+            {
+                "title": "Incident Start",
+                "id": "ITIME",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Time incident was initiated",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "Date Time Group of Termination",
+                "id": "TDATE",
+                "field_group": "FIELD",
+                "length": 6,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Date incident was terminated",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "Termination Time",
+                "id": "TTIME",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Time incident was terminated",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "Initiating Force",
+                "id": "INTFOR",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Force Initiating the Incident",
+                "periodic_set": "fixed",
+                "definition_file": "natab.json"
+            },
+            {
+                "title": "Force Attacked",
+                "id": "FORATK",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Force that was attacked",
+                "periodic_set": "fixed",
+                "definition_file": "natab.json"
+            },
+            {
+                "title": "Place Name",
+                "id": "PLACE",
+                "field_group": "FIELD",
+                "length": 10,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Name of place if reported",
+                "periodic_set": "fixed",
+                "definition_file": ""
+            },
+            {
+                "title": "Place Code",
+                "id": "PLACD",
+                "field_group": "FIELD",
+                "length": 2,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Place Code",
+                "periodic_set": "fixed",
+                "definition_file": "platab.json"
+            }
+    
+        ]
+}

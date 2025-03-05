@@ -1,0 +1,95 @@
+{
+    "dataset": "INCDA",
+    "table": "ACTAB",
+    "definition": "Type of Action",
+    "data": [
+        {
+            "code": "A",
+            "value": "Attack"
+        },
+        {
+            "code": "B",
+            "value": "Attack by Fire"
+        },
+        {
+            "code": "C",
+            "value": "Ambush"
+        },
+        {
+            "code": "D",
+            "value": "Sabotage"
+        },
+        {
+            "code": "E",
+            "value": "Harassment"
+        },
+        {
+            "code": "F",
+            "value": "Assassination"
+        },
+        {
+            "code": "G",
+            "value": "Ground Attack"
+        },
+        {
+            "code": "H",
+            "value": "Air Attack"
+        },
+        {
+            "code": "I",
+            "value": "Ground to Air Attack"
+        },
+        {
+            "code": "J",
+            "value": "Contact/Incident"
+        },
+        {
+            "code": "K",
+            "value": "Ground Infiltration"
+        },
+        {
+            "code": "L",
+            "value": "Engagement"
+        },
+        {
+            "code": "M",
+            "value": "Cleared"
+        },
+        {
+            "code": "N",
+            "value": "Explosion"
+        },
+        {
+            "code": "O",
+            "value": "Burned"
+        },
+        {
+            "code": "P",
+            "value": "Escape Attempt"
+        },
+        {
+            "code": "Q",
+            "value": "Overrun"
+        },
+        {
+            "code": "R",
+            "value": "Entered"
+        },
+        {
+            "code": "S",
+            "value": "Resecured"
+        },
+        {
+            "code": "T",
+            "value": "Sapper Attack"
+        },
+        {
+            "code": "U",
+            "value": "Unknown"
+        },
+        {
+            "code": "V",
+            "value": "Kidnapped/Abducted"
+        }
+    ]
+}

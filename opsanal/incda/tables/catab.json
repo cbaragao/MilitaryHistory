@@ -1,0 +1,23 @@
+{
+    "dataset": "INCDA",
+    "table": "CATAB",
+    "definition": "Incident Category",
+    "data": [
+        {
+            "code": "A",
+            "value": "Major Incident"
+        },
+        {
+            "code": "B",
+            "value": "Minor Incident"
+        },
+        {
+            "code": "C",
+            "value": "Civilian Incident"
+        },
+        {
+            "code": "D",
+            "value": "Serious Incident"
+        }
+    ]
+}

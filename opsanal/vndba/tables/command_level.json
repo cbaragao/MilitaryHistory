@@ -1,0 +1,47 @@
+{
+    "dataset": "VNDBA",
+    "table": "Command Level",
+    "definition": "Command Level definitions",
+    "data": [
+        {
+            "code": "B",
+            "value": "BN"
+        },
+        {
+            "code": "C",
+            "value": "CORP"
+        },
+        {
+            "code": "D",
+            "value": "DIV"
+        },
+        {
+            "code": "G",
+            "value": "BRIG"
+        },
+        {
+            "code": "R",
+            "value": "REGT"
+        },
+        {
+            "code": "S",
+            "value": "SECT"
+        },
+        {
+            "code": "T",
+            "value": "CT115"
+        },
+        {
+            "code": "U",
+            "value": "JDIV"
+        },
+        {
+            "code": "W",
+            "value": "DIST"
+        },
+        {
+            "code": "X",
+            "value": "BTLGP"
+        }
+    ]
+}

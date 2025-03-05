@@ -1,0 +1,211 @@
+{
+    "dataset": "TIRSA",
+    "table": "PROVINCE CODES",
+    "definition": "DEFINITION OF PROVINCE CODES",
+    "data": [
+        {
+            "code": "01",
+            "value": "QUANG TRI"
+        },
+        {
+            "code": "02",
+            "value": "THUA THIEN"
+        },
+        {
+            "code": "03",
+            "value": "QUANG NAM"
+        },
+        {
+            "code": "04",
+            "value": "QUANG TIN"
+        },
+        {
+            "code": "05",
+            "value": "QUANG NGAI"
+        },
+        {
+            "code": "06",
+            "value": "KONTUM"
+        },
+        {
+            "code": "07",
+            "value": "BINH DINH"
+        },
+        {
+            "code": "08",
+            "value": "PLEIKU"
+        },
+        {
+            "code": "09",
+            "value": "PHU BON"
+        },
+        {
+            "code": "10",
+            "value": "PHU YEN"
+        },
+        {
+            "code": "11",
+            "value": "DARLAC"
+        },
+        {
+            "code": "12",
+            "value": "KHANH HOA"
+        },
+        {
+            "code": "13",
+            "value": "NINH THUAN"
+        },
+        {
+            "code": "14",
+            "value": "TUYEN DUC"
+        },
+        {
+            "code": "15",
+            "value": "QUANG DUC"
+        },
+        {
+            "code": "16",
+            "value": "LAM DONG"
+        },
+        {
+            "code": "17",
+            "value": "BINH THUAN"
+        },
+        {
+            "code": "18",
+            "value": "BINH THUY"
+        },
+        {
+            "code": "19",
+            "value": "LONG KHANH"
+        },
+        {
+            "code": "21",
+            "value": "PHUOC LONG"
+        },
+        {
+            "code": "22",
+            "value": "BINH LONG"
+        },
+        {
+            "code": "23",
+            "value": "BINH DUONG"
+        },
+        {
+            "code": "24",
+            "value": "TAY NINH"
+        },
+        {
+            "code": "25",
+            "value": "HAU NGHIA"
+        },
+        {
+            "code": "26",
+            "value": "BIEN HOA"
+        },
+        {
+            "code": "27",
+            "value": "PHUOC TUY"
+        },
+        {
+            "code": "28",
+            "value": "LONG AN"
+        },
+        {
+            "code": "29",
+            "value": "GIA DINH"
+        },
+        {
+            "code": "30",
+            "value": "GO CONG"
+        },
+        {
+            "code": "31",
+            "value": "KIEN TUONG"
+        },
+        {
+            "code": "32",
+            "value": "KIEN PHONG"
+        },
+        {
+            "code": "33",
+            "value": "DINH TUONG"
+        },
+        {
+            "code": "34",
+            "value": "KIEN HOA"
+        },
+        {
+            "code": "35",
+            "value": "VINH BINH"
+        },
+        {
+            "code": "36",
+            "value": "VINH LONG"
+        },
+        {
+            "code": "37",
+            "value": "AN GIANG"
+        },
+        {
+            "code": "38",
+            "value": "KIEN GIANG"
+        },
+        {
+            "code": "39",
+            "value": "CHUONG THIEN"
+        },
+        {
+            "code": "40",
+            "value": "PHONG DINH"
+        },
+        {
+            "code": "41",
+            "value": "BA XUYEN"
+        },
+        {
+            "code": "42",
+            "value": "AN XUYEN"
+        },
+        {
+            "code": "43",
+            "value": "BAC LIEU"
+        },
+        {
+            "code": "44",
+            "value": "CHAU DOC"
+        },
+        {
+            "code": "46",
+            "value": "SA DEC"
+        },
+        {
+            "code": "81",
+            "value": "CON SON"
+        },
+        {
+            "code": "91",
+            "value": "HUE"
+        },
+        {
+            "code": "92",
+            "value": "DANANG"
+        },
+        {
+            "code": "93",
+            "value": "CAM RANH"
+        },
+        {
+            "code": "94",
+            "value": "DALAT"
+        },
+        {
+            "code": "95",
+            "value": "VUNG TAU"
+        },
+        {
+            "code": "96",
+            "value": "SAIGON"
+        }
+    ]
+}

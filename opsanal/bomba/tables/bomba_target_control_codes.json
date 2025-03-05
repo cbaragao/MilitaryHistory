@@ -1,0 +1,63 @@
+{
+    "table": "target control codes",
+    "table_index": 4,
+    "datasource": "BOMBA",
+    "data" : [
+        {
+            "code": "A",
+            "value": "ABN FWD AIR CNTL (CRICKET)"
+        },
+        {
+            "code": "B",
+            "value": "FWD AIR CNTL (TIGER HOUND)"
+        },
+        {
+            "code": "C",
+            "value": "ABN FWD CNTL"
+        },
+        {
+            "code": "G",
+            "value": "GRND FWD AIR CNTL"
+        },
+        {
+            "code": "I",
+            "value": "GCI"
+        },
+        {
+            "code": "L",
+            "value": "LORAN"
+        },
+        {
+            "code": "M",
+            "value": "MSQ"
+        },
+        {
+            "code": "N",
+            "value": "NONE"
+        },
+        {
+            "code": "O",
+            "value": "TGT OF OPPORTUNITY"
+        },
+        {
+            "code": "P",
+            "value": "PREBRIEFED TGT"
+        },
+        {
+            "code": "S",
+            "value": "SHIP"
+        },
+        {
+            "code": "T",
+            "value": "TPQ-10"
+        },
+        {
+            "code": "U",
+            "value": "UNKNOWN"
+        },
+        {
+            "code": "Z",
+            "value": "COMBAT RESCUE CTR"
+        }
+    ]
+}

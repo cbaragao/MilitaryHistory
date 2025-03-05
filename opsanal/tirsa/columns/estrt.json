@@ -1,0 +1,34 @@
+{
+    "dataset": "TIRSA",
+    "column_id": "ESTRT",
+    "column": "Estimated Size",
+    "definition": "The estimated size of the attacking force involved in the incident.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "Single"
+        },
+        {
+            "code": "2",
+            "value": "Team"
+        },
+        {
+            "code": "3",
+            "value": "Squad"
+        },
+        {
+            "code": "4",
+            "value": "Platoon"
+        },
+        {
+            "code": "5",
+            "value": "Company"
+        },
+        {
+            "code": "9",
+            "value": "Unknown"
+        }
+    ]
+}

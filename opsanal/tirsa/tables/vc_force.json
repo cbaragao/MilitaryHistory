@@ -1,0 +1,31 @@
+{
+    "dataset": "TIRSA",
+    "table": "VC FORCE",
+    "definition": "Size of VC Force",
+    "data": [
+        {
+            "code": "1",
+            "value": "SINGLE"
+        },
+        {
+            "code": "2",
+            "value": "TEAM"
+        },
+        {
+            "code": "3",
+            "value": "SQUAD"
+        },
+        {
+            "code": "4",
+            "value": "PLATOON"
+        },
+        {
+            "code": "5",
+            "value": "COMPANY"
+        },
+        {
+            "code": "9",
+            "value": "UNKNOWN"
+        }
+    ]
+}

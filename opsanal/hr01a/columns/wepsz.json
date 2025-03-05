@@ -1,0 +1,34 @@
+{
+    "dataset": "hr01",
+    "column_id": "WEPSZ",
+    "column": "Weapon Size",
+    "definition": "Defines the size and type artillery weapon used in support of an action.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "155G"
+        },
+        {
+            "code": "2",
+            "value": "155H"
+        },
+        {
+            "code": "3",
+            "value": "105H"
+        },
+        {
+            "code": "4",
+            "value": "107HT"
+        },
+        {
+            "code": "5",
+            "value": "H8"
+        },
+        {
+            "code": "6",
+            "value": "175G"
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "dataset": "INCDA",
+    "table": "NATAB",
+    "definition": "Force Nationality Table",
+    "data": [
+        {
+            "code": "A",
+            "value": "Army Republic Vietnam"
+        },
+        {
+            "code": "B",
+            "value": "Vietnam Air Force"
+        },
+        {
+            "code": "C",
+            "value": "Vietnam Navy"
+        },
+        {
+            "code": "D",
+            "value": "Vietnam Marine Corps"
+        },
+        {
+            "code": "E",
+            "value": "Enemy"
+        },
+        {
+            "code": "F",
+            "value": "Friendly"
+        },
+        {
+            "code": "G",
+            "value": "Regional Forces"
+        },
+        {
+            "code": "H",
+            "value": "Regional Forces"
+        },
+        {
+            "code": "I",
+            "value": "South Vietnam Civilian"
+        },
+        {
+            "code": "J",
+            "value": "Territorial Forces"
+        },
+        {
+            "code": "K",
+            "value": "Korean Forces"
+        },
+        {
+            "code": "L",
+            "value": "United States Forces"
+        },
+        {
+            "code": "M",
+            "value": "Government Official"
+        },
+        {
+            "code": "N",
+            "value": "JMC/ICCS Member"
+        },
+        {
+            "code": "O",
+            "value": "National Police"
+        },
+        {
+            "code": "P",
+            "value": "North Vietnam Civilian"
+        }
+    ]
+}

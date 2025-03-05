@@ -1,0 +1,23 @@
+{
+    "dataset": "BASFA",
+    "table": "CSTAT",
+    "definition": "This field contains the current status of base area as obtained from MACV Monthly Progress Report published by the Combined Intelligence Center, Vietnam (CICV), or from the Enemy Base Area Study.",
+    "data": [
+        {
+            "code": "A",
+            "value": "Active"
+        },
+        {
+            "code": "I",
+            "value": "Inactive"
+        },
+        {
+            "code": "N",
+            "value": "Neutralized"
+        },
+        {
+            "code": "D",
+            "value": "Deleted"
+        }
+    ]
+}

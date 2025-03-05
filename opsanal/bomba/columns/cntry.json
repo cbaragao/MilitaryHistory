@@ -1,0 +1,26 @@
+{
+    "dataset": "BOMBA",
+    "column_id": "CNTRY",
+    "column": "Country",
+    "definition": "This field contains a two-character code for the target country. ",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "VN",
+            "value": "NORTH VIETNAM"
+        },
+        {
+            "code": "VS",
+            "value": "SOUTH VIETNAM"
+        },
+        {
+            "code": "TH",
+            "value": "THAILAND"
+        },
+        {
+            "code": "UN",
+            "value": "UNKNOWN"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "dataset": "VCIIA",
+    "column_id": "XNAME",
+    "column": "Country Indicator",
+    "definition": "Identifies the country in which the incident occurred.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "South Vietnam"
+        },
+        {
+            "code": "2",
+            "value": "North Vietnam"
+        }
+    ]
+}

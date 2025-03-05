@@ -1,0 +1,135 @@
+{
+    "dataset": "gors",
+    "table": "actns",
+    "definition": "Type of Action",
+    "data": [
+        {
+            "code": "A2",
+            "value": "Atkd by Frng On"
+        },
+        {
+            "code": "A3",
+            "value": "Ambushed"
+        },
+        {
+            "code": "A4",
+            "value": "Engaged"
+        },
+        {
+            "code": "A5",
+            "value": "Assaulted"
+        },
+        {
+            "code": "E1",
+            "value": "Covertly Entered"
+        },
+        {
+            "code": "E2",
+            "value": "Covertly Entered"
+        },
+        {
+            "code": "E3",
+            "value": "Entered"
+        },
+        {
+            "code": "H2",
+            "value": "Harrass Fire On"
+        },
+        {
+            "code": "H3",
+            "value": "Bombed"
+        },
+        {
+            "code": "H4",
+            "value": "Harassed"
+        },
+        {
+            "code": "H5",
+            "value": "Fired on Acft"
+        },
+        {
+            "code": "H6",
+            "value": "Threw Grenade at"
+        },
+        {
+            "code": "M1",
+            "value": "Mines/Det by"
+        },
+        {
+            "code": "M2",
+            "value": "Stopped"
+        },
+        {
+            "code": "M3",
+            "value": "Blocked"
+        },
+        {
+            "code": "M4",
+            "value": "Destroyed"
+        },
+        {
+            "code": "M5",
+            "value": "Damaged"
+        },
+        {
+            "code": "M6",
+            "value": "Stole"
+        },
+        {
+            "code": "M7",
+            "value": "Burned"
+        },
+        {
+            "code": "M8",
+            "value": "Booby Trapped"
+        },
+        {
+            "code": "M9",
+            "value": "Det Exp Against"
+        },
+        {
+            "code": "P2",
+            "value": "Propagandized"
+        },
+        {
+            "code": "P3",
+            "value": "Lectured"
+        },
+        {
+            "code": "P4",
+            "value": "Dist Leaflets to"
+        },
+        {
+            "code": "P5",
+            "value": "Demonstrate to"
+        },
+        {
+            "code": "S2",
+            "value": "Sabotaged"
+        },
+        {
+            "code": "S3",
+            "value": "Sabotage w/Expl"
+        },
+        {
+            "code": "T2",
+            "value": "Terrorized"
+        },
+        {
+            "code": "T3",
+            "value": "Assassinated"
+        },
+        {
+            "code": "T4",
+            "value": "Murdered"
+        },
+        {
+            "code": "T5",
+            "value": "Kidnapped"
+        },
+        {
+            "code": "T6",
+            "value": "Captured"
+        }
+    ]
+}

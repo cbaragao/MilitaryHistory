@@ -1,0 +1,27 @@
+{
+    "dataset": "hr01",
+    "column_id": "ACTYPE",
+    "column": "Action Type Code",
+    "definition": "Specifies the type of military operation of the action being reported.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data" : [
+        
+        {
+            "code":"A",
+            "value":"Artillery"
+        },
+        {
+            "code":"B",
+            "value":"Base Defense"
+        },
+        {
+            "code":"G",
+            "value":"Infantry"
+        },
+        {
+            "code":"R",
+            "value":"Reconnaissance Bn"
+        }
+    ]
+}

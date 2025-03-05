@@ -1,0 +1,42 @@
+{
+    "table": "seafa",
+    "column_id": "VCMR",
+    "column": "VC Military Region",
+    "definition": "This field identifies the Viet Cong Military Region (VCMR) in which the unit is located. Data for this field is derived from the province in which the unit is reported to be located. Conversion from province to VCMR is as shown in Table 1 Chapter 7.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "01",
+            "value": "MR1"
+        },
+        {
+            "code": "02",
+            "value": "MR2"
+        },
+        {
+            "code": "03",
+            "value": "MR3"
+        },
+        {
+            "code": "04",
+            "value": "MR4"
+        },
+        {
+            "code": "05",
+            "value": "MR5"
+        },
+        {
+            "code": "06",
+            "value": "MR6"
+        },
+        {
+            "code": "10",
+            "value": "MR10"
+        },
+        {
+            "code": "11",
+            "value": "TRI THIEN MR"
+        }
+    ]
+}

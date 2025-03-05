@@ -1,0 +1,23 @@
+{
+    "dataset": "INCDA",
+    "table": "MRTAB",
+    "definition": "Military Region Table",
+    "data": [
+        {
+            "code": "01",
+            "value": "Military Region I"
+        },
+        {
+            "code": "02",
+            "value": "Military Region II"
+        },
+        {
+            "code": "03",
+            "value": "Military Region III"
+        },
+        {
+            "code": "04",
+            "value": "Military Region IV"
+        }
+    ]
+}

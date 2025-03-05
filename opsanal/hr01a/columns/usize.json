@@ -1,0 +1,31 @@
+{
+    "dataset": "hr01",
+    "column_id": "USIZE",
+    "column": "Unit Size",
+    "definition": "The size of the friendly unit involved in the reported action.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data" : [
+        
+        {
+            "code":"SQ",
+            "value":"Squad"
+        },
+        {
+            "code":"FT",
+            "value":"Fire Team"
+        },
+        {
+            "code":"PT",
+            "value":"Platoon"
+        },
+        {
+            "code":"CO",
+            "value":"Company"
+        },
+        {
+            "code":"SS",
+            "value":"Scout/Sniper Team"
+        }
+    ]
+}

@@ -1,0 +1,226 @@
+{
+  "dataset": "SEAFA",
+  "table": "SEAFA",
+  "data": [
+    {
+      "title": "Unit Number",
+      "id": "UNITO",
+      "field_group": "FIELD",
+      "length": 6,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field identifies the unit. The unit number for South Vietnamese units is an arbitrarily assigned number unique for every unit; the numbers for the US and FWMAF units were obtained from the STALA file.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "Year",
+      "id": "YEAR",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field identifies the year, e.g., '68'.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "Month",
+      "id": "MONTH",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field identifies the month, e.g., '10' represents October.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "Unit Name",
+      "id": "UNAME",
+      "field_group": "FIELD",
+      "length": 30,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field identifies the unit name.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Province",
+      "id": "PROV",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "locations.json",
+      "definition": "This field identifies the province in which the unit is located. The table for converting province code to province name is used in output.",
+      "periodic_set": "fixed",
+      "definition_file": "locations.json"
+    },
+    {
+      "title": "UTM QUAD",
+      "id": "UTMQD",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field contains the two characters -- quadrant identification -- of the UTM coordinate.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "UTM East",
+      "id": "UTMES",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field contains the easting values of the UTM coordinate.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "UTM North",
+      "id": "UTMNO",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field contains the northing values of the UTM coordinate.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "VC Military Region",
+      "id": "VCMR",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "01,02,03,04,05,06,10,11",
+      "data_values": "VCMR.json",
+      "definition": "This field identifies the Viet Cong Military Region (VCMR) in which the unit is located. Data for this field is derived from the province in which the unit is reported to be located. Conversion from province to VCMR is as shown in Table 1 Chapter 7.",
+      "periodic_set": "fixed",
+      "definition_file": "vcmr.json"
+    },
+    {
+      "title": "Corps Area",
+      "id": "CTZ",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "1,2,3,4",
+      "data_values": "ctz.json",
+      "definition": "This field identifies the Corps Tactical Zone in which the unit is located. Data for this field are derived from the province in which the unit is reported to be located. Conversion from province code to corps area is as shown in Table 1.",
+      "periodic_set": "fixed",
+      "definition_file": "ctz.json"
+    },
+    {
+      "title": "Service",
+      "id": "SERV",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "M,W",
+      "data_values": "serv.json",
+      "definition": "This field identifies the unit's service.",
+      "periodic_set": "fixed",
+      "definition_file": "serv.json"
+    },
+    {
+      "title": "Mission Code",
+      "id": "MISSN",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field is blank. It is reserved for the mission of the individual battalions.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Country",
+      "id": "CNTRY",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "AU,KS,NZ,PH,TH,US,VS",
+      "data_values": "cntry.json",
+      "definition": "This field identifies the unit's nationality.",
+      "periodic_set": "fixed",
+      "definition_file": "cntry.json"
+    },
+    {
+      "title": "Unit Type Code",
+      "id": "UTYPE",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "C01, C02, C03, C04, C05, C06, C09",
+      "data_values": "utype.json",
+      "definition": "Simplified unit type code.",
+      "periodic_set": "fixed",
+      "definition_file": "utype.json"
+    },
+    {
+      "title": "Control Hq Unit Name",
+      "id": "CTLHQ",
+      "field_group": "FIELD",
+      "length": 20,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field identifies the unit's tactical control headquarters.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Station",
+      "id": "STATN",
+      "field_group": "FIELD",
+      "length": 15,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field identifies the station/base name.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "DIA Unit Number",
+      "id": "DIAID",
+      "field_group": "FIELD",
+      "length": 17,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field is reserved for the DIA identification number for the unit.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Coordinates",
+      "id": "CORDS",
+      "field_group": "FIELD",
+      "length": 13,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field is reserved for latitude and longitude coordinates.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Unit Type",
+      "id": "UNTYP",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "18AAA,18BAA,18FAA,18MAA,18RMA,18TAA,19AAA,19FAA,19FTA,19VAA",
+      "data_values": "untyp.json",
+      "definition": "Unit type code from the STALA file.",
+      "periodic_set": "fixed",
+      "definition_file": "untyp.json"
+    },
+    {
+      "title": "For Future Use",
+      "id": "RSRVD",
+      "field_group": "FIELD",
+      "length": 12,
+      "code": "N/A",
+      "data_values": "Alpha",
+      "definition": "This field is reserved for future use.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    }
+  ]
+}

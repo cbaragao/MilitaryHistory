@@ -1,0 +1,133 @@
+
+    {
+    "dataset": "gors",
+    "table": "ps6",
+    "data": [ 
+            {
+                "title": "DATE",
+                "id": "DATE",
+                "field_group": "FIELD",
+                "length": 6,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Publication date of the operational report"
+            },
+            {
+                "title": "DATAT",
+                "id": "DATAT",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Publication date of the operational report"
+            },
+            {
+                "title": "SERAL",
+                "id": "SERAL",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Record sequence number within the operational report"
+            },
+            {
+                "title": "CORP",
+                "id": "CORP",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Corps tactical zone in which the action occurred"
+            },
+            {
+                "title": "PART",
+                "id": "PART",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Major force of the action"
+            },
+            {
+                "title": "PCN",
+                "id": "PCN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Periodic set number; created by the NIPSTRAN program"
+            },
+            {
+                "title": "PSSQ6",
+                "id": "PSSQ6",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Subset sequence number used for periodic set identification; created by the NIPSTRAN"
+            },
+            {
+                "title": "VSZ6",
+                "id": "VSZ6",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Indicates number of characters in the logical record's variable field; the field will contain zeros if there is no variable field for a logical record; created by the NIPSTRAN program"
+            },
+            {
+                "title": "RTWER",
+                "id": "RTWER",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Ratio of VC weapons lost to allied weapons"
+            },
+            {
+                "title": "RTPER",
+                "id": "RTPER",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Ratio of VC casualties to allied casualties"
+            },
+            {
+                "title": "RVNRR",
+                "id": "RVNRR",
+                "field_group": "FIELD",
+                "length": 6,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Regular RVN manpower strength"
+            },
+            {
+                "title": "RVNRL",
+                "id": "RVNRL",
+                "field_group": "FIELD",
+                "length": 6,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Regional RVN manpower strength"
+            },
+            {
+                "title": "RVNPR",
+                "id": "RVNPR",
+                "field_group": "FIELD",
+                "length": 6,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Popular RVN manpower strength"
+            },
+            {
+                "title": "LINSS",
+                "id": "LINSS",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Sequence number for subsets of periodic set 6"
+            }
+        ]
+    }

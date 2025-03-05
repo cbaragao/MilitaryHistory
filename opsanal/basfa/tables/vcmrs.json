@@ -1,0 +1,43 @@
+{
+    "dataset": "BASFA",
+    "table": "VCMRS",
+    "definition": "Viet Cong Military Region and Subregion codes",
+    "data": [
+        {
+            "code": "01",
+            "value": "MR 1"
+        },
+        {
+            "code": "02",
+            "value": "MR 2"
+        },
+        {
+            "code": "03",
+            "value": "MR 3"
+        },
+        {
+            "code": "04",
+            "value": "MR 4"
+        },
+        {
+            "code": "05",
+            "value": "MR 5"
+        },
+        {
+            "code": "06",
+            "value": "MR 6"
+        },
+        {
+            "code": "10",
+            "value": "MR 10"
+        },
+        {
+            "code": "SR",
+            "value": "Special Region 10"
+        },
+        {
+            "code": "TT",
+            "value": "Tri-Thien-Hue MR"
+        }
+    ]
+}

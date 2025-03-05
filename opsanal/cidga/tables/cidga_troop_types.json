@@ -1,0 +1,63 @@
+{
+    "table": "troop types",
+    "table_index": 3,
+    "datasource": "CIDGA",
+    "data" : [
+        {
+            "troop_type": "VNSF",
+            "valid_entries": "Vietnamese Special Forces"
+        },
+        {
+            "troop_type": "USASF",
+            "valid_entries": "U.S. Army Special Forces"
+        },
+        {
+            "troop_type": "CSF",
+            "valid_entries": "Camp Strike Force"
+        },
+        {
+            "troop_type": "CIDG",
+            "valid_entries": "Civilian Irregular Defense Group (includes MSF, CSF, CRP, CA/PO)"
+        },
+        {
+            "troop_type": "CA/PO",
+            "valid_entries": "Civic Action/Psychological Operations"
+        },
+        {
+            "troop_type": "MSF",
+            "valid_entries": "Mobile Strike Force"
+        },
+        {
+            "troop_type": "RF",
+            "valid_entries": "Regional Force (Province Level)"
+        },
+        {
+            "troop_type": "PF",
+            "valid_entries": "Popular Force (District Level)"
+        },
+        {
+            "troop_type": "RF/PF",
+            "valid_entries": "Combined RF and PF"
+        },
+        {
+            "troop_type": "ARTY SEC",
+            "valid_entries": "Artillery Section"
+        },
+        {
+            "troop_type": "AIRBOAT",
+            "valid_entries": "Airboat Platoon"
+        },
+        {
+            "troop_type": "TRNG",
+            "valid_entries": "Training"
+        },
+        {
+            "troop_type": "MGF",
+            "valid_entries": "Mobile Guerilla Force"
+        },
+        {
+            "troop_type": "CRP",
+            "valid_entries": "Combat Reconnaissance Platoon"
+        }
+    ]
+}

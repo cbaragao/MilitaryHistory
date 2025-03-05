@@ -1,0 +1,26 @@
+{
+    "table": "seafa",
+    "column_id": "CTZ",
+    "column": "Corps Area",
+    "definition": "This field identifies the Corps Tactical Zone in which the unit is located. Data for this field are derived from the province in which the unit is reported to be located. Conversion from province code to corps area is as shown in Table 1.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "I CORPS"
+        },
+        {
+            "code": "2",
+            "value": "II CORPS"
+        },
+        {
+            "code": "3",
+            "value": "III CORPS"
+        },
+        {
+            "code": "4",
+            "value": "IV CORPS"
+        }
+    ]
+}

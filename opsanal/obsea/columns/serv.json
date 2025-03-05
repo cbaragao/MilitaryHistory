@@ -1,0 +1,30 @@
+{
+    "dataset": "obsea",
+    "column_id": "SERV",
+    "column": "Unit Service",
+    "definition": "Indicates the service branch of the enemy unit.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "Army"
+        },
+        {
+            "code": "2",
+            "value": "Navy"
+        },
+        {
+            "code": "3",
+            "value": "Air Force"
+        },
+        {
+            "code": "4",
+            "value": "Marine Corps"
+        },
+        {
+            "code": "5",
+            "value": "Coast Guard"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "dataset": "INCDA",
+    "table": "PLATAB",
+    "definition": "Place Description Table",
+    "data": [
+        {
+            "code": "01",
+            "value": "Hamlet"
+        },
+        {
+            "code": "02",
+            "value": "Village"
+        },
+        {
+            "code": "03",
+            "value": "Province"
+        },
+        {
+            "code": "04",
+            "value": "Headquarters"
+        },
+        {
+            "code": "05",
+            "value": "Base Camp"
+        },
+        {
+            "code": "06",
+            "value": "Section/Sector"
+        },
+        {
+            "code": "07",
+            "value": "District Town"
+        },
+        {
+            "code": "08",
+            "value": "Highway"
+        },
+        {
+            "code": "09",
+            "value": "River"
+        },
+        {
+            "code": "10",
+            "value": "Outpost"
+        },
+        {
+            "code": "11",
+            "value": "Church"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "dataset": "VNDBA",
+    "column_id": "FMIAK",
+    "column": "Friendly MIA Code",
+    "definition": "Service/category of friendy personnel missing",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "C",
+            "value": "Captured"
+        },
+        {
+            "code": "D",
+            "value": "Deserted"
+        },
+        {
+            "code": "K",
+            "value": "Kidnapped"
+        },
+        {
+            "code": "M",
+            "value": "Missing in Action"
+        },
+        {
+            "code": "Blank",
+            "value": "***"
+        }
+    ]
+}

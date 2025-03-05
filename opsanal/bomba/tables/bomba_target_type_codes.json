@@ -1,0 +1,80 @@
+{
+    "table": "target type codes",
+    "table_index": 1,
+    "datasource": "BOMBA",
+    "data" : [
+        {
+            "code": "01",
+            "target_type": "AIR DEFENSE"
+        },
+        {
+            "code": "02",
+            "target_type": "AIR FIELDS"
+        },
+        {
+            "code": "03",
+            "target_type": "AREA DEPOTS"
+        },
+        {
+            "code": "04",
+            "target_type": "BRIDGES"
+        },
+        {
+            "code": "05",
+            "target_type": "BUILDINGS"
+        },
+        {
+            "code": "06",
+            "target_type": "NO TARGET"
+        },
+        {
+            "code": "07",
+            "target_type": "ROADS"
+        },
+        {
+            "code": "08",
+            "target_type": "RAILROAD/FAC"
+        },
+        {
+            "code": "09",
+            "target_type": "WATERWAY/FAC"
+        },
+        {
+            "code": "10",
+            "target_type": "TRUCK PARTS"
+        },
+        {
+            "code": "11",
+            "target_type": "ENEMY FORTIF"
+        },
+        {
+            "code": "12",
+            "target_type": "UNKNOWN TARGET"
+        },
+        {
+            "code": "13",
+            "target_type": "AIRCRAFT"
+        },
+        {
+            "code": "14",
+            "target_type": "MOTOR VEHICLES"
+        },
+        {
+            "code": "15",
+            "target_type": "RR VEHICLES"
+        },
+        {
+            "code": "16",
+            "target_type": "WATER VEHICLES"
+        },
+        {
+            "code": "17",
+            "target_type": "TROOPS"
+        },
+        {
+            "code": "18",
+            "target_type": "RADAR"
+        }
+    ]
+
+}

@@ -1,0 +1,67 @@
+{
+    "dataset": "VNDBA",
+    "table": "Food Losses",
+    "definition": "Type of food lost, by unit of measure and type",
+    "data": [
+        {
+            "code": "HN",
+            "value": "H MANIOC"
+        },
+        {
+            "code": "HR",
+            "value": "H RICE"
+        },
+        {
+            "code": "HZ",
+            "value": "H GRAIN"
+        },
+        {
+            "code": "KN",
+            "value": "K MANIOC"
+        },
+        {
+            "code": "KR",
+            "value": "K RICE"
+        },
+        {
+            "code": "KS",
+            "value": "K SALT"
+        },
+        {
+            "code": "KZ",
+            "value": "H GRAIN"
+        },
+        {
+            "code": "KT",
+            "value": "K SUGAR"
+        },
+        {
+            "code": "LC",
+            "value": "CATTLE"
+        },
+        {
+            "code": "LP",
+            "value": "LIVESTOCK"
+        },
+        {
+            "code": "PA",
+            "value": "ANIMALS"
+        },
+        {
+            "code": "TG",
+            "value": "MT GRAIN"
+        },
+        {
+            "code": "TR",
+            "value": "MT RICE"
+        },
+        {
+            "code": "UN",
+            "value": "UNSPEC"
+        },
+        {
+            "code": "WB",
+            "value": "BUFFALO"
+        }
+    ]
+}

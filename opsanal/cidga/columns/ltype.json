@@ -1,0 +1,26 @@
+{
+    "dataset": "CIDGA",
+    "column_id": "LTYPE",
+    "column": "Loss Type",
+    "definition": "This field indicates the type of friendly loss sustained",
+    "field/group": "FIELD",
+    "length": 3,
+    "data": [
+        {
+            "code": "KIA",
+            "value": "Killed in Action"
+        },
+        {
+            "code": "WIA",
+            "value": "Wounded in Action"
+        },
+        {
+            "code": "MIA",
+            "value": "Missing in Action"
+        },
+        {
+            "code": "WPN",
+            "value": "Weapon"
+        }
+    ]
+}

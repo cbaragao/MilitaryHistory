@@ -1,0 +1,189 @@
+{
+    "table": "OB01S - Province Code",
+    "data": [
+        {
+            "code": "100",
+            "value": "UNKNOWN"
+        },
+        {
+            "code": "101",
+            "value": "QUANG TRI"
+        },
+        {
+            "code": "102",
+            "value": "THUA THEIN"
+        },
+        {
+            "code": "103",
+            "value": "QUANG NAM"
+        },
+        {
+            "code": "104",
+            "value": "QUANG TIN"
+        },
+        {
+            "code": "105",
+            "value": "QUANG NGAI"
+        },
+        {
+            "code": "106",
+            "value": "BINH DINH"
+        },
+        {
+            "code": "107",
+            "value": "KONTUM"
+        },
+        {
+            "code": "108",
+            "value": "PLEIKU"
+        },
+        {
+            "code": "109",
+            "value": "PHU BON"
+        },
+        {
+            "code": "110",
+            "value": "PHU YEN"
+        },
+        {
+            "code": "111",
+            "value": "KHNAH HOA"
+        },
+        {
+            "code": "112",
+            "value": "KINH THUAN"
+        },
+        {
+            "code": "113",
+            "value": "DARLAC"
+        },
+        {
+            "code": "114",
+            "value": "QUANG DUC"
+        },
+        {
+            "code": "115",
+            "value": "TUYEN DUC"
+        },
+        {
+            "code": "116",
+            "value": "LAM DONG"
+        },
+        {
+            "code": "117",
+            "value": "BINH THUAN"
+        },
+        {
+            "code": "118",
+            "value": "BINH TUY"
+        },
+        {
+            "code": "119",
+            "value": "PHUOC LONG"
+        },
+        {
+            "code": "120",
+            "value": "SA DEC"
+        },
+        {
+            "code": "121",
+            "value": "BINH LONG"
+        },
+        {
+            "code": "122",
+            "value": "LONG KHANH"
+        },
+        {
+            "code": "123",
+            "value": "PHUOC TUY"
+        },
+        {
+            "code": "124",
+            "value": "BIEN HOA"
+        },
+        {
+            "code": "125",
+            "value": "TAY NINH"
+        },
+        {
+            "code": "126",
+            "value": "BINH DUONG"
+        },
+        {
+            "code": "127",
+            "value": "HAU NGHIA"
+        },
+        {
+            "code": "128",
+            "value": "LONG AN"
+        },
+        {
+            "code": "129",
+            "value": "GIA DINH"
+        },
+        {
+            "code": "130",
+            "value": "KIEN TUONG"
+        },
+        {
+            "code": "131",
+            "value": "DINH TUONG"
+        },
+        {
+            "code": "132",
+            "value": "GO CONG"
+        },
+        {
+            "code": "133",
+            "value": "KIEN HOA"
+        },
+        {
+            "code": "134",
+            "value": "KIEN PHONG"
+        },
+        {
+            "code": "135",
+            "value": "CHAU DOC"
+        },
+        {
+            "code": "136",
+            "value": "AN GIANG"
+        },
+        {
+            "code": "137",
+            "value": "KIEN GIANG"
+        },
+        {
+            "code": "138",
+            "value": "VINH BINH"
+        },
+        {
+            "code": "139",
+            "value": "VINH LONG"
+        },
+        {
+            "code": "140",
+            "value": "PHUONG DINH"
+        },
+        {
+            "code": "141",
+            "value": "CHUONG THIEN"
+        },
+        {
+            "code": "142",
+            "value": "BA XUYEN"
+        },
+        {
+            "code": "143",
+            "value": "BAC LIEU"
+        },
+        {
+            "code": "144",
+            "value": "AN XUYEN"
+        },
+        {
+            "code": "145",
+            "value": "CON SON"
+        }
+    ]
+}

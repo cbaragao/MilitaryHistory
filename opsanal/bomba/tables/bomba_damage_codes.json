@@ -1,0 +1,75 @@
+{
+    "table": "damage codes",
+    "table_index": 5,
+    "datasource": "BOMBA",
+    "data" : [
+        {
+            "code": "1",
+            "value": "DESTROYED"
+        },
+        {
+            "code": "2",
+            "value": "DAMAGED"
+        },
+        {
+            "code": "3",
+            "value": "CRATERED"
+        },
+        {
+            "code": "4",
+            "value": "CUT"
+        },
+        {
+            "code": "5",
+            "value": "KILLED"
+        },
+        {
+            "code": "6",
+            "value": "WOUNDED"
+        },
+        {
+            "code": "7",
+            "value": "NO DAMAGE"
+        },
+        {
+            "code": "8",
+            "value": "DAMAGE (LIGHT)"
+        },
+        {
+            "code": "9",
+            "value": "NOT OBSERVED"
+        },
+        {
+            "code": "A",
+            "value": "SECONDARY EXPLOSION"
+        },
+        {
+            "code": "B",
+            "value": "MISSED TARGET"
+        },
+        {
+            "code": "C",
+            "value": "SEEDED AREA"
+        },
+        {
+            "code": "D",
+            "value": "ORD ON TGT/NO BDA"
+        },
+        {
+            "code": "E",
+            "value": "SECONDARY FIRES"
+        },
+        {
+            "code": "F",
+            "value": "SILENCED (FLAK/SAM SITE)"
+        },
+        {
+            "code": "O",
+            "value": "ORDNANCE MALFUNCTION"
+        },
+        {
+            "code": "U",
+            "value": "UNKNOWN"
+        }
+    ]
+}

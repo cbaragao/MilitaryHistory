@@ -1,0 +1,19 @@
+{
+    "dataset": "INCDA",
+    "table": "MTAB",
+    "definition": "Message Type",
+    "data": [
+        {
+            "code": "A",
+            "value": "OPREP 4"
+        },
+        {
+            "code": "B",
+            "value": "OPREP 3"
+        },
+        {
+            "code": "C",
+            "value": "DD ISA"
+        }
+    ]
+}

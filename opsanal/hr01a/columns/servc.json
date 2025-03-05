@@ -1,0 +1,30 @@
+{
+    "dataset": "hr01",
+    "column_id": "SERVC",
+    "column": "Service",
+    "definition": "Identifies the service of the unit conducting the action being reported.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "A",
+            "value": "Army"
+        },
+        {
+            "code": "N",
+            "value": "Navy"
+        },
+        {
+            "code": "R",
+            "value": "ROK"
+        },
+        {
+            "code": "V",
+            "value": "RVN"
+        },
+        {
+            "code": null,
+            "value": "USMC"
+        }
+    ]
+}

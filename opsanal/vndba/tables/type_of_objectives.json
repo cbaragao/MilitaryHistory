@@ -1,0 +1,347 @@
+{
+    "dataset": "VNDBA",
+    "table": "Type of Objectives",
+    "definition": "Objectives sought in the operation and recorded in the dataset",
+    "data": [
+        {
+            "code": "01",
+            "value": "Guard Post"
+        },
+        {
+            "code": "02",
+            "value": "Command Post"
+        },
+        {
+            "code": "03",
+            "value": "Training Center"
+        },
+        {
+            "code": "04",
+            "value": "Headquarters"
+        },
+        {
+            "code": "05",
+            "value": "District Capitol"
+        },
+        {
+            "code": "06",
+            "value": "Province Capitol"
+        },
+        {
+            "code": "07",
+            "value": "District Town"
+        },
+        {
+            "code": "08",
+            "value": "Market"
+        },
+        {
+            "code": "09",
+            "value": "School"
+        },
+        {
+            "code": "10",
+            "value": "Military Post"
+        },
+        {
+            "code": "11",
+            "value": "Outpost"
+        },
+        {
+            "code": "12",
+            "value": "Base"
+        },
+        {
+            "code": "13",
+            "value": "Junk Base"
+        },
+        {
+            "code": "14",
+            "value": "Airfield"
+        },
+        {
+            "code": "15",
+            "value": "Watchtower"
+        },
+        {
+            "code": "16",
+            "value": "Blockhouse"
+        },
+        {
+            "code": "17",
+            "value": "Military Facilities"
+        },
+        {
+            "code": "18",
+            "value": "Camp"
+        },
+        {
+            "code": "19",
+            "value": "Bivouac"
+        },
+        {
+            "code": "20",
+            "value": "NRL Hamlet"
+        },
+        {
+            "code": "21",
+            "value": "NRL Hamlt und const"
+        },
+        {
+            "code": "22",
+            "value": "Security Fence/s"
+        },
+        {
+            "code": "23",
+            "value": "NRL Ham Facilities"
+        },
+        {
+            "code": "29",
+            "value": "RD Personnel"
+        },
+        {
+            "code": "30",
+            "value": "Hamlet"
+        },
+        {
+            "code": "31",
+            "value": "Village"
+        },
+        {
+            "code": "32",
+            "value": "Village Office"
+        },
+        {
+            "code": "33",
+            "value": "District Office"
+        },
+        {
+            "code": "34",
+            "value": "Province Office"
+        },
+        {
+            "code": "35",
+            "value": "Land Develop Center"
+        },
+        {
+            "code": "36",
+            "value": "House(s)"
+        },
+        {
+            "code": "37",
+            "value": "Building(s)"
+        },
+        {
+            "code": "38",
+            "value": "Church(s)"
+        },
+        {
+            "code": "39",
+            "value": "Civil Facilities"
+        },
+        {
+            "code": "40",
+            "value": "Armed Helicopter"
+        },
+        {
+            "code": "41",
+            "value": "Unarmed Helicopter"
+        },
+        {
+            "code": "42",
+            "value": "Helicopter(s)"
+        },
+        {
+            "code": "43",
+            "value": "Combat Aircraft(s)"
+        },
+        {
+            "code": "44",
+            "value": "Support Aircraft(s)"
+        },
+        {
+            "code": "45",
+            "value": "Aircraft"
+        },
+        {
+            "code": "50",
+            "value": "Motor Convoy"
+        },
+        {
+            "code": "51",
+            "value": "Truck"
+        },
+        {
+            "code": "52",
+            "value": "Bus"
+        },
+        {
+            "code": "53",
+            "value": "Auto"
+        },
+        {
+            "code": "54",
+            "value": "Jeep"
+        },
+        {
+            "code": "55",
+            "value": "Train"
+        },
+        {
+            "code": "56",
+            "value": "Cart"
+        },
+        {
+            "code": "57",
+            "value": "Vehicle"
+        },
+        {
+            "code": "58",
+            "value": "Armored Car"
+        },
+        {
+            "code": "60",
+            "value": "Sampan"
+        },
+        {
+            "code": "61",
+            "value": "Junk"
+        },
+        {
+            "code": "62",
+            "value": "Boat"
+        },
+        {
+            "code": "63",
+            "value": "Naval Craft"
+        },
+        {
+            "code": "64",
+            "value": "Ship"
+        },
+        {
+            "code": "65",
+            "value": "A Naval Unit"
+        },
+        {
+            "code": "66",
+            "value": "A Marine Unit"
+        },
+        {
+            "code": "70",
+            "value": "Road"
+        },
+        {
+            "code": "71",
+            "value": "Vehicular Bridge"
+        },
+        {
+            "code": "72",
+            "value": "Railroad Bridge"
+        },
+        {
+            "code": "73",
+            "value": "Bridge"
+        },
+        {
+            "code": "74",
+            "value": "Railroad Tracks"
+        },
+        {
+            "code": "75",
+            "value": "Railroad Facilities"
+        },
+        {
+            "code": "76",
+            "value": "Communication Lines"
+        },
+        {
+            "code": "77",
+            "value": "Communication Facil."
+        },
+        {
+            "code": "78",
+            "value": "Canal"
+        },
+        {
+            "code": "79",
+            "value": "Waterways"
+        },
+        {
+            "code": "80",
+            "value": "Village Official(s)"
+        },
+        {
+            "code": "81",
+            "value": "Hamlet Official(s)"
+        },
+        {
+            "code": "82",
+            "value": "Civil Official(s)"
+        },
+        {
+            "code": "83",
+            "value": "Civilians"
+        },
+        {
+            "code": "84",
+            "value": "Inhabitants"
+        },
+        {
+            "code": "85",
+            "value": "Military Unit"
+        },
+        {
+            "code": "86",
+            "value": "Military Personnel"
+        },
+        {
+            "code": "87",
+            "value": "Police"
+        },
+        {
+            "code": "88",
+            "value": "Company or Larger"
+        },
+        {
+            "code": "89",
+            "value": "Less Than Company"
+        },
+        {
+            "code": "90",
+            "value": "Firearms/Ammunition"
+        },
+        {
+            "code": "91",
+            "value": "Foodstuffs"
+        },
+        {
+            "code": "92",
+            "value": "Livestock"
+        },
+        {
+            "code": "93",
+            "value": "Medical Supplies"
+        },
+        {
+            "code": "94",
+            "value": "Area"
+        },
+        {
+            "code": "95",
+            "value": "Construction Equip"
+        },
+        {
+            "code": "96",
+            "value": "Power Lines"
+        },
+        {
+            "code": "97",
+            "value": "Culvert"
+        },
+        {
+            "code": "98",
+            "value": "Tank"
+        }
+    ]
+}

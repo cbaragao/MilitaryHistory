@@ -1,0 +1,50 @@
+{
+    "table": "seafa",
+    "column_id": "UNTYP",
+    "column": "Unit Type",
+    "definition": "Unit Type code from the STALA file.",
+    "field/group": "FIELD",
+    "length": 5,
+    "data": [
+        {
+            "code": "18AAA",
+            "value": "INFANTRY"
+        },
+        {
+            "code": "18BAA",
+            "value": "AIRBORNE INF"
+        },
+        {
+            "code": "18FAA",
+            "value": "AIRMOBILE INF"
+        },
+        {
+            "code": "18MAA",
+            "value": "MECHANIZED INF"
+        },
+        {
+            "code": "18RMA",
+            "value": "LIGHT INF"
+        },
+        {
+            "code": "18TAA",
+            "value": "MARINE INF"
+        },
+        {
+            "code": "19AAA",
+            "value": "TANK"
+        },
+        {
+            "code": "19FAA",
+            "value": "ARMORED CAV"
+        },
+        {
+            "code": "19FTA",
+            "value": "ARMORED CAV TANK"
+        },
+        {
+            "code": "19VAA",
+            "value": "CAVALRY"
+        }
+    ]
+}

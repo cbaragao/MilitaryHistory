@@ -1,0 +1,182 @@
+{
+  "dataset": "VCIIA",
+  "table": "VCIIA",
+  "data": [
+    {
+      "title": "Situation Report Number",
+      "id": "SITRP",
+      "field_group": "FIELD",
+      "length": 9,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Identifies the report from which the data for the incident was taken.",
+      "periodic_set": "control",
+      "definition_file": ""
+    },
+    {
+      "title": "PCN",
+      "id": "PCN",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "NIPS Metadata",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "SC0",
+      "id": "SC0",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "NIPS Metadata",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "VSZ",
+      "id": "VSZ",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "NIPS Metadata",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },    
+    {
+      "title": "Enemy Killed in Action",
+      "id": "EKIAC",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Confirmed count of enemy killed in action.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },    
+    {
+      "title": "Enemy Wounded in Action",
+      "id": "EWIAC",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Confirmed count of enemy wounded in action.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Enemy Prisoners of War",
+      "id": "EPOWC",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Confirmed count of enemy prisoners of war.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Quarter of Year",
+      "id": "QUART",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "1-4",
+      "data_values": "Numeric",
+      "definition": "Identifies the quarter of the year in which the incident took place.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },    
+    {
+      "title": "Special Geographic Division Indicator",
+      "id": "ZNDIV",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "This field, when used, indicates any special geographic division, e.g., ARVN divisional area of operation.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Country Indicator",
+      "id": "XNAME",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "1,2",
+      "data_values": "XNAME.json",
+      "definition": "Identifies the country in which the incident occurred.",
+      "periodic_set": "fixed",
+      "definition_file": "xname.json"
+    },    
+    {
+      "title": "Province",
+      "id": "PROVN",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "Table 1",
+      "data_values": "province_codes.json",
+      "definition": "Identifies the province in which the incident occurred.",
+      "periodic_set": "fixed",
+      "definition_file": "province_codes.json"
+    },
+    {
+      "title": "VC Military Region",
+      "id": "REGON",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "01,02,03,05,06,10,11",
+      "data_values": "REGON.json",
+      "definition": "Identifies the Viet Cong Military region in which the incident occurred.",
+      "periodic_set": "fixed",
+      "definition_file": "regon.json"
+    },
+    {
+      "title": "Corps Area",
+      "id": "CORPS",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "1-4",
+      "data_values": "Numeric",
+      "definition": "Identifies the corps tactical zone in which the incident occurred.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Map Coordinates UTM",
+      "id": "COORX",
+      "field_group": "FIELD",
+      "length": 8,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "An eight-character UTM coordinate in the form AAEEENNN gives location of incident, where AA is the alphabetic assignment for the specific UTM grid, EEE is the numeric easting direction, and NNN is the numeric northing direction in the area.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Date Incident Initiated",
+      "id": "SDATE",
+      "field_group": "FIELD",
+      "length": 6,
+      "code": "YR-MO-DAY",
+      "data_values": "Numeric",
+      "definition": "Identifies the calendar date of the incident.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Time Incident Initiated",
+      "id": "STIME",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Indicates local (Saigon) time incident was initiated.",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    }
+  ]
+}

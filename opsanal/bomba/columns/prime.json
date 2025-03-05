@@ -1,0 +1,18 @@
+{
+    "dataset": "BOMBA",
+    "column_id": "PRIME",
+    "column": "Prime/Secondary Indicator",
+    "definition": "This field contains a 1 or 2 to indicate primary or secondary target.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "PRIMARY"
+        },
+        {
+            "code": "2",
+            "value": "SECONDARY"
+        }
+    ]
+}

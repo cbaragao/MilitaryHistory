@@ -1,0 +1,31 @@
+{
+    "dataset": "hr01",
+    "column_id": "TACTA",
+    "column": "Tactical Area",
+    "definition": "Identifies a specific tactical area of operation in which the action took place.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data" : [
+        
+        {
+            "code":"A",
+            "value":"Dong Ha"
+        },
+        {
+            "code":"B",
+            "value":"Phu Bai"
+        },
+        {
+            "code":"C",
+            "value":"Da Nang"
+        },
+        {
+            "code":"D",
+            "value":"Chu Lai"
+        },
+        {
+            "code":"E",
+            "value":"Other"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "dataset": "CIDGA",
+    "column_id": "CTYPE",
+    "column": "Contact Type",
+    "definition": "This field identifies the type of contact made with the enemy.",
+    "field/group": "FIELD",
+    "length": 3,
+    "data": [
+        {
+            "code": "VCA",
+            "value": "Viet Cong Attack"
+        },
+        {
+            "code": "FOA",
+            "value": "Friendly Offensive Attack"
+        },
+        {
+            "code": "INC",
+            "value": "Incident"
+        }
+    ]
+}

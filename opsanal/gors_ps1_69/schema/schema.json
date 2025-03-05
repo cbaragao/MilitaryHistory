@@ -1,0 +1,145 @@
+
+    {
+    "dataset": "gors",
+    "table": "ps1",
+    "data": [ 
+            {
+                "title": "DATE",
+                "id": "DATE",
+                "field_group": "FIELD",
+                "length": 6,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Publication date of the operational report",
+                "definition_file": ""
+            },
+            {
+                "title": "DATAT",
+                "id": "DATAT",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Basic description of recorded incident/operation",
+                "definition_file": ""
+            },
+            {
+                "title": "SERAL",
+                "id": "SERAL",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Record sequence number within the operational report",
+                "definition_file": ""
+            },
+            {
+                "title": "CORP",
+                "id": "CORP",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Corps tactical zone in which the action occurred",
+                "definition_file": ""
+            },
+            {
+                "title": "PART",
+                "id": "PART",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Major force of the action",
+                "definition_file": ""
+            },
+            {
+                "title": "PCN",
+                "id": "PCN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Periodic set number; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "PSSQ1",
+                "id": "PSSQ1",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Subset sequence number used for periodic set identification; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "VSZ1",
+                "id": "VSZ1",
+                "field_group": "FIELD",
+                "length": 4,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Indicates number of characters in the logical record's variable field; the field will contain zeros if there is no variable field for a logical record; created by the NIPSTRAN program",
+                "definition_file": ""
+            },
+            {
+                "title": "FSLIN",
+                "id": "FSLIN",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Sequence number for subsets of period set 1",
+                "definition_file": ""
+            },
+            {
+                "title": "NGFS",
+                "id": "NGFS",
+                "field_group": "FIELD",
+                "length": 3,
+                "code": "N/A",
+                "data_values": "Numeric",
+                "definition": "Number of naval gunfire missions",
+                "definition_file": ""
+            },
+            {
+                "title": "CONAT",
+                "id": "CONAT",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Force or nationality of the other force in a combined operation",
+                "definition_file": "gsvcs.json"
+            },
+            {
+                "title": "CONAM",
+                "id": "CONAM",
+                "field_group": "FIELD",
+                "length": 15,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Operation name used by the combined force (CONAM field)"
+            },
+            {
+                "title": "ARSVC",
+                "id": "ARSVC",
+                "field_group": "FIELD",
+                "length": 1,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Service, force or nationality of aircraft supporting an operation",
+                "definition_file": "gsvcs.json"
+            },
+            {
+                "title": "ARCFT",
+                "id": "ARCFT",
+                "field_group": "FIELD",
+                "length": 6,
+                "code": "N/A",
+                "data_values": "Alphanumeric",
+                "definition": "Type of aircraft used to support an operation"
+            }
+        ]
+    }

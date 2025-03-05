@@ -1,0 +1,119 @@
+{
+    "dataset": "INCDA",
+    "table": "LCTAB",
+    "definition": "Type of Loss Table",
+    "data": [
+        {
+            "code": "A",
+            "value": "M-48 Tank"
+        },
+        {
+            "code": "B",
+            "value": "Truck"
+        },
+        {
+            "code": "C",
+            "value": "Artillery"
+        },
+        {
+            "code": "D",
+            "value": "Armored Patrol Car"
+        },
+        {
+            "code": "E",
+            "value": "Individual Weapon"
+        },
+        {
+            "code": "F",
+            "value": "Crew-served Weapon"
+        },
+        {
+            "code": "G",
+            "value": "Small Arms"
+        },
+        {
+            "code": "H",
+            "value": "UH-1H Helicopter"
+        },
+        {
+            "code": "I",
+            "value": "Helicopter"
+        },
+        {
+            "code": "J",
+            "value": "PRC-25"
+        },
+        {
+            "code": "K",
+            "value": "12.7 Machine Gun"
+        },
+        {
+            "code": "L",
+            "value": "Bridge"
+        },
+        {
+            "code": "M",
+            "value": "M-41 Tank"
+        },
+        {
+            "code": "N",
+            "value": "House"
+        },
+        {
+            "code": "O",
+            "value": "M-43 Tank"
+        },
+        {
+            "code": "P",
+            "value": "Personnel"
+        },
+        {
+            "code": "Q",
+            "value": "M-72 Automatic Weapon"
+        },
+        {
+            "code": "R",
+            "value": "A-37 Aircraft"
+        },
+        {
+            "code": "S",
+            "value": "CCH-47 Aircraft"
+        },
+        {
+            "code": "T",
+            "value": "L-19 Aircraft"
+        },
+        {
+            "code": "U",
+            "value": "OH-1A Helicopter"
+        },
+        {
+            "code": "V",
+            "value": "Oxen"
+        },
+        {
+            "code": "W",
+            "value": "Petro (Kiloliter)"
+        },
+        {
+            "code": "X",
+            "value": "M-51 Jeep"
+        },
+        {
+            "code": "Y",
+            "value": "155 MM Howitzer"
+        },
+        {
+            "code": "Z",
+            "value": "Water Craft"
+        },
+        {
+            "code": "1",
+            "value": "XM 202 RKT Launcher"
+        },
+        {
+            "code": "2",
+            "value": "XM 113 RKT Launcher"
+        }
+    ]
+}

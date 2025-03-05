@@ -1,0 +1,191 @@
+{
+    "dataset": "gors",
+    "table": "fwops",
+    "definition": "Type of Operation",
+    "data": [
+        {
+            "code": "FR",
+            "value": "Rec In For Pac"
+        },
+        {
+            "code": "UN",
+            "value": "Sm Unit No Con"
+        },
+        {
+            "code": "SD",
+            "value": "Search & Destroy"
+        },
+        {
+            "code": "NC",
+            "value": "Combat Support"
+        },
+        {
+            "code": "NB",
+            "value": "Coastal Patrol"
+        },
+        {
+            "code": "CS",
+            "value": "Cordon-Search"
+        },
+        {
+            "code": "SR",
+            "value": "Search & Rescue"
+        },
+        {
+            "code": "NV",
+            "value": "Coast Surveil"
+        },
+        {
+            "code": "LC",
+            "value": "Clear - Search"
+        },
+        {
+            "code": "SP",
+            "value": "Sch & Des Prov"
+        },
+        {
+            "code": "UT",
+            "value": "Security Sml"
+        },
+        {
+            "code": "UG",
+            "value": "Guard & Escort"
+        },
+        {
+            "code": "SC",
+            "value": "Search & Clear"
+        },
+        {
+            "code": "NR",
+            "value": "River Patrol"
+        },
+        {
+            "code": "NP",
+            "value": "Prov Support"
+        },
+        {
+            "code": "NE",
+            "value": "Convoy Secty"
+        },
+        {
+            "code": "DR",
+            "value": "Sch & Des Reg"
+        },
+        {
+            "code": "SL",
+            "value": "Sch & Des Loc"
+        },
+        {
+            "code": "UU",
+            "value": "Sm Unit Opn"
+        },
+        {
+            "code": "RE",
+            "value": "Large Recon"
+        },
+        {
+            "code": "NL",
+            "value": "Log Support"
+        },
+        {
+            "code": "SV",
+            "value": "Surveillance"
+        },
+        {
+            "code": "RQ",
+            "value": "Rec Force Srch"
+        },
+        {
+            "code": "GE",
+            "value": "Lrge Gd & Esct"
+        },
+        {
+            "code": "FD",
+            "value": "Fix & Destroy"
+        },
+        {
+            "code": "DE",
+            "value": "Development"
+        },
+        {
+            "code": "RF",
+            "value": "Rec In For"
+        },
+        {
+            "code": "SS",
+            "value": "Sea Search"
+        },
+        {
+            "code": "NS",
+            "value": "Sea Patrol"
+        },
+        {
+            "code": "ND",
+            "value": "Static Def"
+        },
+        {
+            "code": "CH",
+            "value": "Clear & Hold"
+        },
+        {
+            "code": "CO",
+            "value": "Cmbt Opns"
+        },
+        {
+            "code": "NT",
+            "value": "Training"
+        },
+        {
+            "code": "SG",
+            "value": "Securing"
+        },
+        {
+            "code": "SE",
+            "value": "Security"
+        },
+        {
+            "code": "CL",
+            "value": "Clearing"
+        },
+        {
+            "code": "RV",
+            "value": "Reserve"
+        },
+        {
+            "code": "US",
+            "value": "Search"
+        },
+        {
+            "code": "UP",
+            "value": "Patrol"
+        },
+        {
+            "code": "UA",
+            "value": "Ambush"
+        },
+        {
+            "code": "UC",
+            "value": "Recon"
+        },
+        {
+            "code": "UR",
+            "value": "Raid"
+        },
+        {
+            "code": "XX",
+            "value": "Other"
+        },
+        {
+            "code": "CA",
+            "value": "Capture"
+        },
+        {
+            "code": "AP",
+            "value": "Desrtr Appreh"
+        },
+        {
+            "code": "AT",
+            "value": "Attack"
+        }
+    ]
+}

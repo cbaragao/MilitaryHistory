@@ -1,0 +1,111 @@
+{
+    "dataset": "VNDBA",
+    "table": "Friendly Activity At the Time of Friendly Initiated Action",
+    "definition": "Friendly Activity At the Time of Friendly Initiated Action",
+    "data": [
+        {
+            "code": "CH",
+            "value": "Clear + Hold"
+        },
+        {
+            "code": "CL",
+            "value": "Clearing"
+        },
+        {
+            "code": "DE",
+            "value": "Development"
+        },
+        {
+            "code": "FD",
+            "value": "Fix + Destroy"
+        },
+        {
+            "code": "GE",
+            "value": "Guaerd + Escort"
+        },
+        {
+            "code": "NC",
+            "value": "Combat Support"
+        },
+        {
+            "code": "RE",
+            "value": "Large Recon"
+        },
+        {
+            "code": "SC",
+            "value": "Search + Clear"
+        },
+        {
+            "code": "SD",
+            "value": "Search + Destroy"
+        },
+        {
+            "code": "SE",
+            "value": "Security"
+        },
+        {
+            "code": "SG",
+            "value": "Securing"
+        },
+        {
+            "code": "SR",
+            "value": "Search + Rescue"
+        },
+        {
+            "code": "SS",
+            "value": "Sea Search"
+        },
+        {
+            "code": "UA",
+            "value": "Ambush"
+        },
+        {
+            "code": "UC",
+            "value": "Recon"
+        },
+        {
+            "code": "UG",
+            "value": "Guard + Escort"
+        },
+        {
+            "code": "UN",
+            "value": "SML Unit OP NO CON"
+        },
+        {
+            "code": "UP",
+            "value": "Patrol"
+        },
+        {
+            "code": "UR",
+            "value": "Raid"
+        },
+        {
+            "code": "US",
+            "value": "Search"
+        },
+        {
+            "code": "UT",
+            "value": "Security Small"
+        },
+        {
+            "code": "UU",
+            "value": "UNSP SML Unit OP"
+        },
+        {
+            "code": "LSD",
+            "value": "SCH + DES LOC"
+        },
+        {
+            "code": "PSD",
+            "value": "SCH + DES PRO"
+        },
+        {
+            "code": "RSD",
+            "value": "SCH + DES REG"
+        },
+        {
+            "code": "CBT",
+            "value": "COMBAT OPERATION"
+        }
+    ]
+}

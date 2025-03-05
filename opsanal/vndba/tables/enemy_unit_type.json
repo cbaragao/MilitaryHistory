@@ -1,0 +1,51 @@
+{
+    "dataset": "VNDBA",
+    "table": "Enemy Unit Type",
+    "definition": "Type of enemy unit recorded in the dataset",
+    "data": [
+        {
+            "code": "B",
+            "value": "BN"
+        },
+        {
+            "code": "C",
+            "value": "CO"
+        },
+        {
+            "code": "D",
+            "value": "DIV"
+        },
+        {
+            "code": "J",
+            "value": "JUNK"
+        },
+        {
+            "code": "K",
+            "value": "SMPN"
+        },
+        {
+            "code": "L",
+            "value": "VESL"
+        },
+        {
+            "code": "P",
+            "value": "PLAT"
+        },
+        {
+            "code": "R",
+            "value": "REGT"
+        },
+        {
+            "code": "S",
+            "value": "SQD"
+        },
+        {
+            "code": "U",
+            "value": "UNKN"
+        },
+        {
+            "code": "X",
+            "value": "UNIT"
+        }
+    ]
+}

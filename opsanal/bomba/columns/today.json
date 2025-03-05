@@ -1,0 +1,26 @@
+{
+    "dataset": "BOMBA",
+    "column_id": "TODAY",
+    "column": "Time of Day",
+    "definition": "This field contains a code indicating the time of day of the mission.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "M",
+            "value": "DAWN"
+        },
+        {
+            "code": "D",
+            "value": "DAY"
+        },
+        {
+            "code": "E",
+            "value": "DUSK"
+        },
+        {
+            "code": "N",
+            "value": "NIGHT"
+        }
+    ]
+}

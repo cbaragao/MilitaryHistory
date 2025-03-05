@@ -1,0 +1,30 @@
+{
+    "dataset": "hr01",
+    "column_id": "WHO",
+    "column": "Service",
+    "definition": "Identifies the service of the unit involved in the contact/incident action being reported.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "A",
+            "value": "Army"
+        },
+        {
+            "code": "N",
+            "value": "Navy"
+        },
+        {
+            "code": "R",
+            "value": "ROK"
+        },
+        {
+            "code": "V",
+            "value": "RVN"
+        },
+        {
+            "code": null,
+            "value": "USMC"
+        }
+    ]
+}
