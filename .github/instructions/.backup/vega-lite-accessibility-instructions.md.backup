@@ -1,0 +1,27 @@
+### Specialized instruction files
+
+**File: `.github/instructions/vega-lite-accessibility.instructions.md`**
+
+```markdown
+---
+applyTo: "**/*.{js,ts,json}"
+description: "Vega-Lite accessibility implementation guidelines"
+---
+
+## Mandatory Accessibility Implementation
+
+### Alt Text Generation
+Always include descriptive text using Amy Cesal's formula:
+"Chart type of [data type] where [reason for chart]"
+
+Example implementation:
+```json
+{
+  "description": "Bar chart of quarterly sales data where Q4 shows highest revenue at $2.1M",
+  "encoding": {
+    "description": {
+      "field": "quarter",
+      "type": "nominal"
+    }
+  }
+}                                         

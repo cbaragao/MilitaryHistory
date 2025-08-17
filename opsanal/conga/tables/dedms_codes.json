@@ -1,0 +1,14 @@
+{
+    "table": "DEDMS Codes",
+    "column_id": "DEDMS",
+    "data": [
+        {
+            "code": "DES",
+            "value": "Destroyed"
+        },
+        {
+            "code": "DAM",
+            "value": "Damaged"
+        }
+    ]
+}

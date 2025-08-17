@@ -1,0 +1,649 @@
+<!DOCTYPE HTML 2.0">
+<HEAD>
+<TITLE>
+Layouts for NIPS file Z:\1_WorkingStorage\RDER\NIPSTRAN project\PSYOPSIS\NIPS Files\RG349.PSY.M70TF73.LAYOUT.HTML</TITLE>
+</HEAD>
+<BODY>
+<center><table border="3" cellpadding="3" bgcolor="rgb(255,255,0)">
+<tr>
+<td align=center>
+<br>National Archives and Records Administration<br>Electronic and Special Media Division<br>8601 Adelphi Road, College Park, MD 20740-6001<br> <br>NIPS (NMCS Information Processing System) Emulation based on the<br>IBM(tm) FFS (Formatted File System)<br>version 3.5.2.0 Dated Oct 01, 2008<br> <br>Production of simple Relational tables in ASCII of User’s<br>Data File Records from NIPS System files dumped in image form<br><br></td>
+</tr>
+</table>
+</center><p> This emulator produces one file per table (Fixed Set and Periodic Sets) in ASCII format. Each data value is transformed from EBCDIC, NIPS Coordinate, Binary, Decimal, etc. into ASCII, ASCII encoded latitude-longitude geographic coordinate system, ASCII encoded Decimal values, etc. Each file is a table in fixed field and optionally formatted delimited values. The delimited values use either commas or tabs chosen by the user. The first row of values for each table are the NIPS Mnemonics allowing the importing of the data into spread sheets and databases with the correct column lables.<p> For more detail about the files produced, changes in the size of the data values, and other valuable information about the processes used, see the User's Reference Manual.<p> Two additional files are produced during this process. One file shows the analysis and summary of the input data and the other file shows the layout of each table file produced. If a data dictionary is used with the program, the definition of each Mnemonic is printed on the layout report.<p>Processing started: <b><u>Mon Jul 22 07:50:43 2019</u></b><p><p>The option selected for "Output Deliminated tables" is: <b><u>TRUE</u></b><p>The delimiter selected is: <b><u>COMMA</u></b><p>The NIPS file being processed is: <b>Z:\1_WorkingStorage\RDER\NIPSTRAN project\PSYOPSIS\NIPS Files\<u>RG349.PSY.M70TF73</u></b><p><table border="3" cellpadding="3" bgcolor="rgb(255,255,0)">
+<tr>
+<td colspan="2" width=100% valign=middle align=center bgcolor="rgb(255,160,55)"><u><h2>Fixed Record Lengths by Table</h2></u><font size="2">(Values include "CR+LF" line termination)</font></td></tr>
+<tr>
+<td colspan="1" align=center bgcolor="rgb(255,255,255)">Table</td>
+<td colspan="1" align=center bgcolor="rgb(255,255,255)">Record Length</td>
+</tr>
+<tr>
+<td colspan="1">Fixed</td>
+<td colspan="1">94</td>
+</tr>
+<tr>
+<td colspan="1">Periodic  1</td>
+<td colspan="1">63</td>
+</tr>
+<tr>
+<td colspan="1">Periodic  2</td>
+<td colspan="1">39</td>
+</tr>
+</table>
+<p><p><br><br><table border="3" cellpadding="3" bgcolor="rgb(255,255,255)">
+<tr>
+<td colspan="9" width=100% valign=middle align=center bgcolor="rgb(255,160,55)"><u><h3><br>Fixed Table</h3></u></td></tr>
+<tr>
+<th>Label</th>
+<th>Pos</th>
+<th>Offset</th>
+<th>Authority</th>
+<th>Len</th>
+<th>Type</th>
+<th>Defined by</th>
+<th>Report Label</th>
+<th>In Dataset</th>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">USID   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">1</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0000)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">5</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">+PCN   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">6</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0005)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">System Generated</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">+SC0   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">9</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0008)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">15</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">System Generated</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">VSZ    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">24</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0017)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">4</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">System Generated</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">POP    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">28</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x001B)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">7</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">DISTRICT POPULATION</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">GVNPOP </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">35</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0022)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">7</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">GVN CONTROLLED POPULATION</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">HOICHN </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">42</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0029)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">5</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">HOI CHANH RECEIVED</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">REF    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">47</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x002E)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">6</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">REFUGEE POPULATION</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NVA    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">53</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0034)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">6</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">NVA PERSONNEL</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">VCHAM  </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">59</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x003A)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">6</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">VC/HAMLET GUERRILLAS</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">VCI    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">65</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0040)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">6</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">VC INFRASTRUCTURE</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">SAS    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">71</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0046)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">4</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">SECURITY AVERAGE SCORE</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">DAS    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">75</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x004A)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">4</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">DEVELOPMENT AVERAGE SCORE</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">PAS    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">79</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x004E)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">4</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">POLITICAL AVERAGE SCORE</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NUMRAD </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">83</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0052)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">5</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">NUMBER OF RADIOS</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NUMTV  </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">88</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0057)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">5</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">NUMBER OF TV S</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+</table>
+<p><br><br><table border="3" cellpadding="3" bgcolor="rgb(255,255,255)">
+<tr>
+<td colspan="9" width=100% valign=middle align=center bgcolor="rgb(255,160,55)"><u><h3><br>Periodic Table 1</h3></u></td></tr>
+<tr>
+<th>Label</th>
+<th>Pos</th>
+<th>Offset</th>
+<th>Authority</th>
+<th>Len</th>
+<th>Type</th>
+<th>Defined by</th>
+<th>Report Label</th>
+<th>In Dataset</th>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">USID   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">1</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0000)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">5</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">+PCN   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">6</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0005)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">System Generated</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">DATE1  </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">9</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0008)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">6</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">CONAG  </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">15</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x000E)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">1</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">CONDUCTING AGENCY</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">REPORT </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">16</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x000F)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">REPORTING UNIT</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">OP     </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">19</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0012)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">1</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">OPERATION CODE</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">CAMPN  </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">20</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0013)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">1</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">CAMPAIGN CODE</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">THEM   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">21</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0014)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">2</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">THEME CODE</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">STHEM  </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">23</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0016)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">1</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">SUB-THEME CODE</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">VSZ1   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">24</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0017)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">4</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">System Generated</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">LEAFLET</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">28</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x001B)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">4</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">LEAFLETS DISTRIBUTED</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">SPRHRS </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">32</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x001F)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">LOUDSPEAKER HOURS</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">POSTERS</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">35</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0022)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">POSTERS/HANDBILLS</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">PUBLS  </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">38</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0025)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">OTHER PUBLICATIONS</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">APT    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">41</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0028)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">2</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">CAP    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">43</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x002A)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">2</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">CDT    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">45</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x002C)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">2</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">CVC    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">47</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x002E)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">2</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">HB     </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">49</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0030)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">2</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">HE     </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">51</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0032)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">2</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">MDC    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">53</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0034)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">2</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">RDC    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">55</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0036)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">2</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">SLT    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">57</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0038)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">2</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">VIS    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">59</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x003A)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">2</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">AUD    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">61</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x003C)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">1</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">AUDIENCE</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+</table>
+<p><br><br><table border="3" cellpadding="3" bgcolor="rgb(255,255,255)">
+<tr>
+<td colspan="9" width=100% valign=middle align=center bgcolor="rgb(255,160,55)"><u><h3><br>Periodic Table 2</h3></u></td></tr>
+<tr>
+<th>Label</th>
+<th>Pos</th>
+<th>Offset</th>
+<th>Authority</th>
+<th>Len</th>
+<th>Type</th>
+<th>Defined by</th>
+<th>Report Label</th>
+<th>In Dataset</th>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">USID   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">1</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0000)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">5</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">+PCN   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">6</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0005)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">System Generated</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">DATE2  </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">9</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0008)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">4</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">REPUNIT</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">13</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x000C)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Alphameric</td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">REPORTING UNIT</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">VSZ2   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">16</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x000F)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">4</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">System Generated</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">&nbsp;</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">RNEWS  </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">20</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0013)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">RADIO NEWS</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">RENT   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">23</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0016)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">RADIO ENTERTAINMENT</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">RIP    </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">26</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0019)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">RADIO INFORMATION/PROPAGANDA</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">TVNEWS </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">29</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x001C)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">TV NEWS</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">TVENT  </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">32</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x001F)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">TV ENTERTAINMENT</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+<tr>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">TVIP   </td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">35</td>
+<td colspan="1" width = 7% align=center bgcolor="rgb(255,255,0)">(0x0022)</td>
+<td colspan="1" width = 10% align=center bgcolor="rgb(255,255,0)">NIPS Metadata</td>
+<td colspan="1" width = 5% align=right bgcolor="rgb(255,255,0)">3</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">Numeric   </td>
+<td colspan="1" width = 13% align=center bgcolor="rgb(255,255,0)">User Defined</td>
+<td colspan="1" width = 23% align=left bgcolor="rgb(255,255,0)">TV INFORMATION/PROPAGANDA</td>
+<td colspan="1" width = 15% align=center bgcolor="rgb(255,255,0)">n/a</td>
+</tr>
+</BODY></HTML>

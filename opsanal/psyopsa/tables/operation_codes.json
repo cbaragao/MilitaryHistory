@@ -1,0 +1,31 @@
+{
+  "dataset": "psyopsa",
+  "table": "operation_codes",
+  "definition": "Operation codes for psychological operations",
+  "data": [
+    {
+      "code": "A",
+      "value": "Aerial Operations"
+    },
+    {
+      "code": "G",
+      "value": "Ground Operations"
+    },
+    {
+      "code": "R",
+      "value": "Radio Operations"
+    },
+    {
+      "code": "T",
+      "value": "Television Operations"
+    },
+    {
+      "code": "L",
+      "value": "Leaflet Operations"
+    },
+    {
+      "code": "S",
+      "value": "Special Operations"
+    }
+  ]
+}

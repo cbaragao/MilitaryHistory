@@ -1,0 +1,64 @@
+**File: `.github/instructions/chart-type-selection.instructions.md`**
+
+```markdown
+---
+applyTo: "**/*.{js,ts,json}"
+description: "Financial Times Visual Vocabulary chart selection guidelines"
+---
+
+## Chart Type Selection Matrix
+
+Based on data relationship, select appropriate visualization: 
+
+### Deviation (variations from reference point) 
+- **Use**: Diverging bar charts, spine charts
+- **Pattern**: Center baseline, positive/negative values
+- **Example**: Budget surplus/deficit, temperature anomalies
+
+### Correlation (relationships between variables)   
+- **Use**: Scatterplots, connected scatterplots
+- **Pattern**: Two quantitative variables
+- **Example**: Income vs. life expectancy, price vs. demand
+
+### Ranking (ordered position more important than absolute value) 
+- **Use**: Horizontal bar charts (easier label reading)
+- **Pattern**: Ordered categorical data
+- **Example**: Top 10 companies by revenue
+
+### Distribution (values and frequency) 
+- **Use**: Histograms, box plots
+- **Pattern**: Single variable frequency analysis
+- **Example**: Income distribution, test score ranges
+
+### Change Over Time 
+- **Use**: Line charts, area charts
+- **Pattern**: Temporal x-axis
+- **Example**: Stock prices, population growth
+
+### Part-to-Whole (component breakdown) 
+- **Use**: Stacked bar charts, treemaps
+- **Pattern**: Categories summing to total
+- **Example**: Budget allocation, market share
+
+### Magnitude (size comparisons) 
+- **Use**: Column charts, lollipop charts
+- **Pattern**: Comparing absolute values
+- **Example**: Country populations, sales by region
+
+## Implementation Examples
+
+### Horizontal Bar Chart (preferred over pie)
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mark": {"type": "bar", "stroke": "white", "strokeWidth": 1},
+  "encoding": {
+    "y": {"field": "category", "type": "nominal", "sort": "-x"},
+    "x": {"field": "value", "type": "quantitative"},
+    "color": {
+      "field": "category",
+      "type": "nominal", 
+      "scale": {"range": ["#4477AA", "#EE6677", "#228833", "#CCBB44"]}
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "table": "Period of Day",
+    "column_id": "TCODE",
+    "data": [
+        {
+            "code": "D",
+            "value": "Day"
+        },
+        {
+            "code": "N",
+            "value": "Night"
+        }
+    ]
+}

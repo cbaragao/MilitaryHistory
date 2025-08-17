@@ -9,12 +9,27 @@ from utmconverter import UTMConverter
 class Main:
     """Main class to process data from multiple sources."""
 
+    _instance = None  # Add this at the top of the Main class
+
+    def __new__(cls, dataset=None):
+        if cls._instance is None:
+            cls._instance = super(Main, cls).__new__(cls)
+            # Initialize instance attributes in __init__, not here
+        return cls._instance
+
     def __init__(self, dataset: str):
-        self.dataset = dataset.lower()
-        current_dir = Path(__file__).resolve().parent
-        db_path = current_dir / 'ddb' / 'opsanal.db'
-        self.db = duckdb.connect(str(db_path))
-        self.utm_converter = UTMConverter()
+        if not hasattr(self, 'initialized'):  # Prevent re-initialization
+            self.dataset = dataset.lower()
+            current_dir = Path(__file__).resolve().parent
+            db_dir = current_dir / 'ddb'
+            
+            # Create the directory if it doesn't exist
+            db_dir.mkdir(exist_ok=True)
+            
+            db_path = db_dir / 'opsanal.db'
+            self.db = duckdb.connect(str(db_path))
+            self.utm_converter = UTMConverter()
+            self.initialized = True  # Set the flag to True after initialization
 
     def process_all_files(self):
         """Process JSON files and return database connection."""
@@ -65,3 +80,4 @@ class Main:
             print(f"{file} has been deleted.")
         else:
             print(f"{file} does not exist.")
+

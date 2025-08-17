@@ -1,0 +1,31 @@
+{
+    "dataset": "VSSG", 
+    "table": "Hamlet Security Codes",
+    "definition": "Hamlet security assessment codes for day and night evaluations",
+    "data": [
+        {
+            "code": "1",
+            "value": "SECURE - Government control maintained"
+        },
+        {
+            "code": "2", 
+            "value": "RELATIVELY SECURE - Minimal enemy activity"
+        },
+        {
+            "code": "3",
+            "value": "CONTESTED - Significant enemy presence/activity"
+        },
+        {
+            "code": "4",
+            "value": "ENEMY CONTROLLED - Under enemy control"
+        },
+        {
+            "code": "5",
+            "value": "ENEMY DOMINATED - Strong enemy influence"
+        },
+        {
+            "code": "9",
+            "value": "UNKNOWN - Assessment not available"
+        }
+    ]
+}

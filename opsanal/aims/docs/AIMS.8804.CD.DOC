@@ -1,0 +1,741 @@
+**********************************************************************
+AWARDS INFORMATION MANAGEMENT SYSTEM (AIMS) DATA DESCRIPTIONS
+**********************************************************************
+
+The AIMS data contains some unit award cases that may have a variable
+numbers of participating commands associated with the cases.  It is
+most efficient to store participating command data separately.  Thus,
+the two parts of the the AIMS system data base are:
+
+    AIMS  - the main dataset. Each record in this dataset
+            contains information about an award case received 
+            at BDM. 
+
+    PCMDS - the participating commands dataset. Each record in 
+            this dataset contains information about one 
+            participating command associated with a unit award 
+            case.
+
+
+In order to make the separate existence of AIMS and PCMDS transparent
+to the user these files are "joined" by VMS to appear as if they were
+all in one dataset.  They are joined through the common data field
+PCMD_ID.  This is a sequential number that will have the same value in
+a unit award case record and each of its participating command records.  
+These tables remain separated for this accession.
+
+
+Additional tables, used for validating data entered by end users, are
+described at the end of this document.
+
+
+For this accession, the data within the History_AIMS archive table has 
+been merged with the Active_AIMS table. This was done in part, due to the 
+amount of time that has passed since the last conveyance; and also 
+because the History_AIMS table has been updated significantly since then. 
+
+These two tables share identical field structures, although the archive 
+process drops about half of the fields from each record (by design) when 
+they were originally moved from Active_AIMS into History_AIMS. To state 
+it simply: The History_AIMS file structure is a subset of Active_AIMS.
+(See the field descriptions below for details.)
+
+
+NOTES:  Due to its size, the Active/History AIMS table has been split into
+segments to facilitate transfer to the National Archives.  These files may 
+be "recombined" to form a single table, if storage space is sufficient 
+(recommended).  They have been sorted (ascending) by the Merit_Start date
+field, for easier selection and retrieval.   
+
+Entries from 1988 do not extend prior to July 15th of that year.  The data 
+in the years between 1988 to 1993 (inclusive) may already exist in an 
+earlier NARA archive, from a past conveyance. As they still exist
+within the Active_AIMS table within the AIMS system, they are included
+here for completeness.
+
+Entries from 2004 do not extend beyond March 25th of that year.  This marks 
+the date that all further entry into AIMS was blocked, and users were 
+directed to switch over to the new Navy Department Awards Web Service 
+(NDAWS) application.
+
+
+==================================================================================================
+Active Aims Data Table   [An "*" next to Field Name denotes field is also present in History_AIMS]
+==================================================================================================
+
+Num  Field                Field     Column      Fld  Field                 Criteria/  
+ber  Name                 Type      Position    Len  Description           Valid Entries
+---  ------------------   -------   ---------   ---  --------------------  ------------------
+
+  1 *INDV_UNIT            Text         1    1     1  Individual or unit    I - Individual
+                                                     case.                 U - Unit 
+
+  2 *PRIM_TYPE            Text         2    4     3  Indicates case type.  CNO - Chief, Naval Ops 
+                                                                           CMC - Marine Corps
+                                                                           SEC - SECNAV
+                                                                           FLT - Fleet
+
+  3  BDM_RECVD            Date         5   15    11  Date BDM receives a   Date format, e.g.,
+                                                     case.                 01-JAN-97
+
+  4  SEC_DIR_END          Text        16   16     1  Indicates whether a   D - Directed
+                                                     case is SECNAV        E - Endorsed
+                                                     directed or endorsed. N - Neither
+
+  5  CLS                  Text        17   17     1  Classification of a   C - Confidential 
+                                                     case.                 S - Secret
+                                                                           U - Unclassified
+                                                                           (defaults to U)
+
+  6  CLS_SER_NUM          Text        18   26     9  Serial Number for a   Xnnmmmmm where         
+                                                     classified case.      X = C (confidential or
+                                                                               S (secret),
+                                                                           nn = 86 - 99
+                                                                           mmmmm = 00000-99999
+          
+  7 *FOREIGN              Text        27   27     1  Whether award is to   Y - Yes
+                                                     a Foreign             N - No
+                                                     individual.
+ 
+  8 *COUNTRY              Text        28   52    25  Country of Foreign    (The country name
+                                                     individual.           Should be entered
+                                                                           here.)   
+
+  9 *CAMPAIGN             Text        53   57     5  Period of Action.     Enter appropriate
+                                                                           Campaign from Campaign
+                                                                           Table.
+
+ 10  SECBD                Text        58   58     1  Indicates if a case   S - Special Board
+                                                     will appear before    V - SECNAV board
+                                                     the SECNAV board or   N - Non-Board
+                                                     has appeared before   W - Walk
+                                                     the special board.
+
+ 11 *SECBD_MTG            Date        59   69    11  SECNAV board          Date format e.g.,
+                                                     meeting date.         01-JAN-97  
+
+ 12  COMMENTS             Text        70  119    50  Freeform text.
+
+ 13 *DUP                  Text       120  121     2  Duplicate record      Displays if approp.
+                                                     indicator.            entry not required.
+
+ 14  FROM                 Text       122  161    40  Originating Command.
+
+ 15 *SSN                  Text       162  172    11  Social Security       (Social security no. 
+                                                     Number.               should be entered 
+                                                                           here.)                      
+
+ 16 *LNAME                Text       173  192    20  Last name.            (Subject's last name
+                                                                           should be entered
+                                                                           here.)
+
+ 17 *FNAME                Text       193  207    15  First name.           (Subject's first name
+                                                                           should be entered 
+                                                                           here.)
+
+ 18 *MNAME                Text       208  222    15  Middle name.          (Subject's middle name
+                                                                           should be entered 
+                                                                           here.)
+
+ 19 *SUFFIX               Text       223  227     5  Ending to last        (Name suffix, if any,
+                                                     name.                 should be entered 
+                                                                           here e.g., JR., III.)
+
+ 20  CITED_UNIT           Text       228  267    40  Name of unit cited    (Unit name should be
+                                                     for award.            entered here.)
+
+ 21  DUTY_STAT            Text       268  270     3  Duty status of        RET - retired
+                                                     individual.           REL - Released from
+                                                                                 active duty
+                                                                           DET - end of tour
+                                                                           SPA - specific
+                                                                                 achievement
+                                                                           UNK - unknown
+                                                                           PTO - Partial tour/
+                                                                                 other     
+                                                                           NA  - Not applicable
+
+ 22  DET_DATE             Date       271  281    11  Detachment/           Date format, 
+                                                     retirement date.      e.g., 01-JAN-97
+
+ 23 *COMPONENT            Text       282  286     5  Branch of Service.    USN   - Navy
+                                                                           USNR  - Navy Reserve
+                                                                           USMC  - Marine Corps
+                                                                           USMCR - Marine Corps                 
+                                                                                   Res.
+                                                                           USA   - Army
+                                                                           USAR  - Army Reserve
+                                                                           USAF  - Air Force
+                                                                           USAFR - Air Force Res.
+                                                                           USCG  - Coast Guard
+
+ 24  OTH_SVC              Text       287  311    25  Other Service not     (Enter service, if
+                                                     listed in the         appropriate.) 
+                                                     Component Table.
+
+ 25 *OFF_ENL              Text       312  312     1  Officer or            O - Officer
+                                                     enlisted indiv.       E - Enlisted      
+                                                                           W - Warrant Officer
+                                                                           M - Midshipman 
+ 
+ 26 *GRADE_RATING         Text       313  322    10  Abbreviation of       Enter a valid abbrev.   
+                                                     rank.                 for rank as shown in      
+                                                                           the Grade Code Table.
+
+ 27 *PAY_GRADE            Text       323  324     2  Code for Grade        No entry required; 
+                                                     and Pay.              created from Grade
+                                                                           rating.
+
+ 28 *DESIG_NEC_MOS        Text       325  328     4  Codes for Officers    Enter member's 
+                                                     and Enlisted          designator as
+                                                     personnel.            Appropriate.
+
+ 29 *CORPS_MEM            Text       329  331     3  Indicates             MC  - Medical Corps
+                                                     membership in a       DC  - Dental Corps
+                                                     specific corps.       MSC - Med. Svc. Corp
+                                                                           JAG - Judge Advoc. 
+                                                                                 Gen. Corps
+                                                                           NC  - Nurse Corps
+                                                                           SC  - Supply Corps
+                                                                           CHC - Chaplain Corps
+                                                                           CEC - Civ. Engin.
+                                                                                 Corps
+
+ 30 *BUIC_RUC             Text       332  336     5  Unit/command          (Enter awarding 
+                                                     ID code.              authority's UIC.)
+ 
+ 31 *RECMD_AWD            Text       337  338     2  Recommended award.    Enter a valid award,
+                                                                           as specified on the
+                                                                           Awards Table.
+
+ 32 *BILLET               Text       339  358    20  Duty Assignment.      (Duty assignment)
+
+ 33 *ACTION_TYPE          Text       359  360     2  Type of action        01 - Heroic
+                                                     recommended by the    02 - Meritorious
+                                                     originator.           03 - Heroic/posth
+                                                                           04 - Merit/posth
+                                                                           05 - Heroic/MIA
+                                                                           06 - Merit/MIA
+
+ 34  REC_AWD_NUM          Text       361  362     2  Number of times an    Enter the appropriate
+                                                     award recommended     number.)
+                                                     by SECNAV has been
+                                                     given.
+
+ 35 *APPR_AWD_NUM         Text       363  364     2  Number of times this  00-99
+                                                     award has been 
+                                                     given.
+
+ 36 *MERIT_START          Date       365  375    11  Start of awd merit    Date format, e.g., 
+                                                     period.               01-JAN-97
+
+ 37 *MERIT_END            Date       376  386    11  End of awd merit      Date format, e.g.,
+                                                     period.               01-JAN-97
+
+ 38 *MERIT_MOS            Text       387  388     2  Number of months in   No entry required;
+                                                     Merit award period.   Field is displayed.
+
+ 39 *SHOW_MERIT_DATE      Text       389  389     1  Indicator for         1 - Disp day/mo/yr
+                                                     displaying merit_     2 - Disp month & yr 
+                                                     start_date and        3 - Disp Winter & yr
+                                                     merit_end_date on     4 - Disp Spring & yr
+                                                     reports.              5 - Disp Summer & yr
+                                                                           6 - Disp Fall & yr
+                                                                           7 - Disp Period & yr
+                                                                           8 - Disp Period & yrs 
+
+ 40 *ACTION_AREA          Text       390  391     2  Geographic area in    Enter appropriate code
+                                                     which the award was   from Action Area Table.
+                                                     earned.               
+
+ 41 *ORIG_RECMD_DATE      Date       392  402    11  Date award            Date format, e.g., 
+                                                     recommended.          01-JAN-97
+
+ 42  SEC_ENDRSR           Text       403  405     3  SECNAV case           CMC - Marines   
+                                                     endorser.             CNO - Chief, Naval Ops
+
+ 43 *SEC_ENDRSR_RECMD     Text       406  407     2  Name of award         Enter award from 
+                                                     endorsed by CNO or    Awards Table.
+                                                     CMC.                  
+
+ 44 *ENDRSMT_DATE         Date       408  418    11  Date endorser signs   Date format, e.g.,
+                                                     case.                 01-JAN-97
+
+ 45 *APPR_AWD             Text       419  420     2  Name of approved      Enter code from
+                                                     award.                Award Code Table.
+                                                                           
+
+ 46 *AWD_AUTH             Text       421  421     1  Awarding authority    Enter code from
+                                                     code.                 Awarding Authority
+                                                                           Table.
+
+ 47 *APPR_AWD_DATE        Date       422  432    11  Date award approved.  Date format, e.g.,
+                                                                           01-JAN-97
+
+ 48  CMD_CHAIN            Text       433  532   100  Case approval chain.
+
+ 49  FACTS                Text       533  772   240  Case synopsis.
+
+ 50  RECMD_FORM           Text       773  792    20  Type of form on 
+                                                     which an award
+                                                     recommendation is
+                                                     submitted.
+
+ 51  CIVS                 Text       793  793     1  Indicates if a unit   Y - Yes 
+                                                     award includes        N - No
+                                                     civilians.
+                                           
+ 52  CIVLIST              Text       794  794     1  Indicates if a list   Y - Yes
+                                                     of civilian names     N - No
+                                                     is enclosed in a 
+                                                     unit recommendation.
+
+ 53  CIVNUM               Text       795  799     5  Number of civilians   00000-99999
+                                                     that are included in
+                                                     the unit award
+                                                     recommendation.
+
+ 54  LTR_TYPE             Text       800  804     5  Approval letter       The options are
+                                                     types.                explained in
+                                                                           Appendix G
+
+ 55  REMOVAL_OF           Text       805  834    30  Wording that 
+                                                     specifies any 
+                                                     recommendation
+                                                     enclosures must be
+                                                     removed to make a
+                                                     classified case 
+                                                     classified.
+
+ 56  FOREIGN_SVC_DEG      Text       835  835     1  Indicates the degree
+                                                     of service for each
+                                                     recipient of a 
+                                                     foreign award.
+
+ 57 *SEC_SER_NUM          Text       836  839     4  SECNAV case serial    Snnn
+                                                     number                Cnnn
+                                                                           nnnn
+
+ 58 *SECBD_RECMD_AWD      Text       840  841     2  Name of the award     See Award Code
+                                                     recommended by the    Table.
+                                                     SECNAV board.
+
+ 59  SECBD_RECMD_AWD_NUM  Text       842  843     2  Number of times a     00-99
+                                                     specific award has
+                                                     been given.
+
+ 60 *SECBD_EH             Text       844  844     1  Indicates whether     Y - Yes
+                                                     SECNAV board          N - No
+                                                     recommended 
+                                                     extraordinary 
+                                                     heroism or if
+                                                     recipient is 
+                                                     ineligible.
+
+ 61  BDM_TO_SEC_RECIP     Date       845  855    11  Date BDM sends a      Date format, e.g.,
+                                                     case to SECNAV.       01-JAN-97
+
+ 62  SEC_RECIP            Text       856  861     6  SECNAV office         SECNAV 
+                                                     receiving the case.   M&RA
+                                                                           ADMIN
+                                                                           MAILRM
+                                                                           UNSEC
+
+ 63  TRANS_METHOD         Text       862  862     1  Transmission method   1 - Handcarry
+                                                     to SECNAV.            2 - Courier
+                                                                           3 - Guard Mail
+                                                                           4 - Other
+
+ 64  BDM_FROM_SEC         Date       863  873    11  Date BDM receives     Date format, e.g.,
+                                                     copy of signed        01-JAN-97
+                                                     SECNAV approval
+                                                     letter.
+
+ 65 *APPR_EH              Text       874  874     1  SECNAV approved       Y - Yes
+                                                     extraordinary         N - No
+                                                     heroism.
+
+ 66 *AWD_MUL_DATE         Text       875  876     2  Sequence number for   (Display-only field;
+                                                     one award with        no entry required.)
+                                                     multiple dates, 
+                                                     starting with 1.
+
+ 67 *TOTAL_MUL_DATE       Text       877  878     2  Total Number of       System generated -
+                                                     dates associated      Displayed as part of
+                                                     with an award.        xx/yy
+
+ 68 *SHIP                 Text       879  879     1  Specifies whether     Y - Yes
+                                                     unit award is for     N - No
+                                                     a ship. 
+
+ 69  O9B33_RECVD          Date       880  890    11  Date 09B33            Date format, e.g.,
+                                                     Received the case.    01-JAN-97
+
+ 70  O9B33_TO_CNO         Date       891  901    11  Date 09B33 sends      Date format, e.g.,
+                                                     cases to CNO for      01-JAN-97
+                                                     approval.
+
+ 71  O9B33_TO_BDM         Date       902  912    11  Date 09B33 sends      Date format, e.g.,
+                                                     case to BDM.          01-JAN-97
+
+ 72  O9B33_FRM_BDM        Date       913  923    11  Date 09B33            Date format, e.g., 
+                                                     receives CNO case     01-JAN-97
+                                                     from BDM.
+
+ 73  O9B33_TO_SECR        Date       924  934    11  Date 09B33 sends      Date format, e.g.,
+                                                     cases to              01-JAN-97
+                                                     secretariat for
+                                                     signature.
+
+ 74 *CNO_SER_NUM          Text       935  942     8  09B33 serial number.  2nd character must
+                                                                           be a "C", "U", 
+                                                                           or "S".  
+                                                     
+ 75  CNO_BD_MTG           Date       943  953    11  CNO LOM board         Date format e.g.,
+                                                     meeting date.         01-JAN-97  
+
+ 76  CNO_CIT_DATE         Date       954  964    11  Date CNO signed       Date format e.g.,
+                                                     citation.             01-JAN-97
+
+ 77  SEC_CIT_DATE         Date       965  975    11  Date SECNAV signed    Date format e.g.,
+                                                     the citation.         01-JAN-97
+
+ 78  SEC_CIT_RECVD        Date       976  986    11  Date 09B33 receives   Date format e.g.,
+                                                     SECNAV signed         01-JAN-97 
+                                                     citation.
+
+ 79  CNO_CIT_RECVD        Date       987  997    11  Date 09B33 receives   Date format e.g.,
+                                                     CNO signed citation.  01-JAN-97
+
+ 80 *MAIL_DATE            Date       998 1008    11  Date 09B33 mails      Date format e.g.,
+                                                     completed case.       01-JAN-97
+
+ 81 *MAILED_TO            Text      1009 1048    40  CNO mailed award to.   
+
+ 82  PICKUP_DATE          Date      1049 1059    11  Date completed case   Date format, e.g.,  
+                                                     picked up from 09B33. 01-JAN-97
+
+ 83  REMARKS              Text      1060 1099    40  Freeform text.
+
+ 84 *AWD_REMARKS          Text      1100 1102     3  Remarks code for unit
+                                                     awards report.
+
+ 85 *PCMD_ID              Integer   1103 1113    11  Participating 
+                          of ID                      Commands ID
+
+ 86 *MUL_ID               Text      1114 1121     8  Multiple record ID    Self generating;
+                                                                           provides a unique
+                                                                           ID number for each
+                                                                           Set of multiple
+                                                                           Award records.
+
+ 87  BDVOTE1              Text      1122 1127     6  Result of board       Format: aa-n
+                                                     vote.                 Where 
+                                                                           aa = type of vote
+                                                                           n  = # of votes  
+
+ 88  BDVOTE2              Text      1128 1133     6  Result of board       Format: aa-n
+                                                     vote.                 Where 
+                                                                           aa = type of vote
+                                                                           n  = # of votes  
+ 
+ 89  BDVOTE3              Text      1134 1139     6  Result of board       Format: aa-n
+                                                     vote.                 Where 
+                                                                           aa = type of vote
+                                                                           n  = # of votes  
+
+ 90  BDVOTE_REMARKS       Text      1140 1145     6  Comments about        May be used as
+                                                     board vote.           BDVOTE4 if more 
+                                                                           than 3 different
+                                                                           votes.
+
+ 91  CMCBD_NUM            Text      1146 1147     2  CMC board number.     (1-2)
+
+ 92  CMCBD_MTG            Date      1148 1158    11  Date that board will  Date format e.g.,
+                                                     meet.                 01-JAN-97
+
+ 93  CMC_SER_NUM          Text      1159 1164     6  CMC serial number     Xnnnn where
+                                                     for a CMC case.       X = (C)onfidential
+                                                                               (S)ecret
+                                                                           nnnn = 0000 - 9999
+
+ 94  CASE_SER_NUM         Text      1165 1166     2  Sequence number for   Generated by the
+                                                     board.                system when vote
+                                                                           sheets are
+                                                                           generated.
+
+ 95  TYPECMD              Text      1167 1178    12  Unit at time of       Free format - no
+                                                     action/service.       validation
+
+ 96  CEREMONY_DATE        Date      1179 1189    11  Date of retirement    Date format e.g.,
+                                                     ceremony.             01-JAN-97
+
+ 97  FLAG                 Text      1190 1190     1  General purpose       Free format - no 
+                                                     flag.                 validation
+                                                     
+ 98  FROM_NUM             Text      1191 1202    12  Phone number of
+                                                     "From" field.
+
+ 99  RECVD_MHM            Date      1203 1213    11  Date received.        Date format e.g.,
+                                                                           01-JAN-97
+
+100  MHM_TO_CMC           Date      1214 1224    11  Date to CMC.          Date format e.g.,
+                                                                           01-JAN-97
+
+101 *CMC_TO_MHM           Date      1225 1235    11  Date from CMC.        Date format e.g.,
+                                                                           01-JAN-97
+
+102  MHM_TO_BDM           Date      1236 1246    11  Date to BDM.          Date format e.g.,
+                                                                           01-JAN-97
+
+103  SECNAV_TO_MHM        Date      1247 1257    11  Date from SECNAV.     Date format e.g.,
+                                                                           01-JAN-97
+
+104 *ENTRY_DATE           Date_Time 1258 1273    16  Date record was
+                          of Entry                   entered.
+
+105 *CHANGE_DATE          Date_Time 1274 1289    16  Date record was
+                          of Change                  modified.
+
+
+
+
+==================================================================================================
+Participating Commands Data Table  [Active_PCMDS and History_PCMDS combined]
+                                   [Same fields, same field structure] 
+==================================================================================================
+
+Num  Field                Field     Column      Fld  Field                 Criteria/  
+ber  Name                 Type      Position    Len  Description           Valid Entries
+---  ------------------   -------   ---------   ---  --------------------  ------------------
+  1  PCMD_ID              Integer      1   11    11  Participating 
+                                                     Command's ID.  
+ 
+  2  PCMD                 Text        12   51    40  Participating 
+                                                     Command.  
+
+  3  PCSTART              Date        52   62    11  PCMD Merit Start      Date format e.g.,
+                                                     Date.                 01-JAN-97
+
+  4  PCEND                Date        63   73    11  PCMD Merit End        Date format e.g.,
+                                                     Date.                 01-JAN-97
+
+  5  PCOMP                Text        74   78     5  Branch of Service
+                                                     for each
+                                                     participating Cmd. 
+
+  6  PCMD_OTH_SVC         Text        79  103    25  Other Service not
+                                                     listed in component
+                                                     codes (for each
+                                                     participating Cmd.  
+
+  7  PC_MUL_DATE          Text       104  104     1  Multiple Date         
+                                                     Indicator number.
+
+
+
+
+
+**********************************************************************
+Supplementary Datasets
+**********************************************************************
+
+These tables are used to validate certain fields on the data entry
+form.  There are seven validation tables:
+    Action areas
+    Awarding authorities
+    Award codes
+    Rank/rate codes
+    Campaign periods
+    Corps
+    Enlisted ratings
+
+
+Validation Table Datasets
+
+  The validation table datasets contain tables used by the FMS UARs
+  to validate user input on certain fields.  These tables have been
+  loaded with data values that were agreed upon by BDM, OP-09B33 and
+  CMC/MHM users.  These tables are maintained by the VALID command.
+  Entries in these tables can be added or deleted and the tables can
+  be printed out.  The datasets are described below.
+
+The validation table datasets are stored in the following datasets:
+   ACTION_AREAS_TAB
+   AWARD_AUTH_TAB
+   AWARD_CODE_TAB
+   CAMPAIGN_TAB
+   CORPS_TAB
+   GRADE_CODE_TAB
+   RATINGS_TAB
+
+==================================================================================================
+Action_area_tab
+This table is used to validate the ACTION_AREA field.  It contains the following fields:
+==================================================================================================
+
+Num  Field                Field     Column      Fld  Field                            
+ber  Name                 Type      Position    Len  Description                        
+---  ------------------   -------   ---------   ---  --------------------                    
+  1  SHORT_FORM           Text         1    2     2  Two letter ACTION
+                                                     AREA code.    
+
+  2  ENTRY_DATE           Date_        3   18    16  Date record was
+                          Time                       entered.
+
+  3  CHANGE_DATE          Date_        19  34    16  Date record was
+                          Time                       modified.
+
+
+==================================================================================================
+Award_auth_tab
+This table is used to validate the AWD_AUTH field.  It contains the following fields:
+==================================================================================================
+
+Num  Field                Field     Column      Fld  Field                            
+ber  Name                 Type      Position    Len  Description                        
+---  ------------------   -------   ---------   ---  --------------------                    
+  1  SHORT_FORM           Text         1    1     2  One letter AWARDING
+                                                     AUTHORITY code.    
+
+  2  LONG_FORM            Text         2   61    60  Full description of
+                                                     AWARDING AUTHORITY. 
+
+  3  ENTRY_DATE           Date_       62   77    16  Date record was
+                          Time                       entered.
+
+  4  CHANGE_DATE          Date_       78   93    16  Date record was
+                          Time                       modified.
+
+
+
+==================================================================================================
+Award_code_tab
+This table is used to validate any award field.  It contains the following fields:
+==================================================================================================
+
+Num  Field                Field     Column      Fld  Field                            
+ber  Name                 Type      Position    Len  Description                        
+---  ------------------   -------   ---------   ---  --------------------                    
+01   SHORT_FORM           Text         1    2     2  Two letter AWARD 
+                                                     code.    
+
+02   LONG_FORM            Text         3   74    72  Full description of
+                                                     AWARD. 
+
+03   ENTRY_DATE           Date_       75   90    16  Date record was
+                          Time                       entered.
+
+04   CHANGE_DATE          Date_       91   106   16  Date record was
+                          Time                       modified.
+
+
+==================================================================================================
+Campaign_tab 
+This table is used to validate the CAMPAIGN field.  It contains the following fields:
+==================================================================================================
+
+Num  Field                Field     Column      Fld  Field                            
+ber  Name                 Type      Position    Len  Description                        
+---  ------------------   -------   ---------   ---  --------------------                    
+  1  SHORT_FORM           Text         1    5     5  Two letter CAMPAIGN 
+                                                     code.    
+
+  2  LONG_FORM            Text         6   21    16  Full description of
+                                                     CAMPAIGN. 
+
+  3  ENTRY_DATE           Date_       22   37    16  Date record was
+                          Time                       entered.
+
+  4  CHANGE_DATE          Date_       38   53    16  Date record was
+                          Time                       modified.
+
+==================================================================================================
+Corps_tab
+This table is used to validate the CORPS field.  It contains the following fields:
+==================================================================================================
+
+Num  Field                Field     Column      Fld  Field                            
+ber  Name                 Type      Position    Len  Description                        
+---  ------------------   -------   ---------   ---  --------------------                    
+  1  SHORT_FORM           Text         1    3     3  Three letter CORPS 
+                                                     code.    
+
+  2  LONG_FORM            Text         4   33    30  Full description of
+                                                     CORPS.
+ 
+  3  DESIG_NEC_MOS_LOW    Text        34   37     4  Lower limit of valid           
+                                                     designator for the 
+                                                     Corps.
+
+  4  DESIG_NEC_MOS_HIGH   Text        38   41     4  High limit of valid 
+                                                     designator for the 
+                                                     Corps.
+
+  5  ENTRY_DATE           Date_       42   57    16  Date record was
+                          Time                       entered.
+
+  6  CHANGE_DATE          Date_       58   73    16  Date record was
+                          Time                       modified.
+
+
+
+==================================================================================================
+3.3.2.1.6 Grade_code_tab
+This table is used to validate the GRADE/RATING field for all individuals except Navy enlisted.
+It contains the following fields:
+==================================================================================================
+
+Num  Field                Field     Column      Fld  Field                            
+ber  Name                 Type      Position    Len  Description                        
+---  ------------------   -------   ---------   ---  --------------------                    
+  1  SHORT_FORM           Text         1    7     7  Seven letter GRADE 
+                                                     code.    
+
+  2  LONG_FORM            Text         8   66    59  Full description of
+                                                     GRADE. 
+
+  3  CODE                 Text        67   68     2  Two letter 
+                                                     PAY_GRADE.
+
+  4  ENTRY_DATE           Date_       69   84    16  Date record was
+                          Time                       entered.
+
+  5  CHANGE_DATE          Date_       85  100    16  Date record was
+                          Time                       modified.
+
+
+==================================================================================================
+Ratings_tab
+This table is used to validate the GRADE/RATING field for all Navy enlisted.
+It contains the following fields:
+==================================================================================================
+
+Num  Field                Field     Column      Fld  Field                            
+ber  Name                 Type      Position    Len  Description                        
+---  ------------------   -------   ---------   ---  --------------------                    
+  1  SHORT_FORM           Text         1    6     6  Four letter RATINGS 
+                                                     code.    
+
+  2  LONG_FORM            Text         7   65    59  Full description of
+                                                     RATINGS. 
+
+  3  CODE                 Text        66   67     2  Two letter 
+                                                     PAY_GRADE.
+
+  4  ENTRY_DATE           Date_       68   83    16  Date record was
+                          Time                       entered.
+
+  5  CHANGE_DATE          Date_       84   99    16  Date record was
+                          Time                       modified.
+
+
+
+
+
+
+
+
+
+
+

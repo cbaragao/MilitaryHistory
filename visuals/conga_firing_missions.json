@@ -1,0 +1,235 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "U.S. Naval Fire Support Missions During the Vietnam War",
+    "subtitle": "Analysis of CONGA dataset showing targeting patterns, ship deployments, and operational ranges",
+    "fontSize": 16,
+    "anchor": "start",
+    "color": "#2c3e50"
+  },
+  "data": {
+    "name":"source"
+  },
+  "transform": [
+    {
+      "calculate": "datum.force_supported == null || datum.force_supported == '' ? 'Not Listed' : datum.force_supported",
+      "as": "force_supported_clean"
+    },
+    {
+      "calculate": "datum.operation == null || datum.operation == '' ? 'Not Listed' : datum.operation",
+      "as": "operation_clean"
+    }
+  ],
+  "vconcat": [
+    {
+      "title": {
+        "text": "Geographic Distribution of Naval Fire Support Targets",
+        "subtitle": "Locations of naval gunfire missions along the Vietnamese coast, 1968-1972",
+        "fontSize": 14,
+        "anchor": "start"
+      },
+      "width": 800,
+      "height": 400,
+      "projection": {
+        "type": "mercator",
+        "scale": 2400,
+        "center": [107.5, 14]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson",
+            "format": {"type": "topojson", "feature": "countries"}
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#e8f4f0",
+            "stroke": "#4477AA",
+            "strokeWidth": 0.5
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "size": 60,
+            "opacity": 0.7,
+            "stroke": "#2c3e50",
+            "strokeWidth": 0.5
+          },
+          "encoding": {
+            "longitude": {"field": "target_longitude", "type": "quantitative"},
+            "latitude": {"field": "target_latitude", "type": "quantitative"},
+            "color": {
+              "field": "operation_clean",
+              "type": "nominal",
+              "scale": {
+                "range": ["#4477AA", "#CC6677", "#66CCEE"]
+              },
+              "legend": {
+                "title": "Operation Type",
+                "orient": "right"
+              }
+            },
+            "size": {
+              "field": "number_expended",
+              "type": "quantitative",
+              "scale": {"range": [30, 200]},
+              "legend": {
+                "title": "Rounds Fired",
+                "orient": "right"
+              }
+            },
+            "tooltip": [
+              {"field": "mission_date", "type": "temporal", "title": "Date"},
+              {"field": "ship", "type": "nominal", "title": "Ship"},
+              {"field": "operation_clean", "type": "nominal", "title": "Operation"},
+              {"field": "force_supported_clean", "type": "nominal", "title": "Force Supported"},
+              {"field": "number_expended", "type": "quantitative", "title": "Rounds Fired"},
+              {"field": "range_yds", "type": "quantitative", "title": "Range (yards)", "format": ",.0f"},
+              {"field": "target_latitude", "type": "quantitative", "title": "Latitude", "format": ".4f"},
+              {"field": "target_longitude", "type": "quantitative", "title": "Longitude", "format": ".4f"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "Top 10 Ships by Number of Firing Missions",
+        "subtitle": "Naval vessels with the highest operational tempo during Vietnam War coastal bombardment",
+        "fontSize": 14,
+        "anchor": "start"
+      },
+      "width": 800,
+      "height": 300,
+      "transform": [
+        {
+          "aggregate": [
+            {"op": "count", "as": "mission_count"},
+            {"op": "sum", "field": "number_expended", "as": "total_rounds"}
+          ],
+          "groupby": ["ship"]
+        },
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "sort": [{"field": "mission_count", "order": "descending"}]
+        },
+        {"filter": "datum.rank <= 10"}
+      ],
+      "mark": {
+        "type": "bar",
+        "color": "#4477AA",
+        "stroke": "#2c3e50",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "mission_count",
+          "type": "quantitative",
+          "title": "Number of Missions",
+          "axis": {"grid": true}
+        },
+        "y": {
+          "field": "ship",
+          "type": "nominal",
+          "sort": "-x",
+          "title": "Ship Name",
+          "axis": {"labelLimit": 150}
+        },
+        "tooltip": [
+          {"field": "ship", "type": "nominal", "title": "Ship"},
+          {"field": "mission_count", "type": "quantitative", "title": "Total Missions"},
+          {"field": "total_rounds", "type": "quantitative", "title": "Total Rounds Fired", "format": ",.0f"}
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Ship Mission Frequency vs. Average Firing Range",
+        "subtitle": "Operational patterns showing relationship between mission count and engagement distance",
+        "fontSize": 14,
+        "anchor": "start"
+      },
+      "width": 800,
+      "height": 400,
+      "transform": [
+        {
+          "aggregate": [
+            {"op": "count", "as": "mission_count"},
+            {"op": "mean", "field": "range_yds", "as": "avg_range_yds"},
+            {"op": "sum", "field": "number_expended", "as": "total_rounds"}
+          ],
+          "groupby": ["ship"]
+        },
+        {
+          "calculate": "datum.avg_range_yds / 1000",
+          "as": "avg_range_thousands"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": 0.8,
+        "stroke": "#2c3e50",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "mission_count",
+          "type": "quantitative",
+          "title": "Number of Missions",
+          "axis": {"grid": true}
+        },
+        "y": {
+          "field": "avg_range_thousands",
+          "type": "quantitative",
+          "title": "Average Range (thousands of yards)",
+          "axis": {"grid": true}
+        },
+        "size": {
+          "field": "total_rounds",
+          "type": "quantitative",
+          "scale": {"range": [100, 1000]},
+          "legend": {
+            "title": "Total Rounds Fired",
+            "orient": "right"
+          }
+        },
+        "color": {
+          "value": "#4477AA"
+        },
+        "tooltip": [
+          {"field": "ship", "type": "nominal", "title": "Ship"},
+          {"field": "mission_count", "type": "quantitative", "title": "Total Missions"},
+          {"field": "avg_range_thousands", "type": "quantitative", "title": "Avg Range (k yards)", "format": ".1f"},
+          {"field": "total_rounds", "type": "quantitative", "title": "Total Rounds", "format": ",.0f"}
+        ]
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent",
+      "size": "independent"
+    }
+  },
+  "config": {
+    "view": {"stroke": null},
+    "axis": {
+      "labelFont": "Arial",
+      "titleFont": "Arial",
+      "titleFontSize": 12,
+      "labelFontSize": 10
+    },
+    "legend": {
+      "labelFont": "Arial",
+      "titleFont": "Arial",
+      "titleFontSize": 11,
+      "labelFontSize": 10
+    },
+    "title": {
+      "font": "Arial",
+      "fontSize": 14,
+      "fontWeight": "bold"
+    }
+  }
+}

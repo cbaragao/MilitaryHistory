@@ -1,0 +1,39 @@
+{
+    "dataset": "VSSG",
+    "table": "Assessment Score Ranges",
+    "definition": "Overall hamlet assessment score interpretations",
+    "data": [
+        {
+            "code": "90-100",
+            "value": "EXCELLENT - Highly secure and developed hamlet"
+        },
+        {
+            "code": "80-89",
+            "value": "VERY GOOD - Well-secured hamlet with good development"
+        },
+        {
+            "code": "70-79",
+            "value": "GOOD - Generally secure with adequate development"
+        },
+        {
+            "code": "60-69", 
+            "value": "SATISFACTORY - Moderate security and development"
+        },
+        {
+            "code": "50-59",
+            "value": "MARGINAL - Limited security and development"
+        },
+        {
+            "code": "40-49",
+            "value": "POOR - Inadequate security and development"
+        },
+        {
+            "code": "30-39",
+            "value": "VERY POOR - Minimal security and development"
+        },
+        {
+            "code": "0-29",
+            "value": "CRITICAL - Severe security and development deficiencies"
+        }
+    ]
+}

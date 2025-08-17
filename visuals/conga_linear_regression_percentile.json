@@ -1,0 +1,302 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Naval Fire Support: Range vs. Ammunition by Range Category",
+    "subtitle": ["Small multiples analysis of Vietnam War naval gunfire missions 1968-1972",
+                 "Key Finding: Three range categories show distinct ship operational patterns",
+                 "Note: Analysis limited to ships with 50+ missions in dataset"],
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "anchor": "start"
+  },
+  "description": "Small multiples scatterplot showing relationship between range percentile and average rounds expended per mission across three range categories",
+  "vconcat": [
+    {
+      "title": "Short Range (≤120k yds)",
+      "width": 500,
+      "height": 120,
+      "data": {
+        "url": "../datasets/conga_heatmap.csv"
+      },
+      "transform": [
+        {"filter": "datum.mean_range <= 120"},
+        {
+          "window": [{"op": "percent_rank", "field": "mean_range", "as": "range_percentile"}],
+          "sort": [{"field": "mean_range", "order": "ascending"}]
+        },
+        {"calculate": "datum.range_percentile * 100", "as": "range_percentile_scaled"}
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "size": 50,
+            "stroke": "#FFFFFF",
+            "strokeWidth": 1,
+            "opacity": 0.8
+          },
+          "encoding": {
+            "x": {
+              "field": "range_percentile_scaled",
+              "type": "quantitative",
+              "title": "Range Percentile (%)",
+              "axis": {"labelFontSize": 10, "titleFontSize": 11, "format": ".0f"},
+              "scale": {"domain": [0, 100]}
+            },
+            "y": {
+              "field": "mean_quantity_expended",
+              "type": "quantitative",
+              "title": "Avg Rounds per Mission",
+              "axis": {"labelFontSize": 10, "titleFontSize": 11, "format": ".0f"}
+            },
+            "color": {"value": "#4477AA"},
+            "tooltip": [
+              {"field": "ship", "type": "nominal", "title": "Ship Name"},
+              {"field": "range_percentile_scaled", "type": "quantitative", "title": "Range Percentile", "format": ".1f"},
+              {"field": "mean_range", "type": "quantitative", "title": "Actual Range (thousands of yards)", "format": ".1f"},
+              {"field": "mean_quantity_expended", "type": "quantitative", "title": "Avg Rounds per Mission", "format": ".1f"},
+              {"field": "number_of_missions", "type": "quantitative", "title": "Total Missions"}
+            ]
+          }
+        },
+        {
+          "mark": {"type": "line", "color": "#CC6677", "strokeWidth": 2, "opacity": 0.8},
+          "transform": [
+            {"regression": "mean_quantity_expended", "on": "range_percentile_scaled", "extent": [0, 100]}
+          ],
+          "encoding": {
+            "x": {"field": "range_percentile_scaled", "type": "quantitative"},
+            "y": {"field": "mean_quantity_expended", "type": "quantitative"}
+          }
+        },
+        {
+          "transform": [
+            {"regression": "mean_quantity_expended", "on": "range_percentile_scaled", "params": true},
+            {"calculate": "'R² = '+format(datum.rSquared, '.3f')", "as": "R2"}
+          ],
+          "mark": {
+            "type": "text", "color": "#CC6677", "fontSize": 11, "fontWeight": "bold",
+            "x": 10, "y": 15, "align": "left"
+          },
+          "encoding": {"text": {"type": "nominal", "field": "R2"}}
+        }
+      ]
+    },
+    {
+      "width": 500,
+      "height": 60,
+      "data": {
+        "url": "../datasets/conga_heatmap.csv"
+      },
+      "transform": [
+        {"filter": "datum.mean_range <= 120"},
+        {
+          "window": [{"op": "percent_rank", "field": "mean_range", "as": "range_percentile"}],
+          "sort": [{"field": "mean_range", "order": "ascending"}]
+        },
+        {"calculate": "datum.range_percentile * 100", "as": "range_percentile_scaled"},
+        {"regression": "mean_quantity_expended", "on": "range_percentile_scaled", "params": true},
+        {"calculate": "datum.rSquared < 0.1 ? 'ANALYSIS: Very weak correlation (R² < 0.1). Range percentile has minimal impact on ammunition use. Close-support ships show high variability due to mission urgency and tactical situation.' : datum.rSquared < 0.3 ? 'ANALYSIS: Weak correlation. Some predictive value but other factors dominate. Short-range operations influenced by immediate tactical requirements.' : 'ANALYSIS: Moderate correlation. Range percentile is a useful predictor. Short-range ships show consistent patterns between relative distance and fire intensity.'", "as": "interpretation"}
+      ],
+      "mark": {
+        "type": "text", "align": "left", "baseline": "top", "fontSize": 11,
+        "color": "#555555", "x": 10, "y": 5, "limit": 480
+      },
+      "encoding": {"text": {"field": "interpretation", "type": "nominal"}}
+    },
+    {
+      "title": "Medium Range (120-180k yds)",
+      "width": 500,
+      "height": 120,
+      "data": {
+        "url": "../datasets/conga_heatmap.csv"
+      },
+      "transform": [
+        {"filter": "datum.mean_range > 120 && datum.mean_range <= 180"},
+        {
+          "window": [{"op": "percent_rank", "field": "mean_range", "as": "range_percentile"}],
+          "sort": [{"field": "mean_range", "order": "ascending"}]
+        },
+        {"calculate": "datum.range_percentile * 100", "as": "range_percentile_scaled"}
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "size": 50,
+            "stroke": "#FFFFFF",
+            "strokeWidth": 1,
+            "opacity": 0.8
+          },
+          "encoding": {
+            "x": {
+              "field": "range_percentile_scaled",
+              "type": "quantitative",
+              "title": "Range Percentile (%)",
+              "axis": {"labelFontSize": 10, "titleFontSize": 11, "format": ".0f"},
+              "scale": {"domain": [0, 100]}
+            },
+            "y": {
+              "field": "mean_quantity_expended",
+              "type": "quantitative",
+              "title": "Avg Rounds per Mission",
+              "axis": {"labelFontSize": 10, "titleFontSize": 11, "format": ".0f"}
+            },
+            "color": {"value": "#4477AA"},
+            "tooltip": [
+              {"field": "ship", "type": "nominal", "title": "Ship Name"},
+              {"field": "range_percentile_scaled", "type": "quantitative", "title": "Range Percentile", "format": ".1f"},
+              {"field": "mean_range", "type": "quantitative", "title": "Actual Range (thousands of yards)", "format": ".1f"},
+              {"field": "mean_quantity_expended", "type": "quantitative", "title": "Avg Rounds per Mission", "format": ".1f"},
+              {"field": "number_of_missions", "type": "quantitative", "title": "Total Missions"}
+            ]
+          }
+        },
+        {
+          "mark": {"type": "line", "color": "#CC6677", "strokeWidth": 2, "opacity": 0.8},
+          "transform": [
+            {"regression": "mean_quantity_expended", "on": "range_percentile_scaled", "extent": [0, 100]}
+          ],
+          "encoding": {
+            "x": {"field": "range_percentile_scaled", "type": "quantitative"},
+            "y": {"field": "mean_quantity_expended", "type": "quantitative"}
+          }
+        },
+        {
+          "transform": [
+            {"regression": "mean_quantity_expended", "on": "range_percentile_scaled", "params": true},
+            {"calculate": "'R² = '+format(datum.rSquared, '.3f')", "as": "R2"}
+          ],
+          "mark": {
+            "type": "text", "color": "#CC6677", "fontSize": 11, "fontWeight": "bold",
+            "x": 10, "y": 15, "align": "left"
+          },
+          "encoding": {"text": {"type": "nominal", "field": "R2"}}
+        }
+      ]
+    },
+    {
+      "width": 500,
+      "height": 60,
+      "data": {
+        "url": "../datasets/conga_heatmap.csv"
+      },
+      "transform": [
+        {"filter": "datum.mean_range > 120 && datum.mean_range <= 180"},
+        {
+          "window": [{"op": "percent_rank", "field": "mean_range", "as": "range_percentile"}],
+          "sort": [{"field": "mean_range", "order": "ascending"}]
+        },
+        {"calculate": "datum.range_percentile * 100", "as": "range_percentile_scaled"},
+        {"regression": "mean_quantity_expended", "on": "range_percentile_scaled", "params": true},
+        {"calculate": "datum.rSquared < 0.1 ? 'ANALYSIS: Very weak correlation. Medium-range naval gunfire shows high tactical variability. Ships adjust ammunition based on target types and mission objectives rather than relative distance.' : datum.rSquared < 0.3 ? 'ANALYSIS: Weak correlation. Distance percentile influences ammunition use but other factors dominate. Medium-range ships balance accuracy with conservation.' : 'ANALYSIS: Moderate correlation. Range percentile becomes significant in ammunition planning. Medium-range ships show systematic patterns.'", "as": "interpretation"}
+      ],
+      "mark": {
+        "type": "text", "align": "left", "baseline": "top", "fontSize": 11,
+        "color": "#555555", "x": 10, "y": 5, "limit": 480
+      },
+      "encoding": {"text": {"field": "interpretation", "type": "nominal"}}
+    },
+    {
+      "title": "Long Range (>180k yds)",
+      "width": 500,
+      "height": 120,
+      "data": {
+        "url": "../datasets/conga_heatmap.csv"
+      },
+      "transform": [
+        {"filter": "datum.mean_range > 180"},
+        {
+          "window": [{"op": "percent_rank", "field": "mean_range", "as": "range_percentile"}],
+          "sort": [{"field": "mean_range", "order": "ascending"}]
+        },
+        {"calculate": "datum.range_percentile * 100", "as": "range_percentile_scaled"}
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "size": 50,
+            "stroke": "#FFFFFF",
+            "strokeWidth": 1,
+            "opacity": 0.8
+          },
+          "encoding": {
+            "x": {
+              "field": "range_percentile_scaled",
+              "type": "quantitative",
+              "title": "Range Percentile (%)",
+              "axis": {"labelFontSize": 10, "titleFontSize": 11, "format": ".0f"},
+              "scale": {"domain": [0, 100]}
+            },
+            "y": {
+              "field": "mean_quantity_expended",
+              "type": "quantitative",
+              "title": "Avg Rounds per Mission",
+              "axis": {"labelFontSize": 10, "titleFontSize": 11, "format": ".0f"}
+            },
+            "color": {"value": "#4477AA"},
+            "tooltip": [
+              {"field": "ship", "type": "nominal", "title": "Ship Name"},
+              {"field": "range_percentile_scaled", "type": "quantitative", "title": "Range Percentile", "format": ".1f"},
+              {"field": "mean_range", "type": "quantitative", "title": "Actual Range (thousands of yards)", "format": ".1f"},
+              {"field": "mean_quantity_expended", "type": "quantitative", "title": "Avg Rounds per Mission", "format": ".1f"},
+              {"field": "number_of_missions", "type": "quantitative", "title": "Total Missions"}
+            ]
+          }
+        },
+        {
+          "mark": {"type": "line", "color": "#CC6677", "strokeWidth": 2, "opacity": 0.8},
+          "transform": [
+            {"regression": "mean_quantity_expended", "on": "range_percentile_scaled", "extent": [0, 100]}
+          ],
+          "encoding": {
+            "x": {"field": "range_percentile_scaled", "type": "quantitative"},
+            "y": {"field": "mean_quantity_expended", "type": "quantitative"}
+          }
+        },
+        {
+          "transform": [
+            {"regression": "mean_quantity_expended", "on": "range_percentile_scaled", "params": true},
+            {"calculate": "'R² = '+format(datum.rSquared, '.3f')", "as": "R2"}
+          ],
+          "mark": {
+            "type": "text", "color": "#CC6677", "fontSize": 11, "fontWeight": "bold",
+            "x": 10, "y": 15, "align": "left"
+          },
+          "encoding": {"text": {"type": "nominal", "field": "R2"}}
+        }
+      ]
+    },
+    {
+      "width": 500,
+      "height": 60,
+      "data": {
+        "url": "../datasets/conga_heatmap.csv"
+      },
+      "transform": [
+        {"filter": "datum.mean_range > 180"},
+        {
+          "window": [{"op": "percent_rank", "field": "mean_range", "as": "range_percentile"}],
+          "sort": [{"field": "mean_range", "order": "ascending"}]
+        },
+        {"calculate": "datum.range_percentile * 100", "as": "range_percentile_scaled"},
+        {"regression": "mean_quantity_expended", "on": "range_percentile_scaled", "params": true},
+        {"calculate": "datum.rSquared < 0.1 ? 'ANALYSIS: Very weak correlation. Long-range naval gunfire prioritizes precision over volume. Ships conserve ammunition due to reduced accuracy and longer flight times.' : datum.rSquared < 0.3 ? 'ANALYSIS: Weak correlation. Range percentile influences planning but fire control limitations dominate. Long-range ships emphasize observation and adjustment.' : 'ANALYSIS: Moderate to strong correlation. Range percentile becomes critical factor. Long-range ships show clear relationship between relative distance and fire intensity.'", "as": "interpretation"}
+      ],
+      "mark": {
+        "type": "text", "align": "left", "baseline": "top", "fontSize": 11,
+        "color": "#555555", "x": 10, "y": 5, "limit": 480
+      },
+      "encoding": {"text": {"field": "interpretation", "type": "nominal"}}
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "background": "#FFFFFF",
+    "font": "Arial, sans-serif"
+  }
+}

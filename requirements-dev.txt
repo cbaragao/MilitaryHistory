@@ -1,0 +1,33 @@
+# Development and Testing Dependencies
+# Install with: pip install -r requirements-dev.txt
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
+
+# Code Quality
+black>=23.0.0
+isort>=5.12.0
+flake8>=6.0.0
+mypy>=1.0.0
+
+# Documentation
+sphinx>=7.0.0
+sphinx-rtd-theme>=2.0.0
+
+# Jupyter Development
+nbstripout>=0.6.0
+nbqa>=1.7.0
+
+# Type Stubs
+types-requests>=2.32.0
+types-python-dateutil>=2.9.0
+
+# Performance Profiling
+line-profiler>=4.0.0
+memory-profiler>=0.61.0
+
+# Additional Development Tools
+pre-commit>=3.0.0
+bump2version>=1.0.0

@@ -1,0 +1,39 @@
+{
+  "dataset": "psyopsa",
+  "table": "subtheme_codes",
+  "definition": "Sub-theme codes for psychological operations messages",
+  "data": [
+    {
+      "code": "A",
+      "value": "General Appeal"
+    },
+    {
+      "code": "B",
+      "value": "Specific Target"
+    },
+    {
+      "code": "C",
+      "value": "Counter-Message"
+    },
+    {
+      "code": "D",
+      "value": "Direct Action"
+    },
+    {
+      "code": "E",
+      "value": "Educational"
+    },
+    {
+      "code": "F",
+      "value": "Fear Appeal"
+    },
+    {
+      "code": "G",
+      "value": "Group Identity"
+    },
+    {
+      "code": "H",
+      "value": "Historical Reference"
+    }
+  ]
+}

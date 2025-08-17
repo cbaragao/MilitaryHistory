@@ -1,0 +1,235 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Friendly Forces Deployment Analysis: Vietnam War (1966-1972)",
+    "subtitle": "Multi-national coalition force structure showing US withdrawal and South Vietnamese force expansion",
+    "fontSize": 18,
+    "fontWeight": "bold",
+    "anchor": "start",
+    "color": "#2c3e50",
+    "offset": 20
+  },
+  "description": "Dual visualization of Vietnam War friendly forces where top chart shows temporal deployment patterns revealing US Marine withdrawal from 1970-1971 and South Vietnamese expansion, while bottom chart displays coalition composition with Republic of Vietnam comprising 85% of recorded forces versus 10% US and 5% Korean forces",
+  "spacing": 30,
+  "vconcat": [
+    {
+      "title": {
+        "text": "Force Deployment Timeline by Country",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "color": "#2c3e50"
+      },
+      "width": 700,
+      "height": 300,
+      "data": {
+        "url": "friendly_forces_seafa.csv",
+        "format": {"type": "csv", "parse": {"record_date": "date"}}
+      },
+      "transform": [
+        {
+          "calculate": "year(datum.record_date)",
+          "as": "year"
+        },
+        {
+          "calculate": "month(datum.record_date)",
+          "as": "month"
+        },
+        {
+          "aggregate": [{"op": "count", "as": "unit_records"}],
+          "groupby": ["year", "country"]
+        },
+        {
+          "calculate": "datum.country == 'UNITED STATES' ? 'United States' : datum.country == 'REPUBLIC OF VIETNAM' ? 'South Vietnam' : datum.country == 'REPUBLIC OF KOREA' ? 'South Korea' : 'Other'",
+          "as": "country_clean"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "point": {
+          "size": 80,
+          "filled": true,
+          "stroke": "white",
+          "strokeWidth": 2
+        },
+        "strokeWidth": 3,
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {
+            "labelFontSize": 12,
+            "titleFontSize": 14,
+            "titleFontWeight": "bold",
+            "labelFont": "Arial, sans-serif",
+            "titleFont": "Arial, sans-serif",
+            "grid": true,
+            "gridOpacity": 0.3
+          }
+        },
+        "y": {
+          "field": "unit_records",
+          "type": "quantitative",
+          "title": "Number of Unit Records",
+          "axis": {
+            "labelFontSize": 12,
+            "titleFontSize": 14,
+            "titleFontWeight": "bold",
+            "labelFont": "Arial, sans-serif",
+            "titleFont": "Arial, sans-serif",
+            "grid": true,
+            "gridOpacity": 0.3
+          }
+        },
+        "color": {
+          "field": "country_clean",
+          "type": "nominal",
+          "title": "Country",
+          "scale": {
+            "domain": ["United States", "South Vietnam", "South Korea"],
+            "range": ["#4477AA", "#CC6677", "#66CCEE"]
+          },
+          "legend": {
+            "orient": "top-right",
+            "titleFontSize": 12,
+            "titleFontWeight": "bold",
+            "labelFontSize": 11,
+            "labelFont": "Arial, sans-serif",
+            "titleFont": "Arial, sans-serif"
+          }
+        },
+        "strokeDash": {
+          "field": "country_clean",
+          "type": "nominal",
+          "scale": {
+            "domain": ["United States", "South Vietnam", "South Korea"],
+            "range": [[1,0], [5,5], [10,5]]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "year", "type": "ordinal", "title": "Year"},
+          {"field": "country_clean", "type": "nominal", "title": "Country"},
+          {"field": "unit_records", "type": "quantitative", "title": "Unit Records"}
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Coalition Force Composition Analysis",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "color": "#2c3e50"
+      },
+      "width": 400,
+      "height": 250,
+      "data": {
+        "url": "friendly_forces_seafa.csv",
+        "format": {"type": "csv"}
+      },
+      "transform": [
+        {
+          "aggregate": [{"op": "count", "as": "total_records"}],
+          "groupby": ["country"]
+        },
+        {
+          "calculate": "datum.country == 'UNITED STATES' ? 'United States' : datum.country == 'REPUBLIC OF VIETNAM' ? 'South Vietnam' : datum.country == 'REPUBLIC OF KOREA' ? 'South Korea' : 'Other'",
+          "as": "country_clean"
+        },
+        {
+          "joinaggregate": [{"op": "sum", "field": "total_records", "as": "grand_total"}]
+        },
+        {
+          "calculate": "datum.total_records / datum.grand_total * 100",
+          "as": "percentage"
+        }
+      ],
+      "mark": {
+        "type": "bar",
+        "stroke": "white",
+        "strokeWidth": 2,
+        "tooltip": true
+      },
+      "encoding": {
+        "y": {
+          "field": "country_clean",
+          "type": "nominal",
+          "title": "Country",
+          "sort": {"field": "total_records", "order": "descending"},
+          "axis": {
+            "labelFontSize": 12,
+            "titleFontSize": 14,
+            "titleFontWeight": "bold",
+            "labelFont": "Arial, sans-serif",
+            "titleFont": "Arial, sans-serif"
+          }
+        },
+        "x": {
+          "field": "percentage",
+          "type": "quantitative",
+          "title": "Percentage of Total Records (%)",
+          "axis": {
+            "labelFontSize": 12,
+            "titleFontSize": 14,
+            "titleFontWeight": "bold",
+            "labelFont": "Arial, sans-serif",
+            "titleFont": "Arial, sans-serif",
+            "grid": true,
+            "gridOpacity": 0.3,
+            "format": ".1f"
+          }
+        },
+        "color": {
+          "field": "country_clean",
+          "type": "nominal",
+          "scale": {
+            "domain": ["United States", "South Vietnam", "South Korea"],
+            "range": ["#4477AA", "#CC6677", "#66CCEE"]
+          },
+          "legend": null
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum.total_records > 20",
+            "value": 1.0
+          },
+          "value": 0.7
+        },
+        "tooltip": [
+          {"field": "country_clean", "type": "nominal", "title": "Country"},
+          {"field": "total_records", "type": "quantitative", "title": "Total Records"},
+          {"field": "percentage", "type": "quantitative", "title": "Percentage", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFont": "Arial, sans-serif",
+      "titleFont": "Arial, sans-serif",
+      "labelColor": "#2c3e50",
+      "titleColor": "#2c3e50",
+      "gridColor": "#E8E8E8",
+      "domainColor": "#2c3e50"
+    },
+    "legend": {
+      "labelFont": "Arial, sans-serif",
+      "titleFont": "Arial, sans-serif",
+      "labelColor": "#2c3e50",
+      "titleColor": "#2c3e50"
+    },
+    "title": {
+      "font": "Arial, sans-serif",
+      "color": "#2c3e50"
+    },
+    "background": "white"
+  }
+}

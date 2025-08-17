@@ -1,0 +1,31 @@
+{
+    "dataset": "VSSG",
+    "table": "Village Military Activity Codes",
+    "definition": "Village military activity assessment codes",
+    "data": [
+        {
+            "code": "1",
+            "value": "NO ACTIVITY - No military activity reported"
+        },
+        {
+            "code": "2",
+            "value": "LIGHT ACTIVITY - Minimal military presence/operations"
+        },
+        {
+            "code": "3", 
+            "value": "MODERATE ACTIVITY - Regular military operations"
+        },
+        {
+            "code": "4",
+            "value": "HEAVY ACTIVITY - Significant military operations"
+        },
+        {
+            "code": "5",
+            "value": "INTENSE ACTIVITY - Continuous military operations"
+        },
+        {
+            "code": "9",
+            "value": "UNKNOWN - Activity level not assessed"
+        }
+    ]
+}

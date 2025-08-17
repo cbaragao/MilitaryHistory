@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Khmer Events by Province — Bar Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f5f7fb; color: #123; }
+    h1 { margin-bottom: 8px; }
+    #vis { max-width: 900px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 6px 18px rgba(15,23,42,0.08); }
+    .note { max-width: 900px; margin: 12px auto; color: #456; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <h1>Khmer Events by Province</h1>
+  <div class="note">Interactive bar chart of province-level event counts. Use the slider inside the chart to limit to top N provinces.</div>
+  <figure id="chart-figure" aria-labelledby="chart-desc" tabindex="0">
+    <div id="vis"></div>
+    <figcaption id="chart-desc" style="position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;">Horizontal bar chart of Khmer provincial event counts where Kandal, Takeo, and Kampong Cham are the top three provinces by event count.</figcaption>
+  </figure>
+  <script>
+    vegaEmbed('#vis', '/visuals/khmer_events_bar_chart.json', { actions: false, renderer: 'svg' })
+      .then(result => {
+        try {
+          const container = result.view.container();
+          container.setAttribute('role', 'img');
+          container.setAttribute('aria-label', 'Horizontal bar chart of Khmer provincial event counts where Kandal, Takeo, and Kampong Cham are the top three provinces by event count.');
+          container.setAttribute('tabindex', '0');
+        } catch (e) {
+          // some embed responses may not expose view immediately; ignore if unavailable
+        }
+        console.log('Chart loaded', result);
+      })
+      .catch(err => console.error('Embed error', err));
+  </script>
+</body>
+</html>

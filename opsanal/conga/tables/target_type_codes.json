@@ -1,0 +1,277 @@
+{
+    "table": "Target Type Codes / Loss Codes",
+    "column_ids": [
+        "TGCOD",
+        "LCODE"
+    ],
+    "data": [
+        {
+            "code": "A",
+            "value": "WBLC Offshore"
+        },
+        {
+            "code": "AA",
+            "value": "Comm Site"
+        },
+        {
+            "code": "AB",
+            "value": "CSWY"
+        },
+        {
+            "code": "AC",
+            "value": "H and I"
+        },
+        {
+            "code": "AD",
+            "value": "Interdiction PT"
+        },
+        {
+            "code": "AE",
+            "value": "Naval Base"
+        },
+        {
+            "code": "AF",
+            "value": "Port Facility"
+        },
+        {
+            "code": "AG",
+            "value": "R/R Depot"
+        },
+        {
+            "code": "AI",
+            "value": "VC/NVA Posit"
+        },
+        {
+            "code": "AJ",
+            "value": "Artillery Site"
+        },
+        {
+            "code": "AK",
+            "value": "Bunker"
+        },
+        {
+            "code": "AL",
+            "value": "Infiltration PT"
+        },
+        {
+            "code": "AM",
+            "value": "Livestock"
+        },
+        {
+            "code": "AN",
+            "value": "Mortar Site"
+        },
+        {
+            "code": "AP",
+            "value": "Sampan"
+        },
+        {
+            "code": "AQ",
+            "value": "Assembly Area"
+        },
+        {
+            "code": "AR",
+            "value": "Base Camp"
+        },
+        {
+            "code": "AS",
+            "value": "Aircraft"
+        },
+        {
+            "code": "AT",
+            "value": "Minefield"
+        },
+        {
+            "code": "AU",
+            "value": "Weapon"
+        },
+        {
+            "code": "AV",
+            "value": "Barge"
+        },
+        {
+            "code": "AW",
+            "value": "Supply Rte"
+        },
+        {
+            "code": "AX",
+            "value": "Area/LZ Prep"
+        },
+        {
+            "code": "AY",
+            "value": "Illumination"
+        },
+        {
+            "code": "AZ",
+            "value": "Observ Post"
+        },
+        {
+            "code": "B",
+            "value": "WBLC Beached"
+        },
+        {
+            "code": "BA",
+            "value": "Tunnel"
+        },
+        {
+            "code": "BB",
+            "value": "Auto Weap Posit"
+        },
+        {
+            "code": "BC",
+            "value": "Village"
+        },
+        {
+            "code": "BD",
+            "value": "Staging Area"
+        },
+        {
+            "code": "BE",
+            "value": "Secondary Exp"
+        },
+        {
+            "code": "BF",
+            "value": "Junk"
+        },
+        {
+            "code": "BG",
+            "value": "Cargo Vessel"
+        },
+        {
+            "code": "BH",
+            "value": "Beach Strafe"
+        },
+        {
+            "code": "BI",
+            "value": "Hostile Fire"
+        },
+        {
+            "code": "BJ",
+            "value": "Fortified Area"
+        },
+        {
+            "code": "BK",
+            "value": "Fighting Holes"
+        },
+        {
+            "code": "BL",
+            "value": "Sniper Fire"
+        },
+        {
+            "code": "BM",
+            "value": "Recon by Fire"
+        },
+        {
+            "code": "BN",
+            "value": "Training Area"
+        },
+        {
+            "code": "BO",
+            "value": "Trench Line"
+        },
+        {
+            "code": "BP",
+            "value": "Unknown"
+        },
+        {
+            "code": "C",
+            "value": "WBLC Inland"
+        },
+        {
+            "code": "D",
+            "value": "CD Site"
+        },
+        {
+            "code": "E",
+            "value": "Missile Site"
+        },
+        {
+            "code": "F",
+            "value": "Radar Site"
+        },
+        {
+            "code": "G",
+            "value": "Road Segment"
+        },
+        {
+            "code": "H",
+            "value": "R/R Segment"
+        },
+        {
+            "code": "I",
+            "value": "Bridge/APP"
+        },
+        {
+            "code": "J",
+            "value": "Ferry/APP"
+        },
+        {
+            "code": "K",
+            "value": "Tranship Area"
+        },
+        {
+            "code": "L",
+            "value": "Supply Area"
+        },
+        {
+            "code": "M",
+            "value": "Military Instal"
+        },
+        {
+            "code": "N",
+            "value": "Troop Conc"
+        },
+        {
+            "code": "O",
+            "value": "Struct/Building"
+        },
+        {
+            "code": "P0",
+            "value": "Vehicle"
+        },
+        {
+            "code": "P1",
+            "value": "Truck"
+        },
+        {
+            "code": "P2",
+            "value": "Tank"
+        },
+        {
+            "code": "R",
+            "value": "Choke PT"
+        },
+        {
+            "code": "S",
+            "value": "Other"
+        },
+        {
+            "code": "T",
+            "value": "AA Site"
+        },
+        {
+            "code": "U",
+            "value": "AMMO Storage"
+        },
+        {
+            "code": "V",
+            "value": "Boat Repair"
+        },
+        {
+            "code": "W",
+            "value": "Bypass"
+        },
+        {
+            "code": "X",
+            "value": "Cave"
+        },
+        {
+            "code": "Y",
+            "value": "Check PT"
+        },
+        {
+            "code": "Z",
+            "value": "CMD Post"
+        }
+    ]
+}

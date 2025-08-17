@@ -1,0 +1,30 @@
+# ==============================================================================
+# MilitaryHistory Project - Configuration Template
+# ==============================================================================
+# 
+# SECURITY NOTE: This is a template file. Copy to settings.toml and add your 
+# actual API keys. The settings.toml file is gitignored to prevent exposure.
+#
+# Setup Instructions:
+# 1. Copy this file: cp settings.toml.example settings.toml
+# 2. Replace the placeholder values below with your actual API credentials
+# 3. Never commit the actual settings.toml file to Git
+# ==============================================================================
+
+[nara]
+# National Archives API key for downloading archival datasets
+# Get your key from: https://catalog.archives.gov/
+api_key="your_nara_api_key_here"
+
+[datadotworld]
+# Data.world authentication token for uploading processed datasets  
+# Get your token from: https://data.world/settings/advanced
+# Required permissions: read, write, admin
+token="your_datadotworld_jwt_token_here"
+
+# ==============================================================================
+# Additional configuration can be added here as needed:
+# [database]
+# [processing]
+# [export]
+# ==============================================================================

@@ -1,0 +1,182 @@
+{
+  "dataset": "PSYOPSA",
+  "table": "fixed",
+  "data": [
+    {
+      "title": "Unit/District ID",
+      "id": "USID",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Unit or district identifier (primary key)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Periodic Control Number",
+      "id": "PCN",
+      "field_group": "FIELD", 
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "System-generated sequence number",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Security Code",
+      "id": "SC0",
+      "field_group": "FIELD",
+      "length": 15,
+      "code": "N/A", 
+      "data_values": "Alphanumeric",
+      "definition": "System-generated security code",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Variable Size",
+      "id": "VSZ",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "System-generated variable size field",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "District Population",
+      "id": "POP",
+      "field_group": "FIELD",
+      "length": 7,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Total population of the district",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "GVN Controlled Population",
+      "id": "GVNPOP",
+      "field_group": "FIELD",
+      "length": 7,
+      "code": "N/A",
+      "data_values": "Numeric", 
+      "definition": "Population under GVN (Government of Vietnam) control",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Hoi Chanh Received",
+      "id": "HOICHN",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of Hoi Chanh (defectors) received",
+      "periodic_set": "fixed", 
+      "definition_file": ""
+    },
+    {
+      "title": "Refugee Population",
+      "id": "REF",
+      "field_group": "FIELD",
+      "length": 6,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of refugees in the district",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "NVA Personnel",
+      "id": "NVA",
+      "field_group": "FIELD",
+      "length": 6,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Estimated North Vietnamese Army personnel count",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "VC/Hamlet Guerrillas",
+      "id": "VCHAM",
+      "field_group": "FIELD",
+      "length": 6,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Estimated Viet Cong/Hamlet guerrillas count",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "VC Infrastructure",
+      "id": "VCI",
+      "field_group": "FIELD",
+      "length": 6,
+      "code": "N/A",
+      "data_values": "Numeric", 
+      "definition": "Estimated Viet Cong infrastructure personnel count",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Security Average Score",
+      "id": "SAS",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Average security score for the district",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Development Average Score", 
+      "id": "DAS",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Average development score for the district",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Political Average Score",
+      "id": "PAS", 
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Average political score for the district",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Number of Radios",
+      "id": "NUMRAD",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of radios in the district",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Number of TVs", 
+      "id": "NUMTV",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of television sets in the district",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    }
+  ]
+}

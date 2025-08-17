@@ -1,0 +1,31 @@
+{
+    "dataset": "VSSG",
+    "table": "Village Size Codes",
+    "definition": "Village size classification codes based on population",
+    "data": [
+        {
+            "code": "1",
+            "value": "VERY SMALL - Under 100 population"
+        },
+        {
+            "code": "2", 
+            "value": "SMALL - 100-499 population"
+        },
+        {
+            "code": "3",
+            "value": "MEDIUM - 500-999 population" 
+        },
+        {
+            "code": "4",
+            "value": "LARGE - 1000-2499 population"
+        },
+        {
+            "code": "5",
+            "value": "VERY LARGE - 2500+ population"
+        },
+        {
+            "code": "9",
+            "value": "UNKNOWN - Size not determined"
+        }
+    ]
+}

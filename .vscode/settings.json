@@ -1,3 +1,36 @@
 {
-    "sqltools.useNodeRuntime": true
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true,
+    "json": true,
+    "javascript": true
+  },
+  "github.copilot.advanced": {
+    "length": 1000,
+    "temperature": 0.1,
+    "top_p": 1,
+    "listCount": 3
+  },
+  "files.associations": {
+    "*.json": "json",
+    "*.md": "markdown",
+    "copilot-instructions.md": "markdown"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": [
+        ".github/copilot-templates/*.json"
+      ],
+      "url": "https://vega.github.io/schema/vega-lite/v5.json"
+    }
+  ],
+  "emmet.includeLanguages": {
+    "markdown": "html"
+  },
+  "sqltools": {
+    "useNodeRuntime": true
+  } 
+  
 }

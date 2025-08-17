@@ -1,0 +1,281 @@
+{
+  "dataset": "PSYOPSA",
+  "table": "ps1",
+  "data": [
+    {
+      "title": "Unit/District ID",
+      "id": "USID",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Identifies a district in South Vietnam",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Periodic Control Number",
+      "id": "PCN",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Periodic set number created by NIPSTRAN",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Date 1",
+      "id": "DATE1",
+      "field_group": "FIELD",
+      "length": 6,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Date on which surface activity was conducted (YYMMDD)",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Conducting Agency",
+      "id": "CONAG",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "CONAG",
+      "data_values": "Alphanumeric",
+      "definition": "Conducting agency code indicates which organization performed the operation",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Reporting Unit",
+      "id": "REPORT",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "REPORT",
+      "data_values": "Alphanumeric",
+      "definition": "Unit conducting the operation",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Operation Code",
+      "id": "OP",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "OP",
+      "data_values": "Alphanumeric",
+      "definition": "Specific type of operation",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Campaign Code",
+      "id": "CAMPN",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "CAMPN",
+      "data_values": "Alphanumeric",
+      "definition": "Type of campaign",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Theme Code",
+      "id": "THEM",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "THEM",
+      "data_values": "Alphanumeric",
+      "definition": "Type of theme",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Sub-Theme Code",
+      "id": "STHEM",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "STHEM",
+      "data_values": "Alphanumeric",
+      "definition": "Sub-theme of the operation",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Variable Size",
+      "id": "VSZ1",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Indicates number of characters in the logical record's variable field",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Leaflets Distributed",
+      "id": "LEAFLET",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of leaflets passed out during an operation",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Loudspeaker Hours",
+      "id": "SPRHRS",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of hours broadcast over a loudspeaker during a psychological operation",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Posters Distributed",
+      "id": "POSTERS",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Amount of posters and handbills passed out or posted during an operation",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Publications Distributed",
+      "id": "PUBLS",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Other publications passed out during an operation",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Armed Propaganda Team Days",
+      "id": "APT",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of days spent in the field by an armed propaganda team",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Combined Action Platoon Days",
+      "id": "CAP",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of days spent in the field by a combined action platoon",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Culture Drama Team Days",
+      "id": "CDT",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of days spent in the field by a culture drama team",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Civic Action Team Days",
+      "id": "CVC",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of days spent in the field by a civic action team",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Combat Loudspeaker Team Days",
+      "id": "HB",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of days spent in the field by a combat loudspeaker team",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Audio Visual Team Days",
+      "id": "HE",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of days spent in the field by an audio visual team",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Medcap/Dentcap Team Days",
+      "id": "MDC",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of days spent in the field by a medcap/dentcap team",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Rural Development Cadre Days",
+      "id": "RDC",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of days spent in the field by a rural development cadre team",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Support Liaison Team Days",
+      "id": "SLT",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of days spent in the field by a support liaison team",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Vietnamese Information Service Days",
+      "id": "VIS",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of days spent in the field by a Vietnamese information service team",
+      "periodic_set": "1",
+      "definition_file": ""
+    },
+    {
+      "title": "Target Audience",
+      "id": "AUD",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "AUD",
+      "data_values": "Alphanumeric",
+      "definition": "Target audience is the type of people at which the operation was directed",
+      "periodic_set": "1",
+      "definition_file": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+    "table": "Area Codes",
+    "column_id": "ARCOD",
+    "data": [
+        {
+            "code": "1",
+            "value": "Corps area identification"
+        },
+        {
+            "code": "2",
+            "value": "Corps area identification"
+        },
+        {
+            "code": "3",
+            "value": "Corps area identification"
+        },
+        {
+            "code": "4",
+            "value": "Corps area identification"
+        }
+    ]
+}

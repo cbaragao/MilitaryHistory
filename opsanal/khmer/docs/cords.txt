@@ -1,0 +1,48 @@
+The CORD field presented a special problem. This was a latitude/longitude field, which was
+coded into a 64-bit double word, also known as 8-bytes or two full binary words. The layout
+of each of this field is as shown below.
+aabbbbbb bbcccccc cccccccc cccccccc deffffff ffgggggg gggggggg gggggggg
+aa - Two zero bits, unused.
+bbbbbbbb - An 8-bit unsigned binary number indicating the degrees of
+latitude measured from the south pole. If the binary number is greater than
+ninety, then ninety is subtracted from the binary number and the remainder is
+the latitude in the Northern Hemisphere. If the binary number is less than
+ninety, then the binary number is subtracted from ninety and the remainder is
+the latitude in the Southern Hemisphere. If the binary number is equal to
+ninety, then the latitude is zero (the equator).
+cccccccccccccccccccccc - This is a 22-bit binary number, coded in
+powers-of-a-half notation, that represents the minutes and seconds of the
+latitude as a fraction of a degree.
+d - This is the longitude hemisphere flag.
+e - One zero bit.
+ffffffff - The longitude measured in degrees from 0 degrees (Greenwich).
+This is represented as an 8-bit unsigned binary number.
+9999999999999999999999 - This is a 22-bit binary number, coded in
+powers-of-a-half notation, that represents the minutes and seconds of the
+longitude as a fraction of a degree.
+Latitude/Longitude on the translated files is shown as ddmmssxDDDMMSSX in which:
+dd is the 2-digit degrees of Latitude
+rnm is the minutes of Latitude
+ss is the seconds of Latitude
+Accession No.: NN3-330-76-039 
+
+Prepared by: J. Powell, Archives Specialist 
+
+Date: January 26, 2004 
+
+Page 8 of 13 
+
+NARA's web site is http://www.nara.gov
+NARA Reference Page #9
+x equals either North or South
+DDD is the 3-digit degrees of Longitude
+MM is the minutes of Longitude
+SS is the seconds of Longitude
+X equals either East or West.
+The example of the latitude of 49501 ON would mean that 49 is the degrees of latitude, 50 is 
+
+the minutes, 10 is the seconds, and N is North. 
+
+Similarly, the longitude of 1032504E would mean 103 degrees, 25 minutes, 4 seconds, 
+
+East. 

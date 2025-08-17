@@ -1,0 +1,250 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Secret War in Laos: US Air Campaign Intensity (1965-1975)",
+    "subtitle": "Monthly air missions with 12-month moving average revealing sustained bombing escalation",
+    "fontSize": 18,
+    "fontWeight": "bold",
+    "anchor": "start",
+    "color": "#2c3e50",
+    "offset": 20
+  },
+  "description": "Line chart of monthly air missions in Laos where mission counts escalated dramatically from 369 in October 1965 to peaks exceeding 29,000 in 1970, revealing the scope and intensity of the classified bombing campaign during the Vietnam War",
+  "width": 900,
+  "height": 500,
+  "data": {
+    "url": "moving-averages-laos-air-bombings.csv",
+    "format": {"type": "csv", "parse": {"year_month": "date"}}
+  },
+  "transform": [
+    {
+      "filter": "datum.year_month != null && datum.missions != null"
+    },
+    {
+      "calculate": "year(datum.year_month)",
+      "as": "year"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "color": "#66CCEE",
+        "opacity": 0.3,
+        "line": {
+          "color": "#4477AA",
+          "strokeWidth": 2
+        },
+        "point": false
+      },
+      "encoding": {
+        "x": {
+          "field": "year_month",
+          "type": "temporal",
+          "title": "Year",
+          "axis": {
+            "format": "%Y",
+            "grid": true,
+            "gridColor": "#E8E8E8",
+            "labelFontSize": 12,
+            "titleFontSize": 14,
+            "titleFontWeight": "bold",
+            "titleColor": "#2c3e50"
+          }
+        },
+        "y": {
+          "field": "missions",
+          "type": "quantitative",
+          "title": "Monthly Air Missions",
+          "scale": {"domain": [0, 30000]},
+          "axis": {
+            "format": ",.0f",
+            "grid": true,
+            "gridColor": "#E8E8E8",
+            "labelFontSize": 12,
+            "titleFontSize": 14,
+            "titleFontWeight": "bold",
+            "titleColor": "#2c3e50"
+          }
+        },
+        "tooltip": [
+          {"field": "year_month", "type": "temporal", "title": "Date", "format": "%B %Y"},
+          {"field": "missions", "type": "quantitative", "title": "Air Missions", "format": ",.0f"},
+          {"field": "ma_12month", "type": "quantitative", "title": "12-Month Average", "format": ",.0f"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#CC6677",
+        "strokeWidth": 4,
+        "point": {
+          "size": 60,
+          "filled": true,
+          "stroke": "white",
+          "strokeWidth": 2
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year_month",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "ma_12month",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "year_month", "type": "temporal", "title": "Date", "format": "%B %Y"},
+          {"field": "ma_12month", "type": "quantitative", "title": "12-Month Moving Average", "format": ",.0f"},
+          {"field": "missions", "type": "quantitative", "title": "Monthly Missions", "format": ",.0f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"legend_item": "Monthly Missions", "color": "#4477AA"},
+          {"legend_item": "12-Month Moving Average", "color": "#CC6677"}
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "size": 0,
+        "opacity": 0
+      },
+      "encoding": {
+        "color": {
+          "field": "legend_item",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Monthly Missions", "12-Month Moving Average"],
+            "range": ["#4477AA", "#CC6677"]
+          },
+          "legend": {
+            "title": "Data Series",
+            "titleFontSize": 12,
+            "titleFontWeight": "bold",
+            "labelFontSize": 11,
+            "symbolType": "stroke",
+            "symbolStrokeWidth": 3,
+            "orient": "top-left",
+            "offset": 10
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#AA3377",
+        "strokeWidth": 2,
+        "strokeDash": [5, 5],
+        "opacity": 0.8
+      },
+      "encoding": {
+        "x": {
+          "datum": {"year": 1969, "month": 3, "date": 18}
+        },
+        "tooltip": {
+          "value": "Nixon announces secret bombing program escalation"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": 5,
+        "dy": -5,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#AA3377"
+      },
+      "encoding": {
+        "x": {
+          "datum": {"year": 1969, "month": 3, "date": 18}
+        },
+        "y": {
+          "datum": 25000
+        },
+        "text": {
+          "value": "Nixon Escalation"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#AA3377",
+        "strokeWidth": 2,
+        "strokeDash": [5, 5],
+        "opacity": 0.8
+      },
+      "encoding": {
+        "x": {
+          "datum": {"year": 1973, "month": 8, "date": 15}
+        },
+        "tooltip": {
+          "value": "Congressional bombing halt mandated"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "dx": -5,
+        "dy": -5,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#AA3377"
+      },
+      "encoding": {
+        "x": {
+          "datum": {"year": 1973, "month": 8, "date": 15}
+        },
+        "y": {
+          "datum": 8000
+        },
+        "text": {
+          "value": "Congressional Halt"
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "shared"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFont": "Arial, sans-serif",
+      "titleFont": "Arial, sans-serif",
+      "labelColor": "#2c3e50",
+      "titleColor": "#2c3e50",
+      "gridColor": "#E8E8E8",
+      "domainColor": "#2c3e50"
+    },
+    "legend": {
+      "labelFont": "Arial, sans-serif",
+      "titleFont": "Arial, sans-serif",
+      "labelColor": "#2c3e50",
+      "titleColor": "#2c3e50",
+      "orient": "top-right",
+      "offset": 10
+    },
+    "title": {
+      "font": "Arial, sans-serif",
+      "color": "#2c3e50"
+    },
+    "background": "white"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "_template_info": {
+    "name": "Accessible Small Multiples Chart",
+    "use_for": "4+ data series or comparing patterns across categories", 
+    "required_variables": [
+      "{{chart_title}} - Insight-focused title about pattern differences",
+      "{{alt_text_following_cesal_formula}} - Amy Cesal format description",
+      "{{data_source_url}} - Path to your data file",
+      "{{facet_field}} - Column name for creating separate charts",
+      "{{x_field}} - Column name for X-axis (usually temporal)",
+      "{{y_field}} - Column name for Y-axis (usually quantitative)",
+      "{{y_axis_title}} - Y-axis label with units"
+    ],
+    "optional_variables": [
+      "{{mark_type:line}} - Chart type (default: line)",
+      "{{x_type:temporal}} - X data type (default: temporal)",
+      "{{date_format:%Y}} - Date formatting (default: %Y)"
+    ],
+    "example_substitution": {
+      "chart_title": "Each military branch showed different mission patterns during Vietnam War",
+      "alt_text_following_cesal_formula": "Small multiples line chart of monthly missions by military branch where Air Force peaked in 1968 while Navy remained steady",
+      "data_source_url": "data/missions-by-branch.csv", 
+      "facet_field": "military_branch",
+      "x_field": "mission_month",
+      "y_field": "mission_count",
+      "y_axis_title": "Monthly missions (thousands)"
+    }
+  },
+  
+  "title": {
+    "text": "{{chart_title}}",
+    "fontSize": 16,
+    "anchor": "start",
+    "fontWeight": "normal"
+  },
+  "description": "{{alt_text_following_cesal_formula}}",
+  
+  "data": {
+    "url": "{{data_source_url}}"
+  },
+  
+  "transform": [
+    {"filter": "datum.{{value_field}} != null"},
+    {"filter": "datum.{{date_field}} != null"}
+  ],
+  
+  "facet": {
+    "field": "{{facet_field}}",
+    "type": "nominal",
+    "columns": 2,
+    "header": {
+      "title": null,
+      "labelFontSize": 14,
+      "labelFontWeight": "bold",
+      "labelPadding": 10
+    }
+  },
+  
+  "spec": {
+    "width": 200,
+    "height": 150,
+    "mark": {
+      "type": "{{mark_type:line}}",
+      "color": "#4477AA",
+      "strokeWidth": 3,
+      "point": {
+        "filled": true,
+        "size": 60
+      }
+    },
+    "encoding": {
+      "x": {
+        "field": "{{x_field}}",
+        "type": "{{x_type:temporal}}",
+        "axis": {
+          "grid": false,
+          "title": null,
+          "format": "{{date_format:%Y}}"
+        }
+      },
+      "y": {
+        "field": "{{y_field}}",
+        "type": "quantitative",
+        "axis": {
+          "grid": true,
+          "gridOpacity": 0.2,
+          "title": "{{y_axis_title}}"
+        }
+      }
+    }
+  },
+  
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  
+  "config": {
+    "view": {
+      "stroke": null,
+      "keyboard": true
+    },
+    "axis": {
+      "domain": false,
+      "ticks": false
+    }
+  }
+}

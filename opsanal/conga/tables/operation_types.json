@@ -1,0 +1,22 @@
+{
+    "table": "Operation Types",
+    "column_id": "OPCOD",
+    "data": [
+        {
+            "code": "NG",
+            "value": "Naval Gunfire"
+        },
+        {
+            "code": "SE",
+            "value": "Sea Dragon"
+        },
+        {
+            "code": "VS",
+            "value": "Naval operation type"
+        },
+        {
+            "code": "VN",
+            "value": "Naval operation type"
+        }
+    ]
+}

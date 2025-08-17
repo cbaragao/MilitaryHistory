@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Naval Fire Support Mission Density by Count and Average Range",
+    "subtitle": ["2D heatmap of Vietnam War naval gunfire missions 1968-1972", 
+                 "Key Finding: Most ships operated at 100-180k yard ranges with moderate mission counts",
+                 "Outliers include BB New Jersey (long range) and river patrol craft (short range)",
+                 "Note: Analysis limited to ships with 50+ missions in dataset"],
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "anchor": "start"
+  },
+  "data": {
+    "name":"source"
+  },
+  "transform": [
+    {
+      "filter": {"and": [
+        {"field": "mean_range", "valid": true},
+        {"field": "number_of_missions", "valid": true}
+      ]}
+    }
+  ],
+  "mark": {
+    "type": "rect",
+    "stroke": "#FFFFFF",
+    "strokeWidth": 1
+  },
+  "width": 400,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "bin": {"maxbins": 20},
+      "field": "number_of_missions",
+      "type": "quantitative",
+      "title": "Number of Missions per Ship",
+      "axis": {
+        "labelFontSize": 11,
+        "titleFontSize": 12
+      }
+    },
+    "y": {
+      "bin": {"maxbins": 15},
+      "field": "mean_range",
+      "type": "quantitative",
+      "title": "Mean Range (thousands of yards)",
+      "axis": {
+        "labelFontSize": 11,
+        "titleFontSize": 12,
+        "format": ".1f"
+      }
+    },
+    "color": {
+      "field": "mean_quantity_expended",
+      "type": "quantitative",
+      "title": "Avg Rounds per Mission",
+      "scale": {
+        "range": ["#f2f0f7", "#9e9ac8", "#54278f"],
+        "type": "sequential"
+      },
+      "legend": {
+        "titleFontSize": 12,
+        "labelFontSize": 11,
+        "gradientLength": 200,
+        "format": ".1f"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "ship",
+        "type": "nominal",
+        "title": "Ship Name"
+      },
+      {
+        "field": "number_of_missions",
+        "type": "quantitative",
+        "title": "Total Missions"
+      },
+      {
+        "field": "mean_range",
+        "type": "quantitative",
+        "title": "Mean Range (thousands of yards)",
+        "format": ".1f"
+      },
+      {
+        "field": "mean_quantity_expended",
+        "type": "quantitative",
+        "title": "Avg Rounds per Mission",
+        "format": ".1f"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "background": "#FFFFFF",
+    "font": "Arial, sans-serif"
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vega-Lite Visualization</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <!-- Load Vega-Lite stack -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .chart-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .loading { 
+            opacity: 0.5; 
+        }
+        #vis {
+            width: 100%;
+            min-height: 400px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <h1>Sales Performance Dashboard</h1>
+        <div id="vis"></div>
+    </div>
+    
+    <script>
+        // Add error handling and loading state
+        document.getElementById('vis').innerHTML = '<p>Loading visualization...</p>';
+        
+        const spec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "description": "Sales performance by quarter",
+            "data": {
+                "values": [
+                    { "quarter": "Q1", "sales": 2400, "target": 2200 },
+                    { "quarter": "Q2", "sales": 1800, "target": 2000 },
+                    { "quarter": "Q3", "sales": 3200, "target": 2800 },
+                    { "quarter": "Q4", "sales": 2900, "target": 3000 }
+                ]
+            },
+            "mark": { 
+                "type": "bar", 
+                "tooltip": true,
+                "color": "#1f77b4"
+            },
+            "encoding": {
+                "x": { 
+                    "field": "quarter", 
+                    "type": "ordinal",
+                    "title": "Quarter"
+                },
+                "y": { 
+                    "field": "sales", 
+                    "type": "quantitative", 
+                    "scale": { "domain": [0, 3500] },
+                    "title": "Sales ($)"
+                },
+                "color": { 
+                    "field": "quarter", 
+                    "type": "nominal", 
+                    "legend": null,
+                    "scale": {
+                        "range": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728"]
+                    }
+                }
+            },
+            "width": 600,
+            "height": 300
+        };
+        
+        // Use proper error handling
+        vegaEmbed('#vis', spec, {
+            renderer: 'svg',
+            actions: { 
+                export: true, 
+                source: false, 
+                compiled: false, 
+                editor: true 
+            }
+        }).then(function(result) {
+            console.log('Vega-Lite chart rendered successfully');
+        }).catch(function(error) {
+            console.error('Error rendering Vega-Lite chart:', error);
+            document.getElementById('vis').innerHTML = '<p style="color: red;">Error loading visualization: ' + error.message + '</p>';
+        });
+    </script>
+</body>
+</html>

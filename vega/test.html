@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vega-Lite Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            background: #f0f0f0;
+        }
+        #vis { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vega-Lite Test</h1>
+    <div id="vis"></div>
+    
+    <script>
+        console.log('Starting Vega-Lite test...');
+        
+        const spec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "values": [
+                    {"category": "A", "value": 28},
+                    {"category": "B", "value": 55},
+                    {"category": "C", "value": 43},
+                    {"category": "D", "value": 91}
+                ]
+            },
+            "mark": "bar",
+            "encoding": {
+                "x": {"field": "category", "type": "nominal"},
+                "y": {"field": "value", "type": "quantitative"}
+            }
+        };
+        
+        vegaEmbed('#vis', spec)
+            .then(function(result) {
+                console.log('Success!', result);
+            })
+            .catch(function(error) {
+                console.error('Error:', error);
+                document.getElementById('vis').innerHTML = 
+                    '<p style="color: red;">Error: ' + error.message + '</p>';
+            });
+    </script>
+</body>
+</html>

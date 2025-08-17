@@ -1,0 +1,104 @@
+---
+applyTo: "**/*.{js,ts,json,md}"
+description: "Accessibility validation for all data visualizations"
+---
+
+# Accessibility Validation Rules
+
+## Color Vision Deficiency Testing
+
+### Required Validations
+1. **Red-Green Colorblind** (8% of men)
+   - Test all red-green combinations
+   - Ensure adequate separation in Paul Tol palette
+
+2. **Blue-Yellow Colorblind** (1-2% of population)  
+   - Avoid blue + yellow combinations
+   - Test blue + purple combinations
+
+3. **Complete Colorblind** (0.01% of population)
+   - Ensure patterns/shapes distinguish all categories
+   - Test in pure grayscale
+
+### Validation Function Template
+```javascript
+function validateColorAccessibility(colors) {
+  const forbidden = [
+    // Red-Green issues
+    ['#EE6677', '#228833'],
+    ['#CC6677', '#228833'], 
+    ['#FF0000', '#00FF00'],
+    
+    // Blue-Yellow issues
+    ['#4477AA', '#CCBB44'],
+    ['#4477AA', '#DDDD77'],
+    
+    // Blue-Purple issues  
+    ['#4477AA', '#AA3377'],
+    
+    // Age-related issues
+    ['#4477AA', '#666666']
+  ];
+  
+  return !forbidden.some(combo => 
+    colors.includes(combo[0]) && colors.includes(combo[1])
+  );
+}
+```
+
+## Alternative Encoding Requirements
+
+### For 3+ Categories - MANDATORY
+```json
+{
+  "encoding": {
+    "color": {
+      "field": "category",
+      "scale": {"range": ["#4477AA", "#CC6677", "#228833"]},
+      "legend": {"title": "Category"}
+    },
+    "strokeDash": {
+      "field": "category", 
+      "scale": {"range": [[1,0], [8,4], [4,4]]},
+      "legend": null
+    },
+    "shape": {
+      "field": "category",
+      "scale": {"range": ["circle", "square", "triangle-up"]},
+      "legend": null
+    }
+  }
+}
+```
+
+## Contrast Requirements
+
+### Minimum Standards
+- **Graphics**: 3:1 contrast ratio
+- **Text**: 4.5:1 contrast ratio  
+- **Large text**: 3:1 contrast ratio
+
+### Implementation
+```json
+{
+  "mark": {
+    "stroke": "white",
+    "strokeWidth": 2,
+    "strokeOpacity": 1
+  }
+}
+```
+
+## Screen Reader Support
+
+### Required Elements
+```json
+{
+  "description": "Chart type of data type where key insight",
+  "title": {
+    "text": "Clear, descriptive title",
+    "fontSize": 16
+  },
+  "view": {"keyboard": true}
+}
+```

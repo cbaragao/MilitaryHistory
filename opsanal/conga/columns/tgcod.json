@@ -1,0 +1,9 @@
+{
+  "dataset": "CONGA",
+  "column_id": "TGCOD",
+  "column": "Target Type Code",
+  "definition": "Target type code for the operation or loss.",
+  "field_group": "FIELD",
+  "length": 2,
+  "data": "See tables/target_type_codes.json"
+}

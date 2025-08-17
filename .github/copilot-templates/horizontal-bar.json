@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "_template_info": {
+    "name": "Accessible Horizontal Bar Chart", 
+    "use_for": "Rankings and categorical comparisons",
+    "required_variables": [
+      "{{chart_title}} - Insight-focused title highlighting key finding",
+      "{{alt_text_following_cesal_formula}} - Amy Cesal format description",
+      "{{data_source_url}} - Path to your data file", 
+      "{{category_field}} - Column name for categories",
+      "{{value_field}} - Column name for numeric values",
+      "{{x_axis_title}} - X-axis label with units"
+    ],
+    "optional_variables": [
+      "{{max_categories:10}} - Limit displayed categories (default: 10)"
+    ],
+    "example_substitution": {
+      "chart_title": "Vietnam War resulted in highest US casualties since WWII",
+      "alt_text_following_cesal_formula": "Horizontal bar chart of war casualties where Vietnam War shows 58,000 deaths, highest since WWII",
+      "data_source_url": "data/us-war-casualties.csv",
+      "category_field": "conflict_name",
+      "value_field": "total_casualties",
+      "x_axis_title": "Total casualties (thousands)",
+      "max_categories:10": "max_categories:8"
+    }
+  },
+  
+  "title": {
+    "text": "{{chart_title}}",
+    "fontSize": 16,
+    "anchor": "start",
+    "fontWeight": "normal"
+  },
+  "description": "{{alt_text_following_cesal_formula}}",
+  "width": "container",
+  "height": {"step": 30},
+  
+  "data": {
+    "url": "{{data_source_url}}"
+  },
+  
+  "transform": [
+    {"filter": "datum.{{value_field}} != null"},
+    {
+      "window": [{"op": "rank", "as": "rank"}], 
+      "sort": [{"field": "{{value_field}}", "order": "descending"}]
+    },
+    {"filter": "datum.rank <= {{max_categories:10}}"}
+  ],
+
+  "mark": {
+    "type": "bar",
+    "stroke": "white",
+    "strokeWidth": 2,
+    "height": {"band": 0.7}
+  },
+
+  "encoding": {
+    "y": {
+      "field": "{{category_field}}",
+      "type": "nominal",
+      "sort": "-x",
+      "axis": {
+        "title": null,
+        "labelLimit": 120,
+        "ticks": false
+      }
+    },
+    "x": {
+      "field": "{{value_field}}",
+      "type": "quantitative",
+      "axis": {
+        "title": "{{x_axis_title}}",
+        "grid": false
+      }
+    },
+    "color": {
+      "condition": {
+        "test": "datum.rank <= 3",
+        "value": "#4477AA"
+      },
+      "value": "#CCCCCC"
+    }
+  },
+
+  "config": {
+    "view": {
+      "stroke": null,
+      "keyboard": true
+    },
+    "axis": {
+      "domain": false,
+      "ticks": false
+    }
+  }
+}

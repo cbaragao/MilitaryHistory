@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "US Air Missions by Country During Vietnam War (1965-1975)",
+    "subtitle": "Monthly air mission counts showing operational intensity across Southeast Asia",
+    "fontSize": 16,
+    "fontWeight": "bold",
+    "anchor": "start",
+    "color": "#333333"
+  },
+  "description": "Line chart of monthly air mission data where South Vietnam shows highest mission counts peaking at 27,781 in June 1968, demonstrating the scale and geographic distribution of US air operations during the Vietnam War conflict",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "vietnam-monthly-air-missions.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": "datum.year_month != ''"
+    },
+    {
+      "calculate": "datetime(split(datum.year_month, '-')[0], split(datum.year_month, '-')[1] - 1, 1)",
+      "as": "date"
+    },
+    {
+      "filter": "datum.target_country != 'THAILAND'"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": {
+      "size": 60,
+      "filled": true,
+      "stroke": "white",
+      "strokeWidth": 2
+    },
+    "strokeWidth": 3,
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "format": "%Y",
+        "grid": true,
+        "gridColor": "#E5E5E5",
+        "labelFontSize": 12,
+        "titleFontSize": 14,
+        "titleFontWeight": "bold"
+      }
+    },
+    "y": {
+      "field": "missions",
+      "type": "quantitative",
+      "title": "Number of Air Missions",
+      "scale": {"type": "linear"},
+      "axis": {
+        "format": ",.0f",
+        "grid": true,
+        "gridColor": "#E5E5E5",
+        "labelFontSize": 12,
+        "titleFontSize": 14,
+        "titleFontWeight": "bold"
+      }
+    },
+    "color": {
+      "field": "target_country",
+      "type": "nominal",
+      "title": "Target Country",
+      "scale": {
+        "range": ["#4477AA", "#CC6677", "#AA3377", "#66CCEE"]
+      },
+      "legend": {
+        "title": "Target Country",
+        "titleFontSize": 14,
+        "titleFontWeight": "bold",
+        "labelFontSize": 12,
+        "symbolSize": 200,
+        "symbolStrokeWidth": 2,
+        "symbolStrokeColor": "white",
+        "orient": "right"
+      }
+    },
+    "strokeDash": {
+      "field": "target_country",
+      "type": "nominal",
+      "scale": {
+        "domain": ["CAMBODIA", "LAOS", "NORTH VIETNAM", "SOUTH VIETNAM"],
+        "range": [[1,0], [5,5], [10,5], [15,5,5,5]]
+      },
+      "legend": null
+    },
+    "description": {
+      "field": "target_country",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {"field": "target_country", "type": "nominal", "title": "Country"},
+      {"field": "date", "type": "temporal", "title": "Date", "format": "%B %Y"},
+      {"field": "missions", "type": "quantitative", "title": "Air Missions", "format": ",.0f"}
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent",
+      "continuousWidth": 800,
+      "continuousHeight": 400
+    },
+    "axis": {
+      "labelColor": "#333333",
+      "titleColor": "#333333",
+      "gridColor": "#E5E5E5",
+      "tickColor": "#333333",
+      "domainColor": "#333333"
+    },
+    "legend": {
+      "labelColor": "#333333",
+      "titleColor": "#333333"
+    },
+    "title": {
+      "color": "#333333"
+    },
+    "background": "white",
+    "font": "Arial, sans-serif"
+  }
+}

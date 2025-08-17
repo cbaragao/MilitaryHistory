@@ -1,0 +1,31 @@
+{
+  "dataset": "psyopsa",
+  "table": "campaign_codes",
+  "definition": "Campaign codes for psychological operations",
+  "data": [
+    {
+      "code": "V",
+      "value": "Vietnam Campaign"
+    },
+    {
+      "code": "L",
+      "value": "Laos Campaign"
+    },
+    {
+      "code": "C",
+      "value": "Cambodia Campaign"
+    },
+    {
+      "code": "P",
+      "value": "Pacification Campaign"
+    },
+    {
+      "code": "U",
+      "value": "Urban Operations"
+    },
+    {
+      "code": "R",
+      "value": "Rural Operations"
+    }
+  ]
+}

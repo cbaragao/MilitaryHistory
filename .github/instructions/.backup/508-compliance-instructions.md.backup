@@ -1,0 +1,37 @@
+## Section 508 compliance implementation guide
+
+### Legal requirements translation
+
+**WCAG 2.1 Success Criteria Implementation:**
+
+1. **1.1.1 Non-text Content (Level A)** 
+   - Mandatory `description` field in every specification
+   - Use Amy Cesal formula: "Chart type of [data type] where [reason]" 
+
+2. **1.4.1 Use of Color (Level A)** 
+   - Never rely solely on color 
+   - Always include alternative encodings (patterns, shapes, direct labels) 
+
+3. **1.4.3 Contrast (Level AA)** 
+   - Graphics: minimum 3:1 contrast ratio
+   - Add white stroke borders to bars/points
+   - Use Paul Tol palettes (pre-tested for contrast)
+
+4. **2.5.1 Pointer Gestures (Level A)** 
+   - Single-point activation for all interactions
+   - Keyboard alternatives for complex gestures
+
+### Compliance validation checklist
+
+```javascript
+// Automated accessibility check template
+function validateVegaLiteAccessibility(spec) {
+  const checks = {
+    hasDescription: !!spec.description,
+    hasColorAlternatives: hasAlternativeEncodings(spec.encoding),
+    usesAccessibleColors: isAccessiblePalette(spec.encoding.color?.scale?.range),
+    hasProperContrast: hasStrokeBorders(spec.mark),
+    keyboardAccessible: !!spec.view?.keyboard
+  };
+  return checks;
+}

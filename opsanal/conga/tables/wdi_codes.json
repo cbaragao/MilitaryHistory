@@ -1,0 +1,34 @@
+{
+    "table": "Who Inflicted Damage",
+    "column_id": "WDI",
+    "data": [
+        {
+            "code": "C",
+            "value": "CD Site"
+        },
+        {
+            "code": "M",
+            "value": "Missile"
+        },
+        {
+            "code": "S",
+            "value": "Ship"
+        },
+        {
+            "code": "A",
+            "value": "Aircraft"
+        },
+        {
+            "code": "1",
+            "value": "Unknown"
+        },
+        {
+            "code": "T",
+            "value": "Torpedo"
+        },
+        {
+            "code": "N",
+            "value": "Mine"
+        }
+    ]
+}

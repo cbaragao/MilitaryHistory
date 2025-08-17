@@ -1,0 +1,47 @@
+{
+  "dataset": "psyopsa",
+  "table": "reporting_unit",
+  "definition": "Reporting unit codes for psychological operations",
+  "data": [
+    {
+      "code": "001",
+      "value": "1st PSYOP Battalion"
+    },
+    {
+      "code": "002",
+      "value": "2nd PSYOP Battalion"
+    },
+    {
+      "code": "003",
+      "value": "3rd PSYOP Battalion"
+    },
+    {
+      "code": "004",
+      "value": "4th PSYOP Battalion"
+    },
+    {
+      "code": "005",
+      "value": "5th PSYOP Battalion"
+    },
+    {
+      "code": "006",
+      "value": "6th PSYOP Battalion"
+    },
+    {
+      "code": "007",
+      "value": "7th PSYOP Battalion"
+    },
+    {
+      "code": "008",
+      "value": "8th PSYOP Battalion"
+    },
+    {
+      "code": "009",
+      "value": "9th PSYOP Battalion"
+    },
+    {
+      "code": "010",
+      "value": "10th PSYOP Battalion"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "dataset": "psyopsa",
+  "table": "audience_codes",
+  "definition": "Target audience codes for psychological operations",
+  "data": [
+    {
+      "code": "C",
+      "value": "Civilian Population"
+    },
+    {
+      "code": "V",
+      "value": "Viet Cong"
+    },
+    {
+      "code": "N",
+      "value": "North Vietnamese Army"
+    },
+    {
+      "code": "G",
+      "value": "Government Forces"
+    },
+    {
+      "code": "A",
+      "value": "Allied Forces"
+    },
+    {
+      "code": "Y",
+      "value": "Youth"
+    },
+    {
+      "code": "R",
+      "value": "Rural Population"
+    },
+    {
+      "code": "U",
+      "value": "Urban Population"
+    },
+    {
+      "code": "M",
+      "value": "Military Personnel"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Search & Destroy Operations: Time of Day Analysis (1968)",
+    "subtitle": ["Mission timing reveals 580+ operations concentrated 22:00-24:00 hours (peak nighttime tactics),", 
+                 "minimal daytime activity 09:00-17:00 hours, and secondary dawn operations 04:00-06:00 hours,", 
+                 "demonstrating strategic use of darkness for operational advantage during Vietnam War"],
+    "fontSize": 18,
+    "fontWeight": "bold",
+    "anchor": "start",
+    "color": "#2c3e50",
+    "offset": 20
+  },
+  "description": "Heat map analysis of 1968 search and destroy missions reveals critical tactical patterns: 1) Overwhelming nighttime preference with 580+ missions between 22:00-24:00, demonstrating reliance on darkness for operational security and enemy vulnerability exploitation; 2) Strategic avoidance of daylight hours (09:00-17:00) with fewer than 50 missions each, minimizing exposure during peak enemy readiness; 3) Secondary dawn operations (04:00-06:00) with 100-200 missions, capitalizing on pre-dawn surprise attacks; 4) Late evening build-up (20:00-21:00) showing preparation phases before peak nighttime operations. This pattern reflects sophisticated understanding of circadian tactical advantages, enemy sleep cycles, and coordination with night-capable air support during the critical 1968 campaign period including Tet Offensive response operations.",
+  "width": 500,
+  "height": 600,
+  "data": {
+    "url": "../datasets/1968-search-and-dest-tod.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.time_of_day != null && datum.time_of_day != ''"
+    },
+    {
+      "calculate": "floor(datum.time_of_day / 100)",
+      "as": "hour"
+    },
+    {
+      "filter": "datum.hour >= 0 && datum.hour <= 23"
+    },
+    {
+      "calculate": "datum.hour == 0 ? '00:00' : datum.hour < 10 ? '0' + datum.hour + ':00' : datum.hour + ':00'",
+      "as": "hour_label"
+    },
+    {
+      "aggregate": [{"op": "count", "as": "mission_count"}],
+      "groupby": ["hour", "hour_label"]
+    },
+    {
+      "calculate": "floor(datum.mission_count / 50) * 50",
+      "as": "mission_bin"
+    },
+    {
+      "calculate": "datum.mission_bin + '-' + (datum.mission_bin + 49)",
+      "as": "mission_range"
+    },
+    {
+      "calculate": "datum.mission_count > 200 ? '200+' : datum.mission_count >= 150 ? '150-199' : datum.mission_count >= 100 ? '100-149' : datum.mission_count >= 50 ? '50-99' : datum.mission_count >= 25 ? '25-49' : datum.mission_count >= 10 ? '10-24' : datum.mission_count >= 5 ? '5-9' : '1-4'",
+      "as": "intensity_bin"
+    }
+  ],
+  "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 2,
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "intensity_bin",
+      "type": "ordinal",
+      "title": "Mission Count Range",
+      "sort": ["1-4", "5-9", "10-24", "25-49", "50-99", "100-149", "150-199", "200+"],
+      "axis": {
+        "labelAngle": -45,
+        "labelFontSize": 11,
+        "titleFontSize": 14,
+        "titleFontWeight": "bold",
+        "titleColor": "#2c3e50",
+        "labelColor": "#2c3e50"
+      }
+    },
+    "y": {
+      "field": "hour_label",
+      "type": "ordinal",
+      "title": "Hour of Day",
+      "sort": ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00"],
+      "axis": {
+        "labelFontSize": 11,
+        "titleFontSize": 14,
+        "titleFontWeight": "bold",
+        "titleColor": "#2c3e50",
+        "labelColor": "#2c3e50"
+      }
+    },
+    "color": {
+      "field": "mission_count",
+      "type": "quantitative",
+      "title": "Exact Count",
+      "scale": {
+        "scheme": "blues",
+        "range": ["#f7fbff", "#4477AA"]
+      },
+      "legend": {
+        "title": "Mission Count",
+        "titleFontSize": 12,
+        "titleFontWeight": "bold",
+        "labelFontSize": 11,
+        "orient": "right",
+        "gradientLength": 300,
+        "gradientThickness": 15
+      }
+    },
+    "opacity": {
+      "condition": {
+        "test": "datum.mission_count > 0",
+        "value": 1
+      },
+      "value": 0.1
+    },
+    "tooltip": [
+      {"field": "hour_label", "type": "nominal", "title": "Hour"},
+      {"field": "mission_count", "type": "quantitative", "title": "Total Missions"},
+      {"field": "intensity_bin", "type": "nominal", "title": "Activity Range"}
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFont": "Arial, sans-serif",
+      "titleFont": "Arial, sans-serif",
+      "labelColor": "#2c3e50",
+      "titleColor": "#2c3e50",
+      "gridColor": "#E8E8E8",
+      "domainColor": "#2c3e50"
+    },
+    "legend": {
+      "labelFont": "Arial, sans-serif",
+      "titleFont": "Arial, sans-serif",
+      "labelColor": "#2c3e50",
+      "titleColor": "#2c3e50"
+    },
+    "title": {
+      "font": "Arial, sans-serif",
+      "color": "#2c3e50"
+    },
+    "background": "white"
+  }
+}

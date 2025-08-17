@@ -1,2 +1,125 @@
+# ==============================================================================
+# MilitaryHistory Project .gitignore
+# Archival data processing pipeline - keep repository focused on code/schemas
+# ==============================================================================
+
+# ===== HIGH PRIORITY (Security & Size) =====
+
+# Archival source data files - should not be in Git (re-downloadable from NARA)
+opsanal/*/data/
+datasets/*.csv
+*.dat
+*.DAT
+*.zip
+*_extracted/
+
+# Database files - regenerated from source data processing
+*.db
+*.duckdb
+*.DuckDB
+*.sqlite
+OPSANAL.DuckDB
 src/ddb
 **/artifacts/
+
+# Virtual environment - should be recreated locally
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.pytest_cache/
+
+# ===== MEDIUM PRIORITY (Development artifacts) =====
+
+# Test and temporary files
+test_*.csv
+*_test.csv
+temp_*
+*.tmp
+*.temp
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# Prompt files
+*.prompt
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===== LOW PRIORITY (Generated outputs) =====
+
+# Generated visualizations and maps (if regenerable from data)
+# Uncomment if these should not be tracked:
+# maps/*.html
+# visuals/*.html
+# *.png
+# *.jpg
+# *.gif
+
+# Log files
+*.log
+logs/
+*.out
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment variables and config files with secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+src/config/settings.toml
+*.toml
+config/*.toml
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json

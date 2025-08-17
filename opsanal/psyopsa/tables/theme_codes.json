@@ -1,0 +1,47 @@
+{
+  "dataset": "psyopsa",
+  "table": "theme_codes",
+  "definition": "Theme codes for psychological operations messages",
+  "data": [
+    {
+      "code": "01",
+      "value": "Anti-Communist"
+    },
+    {
+      "code": "02",
+      "value": "Pro-Government"
+    },
+    {
+      "code": "03",
+      "value": "Defection Appeals"
+    },
+    {
+      "code": "04",
+      "value": "Morale Building"
+    },
+    {
+      "code": "05",
+      "value": "Information/News"
+    },
+    {
+      "code": "06",
+      "value": "Counter-Propaganda"
+    },
+    {
+      "code": "07",
+      "value": "Cultural/Religious"
+    },
+    {
+      "code": "08",
+      "value": "Economic Development"
+    },
+    {
+      "code": "09",
+      "value": "Security/Safety"
+    },
+    {
+      "code": "10",
+      "value": "Other"
+    }
+  ]
+}

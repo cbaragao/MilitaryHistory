@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "_example_note": "This is a COMPLETE working example showing proper variable substitution",
+  
+  "title": {
+    "text": "Air missions peaked during Tet Offensive in early 1968",
+    "fontSize": 16,
+    "anchor": "start",
+    "fontWeight": "normal"
+  },
+  "description": "Line chart of monthly air missions where South Vietnam operations peaked at 15,000 missions in March 1968, declining to 8,000 by December",
+  "width": "container",
+  "height": 400,
+  
+  "data": {
+    "url": "data/vietnam-missions.csv"
+  },
+  
+  "transform": [
+    {"filter": "datum.mission_count != null"},
+    {"filter": "datum.mission_date != null"}
+  ],
+
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 80
+    },
+    "strokeWidth": 3,
+    "interpolate": "monotone",
+    "stroke": "white",
+    "strokeOpacity": 1
+  },
+
+  "encoding": {
+    "x": {
+      "field": "mission_date",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "format": "%Y-%m",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "mission_count",
+      "type": "quantitative",
+      "axis": {
+        "title": "Number of missions (thousands)",
+        "grid": true,
+        "gridOpacity": 0.2
+      }
+    },
+    "color": {
+      "field": "theater",
+      "type": "nominal",
+      "scale": {
+        "range": ["#4477AA", "#CC6677", "#66CCEE"]
+      },
+      "legend": {
+        "title": "Theater of operations",
+        "orient": "bottom",
+        "direction": "horizontal",
+        "columns": 3
+      }
+    },
+    "strokeDash": {
+      "field": "theater",
+      "type": "nominal",
+      "scale": {
+        "range": [[1,0], [8,4], [4,4]]
+      },
+      "legend": null
+    }
+  },
+
+  "config": {
+    "view": {
+      "stroke": null,
+      "keyboard": true
+    },
+    "axis": {
+      "domain": false,
+      "ticks": false
+    }
+  }
+}

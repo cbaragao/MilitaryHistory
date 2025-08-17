@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Horizontal bar chart of Khmer provincial event counts where Kandal, Takeo, and Kampong Cham are the top three provinces by event count.",
+  "usermeta": {
+    "alt": "Horizontal bar chart of Khmer provincial event counts where Kandal, Takeo, and Kampong Cham are the top three provinces by event count."
+  },
+  "title": {
+    "text": "Khmer Events by Province",
+    "subtitle": "Top N provinces by event count (use slider to adjust)",
+    "subtitleFontSize": 12,
+    "fontSize": 16
+  },
+  "width": 760,
+  "height": 600,
+  "autosize": { "type": "pad", "contains": "padding" },
+  "padding": { "top": 60, "bottom": 60 },
+  "params": [
+    {
+      "name": "top_n",
+      "value": 10,
+      "bind": { "input": "range", "min": 1, "max": 25, "step": 1 }
+    }
+  ],
+  "data": {
+    "url": "../datasets/khmer-events-by-province.csv",
+    "format": { "type": "csv" }
+  },
+  "transform": [
+    { "calculate": "toNumber(datum.event_count)", "as": "events" },
+    {
+      "window": [ { "op": "rank", "as": "rank" } ],
+      "sort": [ { "field": "events", "order": "descending" } ]
+    },
+  { "filter": "datum.rank <= top_n" }
+  ],
+  "layer": [
+    {
+      "mark": { "type": "rect", "opacity": 0 },
+      "encoding": {
+        "x": { "value": 0 },
+        "x2": { "value": 760 },
+        "y": { "value": 0 },
+        "y2": { "value": 40 }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadius": 4
+      },
+      "encoding": {
+        "y": {
+          "field": "province_name",
+          "type": "nominal",
+          "sort": { "op": "max", "field": "events", "order": "descending" },
+          "axis": { "title": "Province", "labelLimit": 200 }
+        },
+        "x": {
+          "field": "events",
+          "type": "quantitative",
+          "axis": { "title": "Event Count" }
+        },
+  "color": { "value": "#4477AA" },
+        "tooltip": [
+          { "field": "province_name", "type": "nominal", "title": "Province" },
+          { "field": "events", "type": "quantitative", "title": "Event Count", "format": "," },
+          { "field": "avg_longitude", "type": "quantitative", "title": "Avg Lon", "format": ".3f" },
+          { "field": "avg_latitude", "type": "quantitative", "title": "Avg Lat", "format": ".3f" }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 4,
+        "fontWeight": 600
+      },
+      "encoding": {
+  "y": { "field": "province_name", "type": "nominal", "sort": { "op": "max", "field": "events", "order": "descending" } },
+        "x": { "field": "events", "type": "quantitative" },
+        "text": { "field": "events", "type": "quantitative", "format": "," },
+        "color": { "value": "#0b2948" }
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": "transparent" },
+    "axis": { "labelFontSize": 12, "titleFontSize": 13, "labelColor": "#0b2948", "titleColor": "#0b2948" }
+  }
+}

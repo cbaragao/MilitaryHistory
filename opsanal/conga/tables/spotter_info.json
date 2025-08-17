@@ -1,0 +1,22 @@
+{
+    "table": "Spotter Info",
+    "column_id": "SPOTS",
+    "data": [
+        {
+            "code": "N",
+            "value": "None"
+        },
+        {
+            "code": "G",
+            "value": "Ground"
+        },
+        {
+            "code": "A",
+            "value": "Air"
+        },
+        {
+            "code": "S",
+            "value": "Ship"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "dataset": "psyopsa",
+  "table": "conducting_agency",
+  "definition": "Conducting agency codes for psychological operations",
+  "data": [
+    {
+      "code": "A",
+      "value": "Army"
+    },
+    {
+      "code": "N",
+      "value": "Navy"
+    },
+    {
+      "code": "F",
+      "value": "Air Force"
+    },
+    {
+      "code": "M",
+      "value": "Marines"
+    },
+    {
+      "code": "C",
+      "value": "CIA"
+    },
+    {
+      "code": "S",
+      "value": "Special Operations"
+    }
+  ]
+}

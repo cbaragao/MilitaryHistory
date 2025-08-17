@@ -1,0 +1,133 @@
+---
+applyTo: "**/*.{js,ts,json,md}"
+description: "User experience validation for data visualizations"
+---
+
+# UX Validation Standards
+
+## The 5-Second Test
+
+Before generating ANY visualization, validate:
+- [ ] Can the main insight be understood in 5 seconds?
+- [ ] Is every visual element necessary?
+- [ ] Would removing something make this clearer?
+- [ ] Are we showing minimum necessary information?
+
+## Cognitive Load Assessment
+
+### HIGH Load (AVOID)
+- 4+ overlapping time series
+- Multiple legends for same dimension
+- Color-only differentiation
+- Dense overlapping data points
+
+### MEDIUM Load (CAUTION)
+- 3 time series with clear separation
+- Single legend with 4+ items
+- Mixed chart types in single view
+
+### LOW Load (PREFERRED)
+- 1-2 data series
+- Clear visual hierarchy
+- Direct labeling when possible
+- Single focused insight
+
+## Multi-Series Decision Tree
+
+### When user requests 4+ data series:
+
+1. **Check patterns**: Similar trends? → Small multiples
+2. **Check importance**: One primary? → Highlight primary, gray others  
+3. **Check task**: Comparing values? → Horizontal bar chart
+4. **Check temporal**: Trends essential? → Limit to 3 most important
+
+### Implementation Templates
+
+#### Small Multiples (Preferred)
+```json
+{
+  "facet": {
+    "field": "category",
+    "type": "nominal", 
+    "columns": 2
+  },
+  "spec": {
+    "mark": {"type": "line", "color": "#4477AA"},
+    "encoding": {
+      "x": {"field": "date", "type": "temporal"},
+      "y": {"field": "value", "type": "quantitative"}
+    }
+  }
+}
+```
+
+#### Highlight + Context
+```json
+{
+  "layer": [
+    {
+      "mark": {"type": "line", "color": "#CCCCCC", "strokeWidth": 1},
+      "encoding": {
+        "detail": {"field": "series", "type": "nominal"},
+        "x": {"field": "date", "type": "temporal"},
+        "y": {"field": "value", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "#4477AA", "strokeWidth": 3},
+      "transform": [{"filter": "datum.series == 'Primary'"}],
+      "encoding": {
+        "x": {"field": "date", "type": "temporal"},
+        "y": {"field": "value", "type": "quantitative"}
+      }
+    }
+  ]
+}
+```
+
+## Legend Validation
+
+### The One Legend Rule
+- Count total legends in specification
+- If > 1, consolidate or remove redundant ones
+- Priority: Color > Pattern > Shape > Size
+
+### Auto-Fix Function
+```javascript
+function consolidateLegends(spec) {
+  const legendFields = [];
+  
+  if (spec.encoding.color?.legend !== null) legendFields.push('color');
+  if (spec.encoding.shape?.legend !== null) legendFields.push('shape');
+  if (spec.encoding.strokeDash?.legend !== null) legendFields.push('strokeDash');
+  
+  // Keep only the highest priority legend
+  if (legendFields.length > 1) {
+    if (legendFields.includes('color')) {
+      spec.encoding.shape = {...spec.encoding.shape, legend: null};
+      spec.encoding.strokeDash = {...spec.encoding.strokeDash, legend: null};
+    } else if (legendFields.includes('shape')) {
+      spec.encoding.strokeDash = {...spec.encoding.strokeDash, legend: null};
+    }
+  }
+  
+  return spec;
+}
+```
+
+## Visual Hierarchy Rules
+
+### Title Strategy
+- Sentence case only (not Title Case)
+- Action-oriented when possible
+- Include key insight in title
+
+### Color Strategy  
+- Maximum 4 colors in single chart
+- Use color to emphasize, not just categorize
+- Gray for context/secondary information
+
+### Layout Strategy
+- Left-align titles and labels
+- Horizontal legends when space allows
+- Remove chart borders and gridlines (reduce noise)

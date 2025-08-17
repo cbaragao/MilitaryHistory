@@ -1,0 +1,31 @@
+{
+    "dataset": "VSSG",
+    "table": "Hamlet Quality Codes", 
+    "definition": "Hamlet quality assessment codes for infrastructure and development",
+    "data": [
+        {
+            "code": "1",
+            "value": "EXCELLENT - High quality infrastructure and services"
+        },
+        {
+            "code": "2",
+            "value": "GOOD - Adequate infrastructure and services"
+        },
+        {
+            "code": "3", 
+            "value": "FAIR - Basic infrastructure with some deficiencies"
+        },
+        {
+            "code": "4",
+            "value": "POOR - Limited or inadequate infrastructure"
+        },
+        {
+            "code": "5",
+            "value": "VERY POOR - Minimal or no infrastructure"
+        },
+        {
+            "code": "9",
+            "value": "UNKNOWN - Assessment not available"
+        }
+    ]
+}

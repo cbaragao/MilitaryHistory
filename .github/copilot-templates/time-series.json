@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "_template_info": {
+    "name": "Accessible Time Series Chart",
+    "use_for": "Temporal data with 1-3 data series",
+    "required_variables": [
+      "{{chart_title}} - Insight-focused title",
+      "{{alt_text_following_cesal_formula}} - Amy Cesal format description", 
+      "{{data_source_url}} - Path to your data file",
+      "{{date_field}} - Column name for dates",
+      "{{value_field}} - Column name for numeric values",
+      "{{series_field}} - Column name for series grouping",
+      "{{y_axis_title}} - Y-axis label with units",
+      "{{legend_title}} - Legend description"
+    ],
+    "example_substitution": {
+      "chart_title": "Air missions peaked during Tet Offensive in early 1968",
+      "alt_text_following_cesal_formula": "Line chart of monthly air missions where South Vietnam peaked at 15,000 missions in March 1968",
+      "data_source_url": "data/vietnam-missions.csv",
+      "date_field": "mission_date",
+      "value_field": "mission_count", 
+      "series_field": "theater",
+      "y_axis_title": "Number of missions",
+      "legend_title": "Theater of operations"
+    }
+  },
+  
+  "title": {
+    "text": "{{chart_title}}",
+    "fontSize": 16,
+    "anchor": "start",
+    "fontWeight": "normal"
+  },
+  "description": "{{alt_text_following_cesal_formula}}",
+  "width": "container",
+  "height": 400,
+  
+  "data": {
+    "url": "{{data_source_url}}"
+  },
+  
+  "transform": [
+    {"filter": "datum.{{value_field}} != null"},
+    {"filter": "datum.{{date_field}} != null"}
+  ],
+
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 80
+    },
+    "strokeWidth": 3,
+    "interpolate": "monotone",
+    "stroke": "white",
+    "strokeOpacity": 0
+  },
+
+  "encoding": {
+    "x": {
+      "field": "{{date_field}}",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "format": "{{date_format:%Y-%m}}",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "{{value_field}}",
+      "type": "quantitative",
+      "axis": {
+        "title": "{{y_axis_title}}",
+        "grid": true,
+        "gridOpacity": 0.2
+      }
+    },
+    "color": {
+      "field": "{{series_field}}",
+      "type": "nominal",
+      "scale": {
+        "range": ["#4477AA", "#CC6677", "#228833", "#CCBB44"]
+      },
+      "legend": {
+        "title": "{{legend_title}}",
+        "orient": "bottom",
+        "direction": "horizontal",
+        "columns": 4
+      }
+    },
+    "strokeDash": {
+      "field": "{{series_field}}",
+      "type": "nominal",
+      "scale": {
+        "range": [[1,0], [8,4], [4,4], [12,4,4,4]]
+      },
+      "legend": null
+    }
+  },
+
+  "config": {
+    "view": {
+      "stroke": null,
+      "keyboard": true
+    },
+    "axis": {
+      "domain": false,
+      "ticks": false
+    }
+  }
+}

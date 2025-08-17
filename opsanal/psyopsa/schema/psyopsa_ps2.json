@@ -1,0 +1,127 @@
+{
+  "dataset": "PSYOPSA",
+  "table": "ps2",
+  "data": [
+    {
+      "title": "Unit/District ID",
+      "id": "USID",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Identifies a district in South Vietnam",
+      "periodic_set": "2",
+      "definition_file": ""
+    },
+    {
+      "title": "Periodic Control Number",
+      "id": "PCN",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Periodic set number created by NIPSTRAN",
+      "periodic_set": "2",
+      "definition_file": ""
+    },
+    {
+      "title": "Date 2",
+      "id": "DATE2",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Date of the radio/tv transmission (YYMM)",
+      "periodic_set": "2",
+      "definition_file": ""
+    },
+    {
+      "title": "Reporting Unit",
+      "id": "REPUNIT",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "REPUNIT",
+      "data_values": "Alphanumeric",
+      "definition": "Unit conducting the operation",
+      "periodic_set": "2",
+      "definition_file": ""
+    },
+    {
+      "title": "Variable Size 2",
+      "id": "VSZ2",
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Indicates number of characters in the logical record's variable field",
+      "periodic_set": "2",
+      "definition_file": ""
+    },
+    {
+      "title": "Radio News Hours",
+      "id": "RNEWS",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of broadcast hours used to present news on radio",
+      "periodic_set": "2",
+      "definition_file": ""
+    },
+    {
+      "title": "Radio Entertainment Hours",
+      "id": "RENT",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of broadcast hours used for entertainment on radio",
+      "periodic_set": "2",
+      "definition_file": ""
+    },
+    {
+      "title": "Radio Information/Propaganda Hours",
+      "id": "RIP",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of broadcast hours used for information and propaganda on radio",
+      "periodic_set": "2",
+      "definition_file": ""
+    },
+    {
+      "title": "TV News Hours",
+      "id": "TVNEWS",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of television transmission hours used to present news",
+      "periodic_set": "2",
+      "definition_file": ""
+    },
+    {
+      "title": "TV Entertainment Hours",
+      "id": "TVENT",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of television transmission hours used for entertainment",
+      "periodic_set": "2",
+      "definition_file": ""
+    },
+    {
+      "title": "TV Information/Propaganda Hours",
+      "id": "TVIP",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of television transmission hours used for information and propaganda",
+      "periodic_set": "2",
+      "definition_file": ""
+    }
+  ]
+}

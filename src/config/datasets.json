@@ -426,6 +426,63 @@
         "catalog_url": "https://catalog.archives.gov/id/2569436",
         "available_online": true,
         "delimiter": "width"
+      },
+      "conga":{
+        "NAID": "573632",
+        "file_name": "CONGA.6673FIX",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/32/5736/573632/content/arcmedia/electronic-records/rg-218/CONGA/CONGA.6673FIX",
+        "catalog_url": "https://catalog.archives.gov/id/573632",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "khmer":{
+        "NAID": "1937209",
+        "file_name": "KHMER.TR.7074",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/9/9372/1937209/content/arcmedia/electronic-records/rg-330/KHMER/KHMER.TR.7074",
+        "catalog_url": "https://catalog.archives.gov/id/1937209",
+        "available_online": true,
+        "delimiter": "width"
+      },
+      "aims":{
+        "NAID": "1937232",
+        "file_name": "AIMSFY04.PU.DAT.zip",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-428/AIMS/AIMSFY04.PU.DAT.zip",
+        "catalog_url": "https://catalog.archives.gov/id/1937232",
+        "available_online": true,
+        "delimiter": "width",
+        "is_zipped": true
+      },
+      "psyopsa": {
+        "NAID": "148414386",
+        "file_name": "PSY.M70TF73.ARFS.csv",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/PSYOPSIS/PSY.M70TF73.ARFS.csv",
+        "catalog_url": "https://catalog.archives.gov/id/148414386",
+        "available_online": true,
+        "delimiter": "comma"
+      },
+      "psyopsa_ps1": {
+        "NAID": "148414386",
+        "file_name": "PSY.M70TF73.ARPS1.csv",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/PSYOPSIS/PSY.M70TF73.ARPS1.csv",
+        "catalog_url": "https://catalog.archives.gov/id/148414386",
+        "available_online": true,
+        "delimiter": "comma"
+      },
+      "psyopsa_ps2": {
+        "NAID": "148414386",
+        "file_name": "PSY.M70TF73.ARPS2.csv",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-472/PSYOPSIS/PSY.M70TF73.ARPS2.csv",
+        "catalog_url": "https://catalog.archives.gov/id/148414386",
+        "available_online": true,
+        "delimiter": "comma"
+      },
+      "vssg": {
+        "NAID": "4658149",
+        "file_name": "PVSSG.7174ARTBFS.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-330/HES/VSSG.7174ARTBFS.txt",
+        "catalog_url": "https://catalog.archives.gov/id/4658149",
+        "available_online": true,
+        "delimiter": "tab"
       }
     }
   ]

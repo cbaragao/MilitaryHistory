@@ -1,0 +1,664 @@
+AR	Airman Recruit
+AA	Airman Apprentice
+AN	Airman
+ABAR	Aviation Boatswain's Mate Airman Recruit
+ABAA	Aviation Boatswain's Mate Airman Apprentice
+ABAN	Aviation Boatswain's Mate Airman
+AB3	Aviation Boatswain's Mate Third Class
+AB2	Aviation Boatswain's Mate Second Class
+AB1	Aviation Boatswain's Mate First Class
+ABC	Chief Aviation Boatswain's Mate
+ABCS	Senior Chief Aviation Boatswain's Mate
+ABCM	Master Chief Aviation Boatswain's Mate
+ACAR	Air Controlman Airman Recruit
+ACAA	Air Controlman Airman Apprentice
+ACAN	Air Controlman Airman
+ADAR	Aviation Machinist's Mate Airman Recruit
+ADAA	Aviation Machinist's Mate Airman Apprentice
+ADAN	Aviation Machinist's Mate Airman
+AD3	Aviation Machinist's Mate Third Class
+AD2	Aviation Machinist's Mate Second Class
+AD1	Aviation Machinist's Mate First Class
+ADC	Chief Aviation Machinist's Mate
+ADCS	Senior Chief Aviation Machinist's Mate
+ADCM	Master Chief Aviation Machinist's Mate
+AEAR	Aviation Electrician's Mate Airman Recruit
+AEAA	Aviation Electrician's Mate Airman Apprentice
+AEAN	Aviation Electrician's Mate Airman
+AE3	Aviation Electrician's Mate Third Class
+AE2	Aviation Electrician's Mate Second Class
+AE1	Aviation Electrician's Mate First Class
+AEC	Chief Aviation Electrician's Mate
+AECS	Senior Chief Aviation Electrician's Mate
+AECM	Master Chief Aviation Electrician's Mate
+AGAR	Aerographer's Mate Airman Recruit
+AGAA	Aerographer's Mate Airman Apprentice
+AGAN	Aerographer's Mate Airman
+AG3	Aerographer's Mate Third Class
+AG2	Aerographer's Mate Second Class
+AG1	Aerographer's Mate First Class
+AGC	Chief Aerographer's Mate
+AGCS	Senior Chief Aerographer's Mate
+AGCM	Master Chief Aerographer's Mate
+AKAR	Aviation Storekeeper Airman Recruit
+AKAA	Aviation Storekeeper Airman Apprentice
+AKAN	Aviation Storekeeper Airman
+AK3	Aviation Storekeeper Third Class
+AK2	Aviation Storekeeper Second Class
+AK1	Aviation Storekeeper First Class
+AKC	Chief Aviation Storekeeper
+AKCS	Senior Chief Aviation Storekeeper
+AKCM	Master Chief Aviation Storekeeper
+AMAR	Aviation Structural Mechanic Airman Recruit
+AMAA	Aviation Structural Mechanic Airman Apprentice
+AMAN	Aviation Structural Mechanic Airman
+AM3	Aviation Structural Mechanic Third Class
+AM2	Aviation Structural Mechanic Second Class
+AM1	Aviation Structural Mechanic First Class
+AMC	Chief Aviation Structural Mechanic
+AMCS	Senior Chief Aviation Structural Mechanic
+AMCM	Master Chief Aviation Structural Mechanic
+AOAR	Aviation Ordnanceman Airman Recruit
+AOAA	Aviation Ordnanceman Airman Apprentice
+AOAN	Aviation Ordnanceman Airman
+AO3	Aviation Ordnanceman Third Class
+AO2	Aviation Ordnanceman Second Class
+AO1	Aviation Ordnanceman First Class
+AOC	Chief Aviation Ordnanceman
+AOCS	Senior Chief Aviation Ordnanceman
+AOCM	Master Chief Aviation Ordnanceman
+AQAR	Aviation Fire Control Technician Airman Recruit
+AQAA	Aviation Fire Control Technician Airman Apprentice
+AQAN	Aviation Fire Control Technician Airman
+AQ3	Aviation Fire Control Technician Third Class
+AQ2	Aviation Fire Control Technician Second Class
+AQ1	Aviation Fire Control Technician First Class
+AQC	Chief Aviation Fire Control Technician
+AQCS	Senior Chief Aviation Fire Control Technician
+AQCM	Master Chief Aviation Fire Control Technician
+ASAR	Aviation Support Equipment Technician Airman Recruit
+ASAA	Aviation Support Equipment Technician Airman Apprentice
+ASAN	Aviation Support Equipment Technician Airman
+AS3	Aviation Support Equipment Technician Third Class
+AS2	Aviation Support Equipment Technician Second Class
+AS1	Aviation Support Equipment Technician First Class
+ASC	Chief Aviation Support Equipment Technician
+ASCS	Senior Chief Aviation Support Equipment Technician
+ASCM	Master Chief Aviation Support Equipment Technician
+ATAR	Aviation Electronics Technician Airman Recruit
+ATAA	Aviation Electronics Technician Airman Apprentice
+ATAN	Aviation Electronics Technician Airman
+AT3	Aviation Electronics Technician Third Class
+AT2	Aviation Electronics Technician Second Class
+AT1	Aviation Electronics Technician First Class
+ATC	Chief Aviation Electronics Technician
+ATCS	Senior Chief Aviation Electronics Technician
+ATCM	Master Chief Aviation Electronics Technician
+AZAR	Aviation Maintenance Administrationman Airman Recruit
+AZAA	Aviation Maintenance Administrationman Airman Apprentice
+AZAN	Aviation Maintenance Administrationman Airman
+AZ3	Aviation Maintenance Administrationman Third Class
+AZ2	Aviation Maintenance Administrationman Second Class
+AZ1	Aviation Maintenance Administrationman First Class
+AZC	Chief Aviation Maintenance Administrationman
+AZCS	Senior Chief Aviation Maintenance Administrationman
+AZCM	Master Chief Aviation Maintenance Administrationman
+SR	Seaman Recruit
+SA	Seaman Apprentice
+SN	Seaman
+BMSR	Boatswain's Mate Seaman Recruit
+BMSA	Boatswain's Mate Seaman Apprentice
+BMSN	Boatswain's Mate Seaman
+BM3	Boatswain's Mate Third Class
+BM2	Boatswain's Mate Second Class
+BM1	Boatswain's Mate First Class
+BMC	Chief Boatswain's Mate
+BMCS	Senior Chief Boatswain's Mate
+BMCM	Master Chief Boatswain's Mate
+DMSR	Illustrator Draftsman Seaman Recruit
+DMSA	Illustrator Draftsman Seaman Apprentice
+DMSN	Illustrator Draftsman Seaman
+DM3	Illustrator Draftsman Third Class
+DM2	Illustrator Draftsman Second Class
+DM1	Illustrator Draftsman First Class
+DMC	Chief Illustrator Draftsman
+DMCS	Senior Chief Illustrator Draftsman
+DMCM	Master Chief Illustrator Draftsman
+SMSR	Signalman Seaman Recruit
+SMSA	Signalman Seaman Apprentice
+SMSN	Signalman Seaman
+SM3	Signalman Third Class
+SM2	Signalman Second Class
+SM1	Signalman First Class
+SMC	Chief Signalman
+SMCS	Senior Chief Signalman
+SMCM	Master Chief Signalman
+PNSR	Personnelman Seaman Recruit
+PNSA	Personnelman Seaman Apprentice
+PNSN	Personnelman Seaman
+PN3	Personnelman Third Class
+PN2	Personnelman Second Class
+PN1	Personnelman First Class
+PNC	Chief Personnelman
+PNCS	Senior Chief Personnelman
+PNCM	Master Chief Personnelman
+YNSR	Yeoman Seaman Recruit
+YNSA	Yeoman Seaman Apprentice
+YNSN	Yeoman Seaman
+YN3	Yeoman Third Class
+YN2	Yeoman Second Class
+YN1	Yeoman First Class
+YNC	Chief Yeoman
+YNCS	Senior Chief Yeoman
+YNCM	Master Chief Yeoman
+IMSR	Instrumentman Seaman Recruit
+IMSA	Instrumentman Seaman Apprentice
+IMSN	Instrumentman Seaman
+IM3	Instrumentman Third Class
+IM2	Instrumentman Second Class
+IM1	Instrumentman First Class
+IMC	Chief Instrumentman
+IMCS	Senior Chief Instrumentman
+IMCM	Master Chief Instrumentman
+QMSR	Quartermaster Seaman Recruit
+QMSA	Quartermaster Seaman Apprentice
+QMSN	Quartermaster Seaman
+QM3	Quartermaster Third Class
+QM2	Quartermaster Second Class
+QM1	Quartermaster First Class
+QMC	Chief Quartermaster
+QMCS	Senior Chief Quartermaster
+QMCM	Master Chief Quartermaster
+ETSR	Electronics Technician Seaman Recruit
+ETSA	Electronics Technician Seaman Apprentice
+ETSN	Electronics Technician Seaman
+ET3	Electronics Technician Third Class
+ET2	Electronics Technician Second Class
+ET1	Electronics Technician First Class
+ETC	Chief Electronics Technician
+ETCS	Senior Chief Electronics Technician
+ETCM	Master Chief Electronics Technician
+PCSR	Postal Clerk Seaman Recruit
+PCSA	Postal Clerk Seaman Apprentice
+PCSN	Postal Clerk Seaman
+PC3	Postal Clerk Third Class
+PC2	Postal Clerk Second Class
+PC1	Postal Clerk First Class
+PCC	Chief Postal Clerk
+PCCS	Senior Chief Postal Clerk
+PCCM	Master Chief Postal Clerk
+SHSR	Ship's Serviceman Seaman Recruit
+SHSA	Ship's Serviceman Seaman Apprentice
+SHSN	Ship's Serviceman Seaman
+SH3	Ship's Serviceman Third Class
+SH2	Ship's Serviceman Second Class
+SH1	Ship's Serviceman First Class
+SHC	Chief Ship's Serviceman
+SHCS	Senior Chief Ship's Serviceman
+SHCM	Master Chief Ship's Serviceman
+SKSR	Storekeeper Seaman Recruit
+SKSA	Storekeeper Seaman Apprentice
+SKSN	Storekeeper Seaman
+SK3	Storekeeper Third Class
+SK2	Storekeeper Second Class
+SK1	Storekeeper First Class
+SKC	Chief Storekeeper
+SKCS	Senior Chief Storekeeper
+SKCM	Master Chief Storekeeper
+DKSR	Disbursing Clerk Seaman Recruit
+DKSA	Disbursing Clerk Seaman Apprentice
+DKSN	Disbursing Clerk Seaman
+DK3	Disbursing Clerk Third Class
+DK2	Disbursing Clerk Second Class
+DK1	Disbursing Clerk First Class
+DKC	Chief Disbursing Clerk
+DKCS	Senior Chief Disbursing Clerk
+DKCM	Master Chief Disbursing Clerk
+MSSR	Mess Management Specialist Seaman Recruit
+MSSA	Mess Management Specialist Seaman Apprentice
+MSSN	Mess Management Specialist Seaman
+MS3	Mess Management Specialist Third Class
+MS2	Mess Management Specialist Second Class
+MS1	Mess Management Specialist First Class
+MSC	Chief Mess Management Specialist
+MSCS	Senior Chief Mess Management Specialist
+MSCM	Master Chief Mess Management Specialist
+JOSR	Journalist Seaman Recruit
+JOSA	Journalist Seaman Apprentice
+JOSN	Journalist Seaman
+JO3	Journalist Third Class
+JO2	Journalist Second Class
+JO1	Journalist First Class
+JOC	Chief Journalist
+JOCS	Senior Chief Journalist
+JOCM	Master Chief Journalist
+FCSR	Fire Controlman Seaman Recruit
+FCSA	Fire Controlman Seaman Apprentice
+FCSN	Fire Controlman Seaman
+FC3	Fire Controlman Third Class
+FC2	Fire Controlman Second Class
+FC1	Fire Controlman First Class
+FCC	Chief Fire Controlman
+FCCS	Senior Chief Fire Controlman
+FCCM	Master Chief Fire Controlman
+GMSR	Gunner's Mate Seaman Recruit
+GMSA	Gunner's Mate Seaman Apprentice
+GMSN	Gunner's Mate Seaman
+GM3	Gunner's Mate Third Class
+GM2	Gunner's Mate Second Class
+GM1	Gunner's Mate First Class
+GMC	Chief Gunner's Mate
+GMCS	Senior Chief Gunner's Mate
+GMCM	Master Chief Gunner's Mate
+DPSR	Data Processing Technician Seaman Recruit
+DPSA	Data Processing Technician Seaman Apprentice
+DPSN	Data Processing Technician Seaman
+DP3	Data Processing Technician Third Class
+DP2	Data Processing Technician Second Class
+DP1	Data Processing Technician First Class
+DPC	Chief Data Processing Technician
+DPCS	Senior Chief Data Processing Technician
+DPCM	Master Chief Data Processing Technician
+ISSR	Intelligence Specialist Seaman Recruit
+ISSA	Intelligence Specialist Seaman Apprentice
+ISSN	Intelligence Specialist Seaman
+IS3	Intelligence Specialist Third Class
+IS2	Intelligence Specialist Second Class
+IS1	Intelligence Specialist First Class
+ISC	Chief Intelligence Specialist
+ISCS	Senior Chief Intelligence Specialist
+ISCM	Master Chief Intelligence Specialist
+CTSR	Cryptologic Technician Seaman Recruit
+CTSA	Cryptologic Technician Seaman Apprentice
+CTSN	Cryptologic Technician Seaman
+CT3	Cryptologic Technician Third Class
+CT2	Cryptologic Technician Second Class
+CT1	Cryptologic Technician First Class
+CTC	Chief Cryptologic Technician
+CTCS	Senior Chief Cryptologic Technician
+CTCM	Master Chief Cryptologic Technician
+FR	Fireman Recruit
+FA	Fireman Apprentice
+FN	Fireman
+BTFR	Bolier Technician Fireman Recruit
+MMFR	Machinist's Mate Fireman Recruit
+MMFA	Machinist's Mate Fireman Apprentice
+MMFN	Machinist's Mate Fireman
+MM3	Machinist's Mate Third Class
+MM2	Machinist's Mate Second Class
+MM1	Machinist's Mate First Class
+MMC	Chief Machinist's Mate
+MMCS	Senior Chief Machinist's Mate
+MMCM	Master Chief Machinist's Mate
+EMFR	Electrician's Mate Fireman Recruit
+EMFA	Electrician's Mate Fireman Apprentice
+EMFN	Electrician's Mate Fireman
+EM3	Electrician's Mate Third Class
+EM2	Electrician's Mate Second Class
+EM1	Electrician's Mate First Class
+EMC	Chief Electrician's Mate
+EMCS	Senior Chief Electrician's Mate
+EMCM	Master Chief Electrician's Mate
+ICFR	Interior Communications Electrician Fireman Recruit
+ICFA	Interior Communications Electrician Fireman Apprentice
+ICFN	Interior Communications Electrician Fireman
+IC3	Interior Communications Electrician Third Class
+IC2	Interior Communications Electrician Second Class
+IC1	Interior Communications Electrician First Class
+ICC	Chief Interior Communications Electrician
+ICCS	Senior Chief Interior Communications Electrician
+ICCM	Master Chief Interior Communications Electrician
+ENFR	Engineman Fireman Recruit
+ENFA	Engineman Fireman Apprentice
+ENFN	Engineman Fireman
+EN3	Engineman Third Class
+EN2	Engineman Second Class
+EN1	Engineman First Class
+ENC	Chief Engineman
+ENCS	Senior Chief Engineman
+ENCM	Master Chief Engineman
+HTFR	Hull Maintenance Technician Fireman Recruit
+HTFA	Hull Maintenance Technician Fireman Apprentice
+HTFN	Hull Maintenance Technician Fireman
+HT3	Hull Maintenance Technician Third Class
+HT2	Hull Maintenance Technician Second Class
+HT1	Hull Maintenance Technician First Class
+HTC	Chief Hull Maintenance Technician
+HTCS	Senior Chief Hull Maintenance Technician
+HTCM	Master Chief Hull Maintenance Technician
+PMFR	Patternmaker Fireman Recruit
+PMFA	Patternmaker Fireman Apprentice
+PMFN	Patternmaker Fireman
+PM3	Patternmaker Third Class
+PM2	Patternmaker Second Class
+PM1	Patternmaker First Class
+PMC	Chief Patternmaker
+PMCS	Senior Chief Patternmaker
+PMCM	Master Chief Patternmaker
+MLFR	Molder Fireman Recruit
+MLFA	Molder Fireman Apprentice
+MLFN	Molder Fireman
+ML3	Molder Third Class
+ML2	Molder Second Class
+ML1	Molder First Class
+MLC	Chief Molder
+MLCS	Senior Chief Molder
+MLCM	Master Chief Molder
+MRFR	Machinery Repairman Fireman Recruit
+MRFA	Machinery Repairman Fireman Apprentice
+MRFN	Machinery Repairman Fireman
+MR3	Machinery Repairman Third Class
+MR2	Machinery Repairman Second Class
+MR1	Machinery Repairman First Class
+MRC	Chief Machinery Repairman
+MRCS	Senior Chief Machinery Repairman
+MRCM	Master Chief Machinery Repairman
+DCFR	Damage Controlman Fireman Recruit
+DCFA	Damage Controlman Fireman Apprentice
+DCFN	Damage Controlman Fireman
+DC3	Damage Controlman Third Class
+DC2	Damage Controlman Second Class
+DC1	Damage Controlman First Class
+DCC	Chief Damage Controlman
+DCCS	Senior Chief Damage Controlman
+DCCM	Master Chief Damage Controlman
+GSFR	Gas Turbine System Technician Fireman Recruit
+GSFA	Gas Turbine System Technician Fireman Apprentice
+GSFN	Gas Turbine System Technician Fireman
+GS3	Gas Turbine System Technician Third Class
+GS2	Gas Turbine System Technician Second Class
+GS1	Gas Turbine System Technician First Class
+GSC	Chief Gas Turbine System Technician
+GSCS	Senior Chief Gas Turbine System Technician
+GSCM	Master Chief Gas Turbine System Technician
+CR	Constructionman Recruit
+CN	Constructionman
+BUCR	Builder Constructionman Recruit
+BUCA	Builder Constructionman Apprentice
+BUCN	Builder Constructionman
+BU3	Builder Third Class
+BU2	Builder Second Class
+BU1	Builder First Class
+BUC	Chief Builder
+BUCS	Senior Chief Builder
+BUCM	Master Chief Builder
+CMCR	Construction Mechanic Recruit
+CMCA	Construction Mechanic Apprentice
+CMCN	Construction Mechanic Constructionman
+CM3	Construction Mechanic Third Class
+CM2	Construction Mechanic Second Class
+CM1	Construction Mechanic First Class
+CMC	Chief Construction Mechanic
+CMCS	Senior Chief Construction Mechanic
+CMCM	Master Chief Construction Mechanic
+EOCR	Equipment Operator Constructionman Recruit
+EOCA	Equipment Operator Constructionman Apprentice
+EOCN	Equipment Operator Constructionman
+EO3	Equipment Operator Third Class
+EO2	Equipment Operator Second Class
+EO1	Equipment Operator First Class
+EOC	Chief Equipment Operator
+EOCS	Senior Chief Equipment Operator
+EOCM	Master Chief Equipment Operator
+SWCR	Steelworker Constructionman Recruit
+SWCA	Steelworker Constructionman Apprentice
+SWCN	Steelworker Constructionman
+SW3	Steelworker Third Class
+SW2	Steelworker Second Class
+SW1	Steelworker First Class
+SWC	Chief Steelworker
+SWCS	Senior Chief Steelworker
+SWCM	Master Chief Steelworker
+UTCR	Utilitiesman Constructionman Recruit
+UTCA	Utilitiesman Constructionman Apprentice
+UTCN	Utilitiesman Constructionman
+UT3	Utilitiesman Third Class
+UT2	Utilitiesman Second Class
+UT1	Utilitiesman First Class
+UTC	Chief Utilitiesman
+UTCS	Senior Chief Utilitiesman
+UTCM	Master Chief Utilitiesman
+HR	Hospitalman Recruit
+HA	Hospitalman Apprentice
+HN	Hospitalman
+HM3	Hospital Corpsman Third Class
+HM2	Hospital Corpsman Second Class
+HM1	Hospital Corpsman First Class
+HMC	Chief Hospital Corpsman
+HMCS	Senior Chief Hospital Corpsman
+HMCM	Master Chief Hospital Corpsman
+DR	Dentalman Recruit
+DA	Dentalman Apprentice
+DN	Dentalman
+DT3	Dental Technician Third Class
+DT2	Dental Technician Second Class
+DT1	Dental Technician First Class
+DTC	Chief Dental Technician
+DTCS	Senior Chief Dental Technician
+DTCM	Master Chief Dental Technician
+LN2	Legalman Second Class
+LN1	Legalman First Class
+LNC	Chief Legalman
+LNCS	Senior Chief Legalman
+LNCM	Master Chief Legalman
+NC2	Navy Counselor Second Class
+NC1	Navy Counselor First Class
+NCC	Chief Navy Counselor
+NCCS	Senior Chief Navy Counselor
+NCCM	Master Chief Navy Counselor
+MU3	Musician Third Class
+MU2	Musician Second Class
+MU1	Musician First Class
+MUC	Chief Musician
+MUCS	Senior Chief Musician
+MUCM	Master Chief Musician
+LI3	Lithographer Third Class
+LI2	Lithographer Second Class
+LI1	Lithographer First Class
+LIC	Chief Lithographer
+LICS	Senior Chief Lithographer
+LICM	Master Chief Lithographer
+PH3	Photographer's Mate Third Class
+PH2	Photographer's Mate Second Class
+PH1	Photographer's Mate First Class
+PHC	Chief Photographer's Mate
+PHCS	Senior Chief Photographer's Mate
+PHCM	Master Chief Photographer's Mate
+RP3	Religious Program Specialist Third Class
+RP1	Religious Program Specialist First Class
+RPC	Chief Religious Program Specialist
+RPCS	Senior Chief Religious Program Specialist
+RPCM	Master Chief Religious Program Specialist
+MNCM	Master Chief Mineman
+TMC	Chief Torpedoman's Mate
+TMSN	Torpedoman's Mate Seaman
+MT2	Missile Technician Second Class
+OTCS	Senior Chief Ocean Systems Technician
+EWCS	Senior Chief Electronics Warfare Technician
+TMCS	Senior Chief Torpedoman's Mate
+FT1	Fire Control Technician First Class
+FT3	Fire Control Technician Third Class
+RP2	Religious Program Specialist Second Class
+ST1	Sonar Technician First Class                               e6 09291988 112600                
+ST2	Sonar Technician Second Class
+ST3	Sonar Technician Third Class
+EWC	Chief Electronics Warfare Technician
+FTC	Chief Fire Controlman
+BT1	Boiler Technician First Class
+ACCM	Master Chief Air Traffic Controller
+AFCM	Master Chief Aviation Maintenance Technician
+BTC	Chief Boiler Technician
+AC1	Air Traffic Controller First Class
+AC2	Air Traffic Controller Second Class
+AC3	Air Traffic Controller Third Class
+ACC	Chief Air Traffic Controller
+ACCS	Senior Chief Air Traffic Controller
+BT2	Boiler Technician Second Class
+BTCM	Master Chief Boiler Technician
+CPO	Chief Petty Officer
+EA1	Engineering Aid First Class
+EA2	Engineering Aid Second Class
+EA3	Engineering Aid Third Class
+EAC	Chief Engineering Aid
+EACS	Senior Chief Engineering Aid
+EACM	Master Chief Engineering Aid
+EWSN	Electronic Warfare Technician Seaman
+FTCS	Senior Chief Fire Controlman
+MNC	Chief Mineman
+MN2	Mineman Second Class
+MN1	Mineman First Class
+MNCS	Senior Chief Mineman
+MSG	Master Sergeant
+MT1	Missile Technician First Class
+OTC	Chief Ocean Systems Technician
+OTCM	Master Chief Ocean Systems Technician
+OT1	Ocean Systems Technician First Class
+OT2	Ocean Systems Technician Second Class
+OT3	Ocean Systems Technician Third Class
+PR3	Aircrew Survival Equipmentman Third Class
+PR2	Aircrew Survival Equipmentman Second Class
+PRC	Chief Aircrew Survival Equipmentman
+PRCS	Senior Chief Aircrew Survival Equipmentman
+PRCM	Master Chief Aircrew Survival Equipmentman
+PR1	Aircrew Survival Equipmentman
+STCM	Master Chief Sonar Technician
+STCS	Senior Chief Sonar Technician
+STC	Chief Sonar Technician
+TD1	Tradevman First Class
+TD2	Tradevman Second Class
+TD3	Tradevman Third Class
+TDC	Chief Tradevman
+TDCM	Master Chief Tradevman
+TDCS	Senior Chief Tradevman
+TM2	Torpedoman's Mate Second Class
+TM1	Torpedoman's Mate First Class
+WT1	Weapons Technician First Class
+WT2	Weapons Technician Second Class
+WTC	Chief Weapons Technician
+WTCS	Senior Chief Weapons Technician
+WTCM	Master Chief Weapons Technician
+PICM	Master Chief Precision Instrumentman
+CNCM	Master Chief Constructionman
+MUSN	Musician Seaman
+FTCM	Master Chief Fire Control Technician
+EQCM	Master Chief Equipmentman
+RPSN	Religious Program Specialist Seaman
+BTFA	Boiler Technician Fireman Apprentice
+SP4	Specialist Fourth Class
+PO1	Petty Officer First Class
+SPC4	Specialist Four
+BTCS	Senior Chief Boiler Technician                             e8 10031990 155200                
+EWCM	Master Chief Electronics Warfare Technician
+POCS	Senior Chief Petty Officer                                 e8 11131990 082500                
+BT3	Boiler Technician Third Class
+WT3	Weapons Technician Third Class
+SFC	Sergeant First Class
+STSN	Sonar Technician Seaman
+PHAN	Photographer's Mate Airman
+MTC	Chief Missile Technician                                   e7 11211991 084100                
+SPC	Specialist                                                 0e 10191992 093700                
+PRAA	Aircrew Survival Equipmentman Airman Apprentice            e2 03231993 112000                
+PO2	Petty Officer Second Class                                 e5 03231993 112000                
+PO3	Petty Officer Third Class
+PRAN	Aircrew Survival Equipmentman Airman
+PRAR	Aircrew Survival Equipmentman Airman Recruit
+TM3	Torpedoman's Mate Third Class
+MT3	Missile Technician Third Class
+MTCS	Senior Chief Missile Technician
+MTCM	Master Chief Missile Technician
+AW1	Aviation Warfare Systems Operator First Class
+AW2	Aviation Warfare Systems Operator Second Class
+AW3	Aviation Warfare Systems Operator Third Class
+AWAN	Aviation Warfare Systems Operator Airman
+AWAA	Aviation Warfare Systems Operator Airman Apprentice
+AWAR	Aviation Warfare Systems Operator Airman Recruit
+AWC	Chief Aviation Warfare Systems Operator
+AWCS	Senior Chief Aviation Warfare Systems Operator
+AWCM	Master Chief Aviation Warfare Systems Operator
+OTSN	Ocean Systems Technician Seaman
+OTSR	Ocean Systems Technician Seaman Recruit
+OS1	Operations Specialist First Class
+OS2	Operations Specialist Second Class
+OS3	Operations Specialist Third Class
+OSC	Chief Operations Specialist
+OSCM	Master Chief Operations Specialist
+OSCS	Senior Chief Operations Specialist
+OSSA	Operations Specialist Seaman Apprentice
+OSSN	Operations Specialist Seaman
+OSSR	Operations Specialist Seaman Recruit
+DS1	Data Systems Technician First Class
+DS2	Data Systems Technician Second Class
+DS3	Data Systems Technician Third Class
+DSC	Chief Data Systems Technician
+DSCS	Senior Chief Data Systems Technician
+DSCM	Master Chief Data Systems Technician
+DSSA	Data Systems Technician Seaman Apprentice
+DSSN	Data Systems Technician Seaman
+DSSR	Data Systems Technician Seaman Recruit
+OPCM	Master Chief Opticalman
+OM1	Opticalman First Class
+OM2	Opticalman Second Class
+OM3	Opticalman Third Class
+OMC	Chief Opticalman
+OMCM	Master Chief Opticalman
+OMCS	Senior Chief Opticalman
+OMSA	Opticalman Seaman Apprentice
+OMSN	Opticalman Seaman
+OMSR	Opticalman Seaman Recruit
+RPSA	Religious Program Seaman Apprentice
+PHAA	PHOTOGRAPHER'S MATE AIRMAN APPRENTICE
+AVCM	Master Chief Avionics Maintenance Technician
+BTFN	Boiler Technician Fireman
+WTSN	Weapons Technician Seaman
+TMSA	Torpedoman's Mate Seaman Apprentice
+TMCM	Master Chief Torpedoman's Mate
+CECR	Construction Electrician Constructionman Recruit
+CECA	Construction Electrician Constructionman Apprentice
+CECN	Construction Electrician Constructionman
+CE3	Construction Electrician Third Class
+CE2	Construction Electrician Second Class
+CE1	Construction Electrician First Class
+CEC	Chief Construction Electrician
+CECS	Senior Chief Construction Electrician
+UCCM	Master Chief Construction Electrician
+CUCM	Master Chief Builder
+MNSA	Mineman Seaman Apprentice
+MNSN	MINEMAN SEAMAN
+SRA	Senior Airman
+MCPO	Master Chief Petty Officer
+LN3	Legalman Third Class
+TSGT	Technical Sergeant
+RM1	Radioman First Class
+RM2	Radioman Second Class
+RM3	Radioman Third Class
+RMC	Chief Radioman
+RMCS	Senior Chief Radioman
+RMCM	Master Chief Radioman
+RMSA	Radioman Seaman Apprentice
+RMSN	Radioman Seaman
+RMSR	Radioman Seaman Recruit
+STSA	Sonar Technician Seaman Apprentice
+EW1	Electronics Warfare Technician First Class
+EW2	Electronics Warfare Technician Second Class
+EW3	Electronics Warfare Technician Third Class
+FLTMC Fleet Master Chief	E9 08032001 114100                
+FORMC Force Master Chief	E9 08032001 114200                
+IT1	Information Systems Technician First Class
+IT2	Information Systems Technician Second Class
+IT3	Information Systems Technician Third Class
+ITC	Chief Information Systems Technician
+ITCS	Senior Chief Information Systems Technician
+ITCM	Master Chief Information Systems Technician
+ITSA	Information Systems Technician Apprentice
+ITSR	Information Systems Technician Seaman Recruit
+ITSN	Information Systems Technician Seaman
+MCPON Master Chief Petty Officer of the Navy	E9 10172001 092000                
+FT2	Fire Control Technician Second Class
+CMDCM Command Master Chief	E9 01112002 075600                
+MAC	Chief Master-at-Arms
+MACM	Master Chief Master-at-Arms
+MACS	Senior Chief Master-at-Arms
+MA1	Master-at-Arms First Class
+MA2	Master-at-Arms Second Class
+MA3	Master-at-Arms Third Class
+MN3	MINEMAN THIRD CLASS
