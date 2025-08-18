@@ -8,6 +8,8 @@
 # Archival source data files - should not be in Git (re-downloadable from NARA)
 opsanal/*/data/
 datasets/*.csv
+src/scripts/*_tx.csv
+src/scripts/*.csv
 *.dat
 *.DAT
 *.zip
