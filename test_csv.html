@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VSSG Survey - CSV Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+    <h1>VSSG Survey - CSV Data Test</h1>
+    <div id="vis"></div>
+
+    <script type="text/javascript">
+        // Test simple CSV loading first
+        const testSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+            "data": {"url": "datasets/vssg_tx.csv"},
+            "mark": "point",
+            "encoding": {
+                "x": {"field": "hamlet_security_night", "type": "quantitative"},
+                "y": {"field": "hamlet_security_day", "type": "quantitative"}
+            },
+            "transform": [
+                {"filter": "datum.hamlet_security_night > 0 && datum.hamlet_security_day > 0"},
+                {"sample": 1000}
+            ]
+        };
+
+        vegaEmbed('#vis', testSpec, {
+            "actions": true,
+            "theme": "default"
+        }).then(function(result) {
+            console.log("CSV test visualization loaded successfully");
+        }).catch(function(error) {
+            console.error("Error loading CSV:", error);
+            document.getElementById('vis').innerHTML = '<p style="color: red;">CSV Error: ' + error.message + '</p>';
+        });
+    </script>
+</body>
+</html>

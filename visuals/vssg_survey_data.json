@@ -1,0 +1,135 @@
+[
+  {
+    "question": "Security Assessment (Night)",
+    "type": "Secure",
+    "value": 12736,
+    "percentage": 71.0,
+    "code": 1
+  },
+  {
+    "question": "Security Assessment (Night)",
+    "type": "Relatively Secure",
+    "value": 5207,
+    "percentage": 29.0,
+    "code": 2
+  },
+  {
+    "question": "Security Assessment (Day)",
+    "type": "Secure",
+    "value": 26778,
+    "percentage": 44.5,
+    "code": 1
+  },
+  {
+    "question": "Security Assessment (Day)",
+    "type": "Relatively Secure",
+    "value": 14854,
+    "percentage": 24.7,
+    "code": 2
+  },
+  {
+    "question": "Security Assessment (Day)",
+    "type": "Contested",
+    "value": 18554,
+    "percentage": 30.8,
+    "code": 3
+  },
+  {
+    "question": "Infrastructure Quality",
+    "type": "Excellent",
+    "value": 18134,
+    "percentage": 6.4,
+    "code": 1
+  },
+  {
+    "question": "Infrastructure Quality",
+    "type": "Good",
+    "value": 176917,
+    "percentage": 62.0,
+    "code": 2
+  },
+  {
+    "question": "Infrastructure Quality",
+    "type": "Fair",
+    "value": 90486,
+    "percentage": 31.7,
+    "code": 3
+  },
+  {
+    "question": "Services Quality",
+    "type": "Excellent",
+    "value": 55653,
+    "percentage": 19.8,
+    "code": 1
+  },
+  {
+    "question": "Services Quality",
+    "type": "Good",
+    "value": 191272,
+    "percentage": 68.0,
+    "code": 2
+  },
+  {
+    "question": "Services Quality",
+    "type": "Fair",
+    "value": 34392,
+    "percentage": 12.2,
+    "code": 3
+  },
+  {
+    "question": "Economic Development",
+    "type": "Excellent",
+    "value": 55463,
+    "percentage": 60.4,
+    "code": 1
+  },
+  {
+    "question": "Economic Development",
+    "type": "Good",
+    "value": 16511,
+    "percentage": 18.0,
+    "code": 2
+  },
+  {
+    "question": "Economic Development",
+    "type": "Fair",
+    "value": 5573,
+    "percentage": 6.1,
+    "code": 3
+  },
+  {
+    "question": "Economic Development",
+    "type": "Poor",
+    "value": 14283,
+    "percentage": 15.6,
+    "code": 4
+  },
+  {
+    "question": "Social Development",
+    "type": "Excellent",
+    "value": 18782,
+    "percentage": 43.8,
+    "code": 1
+  },
+  {
+    "question": "Social Development",
+    "type": "Good",
+    "value": 6739,
+    "percentage": 15.7,
+    "code": 2
+  },
+  {
+    "question": "Social Development",
+    "type": "Fair",
+    "value": 3350,
+    "percentage": 7.8,
+    "code": 3
+  },
+  {
+    "question": "Social Development",
+    "type": "Poor",
+    "value": 14050,
+    "percentage": 32.7,
+    "code": 4
+  }
+]

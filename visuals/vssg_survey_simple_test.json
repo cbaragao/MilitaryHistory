@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Vietnam Hamlet Assessment Survey Responses",
+    "subtitle": "Diverging stacked bar chart showing security and quality assessments (excluding unknown values)",
+    "anchor": "start"
+  },
+  "description": "Horizontal stacked bar chart of Vietnam hamlet assessment survey responses where blue represents positive conditions (Secure/Excellent), gray represents moderate conditions (Relatively Secure/Good/Fair), and red represents negative conditions (Contested/Poor/Very Poor)",
+  "width": 600,
+  "height": 300,
+  "data": {
+    "values": [
+      {"question": "Security Assessment (Night)", "type": "Secure", "value": 12736, "percentage": 71.0, "code": 1},
+      {"question": "Security Assessment (Night)", "type": "Relatively Secure", "value": 5207, "percentage": 29.0, "code": 2},
+      {"question": "Security Assessment (Day)", "type": "Secure", "value": 26778, "percentage": 44.5, "code": 1},
+      {"question": "Security Assessment (Day)", "type": "Relatively Secure", "value": 14854, "percentage": 24.7, "code": 2},
+      {"question": "Security Assessment (Day)", "type": "Contested", "value": 18554, "percentage": 30.8, "code": 3},
+      {"question": "Infrastructure Quality", "type": "Excellent", "value": 18134, "percentage": 6.4, "code": 1},
+      {"question": "Infrastructure Quality", "type": "Good", "value": 176917, "percentage": 62.0, "code": 2},
+      {"question": "Infrastructure Quality", "type": "Fair", "value": 90486, "percentage": 31.7, "code": 3},
+      {"question": "Services Quality", "type": "Excellent", "value": 55653, "percentage": 19.0, "code": 1},
+      {"question": "Services Quality", "type": "Good", "value": 191272, "percentage": 65.3, "code": 2},
+      {"question": "Services Quality", "type": "Fair", "value": 34392, "percentage": 11.7, "code": 3},
+      {"question": "Services Quality", "type": "Poor", "value": 15966, "percentage": 5.4, "code": 4},
+      {"question": "Economic Development", "type": "Excellent", "value": 55463, "percentage": 19.4, "code": 1},
+      {"question": "Economic Development", "type": "Good", "value": 16511, "percentage": 5.8, "code": 2},
+      {"question": "Economic Development", "type": "Fair", "value": 5573, "percentage": 1.9, "code": 3},
+      {"question": "Economic Development", "type": "Poor", "value": 14283, "percentage": 5.0, "code": 4},
+      {"question": "Economic Development", "type": "Very Poor", "value": 210137, "percentage": 73.5, "code": 5}
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "if(datum.type == 'Secure' || datum.type == 'Excellent', 2, if(datum.type == 'Relatively Secure' || datum.type == 'Good', 1, if(datum.type == 'Fair', 0, if(datum.type == 'Contested' || datum.type == 'Poor', -1, -2))))",
+      "as": "sentiment_order"
+    },
+    {
+      "calculate": "if(datum.sentiment_order < 0, datum.percentage, 0) + if(datum.sentiment_order == 0, datum.percentage / 2, 0)",
+      "as": "signed_percentage"
+    },
+    {
+      "stack": "percentage",
+      "as": ["v1", "v2"],
+      "groupby": ["question"]
+    },
+    {
+      "joinaggregate": [
+        {
+          "field": "signed_percentage",
+          "op": "sum",
+          "as": "offset"
+        }
+      ],
+      "groupby": ["question"]
+    },
+    {
+      "calculate": "datum.v1 - datum.offset",
+      "as": "nx"
+    },
+    {
+      "calculate": "datum.v2 - datum.offset",
+      "as": "nx2"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "x": {
+      "field": "nx",
+      "type": "quantitative",
+      "title": "Percentage (%)",
+      "axis": {
+        "format": ".0f",
+        "tickCount": 10
+      }
+    },
+    "x2": {"field": "nx2"},
+    "y": {
+      "field": "question",
+      "type": "nominal",
+      "title": "Assessment Category",
+      "axis": {
+        "offset": 5,
+        "ticks": false,
+        "minExtent": 120,
+        "domain": false,
+        "labelFontSize": 11
+      },
+      "sort": [
+        "Security Assessment (Night)",
+        "Security Assessment (Day)",
+        "Infrastructure Quality",
+        "Services Quality", 
+        "Economic Development"
+      ]
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "title": "Assessment Response",
+      "scale": {
+        "domain": [
+          "Very Poor", "Poor", "Contested", "Fair", 
+          "Relatively Secure", "Good", "Secure", "Excellent"
+        ],
+        "range": [
+          "#AA3377", "#CC6677", "#CC6677", "#BBBBBB",
+          "#66CCEE", "#66CCEE", "#4477AA", "#4477AA"
+        ],
+        "type": "ordinal"
+      },
+      "legend": {
+        "orient": "bottom",
+        "columns": 4,
+        "titleFontSize": 12,
+        "labelFontSize": 10
+      }
+    },
+    "tooltip": [
+      {"field": "question", "type": "nominal", "title": "Category"},
+      {"field": "type", "type": "nominal", "title": "Response"},
+      {"field": "value", "type": "quantitative", "title": "Count", "format": ","},
+      {"field": "percentage", "type": "quantitative", "title": "Percentage", "format": ".1f"}
+    ]
+  }
+}

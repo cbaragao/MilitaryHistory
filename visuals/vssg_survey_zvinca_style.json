@@ -1,0 +1,304 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Vietnam Hamlet Assessment Survey Responses",
+    "subtitle": ["Negative conditions (left), Neutral responses (center), Positive conditions (right).", "Excludes unknown values for clarity."],
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "description": "Three-panel horizontal stacked bar chart separating negative, neutral, and positive Vietnam hamlet assessment responses",
+  "data": {
+    "url": "vssg_survey_data.json",
+    "format": {"type": "json"}
+  },
+  "transform": [
+    {
+      "calculate": "if(datum.type == 'Secure' || datum.type == 'Excellent' || datum.type == 'Good' || datum.type == 'Relatively Secure', 'Positive', if(datum.type == 'Fair', 'Neutral', 'Negative'))",
+      "as": "sentiment_category"
+    }
+  ],
+  "spacing": 10,
+  "hconcat": [
+    {
+      "title": {
+        "text": "Assessment Categories",
+        "anchor": "middle",
+        "fontSize": 14,
+        "color": "#333"
+      },
+      "width": 200,
+      "height": 300,
+      "transform": [
+        {"aggregate": [{"op": "count", "as": "dummy"}], "groupby": ["question"]},
+        {"calculate": "0", "as": "zero_value"}
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "normal",
+        "align": "left",
+        "dx": 5
+      },
+      "encoding": {
+        "x": {
+          "field": "zero_value",
+          "type": "quantitative",
+          "title": null,
+          "axis": null,
+          "scale": {"domain": [0, 1]}
+        },
+        "y": {
+          "field": "question",
+          "type": "nominal",
+          "title": null,
+          "axis": {
+            "labels": false,
+            "ticks": false,
+            "domain": false
+          },
+          "sort": [
+            "Security Assessment (Night)",
+            "Security Assessment (Day)",
+            "Infrastructure Quality",
+            "Services Quality", 
+            "Economic Development",
+            "Social Development"
+          ]
+        },
+        "text": {"field": "question", "type": "nominal"}
+      }
+    },
+    {
+      "title": {
+        "text": "Negative",
+        "anchor": "middle",
+        "fontSize": 14,
+        "color": "#CC6677"
+      },
+      "width": 120,
+      "height": 300,
+      "transform": [
+        {"filter": "datum.sentiment_category == 'Negative'"},
+        {
+          "calculate": "if(datum.type == 'Enemy Dominated', 1, if(datum.type == 'Enemy Controlled', 2, if(datum.type == 'Very Poor', 3, if(datum.type == 'Poor', 4, 5))))",
+          "as": "sort_order"
+        }
+      ],
+      "mark": {
+        "type": "bar",
+        "stroke": "white",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "percentage",
+          "type": "quantitative",
+          "title": "%",
+          "axis": {
+            "format": ".0f",
+            "orient": "top",
+            "labelFontSize": 10,
+            "titleFontSize": 11
+          },
+          "scale": {
+            "domain": [0, 35]
+          }
+        },
+        "y": {
+          "field": "question",
+          "type": "nominal",
+          "title": null,
+          "axis": {
+            "labels": false,
+            "ticks": false,
+            "domain": false
+          },
+          "sort": [
+            "Security Assessment (Night)",
+            "Security Assessment (Day)",
+            "Infrastructure Quality",
+            "Services Quality", 
+            "Economic Development",
+            "Social Development"
+          ]
+        },
+        "order": {"field": "sort_order", "type": "ordinal"},
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Enemy Dominated", "Enemy Controlled", "Very Poor", "Poor", "Contested"],
+            "range": ["#AA3377", "#CC6677", "#CC6677", "#CC6677", "#CC6677"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "question", "type": "nominal", "title": "Category"},
+          {"field": "type", "type": "nominal", "title": "Response"},
+          {"field": "value", "type": "quantitative", "title": "Count", "format": ","},
+          {"field": "percentage", "type": "quantitative", "title": "Percentage", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Neutral",
+        "anchor": "middle",
+        "fontSize": 14,
+        "color": "#999"
+      },
+      "width": 60,
+      "height": 300,
+      "transform": [
+        {"filter": "datum.sentiment_category == 'Neutral'"}
+      ],
+      "mark": {
+        "type": "bar",
+        "stroke": "white",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "percentage",
+          "type": "quantitative",
+          "title": "%",
+          "axis": {
+            "format": ".0f",
+            "orient": "top",
+            "labelFontSize": 10,
+            "titleFontSize": 11
+          },
+          "scale": {
+            "domain": [0, 20]
+          }
+        },
+        "y": {
+          "field": "question",
+          "type": "nominal",
+          "title": null,
+          "axis": {
+            "labels": false,
+            "ticks": false,
+            "domain": false
+          },
+          "sort": [
+            "Security Assessment (Night)",
+            "Security Assessment (Day)",
+            "Infrastructure Quality",
+            "Services Quality", 
+            "Economic Development",
+            "Social Development"
+          ]
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Fair"],
+            "range": ["#BBBBBB"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "question", "type": "nominal", "title": "Category"},
+          {"field": "type", "type": "nominal", "title": "Response"},
+          {"field": "value", "type": "quantitative", "title": "Count", "format": ","},
+          {"field": "percentage", "type": "quantitative", "title": "Percentage", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Positive",
+        "anchor": "middle",
+        "fontSize": 14,
+        "color": "#4477AA"
+      },
+      "width": 200,
+      "height": 300,
+      "transform": [
+        {"filter": "datum.sentiment_category == 'Positive'"},
+        {
+          "calculate": "if(datum.type == 'Relatively Secure', 1, if(datum.type == 'Good', 2, if(datum.type == 'Secure', 3, 4)))",
+          "as": "sort_order"
+        }
+      ],
+      "mark": {
+        "type": "bar",
+        "stroke": "white",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "percentage",
+          "type": "quantitative",
+          "title": "%",
+          "axis": {
+            "format": ".0f",
+            "orient": "top",
+            "labelFontSize": 10,
+            "titleFontSize": 11
+          },
+          "scale": {
+            "domain": [0, 80]
+          }
+        },
+        "y": {
+          "field": "question",
+          "type": "nominal",
+          "title": null,
+          "axis": {
+            "labels": false,
+            "ticks": false,
+            "domain": false
+          },
+          "sort": [
+            "Security Assessment (Night)",
+            "Security Assessment (Day)",
+            "Infrastructure Quality",
+            "Services Quality", 
+            "Economic Development",
+            "Social Development"
+          ]
+        },
+        "order": {"field": "sort_order", "type": "ordinal"},
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Relatively Secure", "Good", "Secure", "Excellent"],
+            "range": ["#66CCEE", "#66CCEE", "#4477AA", "#4477AA"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "question", "type": "nominal", "title": "Category"},
+          {"field": "type", "type": "nominal", "title": "Response"},
+          {"field": "value", "type": "quantitative", "title": "Count", "format": ","},
+          {"field": "percentage", "type": "quantitative", "title": "Percentage", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent",
+      "y": "shared"
+    }
+  },
+  "config": {
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "titleFontSize": 11,
+      "labelFontSize": 10,
+      "symbolSize": 80,
+      "columns": 8
+    },
+    "text": {
+      "fontSize": 11
+    }
+  }
+}

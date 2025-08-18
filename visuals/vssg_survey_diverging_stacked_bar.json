@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Vietnam Hamlet Assessment Survey Responses",
+    "subtitle": ["Negative conditions (red/orange) extend left from center, positive conditions (blue) extend right.", "Neutral responses (gray) positioned separately. Excludes unknown values for clarity."],
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "description": "Horizontal stacked bar chart of Vietnam hamlet assessment survey responses where blue represents positive conditions (Secure/Excellent), gray represents moderate conditions (Relatively Secure/Good/Fair), and red represents negative conditions (Contested/Poor/Very Poor)",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "vssg_survey_data.json",
+    "format": {"type": "json"}
+  },
+  "transform": [
+    {
+      "calculate": "if(datum.type == 'Secure' || datum.type == 'Excellent', 2, if(datum.type == 'Relatively Secure' || datum.type == 'Good', 1, if(datum.type == 'Fair', 0, if(datum.type == 'Contested' || datum.type == 'Poor', -1, -2))))",
+      "as": "sentiment_order"
+    },
+    {
+      "calculate": "if(datum.sentiment_order < 0, datum.percentage, 0) + if(datum.sentiment_order == 0, datum.percentage / 2, 0)",
+      "as": "signed_percentage"
+    },
+    {
+      "stack": "percentage",
+      "as": ["v1", "v2"],
+      "groupby": ["question"]
+    },
+    {
+      "joinaggregate": [
+        {
+          "field": "signed_percentage",
+          "op": "sum",
+          "as": "offset"
+        }
+      ],
+      "groupby": ["question"]
+    },
+    {
+      "calculate": "datum.v1 - datum.offset",
+      "as": "nx"
+    },
+    {
+      "calculate": "datum.v2 - datum.offset",
+      "as": "nx2"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [2, 2],
+        "stroke": "#666",
+        "strokeWidth": 1,
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": {"datum": 0}
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "stroke": "white",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "nx",
+          "type": "quantitative",
+          "title": "← Negative Conditions    0%    Positive Conditions →",
+          "axis": {
+            "format": ".0f",
+            "tickCount": 8,
+            "grid": true,
+            "gridOpacity": 0.3,
+            "domain": true,
+            "labelFontSize": 10,
+            "titleFontSize": 12,
+            "titlePadding": 15
+          },
+          "scale": {
+            "domain": [-80, 80]
+          }
+        },
+        "x2": {"field": "nx2"},
+        "y": {
+          "field": "question",
+          "type": "nominal",
+          "title": "Assessment Category",
+          "axis": {
+            "offset": 5,
+            "ticks": false,
+            "minExtent": 120,
+            "domain": false,
+            "labelFontSize": 11
+          },
+          "sort": [
+            "Security Assessment (Night)",
+            "Security Assessment (Day)",
+            "Infrastructure Quality",
+            "Services Quality", 
+            "Economic Development",
+            "Social Development"
+          ]
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "title": "Assessment Response",
+          "scale": {
+            "domain": [
+              "Enemy Dominated", "Enemy Controlled", "Very Poor", "Poor", 
+              "Contested", "Fair", "Relatively Secure", "Good", 
+              "Secure", "Excellent"
+            ],
+            "range": [
+              "#CC6677", "#CC6677", "#CC6677", "#CC6677",
+              "#AA3377", "#BBBBBB", "#66CCEE", "#66CCEE",
+              "#4477AA", "#4477AA"
+            ],
+            "type": "ordinal"
+          },
+          "legend": {
+            "orient": "top",
+            "direction": "horizontal",
+            "columns": 5,
+            "titleFontSize": 12,
+            "labelFontSize": 10,
+            "symbolSize": 100,
+            "padding": 10,
+            "title": ["Poor/Negative ←", "→ Good/Positive", "Neutral"]
+          }
+        },
+        "tooltip": [
+          {"field": "question", "type": "nominal", "title": "Category"},
+          {"field": "type", "type": "nominal", "title": "Response"},
+          {"field": "value", "type": "quantitative", "title": "Count", "format": ","},
+          {"field": "percentage", "type": "quantitative", "title": "Percentage", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  }
+}

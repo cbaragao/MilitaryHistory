@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VSSG Survey Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+    <h1>VSSG Survey Test - Simple Version</h1>
+    <div id="vis"></div>
+
+    <script type="text/javascript">
+        vegaEmbed('#vis', 'visuals/vssg_survey_simple_test.json', {
+            "actions": true,
+            "theme": "default"
+        }).then(function(result) {
+            console.log("Visualization loaded successfully");
+        }).catch(function(error) {
+            console.error("Error loading visualization:", error);
+            document.getElementById('vis').innerHTML = '<p style="color: red;">Error: ' + error.message + '</p>';
+        });
+    </script>
+</body>
+</html>
