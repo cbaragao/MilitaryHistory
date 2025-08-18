@@ -25,6 +25,7 @@ A comprehensive ETL pipeline for processing military archival datasets from the 
 | Dataset | Description | Records | Time Period | Data.world Link |
 |---------|-------------|---------|-------------|-----------------|
 | **[KHMER](https://data.world/aragaocb/khmer)** | Cambodia operations & incidents | 40+ fields | 1970-1975 | [View Dataset](https://data.world/aragaocb/khmer) |
+| **[AWADS](https://data.world/aragaocb/awardsdecorations)** | Awards and Decorations System | Military awards & decorations | 1965-1972 | [View Dataset](https://data.world/aragaocb/awardsdecorations) |
 | **[AIMS](https://data.world/aragaocb/aimsawards)** | Awards Information Management | Personnel awards | 1988-2004 | [View Dataset](https://data.world/aragaocb/aimsawards) |
 | **[SEAFA](https://data.world/aragaocb/southeast-asia-forces-seafa)** | Southeast Asia Forces Analysis | Military operations | 1967-1975 | [View Dataset](https://data.world/aragaocb/southeast-asia-forces-seafa) |
 | **[INCDA](https://data.world/aragaocb/republic-of-vietnam-incidents-files-incda)** | Republic of Vietnam Incidents | Incident reports | Various | [View Dataset](https://data.world/aragaocb/republic-of-vietnam-incidents-files-incda) |
@@ -33,7 +34,7 @@ A comprehensive ETL pipeline for processing military archival datasets from the 
 
 ### 📈 Dataset Categories
 
-- **🎖️ Personnel & Awards**: AIMS, BASFA, PSYOPSA
+- **🎖️ Personnel & Awards**: AWADS, AIMS, BASFA, PSYOPSA
 - **🗺️ Geographic Operations**: KHMER, GORS (67-72), SEAFA
 - **📋 Incident Reporting**: INCDA, TIRSA, VCIIA  
 - **🎯 Tactical Operations**: CONGA, BOMBA, CIDGA

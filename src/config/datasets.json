@@ -452,6 +452,15 @@
         "delimiter": "width",
         "is_zipped": true
       },
+      "awardsdecorations": {
+        "NAID": "1937849",
+        "file_name": "AWADS.TR.PUBL",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/49/9378/1937849/content/arcmedia/electronic-records/rg-472/AWADS/AWADS.TR.PUBL",
+        "catalog_url": "https://catalog.archives.gov/id/1937849",
+        "available_online": true,
+        "delimiter": "width",
+        "is_zipped": false
+      },
       "psyopsa": {
         "NAID": "148414386",
         "file_name": "PSY.M70TF73.ARFS.csv",

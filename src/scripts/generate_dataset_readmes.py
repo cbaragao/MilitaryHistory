@@ -69,7 +69,8 @@ class DatasetREADMEGenerator:
             "vciia": "viet-cong-initiated-incidents-vciia",
             "basfa": "basfa",
             "conga": "conga",
-            "vssg": "vssgfiles"
+            "vssg": "vssgfiles",
+            "awardsdecorations": "awardsdecorations"
             # Note: Only datasets that exist in Data.world are included
             # Datasets with underscores in names (gors_*, incda_ps*) are not valid Data.world IDs
             # Missing datasets (hes, vndba, bomba, cidga, hr01a, obsea) are excluded
