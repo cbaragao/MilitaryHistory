@@ -69,6 +69,7 @@ class DatasetREADMEGenerator:
             "vciia": "viet-cong-initiated-incidents-vciia",
             "basfa": "basfa",
             "conga": "conga",
+            "hosta": "hosta",
             "vssg": "vssgfiles",
             "awardsdecorations": "awardsdecorations"
             # Note: Only datasets that exist in Data.world are included

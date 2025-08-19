@@ -120,6 +120,16 @@ class Nara:
             # If detection fails, default to standard priority
             return "standard_priority"
     
+    def _get_skiprows_for_dataset(self) -> int:
+        """Determine how many header rows to skip for each dataset."""
+        dataset_skiprows = {
+            'hosta': 3,  # HOSTA has 3 header lines to skip
+            'aims': 1,   # AIMS typically has 1 header line
+            'psyopsa': 1,  # PSYOPSA typically has 1 header line
+            # Add more datasets as needed
+        }
+        return dataset_skiprows.get(self.dataset.lower(), 1)  # Default to 1 if not specified
+    
     def read_file(self, file_path: str, widths) -> pd.DataFrame:
         """Reads the downloaded file using appropriate delimiter or column widths."""
         delimiter_map = {"pipe": "|", "tab": "\t", "comma": ",", "width": None}
@@ -135,10 +145,13 @@ class Nara:
             # Try standard encodings first for modern data
             encodings_to_try = ['utf-8', 'latin-1', 'cp1252', 'iso-8859-1', 'cp037', 'cp500', 'cp1140']
         
+        # Determine skiprows based on dataset
+        skiprows = self._get_skiprows_for_dataset()
+        
         if delimiter:
             for encoding in encodings_to_try:
                 try:
-                    return pd.read_csv(file_path, delimiter=delimiter, header=None, skiprows=1, encoding=encoding)
+                    return pd.read_csv(file_path, delimiter=delimiter, header=None, skiprows=skiprows, encoding=encoding)
                 except UnicodeDecodeError:
                     continue
             raise ValueError(f"Could not read file {file_path} with any supported encoding")
@@ -151,7 +164,7 @@ class Nara:
                         content = f.read(1000)  # Read first 1000 chars to check
                         if '\n' in content or '\r' in content:
                             # Normal fixed width file
-                            return pd.read_fwf(file_path, widths=widths, header=None, encoding=encoding).astype(str)
+                            return pd.read_fwf(file_path, widths=widths, header=None, skiprows=skiprows, encoding=encoding).astype(str)
                         else:
                             # File with no line terminators - need to split manually
                             f.seek(0)
@@ -160,9 +173,15 @@ class Nara:
                             
                             # Split into records
                             records = []
+                            record_index = 0
                             for i in range(0, len(full_content), record_length):
                                 record = full_content[i:i + record_length]
                                 if len(record) == record_length:  # Only complete records
+                                    # Skip header rows for this dataset
+                                    if record_index < skiprows:
+                                        record_index += 1
+                                        continue
+                                        
                                     # Split record into fields based on widths
                                     fields = []
                                     start = 0
@@ -170,6 +189,7 @@ class Nara:
                                         fields.append(record[start:start + width].strip())
                                         start += width
                                     records.append(fields)
+                                    record_index += 1
                             
                             if records:
                                 return pd.DataFrame(records).astype(str)

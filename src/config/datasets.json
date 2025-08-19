@@ -27,6 +27,15 @@
         "available_online": false,
         "delimiter": "not applicable"
       },
+      "hosta": {
+        "NAID": "584667",
+        "file_name": "RG038.HOSTA.Y6670",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/67/5846/584667/content/arcmedia/electronic-records/rg-038/hosta/RG038.HOSTA.Y6670",
+        "catalog_url": "https://catalog.archives.gov/id/584667",
+        "available_online": true,
+        "delimiter": "width",
+        "is_zipped": false
+      },
       "hr01a": {
         "NAID": "UNKNOWN",
         "file_name": "not applicable",

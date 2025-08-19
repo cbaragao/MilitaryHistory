@@ -1,0 +1,248 @@
+{
+  "dataset": "HOSTA",
+  "table": "HOSTA", 
+  "data": [
+    {
+      "title": "Date of Incident",
+      "id": "DATE_INCIDENT",
+      "field_group": "FIELD",
+      "length": 8,
+      "code": "N/A",
+      "data_values": "Date",
+      "definition": "Date of incident in MM/DD/YY format (positions 1-8)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Blank 1", 
+      "id": "BLANK1",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Blank field (positions 9-10)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Time of Incident",
+      "id": "TIME_INCIDENT", 
+      "field_group": "FIELD",
+      "length": 4,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Time of incident in 24-hour format (positions 11-14)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Blank 2",
+      "id": "BLANK2",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "N/A",
+      "data_values": "Alphanumeric", 
+      "definition": "Blank field (position 15)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Number of Hostile Guns",
+      "id": "NUM_HOSTILE_GUNS",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of hostile guns involved (positions 16-17)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Slash 1",
+      "id": "SLASH1",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Slash separator (position 18)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Size (calibre) of Hostile Guns", 
+      "id": "CALIBRE_HOSTILE_GUNS",
+      "field_group": "FIELD",
+      "length": 8,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Calibre/size of hostile guns (positions 19-26)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Blank 3",
+      "id": "BLANK3",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Blank field (positions 27-28)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Number of Rounds Fired in Incident",
+      "id": "ROUNDS_FIRED",
+      "field_group": "FIELD",
+      "length": 6,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Number of rounds fired in the incident (positions 29-34)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Accuracy of Enemy Fire",
+      "id": "ACCURACY_ENEMY_FIRE",
+      "field_group": "FIELD",
+      "length": 11,
+      "code": "N/A", 
+      "data_values": "Alphanumeric",
+      "definition": "Assessment of accuracy of enemy fire (positions 35-45)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Target Range in Yards",
+      "id": "TARGET_RANGE_YARDS",
+      "field_group": "FIELD",
+      "length": 5,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Target range in yards from shore to ship (positions 46-50)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Slash or Blank",
+      "id": "SLASH_BLANK1",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Slash or blank separator (positions 51-52)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Unknown Numeric Data Element",
+      "id": "UNKNOWN_NUMERIC",
+      "field_group": "FIELD", 
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric",
+      "definition": "Unknown numeric data element (positions 53-54)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Blank 4",
+      "id": "BLANK4",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Blank field (position 55)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Name of Ship Fired Upon",
+      "id": "SHIP_NAME", 
+      "field_group": "FIELD",
+      "length": 12,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Name of ship that was fired upon (positions 56-67)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Damage to Ship",
+      "id": "DAMAGE_SHIP",
+      "field_group": "FIELD",
+      "length": 3,
+      "code": "N/A",
+      "data_values": "Alphanumeric", 
+      "definition": "Damage to ship indicator (Yes/No) (positions 68-70)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Blank 5",
+      "id": "BLANK5",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Blank field (positions 71-72)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Friendly Killed in Action", 
+      "id": "FRIENDLY_KIA",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Friendly killed in action (positions 73-74)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Slash 2",
+      "id": "SLASH2",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Slash separator (position 75)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Friendly Wounded in Action",
+      "id": "FRIENDLY_WIA",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A",
+      "data_values": "Numeric", 
+      "definition": "Number of friendly wounded in action (positions 76-77)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Blank 6",
+      "id": "BLANK6",
+      "field_group": "FIELD",
+      "length": 1,
+      "code": "N/A",
+      "data_values": "Alphanumeric",
+      "definition": "Blank field (position 78)",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    },
+    {
+      "title": "Name of Operation",
+      "id": "OPERATION_NAME",
+      "field_group": "FIELD",
+      "length": 2,
+      "code": "N/A", 
+      "data_values": "Alphanumeric",
+      "definition": "Name of operation (positions 79-80): SD=Sea Dragon, NG=Naval Gunfire",
+      "periodic_set": "fixed",
+      "definition_file": ""
+    }
+  ]
+}
