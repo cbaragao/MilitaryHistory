@@ -1,9 +1,17 @@
 import os
 import pandas as pd
 from pathlib import Path
-from main import Main
-from transformcoordinates import TransformCoordinates
-from ddw import DDW
+
+# Handle imports depending on execution context
+try:
+    from .main import Main
+    from .transformcoordinates import TransformCoordinates
+    from .ddw import DDW
+except ImportError:
+    # Fallback for direct execution
+    from main import Main
+    from transformcoordinates import TransformCoordinates
+    from ddw import DDW
 
 class DatasetProcessor:
     """Handles processing, transformation, and uploading of dataset files."""

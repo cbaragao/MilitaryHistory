@@ -1,0 +1,74 @@
+{
+  "patterns": [
+    {
+      "name": "temporal_analysis",
+      "description": "Analysis of military events over time periods",
+      "viz_type": "line_chart",
+      "triggers": ["over time", "temporal", "trend", "timeline", "chronological", "time series"],
+      "data_requirements": ["date_field", "metric_field"],
+      "best_for": ["incident frequency", "casualty trends", "operation patterns"],
+      "sql_template": "temporal",
+      "examples": [
+        "Show incidents over time",
+        "Plot casualty trends by month",
+        "Display operation frequency timeline"
+      ]
+    },
+    {
+      "name": "geographic_distribution",
+      "description": "Spatial distribution of military events across geographic regions",
+      "viz_type": "folium_map",
+      "triggers": ["map", "geographic", "spatial", "location", "where", "coordinates"],
+      "data_requirements": ["latitude", "longitude", "event_data"],
+      "best_for": ["event locations", "geographic patterns", "spatial clustering"],
+      "sql_template": "geographic",
+      "examples": [
+        "Map incident locations",
+        "Show geographic distribution of events",
+        "Plot coordinates on map"
+      ]
+    },
+    {
+      "name": "categorical_comparison",
+      "description": "Comparison across categories like provinces, operation types, or units",
+      "viz_type": "bar_chart",
+      "triggers": ["compare", "by province", "by type", "breakdown", "comparison"],
+      "data_requirements": ["category_field", "metric_field"],
+      "best_for": ["province comparisons", "operation type analysis", "unit performance"],
+      "sql_template": "categorical",
+      "examples": [
+        "Compare incidents by province",
+        "Show breakdown by operation type",
+        "Chart casualties by unit"
+      ]
+    },
+    {
+      "name": "correlation_analysis",
+      "description": "Relationship between two numerical variables in military data",
+      "viz_type": "scatter_plot",
+      "triggers": ["correlation", "relationship", "vs", "versus", "against", "scatter"],
+      "data_requirements": ["numeric_x", "numeric_y", "optional_category"],
+      "best_for": ["casualty vs duration", "intensity relationships", "effectiveness metrics"],
+      "sql_template": "basic",
+      "examples": [
+        "Plot casualties vs mission duration",
+        "Show relationship between intensity and damage",
+        "Correlate frequency with effectiveness"
+      ]
+    },
+    {
+      "name": "activity_heatmap",
+      "description": "Intensity patterns across time and space dimensions",
+      "viz_type": "heatmap",
+      "triggers": ["heatmap", "intensity", "activity level", "density", "heat", "hotspot"],
+      "data_requirements": ["time_dimension", "space_dimension", "intensity_metric"],
+      "best_for": ["activity patterns", "seasonal trends", "geographic hotspots"],
+      "sql_template": "temporal",
+      "examples": [
+        "Create activity heatmap by month and year",
+        "Show intensity patterns over time",
+        "Display geographic heat zones"
+      ]
+    }
+  ]
+}

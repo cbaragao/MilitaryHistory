@@ -1,10 +1,19 @@
 import pandas as pd
 from pathlib import Path
-from common import Database, Common
-from nara import Nara
+
+# Handle imports depending on execution context
+try:
+    from .common import Database, Common
+    from .nara import Nara
+    from .utmconverter import UTMConverter
+except ImportError:
+    # Fallback for direct execution
+    from common import Database, Common
+    from nara import Nara
+    from utmconverter import UTMConverter
+
 import duckdb
 import os
-from utmconverter import UTMConverter
 
 class Main:
     """Main class to process data from multiple sources."""

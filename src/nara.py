@@ -6,7 +6,13 @@ import zipfile
 import tempfile
 import re
 import duckdb
-from common import Common
+
+# Handle imports depending on execution context
+try:
+    from .common import Common
+except ImportError:
+    # Fallback for direct execution
+    from common import Common
 
 class Nara:
     """Handles downloading and processing files from the National Archives."""

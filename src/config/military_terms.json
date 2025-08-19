@@ -1,0 +1,37 @@
+{
+  "operation_types": {
+    "artillery": ["artillery", "firing", "bombardment", "shelling", "guns", "cannon"],
+    "air_mission": ["air", "bombing", "airstrike", "aircraft", "plane", "helicopter", "sortie"],
+    "ground_operation": ["patrol", "sweep", "ground", "infantry", "troops", "march"],
+    "naval": ["naval", "ship", "vessel", "fleet", "navy", "boat"],
+    "reconnaissance": ["recon", "surveillance", "intelligence", "observation", "scout"]
+  },
+  "casualty_levels": {
+    "high": [">10", "heavy", "significant", "major", "severe"],
+    "medium": ["5-10", "moderate", "medium", "substantial"],
+    "low": ["<5", "light", "minimal", "minor", "few"]
+  },
+  "geographic_terms": {
+    "vietnam": ["vietnam", "south vietnam", "north vietnam", "saigon", "hanoi"],
+    "cambodia": ["cambodia", "phnom penh", "kampuchea"],
+    "laos": ["laos", "vientiane", "pathet lao"],
+    "thailand": ["thailand", "bangkok", "siam"]
+  },
+  "military_units": {
+    "naval": ["uss", "hmcs", "hmas", "destroyer", "cruiser", "frigate", "carrier"],
+    "army": ["division", "brigade", "battalion", "company", "platoon", "squad"],
+    "air_force": ["squadron", "wing", "flight", "group"],
+    "marines": ["marine", "corps", "regiment", "meu"]
+  },
+  "weapons_equipment": {
+    "small_arms": ["rifle", "m16", "ak47", "pistol", "machine gun"],
+    "heavy_weapons": ["mortar", "rocket", "missile", "grenade", "rpg"],
+    "artillery": ["howitzer", "cannon", "gun", "battery"],
+    "vehicles": ["tank", "apc", "helicopter", "aircraft", "truck"]
+  },
+  "time_periods": {
+    "vietnam_war": ["1964", "1965", "1966", "1967", "1968", "1969", "1970", "1971", "1972", "1973"],
+    "tet_offensive": ["1968", "january 1968", "tet"],
+    "cambodian_campaign": ["1970", "cambodian incursion"]
+  }
+}
