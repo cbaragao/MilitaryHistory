@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>RAG Test - HOSTA Incidents</title>
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-</head>
-<body>
-    <div id="vis"></div>
-    <script type="text/javascript">
-        var spec = {
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "HOSTA Incidents Analysis",
+    "text": "Hosta Tx",
     "fontSize": 16,
     "anchor": "start",
     "color": "#2F4F4F"
@@ -844,8 +833,4 @@
       "title": "Count"
     }
   }
-};
-        vegaEmbed('#vis', spec);
-    </script>
-</body>
-</html>
+}

@@ -57,7 +57,7 @@ class QueryProcessor:
         table_name = self._select_best_table(entities, temporal_info, spatial_info)
         
         # Generate SQL query
-        sql_query = self._generate_sql_query(table_name, entities, temporal_info, spatial_info, viz_type)
+        sql_query = self._generate_sql_query(table_name, entities, temporal_info, spatial_info, viz_type, query)
         
         return {
             'query': query,
@@ -165,14 +165,19 @@ class QueryProcessor:
                     # Find the actual table with this pattern
                     matching_tables = [t for t in available_tables if pattern in t.upper()]
                     if matching_tables:
-                        # Prefer _tx tables, then _nara, then others
-                        tx_tables = [t for t in matching_tables if '_tx' in t.lower()]
-                        if tx_tables:
-                            if tx_tables[0] not in entities['explicit_tables']:
-                                entities['explicit_tables'].append(tx_tables[0])
+                        # Prefer unified tables first, then _tx tables, then _nara, then others
+                        all_tx_tables = [t for t in matching_tables if '_all_tx' in t.lower()]
+                        if all_tx_tables:
+                            if all_tx_tables[0] not in entities['explicit_tables']:
+                                entities['explicit_tables'].append(all_tx_tables[0])
                         else:
-                            if matching_tables[0] not in entities['explicit_tables']:
-                                entities['explicit_tables'].append(matching_tables[0])
+                            tx_tables = [t for t in matching_tables if '_tx' in t.lower()]
+                            if tx_tables:
+                                if tx_tables[0] not in entities['explicit_tables']:
+                                    entities['explicit_tables'].append(tx_tables[0])
+                            else:
+                                if matching_tables[0] not in entities['explicit_tables']:
+                                    entities['explicit_tables'].append(matching_tables[0])
                     break
         
         # Extract explicit column references
@@ -366,8 +371,12 @@ class QueryProcessor:
             score = 0
             table_lower = table.lower()
             
+            # HIGHEST PREFERENCE: Give unified tables (like aims_all_tx) maximum boost
+            if '_all_tx' in table_lower:
+                score += 50
+            
             # STRONG PREFERENCE: Give _tx tables a significant boost
-            if '_tx' in table_lower:
+            elif '_tx' in table_lower:
                 score += 20
             
             # Operation type matching
@@ -432,7 +441,7 @@ class QueryProcessor:
     
     def _generate_sql_query(self, table_name: str, entities: Dict[str, List[str]], 
                            temporal_info: Dict[str, Any], spatial_info: Dict[str, Any], 
-                           viz_type: str) -> str:
+                           viz_type: str, original_query: str = '') -> str:
         """Generate SQL query based on extracted information."""
         
         # Get table schema
@@ -460,8 +469,26 @@ class QueryProcessor:
                 for start_year, end_year in temporal_info['date_ranges']:
                     conditions.append(f"EXTRACT(year FROM {date_field}) BETWEEN {start_year} AND {end_year}")
         
-        # Geographic conditions
-        if spatial_info['countries']:
+        # Era filtering for unified tables (do this BEFORE geographic filtering)
+        era_applied = False
+        if '_all_tx' in table_name.lower() and 'era' in [col.lower() for col in columns]:
+            era_keywords = {
+                'early': 'early_wars',
+                'korea': 'korea_era', 
+                'vietnam': 'vietnam_era',
+                'post': 'post_vietnam',
+                'gulf': 'gulf_war_era'
+            }
+            
+            query_lower = original_query.lower()
+            for keyword, era_value in era_keywords.items():
+                if keyword in query_lower:
+                    conditions.append(f"era = '{era_value}'")
+                    era_applied = True
+                    break
+
+        # Geographic conditions (skip if era filtering is applied)
+        if spatial_info['countries'] and not era_applied:
             country_conditions = []
             for country in spatial_info['countries']:
                 # Look for country-related columns
@@ -471,7 +498,7 @@ class QueryProcessor:
             
             if country_conditions:
                 conditions.append(f"({' OR '.join(country_conditions)})")
-        
+
         # Operation type conditions
         if entities['operations']:
             operation_conditions = []

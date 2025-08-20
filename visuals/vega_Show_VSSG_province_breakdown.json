@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Vssg Tx",
+    "fontSize": 16,
+    "anchor": "start",
+    "color": "#2F4F4F"
+  },
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": []
+  },
+  "mark": {
+    "type": "circle",
+    "size": 60,
+    "opacity": 0.7
+  },
+  "encoding": {
+    "x": {
+      "field": "village_size_code",
+      "type": "quantitative",
+      "title": "Village Size Code"
+    },
+    "y": {
+      "field": "village_size_description",
+      "type": "quantitative",
+      "title": "Village Size Description"
+    },
+    "color": {
+      "field": "hamlet_quality_2_description",
+      "type": "nominal",
+      "scale": {
+        "scheme": "category10"
+      },
+      "title": "Hamlet Quality 2 Description"
+    }
+  }
+}

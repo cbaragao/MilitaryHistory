@@ -67,6 +67,9 @@ class VegaLiteGenerator:
         # Prepare data for visualization
         viz_data = self._prepare_temporal_data(data, date_col, metric_col, category_col)
         
+        # Clean data for JSON serialization
+        viz_data = self._clean_data_for_json(viz_data)
+        
         spec = {
             "$schema": self.base_schema,
             "title": {
@@ -115,12 +118,28 @@ class VegaLiteGenerator:
         category_col = self._find_category_column(data)
         metric_col = self._find_metric_column(data, context)
         
-        if not category_col or not metric_col:
-            return self._error_spec("Could not identify category or metric columns for comparison")
+        if not category_col:
+            return self._error_spec("Could not identify category column for comparison")
         
-        # Aggregate data by category
-        viz_data = data.groupby(category_col)[metric_col].sum().reset_index()
+        # Handle metric column selection and aggregation
+        if metric_col == 'count' or metric_col not in data.columns:
+            # Create count aggregation
+            viz_data = data.groupby(category_col).size().reset_index(name='count')
+            metric_col = 'count'
+        else:
+            # Use existing numeric column
+            viz_data = data.groupby(category_col)[metric_col].sum().reset_index()
+        
+        # Filter out rows where metric is 0 or category is null/empty
+        viz_data = viz_data[viz_data[metric_col] > 0]
+        if category_col in viz_data.columns:
+            viz_data = viz_data[viz_data[category_col].notna()]
+            viz_data = viz_data[viz_data[category_col].astype(str).str.strip() != '']
+        
         viz_data = viz_data.sort_values(metric_col, ascending=False).head(20)  # Top 20 categories
+        
+        # Clean data for JSON serialization
+        viz_data = self._clean_data_for_json(viz_data)
         
         spec = {
             "$schema": self.base_schema,
@@ -167,6 +186,9 @@ class VegaLiteGenerator:
         
         # Remove rows with null values in key columns
         viz_data = data[[x_col, y_col] + ([category_col] if category_col else [])].dropna()
+        
+        # Clean data for JSON serialization
+        viz_data = self._clean_data_for_json(viz_data)
         
         spec = {
             "$schema": self.base_schema,
@@ -219,6 +241,9 @@ class VegaLiteGenerator:
         
         # Create temporal aggregations
         viz_data = self._prepare_heatmap_data(data, date_col, metric_col)
+        
+        # Clean data for JSON serialization
+        viz_data = self._clean_data_for_json(viz_data)
         
         spec = {
             "$schema": self.base_schema,
@@ -302,16 +327,32 @@ class VegaLiteGenerator:
         
         numeric_cols = self._find_numeric_columns(data)
         
+        # Evaluate numeric columns for usefulness
+        candidate_metrics = []
         for col in numeric_cols:
             col_lower = col.lower()
-            if any(pattern in col_lower for pattern in metric_patterns):
-                return col
+            col_sum = data[col].sum()
+            non_null_count = data[col].notna().sum()
+            unique_count = data[col].nunique()
+            
+            # Skip columns that are mostly null, have no variation, or sum to zero
+            if non_null_count < len(data) * 0.3 or unique_count <= 1 or col_sum == 0:
+                continue
+            
+            # Score based on patterns and data characteristics
+            pattern_score = 10 if any(pattern in col_lower for pattern in metric_patterns) else 0
+            diversity_score = min(unique_count / 10, 5)  # Prefer some diversity but not too much
+            magnitude_score = min(abs(col_sum) / 100, 5)  # Prefer columns with reasonable magnitude
+            
+            total_score = pattern_score + diversity_score + magnitude_score
+            candidate_metrics.append((col, total_score))
         
-        # If no obvious metric, use first numeric column or count
-        if numeric_cols:
-            return numeric_cols[0]
+        if candidate_metrics:
+            # Return the highest-scoring metric column
+            candidate_metrics.sort(key=lambda x: x[1], reverse=True)
+            return candidate_metrics[0][0]
         
-        # Create a count column if no numeric data
+        # If no good numeric metrics found, use count aggregation
         return 'count'
     
     def _find_category_column(self, data: pd.DataFrame) -> Optional[str]:
@@ -321,15 +362,36 @@ class VegaLiteGenerator:
             'ship', 'location', 'region', 'command', 'service'
         ]
         
+        # First, find all categorical columns with good diversity
+        candidate_columns = []
         for col in data.columns:
             if data[col].dtype == 'object' or data[col].dtype.name == 'category':
-                col_lower = col.lower()
-                if any(pattern in col_lower for pattern in category_patterns):
-                    return col
+                unique_count = data[col].nunique()
+                non_null_count = data[col].notna().sum()
+                
+                # Only consider columns with good diversity (2-50 unique values, mostly non-null)
+                if 2 <= unique_count <= 50 and non_null_count > len(data) * 0.5:
+                    col_lower = col.lower()
+                    
+                    # Prefer columns matching our patterns
+                    pattern_match = any(pattern in col_lower for pattern in category_patterns)
+                    candidate_columns.append((col, unique_count, pattern_match))
         
-        # Return first categorical column if no obvious pattern match
+        if candidate_columns:
+            # Sort by: pattern match first, then by reasonable unique count (prefer 5-20 range)
+            def scoring_func(item):
+                col, unique_count, pattern_match = item
+                pattern_score = 10 if pattern_match else 0
+                # Prefer 5-20 unique values for good visualization
+                diversity_score = 10 - abs(unique_count - 10) if 5 <= unique_count <= 20 else 5
+                return pattern_score + diversity_score
+            
+            candidate_columns.sort(key=scoring_func, reverse=True)
+            return candidate_columns[0][0]
+        
+        # Fallback: return any categorical column with reasonable diversity
         for col in data.columns:
-            if data[col].dtype == 'object' and data[col].nunique() < len(data) * 0.8:
+            if data[col].dtype == 'object' and 2 <= data[col].nunique() <= 50:
                 return col
         
         return None
@@ -387,6 +449,10 @@ class VegaLiteGenerator:
             else:
                 viz_data = data.groupby(date_col)[metric_col].sum().reset_index()
         
+        # Convert timestamps to ISO format strings for JSON serialization
+        if pd.api.types.is_datetime64_any_dtype(viz_data[date_col]):
+            viz_data[date_col] = viz_data[date_col].dt.strftime('%Y-%m-%d')
+        
         return viz_data
     
     def _prepare_heatmap_data(self, data: pd.DataFrame, date_col: str, metric_col: str) -> pd.DataFrame:
@@ -396,15 +462,16 @@ class VegaLiteGenerator:
             data[date_col] = pd.to_datetime(data[date_col], errors='coerce')
         
         # Extract year and month
-        data['year'] = data[date_col].dt.year
-        data['month'] = data[date_col].dt.month
+        data_copy = data.copy()
+        data_copy['year'] = data_copy[date_col].dt.year
+        data_copy['month'] = data_copy[date_col].dt.month
         
         # If metric_col doesn't exist, create count
-        if metric_col == 'count' or metric_col not in data.columns:
-            viz_data = data.groupby(['year', 'month']).size().reset_index(name='count')
+        if metric_col == 'count' or metric_col not in data_copy.columns:
+            viz_data = data_copy.groupby(['year', 'month']).size().reset_index(name='count')
             metric_col = 'count'
         else:
-            viz_data = data.groupby(['year', 'month'])[metric_col].sum().reset_index()
+            viz_data = data_copy.groupby(['year', 'month'])[metric_col].sum().reset_index()
         
         # Convert month to name
         month_names = {1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'Jun',
@@ -412,6 +479,30 @@ class VegaLiteGenerator:
         viz_data['month'] = viz_data['month'].map(month_names)
         
         return viz_data
+    
+    def _clean_data_for_json(self, data: pd.DataFrame) -> pd.DataFrame:
+        """Clean DataFrame to ensure JSON serializability."""
+        data_clean = data.copy()
+        
+        for col in data_clean.columns:
+            # Handle timestamps
+            if pd.api.types.is_datetime64_any_dtype(data_clean[col]):
+                data_clean[col] = data_clean[col].dt.strftime('%Y-%m-%d')
+            
+            # Handle NaN values
+            elif data_clean[col].dtype == 'object':
+                data_clean[col] = data_clean[col].fillna('Unknown')
+            elif pd.api.types.is_numeric_dtype(data_clean[col]):
+                data_clean[col] = data_clean[col].fillna(0)
+            
+            # Convert numpy types to native Python types
+            if hasattr(data_clean[col], 'dtype'):
+                if 'int' in str(data_clean[col].dtype):
+                    data_clean[col] = data_clean[col].astype(int)
+                elif 'float' in str(data_clean[col].dtype):
+                    data_clean[col] = data_clean[col].astype(float)
+        
+        return data_clean
     
     def _empty_data_spec(self) -> Dict[str, Any]:
         """Return specification for empty data."""

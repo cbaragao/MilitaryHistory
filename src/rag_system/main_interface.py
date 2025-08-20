@@ -80,6 +80,15 @@ class MilitaryVizInterface:
                 'entities': processed_query['entities']
             }
             
+            # Validate coordinates for map visualizations
+            if viz_type == 'folium_map':
+                # Check if data actually has coordinate columns
+                lat_col, lon_col = self._find_coordinate_columns(data)
+                if not lat_col or not lon_col:
+                    # No coordinates available - fallback to appropriate chart
+                    result['metadata']['coordinate_fallback'] = f"No coordinates found, using bar chart instead"
+                    viz_type = 'bar_chart'
+            
             if viz_type == 'folium_map':
                 # Generate interactive map
                 map_obj = self.folium_generator.generate_map(data, "density", context)
@@ -135,6 +144,25 @@ class MilitaryVizInterface:
             suggestions.extend(self._get_table_suggestions(table))
         
         return suggestions[:10]  # Return top 10 suggestions
+    
+    def _find_coordinate_columns(self, data: pd.DataFrame) -> tuple:
+        """Find latitude and longitude columns in the data."""
+        lat_patterns = ['lat', 'latitude', 'y', 'northing']
+        lon_patterns = ['lon', 'lng', 'longitude', 'x', 'easting']
+        
+        lat_col = None
+        lon_col = None
+        
+        for col in data.columns:
+            col_lower = col.lower()
+            if any(pattern in col_lower for pattern in lat_patterns):
+                if pd.api.types.is_numeric_dtype(data[col]):
+                    lat_col = col
+            elif any(pattern in col_lower for pattern in lon_patterns):
+                if pd.api.types.is_numeric_dtype(data[col]):
+                    lon_col = col
+        
+        return lat_col, lon_col
     
     def get_available_data(self) -> Dict[str, Any]:
         """

@@ -107,51 +107,44 @@ class FoliumMapGenerator:
         center_lat, center_lon = self._calculate_map_center(clean_data, lat_col, lon_col, context)
         zoom_level = self._calculate_zoom_level(clean_data, lat_col, lon_col)
         
-        # Create base map
+        # Create base map with more compatible settings
         m = folium.Map(
             location=[center_lat, center_lon],
             zoom_start=zoom_level,
-            tiles='OpenStreetMap'
+            tiles='OpenStreetMap',
+            prefer_canvas=True  # Better performance and compatibility
         )
         
-        # Add alternative tile layers
-        folium.TileLayer('CartoDB positron', name='Light Mode').add_to(m)
-        folium.TileLayer('CartoDB dark_matter', name='Dark Mode').add_to(m)
-        
-        # Determine operation type column for styling
-        operation_col = self._find_operation_column(clean_data)
-        
-        # Add markers
+        # Use simple CircleMarkers for better compatibility and performance
         for idx, row in clean_data.iterrows():
+            # Limit to first 500 points for performance
+            if idx >= 500:
+                break
+                
             # Determine marker style
+            operation_col = self._find_operation_column(clean_data)
             operation_type = 'default'
             if operation_col and pd.notna(row[operation_col]):
                 operation_type = str(row[operation_col]).lower()
                 
             color = self._get_operation_color(operation_type)
-            icon = self._get_operation_icon(operation_type)
             
             # Create popup content
             popup_content = self._create_military_popup(row)
             
-            # Add marker
-            folium.Marker(
+            # Use simple CircleMarkers to avoid zIndex issues
+            folium.CircleMarker(
                 location=[row[lat_col], row[lon_col]],
-                popup=folium.Popup(popup_content, max_width=300),
+                radius=6,
+                popup=folium.Popup(popup_content, max_width=250),
                 tooltip=self._create_tooltip(row),
-                icon=folium.Icon(
-                    color=color,
-                    icon=icon,
-                    prefix='fa'
-                )
+                color=color,
+                fill=True,
+                fillColor=color,
+                fillOpacity=0.7,
+                weight=2,
+                opacity=0.8
             ).add_to(m)
-        
-        # Add layer control
-        folium.LayerControl().add_to(m)
-        
-        # Add marker cluster if too many points
-        if len(clean_data) > 100:
-            self._add_marker_clusters(m, clean_data, lat_col, lon_col)
         
         return m
     
@@ -165,11 +158,12 @@ class FoliumMapGenerator:
         # Calculate map center
         center_lat, center_lon = self._calculate_map_center(clean_data, lat_col, lon_col, context)
         
-        # Create base map
+        # Create base map with compatibility settings
         m = folium.Map(
             location=[center_lat, center_lon],
             zoom_start=8,
-            tiles='CartoDB positron'
+            tiles='CartoDB positron',
+            prefer_canvas=True
         )
         
         # Prepare heatmap data

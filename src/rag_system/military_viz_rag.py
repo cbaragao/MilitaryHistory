@@ -167,10 +167,18 @@ class MilitaryVizRAG:
             try:
                 embedding = self.embedding_model.encode(text).tolist()
                 
+                # Convert lists to strings for ChromaDB compatibility
+                metadata = {}
+                for key, value in pattern.items():
+                    if isinstance(value, list):
+                        metadata[key] = ', '.join(map(str, value))
+                    else:
+                        metadata[key] = value
+                
                 self.vector_store.add(
                     embeddings=[embedding],
                     documents=[text],
-                    metadatas=[pattern],
+                    metadatas=[metadata],
                     ids=[f"pattern_{i}"]
                 )
             except Exception as e:
@@ -201,7 +209,14 @@ class MilitaryVizRAG:
             
             patterns = []
             for metadata in results['metadatas'][0]:
-                patterns.append(metadata)
+                # Convert string values back to lists where appropriate
+                pattern = {}
+                for key, value in metadata.items():
+                    if key in ['triggers', 'data_requirements', 'best_for', 'examples'] and isinstance(value, str):
+                        pattern[key] = [item.strip() for item in value.split(',')]
+                    else:
+                        pattern[key] = value
+                patterns.append(pattern)
                 
             return patterns
             

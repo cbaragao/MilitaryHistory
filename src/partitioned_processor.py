@@ -226,6 +226,49 @@ class PartitionedDatasetProcessor:
             except Exception as e:
                 self.log_message(f"      Warning: Could not clean up {file}: {e}")
     
+    def _create_unified_aims_table(self):
+        """Create a unified AIMS table combining all era partitions for RAG purposes."""
+        if not self.db:
+            raise RuntimeError("Database connection not available")
+        
+        self.log_message("   📋 Dropping existing unified table if present...")
+        self.db.execute("DROP TABLE IF EXISTS aims_all_tx")
+        
+        self.log_message("   🔗 Creating unified table with era column...")
+        
+        # Create unified table with era tracking
+        union_sql = """
+        CREATE TABLE aims_all_tx AS
+        SELECT 'early_wars' as era, * FROM aims_early_wars_tx
+        UNION ALL
+        SELECT 'korea_era' as era, * FROM aims_korea_era_tx  
+        UNION ALL
+        SELECT 'vietnam_era' as era, * FROM aims_vietnam_era_tx
+        UNION ALL
+        SELECT 'post_vietnam' as era, * FROM aims_post_vietnam_tx
+        UNION ALL
+        SELECT 'gulf_war_era' as era, * FROM aims_gulf_war_era_tx
+        """
+        
+        self.db.execute(union_sql)
+        
+        # Get count for verification
+        total_count = self.db.execute("SELECT COUNT(*) FROM aims_all_tx").fetchone()[0]
+        
+        # Get count by era for verification
+        era_counts = self.db.execute("""
+            SELECT era, COUNT(*) as count 
+            FROM aims_all_tx 
+            GROUP BY era 
+            ORDER BY era
+        """).fetchall()
+        
+        self.log_message(f"   📊 Unified table created with {total_count:,} total records:")
+        for era, count in era_counts:
+            self.log_message(f"      • {era}: {count:,} records")
+        
+        return total_count
+    
     def process_all_partitions(self, partitions: list = None):
         """Process all partitions efficiently with shared resources."""
         if partitions is None:
@@ -278,6 +321,15 @@ class PartitionedDatasetProcessor:
                     self.log_message("   ⏸️  Pausing 1 second before next partition...")
                     time.sleep(1)
             
+            # Create unified table for RAG if all partitions succeeded
+            if failed == 0 and self.dataset.lower() == 'aims':
+                self.log_message("\n🔗 Creating unified AIMS table for RAG purposes...")
+                try:
+                    self._create_unified_aims_table()
+                    self.log_message("✅ Unified AIMS table created successfully")
+                except Exception as e:
+                    self.log_message(f"⚠️  Warning: Failed to create unified table: {e}")
+            
             # Final summary
             overall_end = time.time()
             total_duration = overall_end - overall_start
@@ -295,6 +347,8 @@ class PartitionedDatasetProcessor:
             else:
                 self.log_message("   🎉 All partitions processed successfully!")
                 self.log_message(f"   📁 Files uploaded to: https://data.world/{self.datadotworld_project}")
+                if self.dataset.lower() == 'aims':
+                    self.log_message("   🔗 Unified table 'aims_all_tx' created for comprehensive RAG queries")
                 return 0
                 
         finally:

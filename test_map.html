@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Map Test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <style>
+        #map { height: 400px; width: 100%; }
+        body { font-family: Arial, sans-serif; margin: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Map Compatibility Test</h2>
+    <p>This tests if the basic Leaflet map functionality works in your browser.</p>
+    <div id="map"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script>
+        try {
+            // Create a simple test map
+            var map = L.map('map').setView([16.0, 108.0], 6);
+            
+            // Add tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+            
+            // Add a test marker
+            var marker = L.circleMarker([16.0, 108.0], {
+                radius: 8,
+                fillColor: 'red',
+                color: 'darkred',
+                weight: 2,
+                opacity: 0.8,
+                fillOpacity: 0.6
+            }).addTo(map);
+            
+            marker.bindPopup('<b>Test Location</b><br>Vietnam Center');
+            
+            document.write('<p style="color: green;">✅ Map loaded successfully!</p>');
+            console.log('Map test: SUCCESS');
+            
+        } catch (error) {
+            document.write('<p style="color: red;">❌ Map error: ' + error.message + '</p>');
+            console.error('Map test error:', error);
+        }
+    </script>
+    
+    <p><strong>Instructions:</strong></p>
+    <ul>
+        <li>If you see a map with a red circle marker above, the basic functionality works</li>
+        <li>If you see an error message, there may be browser compatibility issues</li>
+        <li>Try opening the generated RAG map files in the same browser</li>
+    </ul>
+</body>
+</html>

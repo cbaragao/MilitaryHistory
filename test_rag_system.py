@@ -4,18 +4,21 @@ Test script for the Military Visualization RAG System
 """
 
 import sys
+import os
 from pathlib import Path
 
-# Add src to path for imports
-src_path = Path(__file__).parent / "src"
-sys.path.insert(0, str(src_path))
+# Add project root to path for imports
+project_root = Path(__file__).parent
+sys.path.insert(0, str(project_root))
 
 try:
-    from rag_system import MilitaryVizInterface
+    print("🔄 Importing RAG system components...")
+    from src.rag_system.main_interface import MilitaryVizInterface
     print("✅ RAG system imports successful")
     
     # Test initialization
     db_path = "src/ddb/opsanal.db"
+    print(f"🔄 Initializing with database: {db_path}")
     viz_interface = MilitaryVizInterface(db_path)
     print("✅ RAG system initialization successful")
     

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Visualization Error",
+  "width": 400,
+  "height": 200,
+  "mark": {
+    "type": "text",
+    "text": "Could not identify category column for comparison",
+    "fontSize": 14,
+    "color": "red"
+  },
+  "data": {
+    "values": [
+      {}
+    ]
+  }
+}

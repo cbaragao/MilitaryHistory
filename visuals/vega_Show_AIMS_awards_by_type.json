@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Aims All Tx",
+    "fontSize": 16,
+    "anchor": "start",
+    "color": "#2F4F4F"
+  },
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "prim_type": "19-",
+        "count": 1
+      },
+      {
+        "prim_type": "CMC",
+        "count": 1
+      },
+      {
+        "prim_type": "CNO",
+        "count": 1
+      },
+      {
+        "prim_type": "FLT",
+        "count": 1
+      },
+      {
+        "prim_type": "SEC",
+        "count": 1
+      },
+      {
+        "prim_type": "nan",
+        "count": 1
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#2F4F4F"
+  },
+  "encoding": {
+    "x": {
+      "field": "prim_type",
+      "type": "nominal",
+      "title": "Prim Type",
+      "axis": {
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  }
+}

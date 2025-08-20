@@ -1,17 +1,836 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Visualization Error",
-  "width": 400,
-  "height": 200,
-  "mark": {
-    "type": "text",
-    "text": "Could not identify date or metric columns for temporal analysis",
-    "fontSize": 14,
-    "color": "red"
+  "title": {
+    "text": "HOSTA Incidents Analysis",
+    "fontSize": 16,
+    "anchor": "start",
+    "color": "#2F4F4F"
   },
+  "width": 800,
+  "height": 400,
   "data": {
     "values": [
-      {}
+      {
+        "DATE_INCIDENT": "1966-10-25",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1966-11-04",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1966-11-14",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1966-11-19",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1966-12-05",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1966-12-23",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-01-02",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-01-19",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-01-20",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-01-22",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-01-23",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-01-28",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-02-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-02-07",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-02-08",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-02-14",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-02-26",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-02-27",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-02-28",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-01",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-05",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-07",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-08",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-09",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-10",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-11",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-12",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-13",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-14",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-17",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-20",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-25",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-26",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-27",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-03-30",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-01",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-02",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-05",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-07",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-08",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-09",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-11",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-13",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-21",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-22",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-26",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-28",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-04-29",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-09",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-11",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-15",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-17",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-18",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-21",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-22",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-23",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-24",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-25",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-26",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-27",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-05-29",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-03",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-04",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-05",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-08",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-14",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-16",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-22",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-23",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-24",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-25",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-27",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-06-29",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-03",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-09",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-10",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-11",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-13",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-17",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-20",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-21",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-24",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-28",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-29",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-07-31",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-08-02",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-08-08",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-08-09",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-08-10",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-08-12",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-08-13",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-08-18",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-08-25",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-08-27",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-08-28",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-08-29",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-01",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-02",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-03",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-04",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-07",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-13",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-22",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-24",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-25",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-26",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-27",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-28",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-09-29",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-10-01",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-10-02",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-10-11",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-10-12",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-10-16",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-10-18",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-10-22",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-10-30",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-10-31",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-11-03",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-11-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-11-08",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-11-12",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-11-15",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-11-18",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-11-25",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-12-03",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-12-04",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-12-16",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-12-17",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-12-18",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-12-19",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1967-12-21",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-01-18",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-01-25",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-02-03",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-02-04",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-02-07",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-02-09",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-02-12",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-02-21",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-02-26",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-02-27",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-02-28",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-02-29",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-03-01",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-03-02",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-03-03",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-03-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-03-14",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-03-20",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-03-27",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-04-11",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-04-16",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-04-17",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-04-22",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-04-23",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-05-01",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-05-03",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-05-05",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-05-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-05-07",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-05-08",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-05-09",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-05-16",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-05-17",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-05-28",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-05-29",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-06-03",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-06-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-06-10",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-06-14",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-06-28",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-07-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-07-16",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-07-29",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-08-03",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-08-08",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-08-11",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-08-25",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-08-30",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-08-31",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-09-01",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-09-02",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-10-07",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-10-10",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-10-13",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-10-19",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-10-26",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-10-27",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-10-28",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-10-29",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1968-10-31",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1969-05-03",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1969-06-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1969-07-06",
+        "count": 1
+      },
+      {
+        "DATE_INCIDENT": "1970-04-05",
+        "count": 1
+      }
     ]
+  },
+  "mark": {
+    "type": "line",
+    "point": true,
+    "strokeWidth": 2,
+    "interpolate": "monotone"
+  },
+  "encoding": {
+    "x": {
+      "field": "DATE_INCIDENT",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
   }
 }

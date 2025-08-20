@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Hosta Tx",
+    "fontSize": 16,
+    "anchor": "start",
+    "color": "#2F4F4F"
+  },
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "DAMAGE_SHIP": "NO",
+        "ROUNDS_FIRED": 6123
+      },
+      {
+        "DAMAGE_SHIP": "YES",
+        "ROUNDS_FIRED": 2109
+      },
+      {
+        "DAMAGE_SHIP": "",
+        "ROUNDS_FIRED": 0
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#2F4F4F"
+  },
+  "encoding": {
+    "x": {
+      "field": "DAMAGE_SHIP",
+      "type": "nominal",
+      "title": "Damage Ship",
+      "axis": {
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "field": "ROUNDS_FIRED",
+      "type": "quantitative",
+      "title": "Rounds Fired"
+    }
+  }
+}
