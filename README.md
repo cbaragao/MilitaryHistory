@@ -4,7 +4,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/cbaragao/MilitaryHistory)
 [![Data.world](https://img.shields.io/badge/Data.world-datasets-blue)](https://data.world/aragaocb)
 
-A comprehensive ETL pipeline for processing military archival datasets from the National Archives (NARA), with specialized tools for spatial analysis and visualization of conflict events. This project transforms raw historical military data into accessible, analyzable formats hosted on Data.world.
+A comprehensive ELT (Extract, Load, Transform) pipeline for processing military archival datasets from the National Archives (NARA), with specialized tools for spatial analysis and visualization of conflict events. This project transforms raw historical military data into accessible, analyzable formats hosted on Data.world.
 
 ## 🌟 Project Highlights
 
@@ -13,10 +13,11 @@ A comprehensive ETL pipeline for processing military archival datasets from the 
 ### 🎯 What This Project Provides
 
 - **Historical Military Data**: Digitized and processed datasets from NARA archives (1967-2004)
+- **ELT Pipeline**: Extract, load, and transform military archival data into analysis-ready formats
 - **Spatial Analysis**: Geographic visualization of conflict events, operations, and incidents  
 - **Data.world Integration**: All datasets available at [data.world/aragaocb](https://data.world/aragaocb)
 - **Automated Documentation**: Self-generating README files for each dataset
-- **Interactive Maps**: Choropleth maps and event density visualizations
+- **Interactive Visualizations**: Maps, charts, and statistical analysis outputs
 
 ## 📊 Available Datasets
 
@@ -86,14 +87,14 @@ python src/scripts/cambodia_folium.py
 
 ## 🛠️ Technical Architecture
 
-### 🔄 Processing Pipeline
+### 🔄 ELT Processing Pipeline
 
 ```mermaid
 graph LR
-    A[NARA Archives] --> B[Download & Extract]
-    B --> C[Schema Validation]
-    C --> D[Coordinate Transform]
-    D --> E[Data Cleaning]
+    A[NARA Archives] --> B[Extract & Download]
+    B --> C[Load to DuckDB]
+    C --> D[Transform & Clean]
+    D --> E[Coordinate Transform]
     E --> F[Documentation Generation]
     F --> G[Data.world Upload]
     G --> H[Visualization Creation]
@@ -110,7 +111,7 @@ MilitaryHistory/
 │   ├── aims/                # Personnel awards
 │   └── [54 more datasets]   # Complete collection
 ├── 🗃️ src/
-│   ├── scripts/             # Processing & analysis tools
+│   ├── scripts/             # ELT processing & analysis tools
 │   ├── sql/                 # Database transformations
 │   └── config/              # Settings & mappings
 └── 🗺️ maps/                  # GeoJSON boundary files
@@ -260,9 +261,9 @@ Access the complete collection: **[data.world/aragaocb](https://data.world/araga
 
 ## 🏆 Project Impact
 
-**🎖️ Preserving Military History Through Modern Data Science**
+**🎖️ Preserving Military History Through Modern Data Engineering**
 
-This project makes decades of military archival data accessible to researchers, historians, and analysts worldwide. By combining traditional archival research with modern data processing techniques, we're enabling new insights into military operations, conflict patterns, and historical events.
+This project makes decades of military archival data accessible to researchers, historians, and analysts worldwide. By combining traditional archival research with modern ELT processing techniques, we're enabling new insights into military operations, conflict patterns, and historical events.
 
 **📊 By the Numbers**: 58 datasets • 500K+ records • 40+ years of history • Global accessibility
 
