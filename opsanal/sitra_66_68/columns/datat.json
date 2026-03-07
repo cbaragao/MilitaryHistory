@@ -1,0 +1,30 @@
+{
+    "table": "SITRA",
+    "column_id": "DATAT",
+    "column": "DATAT",
+    "definition": "Data Type Code",
+    "field/group": "FIELD",
+    "length": 6,
+    "data": [
+        {
+            "code": "S",
+            "value": "Friendly small unit actions involving less than three companies of line troops but not less than a fire team, reported in paragraph K of the OPREP-4 report."
+        },
+        {
+            "code": "L",
+            "value": "Large unit operations (named operations involving 3 or more companies of line troops), reported in paragraph C of the OPREP-5 report."
+        },
+        {
+            "code": "E",
+            "value": "Enemy initiated incidents (acts which are directed against friendly personnel or property), reported in paragraph H of the OPREP-4 report. Large scale enemy initiated incidents are reported in part IV of paragraph C of the OPREP-5 report."
+        },
+        {
+            "code": "W",
+            "value": "Statistical summary data, reported in sections N1-8, N11, N12, N14 of the OPREP-5 report."
+        },
+        {
+            "code": "SC",
+            "value": "A record of DATAT 'S' and a 'C' in the first position of the serial number is a small scale summary record."
+        }
+    ]
+}

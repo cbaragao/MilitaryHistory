@@ -1,0 +1,74 @@
+{
+    "table": "SITRA",
+    "column_id": "LTYPE",
+    "column": "LTYPE",
+    "definition": "Type Loss Code. Contains the code for the type of loss within the corps area.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "",
+            "value": "Not INDI"
+        },
+        {
+            "code": "D",
+            "value": "KIA"
+        },
+        {
+            "code": "E",
+            "value": "WIA"
+        },
+        {
+            "code": "F",
+            "value": "MIA"
+        },
+        {
+            "code": "G",
+            "value": "Individual"
+        },
+        {
+            "code": "H",
+            "value": "Crew SVD"
+        },
+        {
+            "code": "I",
+            "value": "M/H Chan"
+        },
+        {
+            "code": "J",
+            "value": "POL Cadr"
+        },
+        {
+            "code": "K",
+            "value": "OTH CIV"
+        },
+        {
+            "code": "N",
+            "value": "No. BTNS"
+        },
+        {
+            "code": "O",
+            "value": "CMBT OPS"
+        },
+        {
+            "code": "P",
+            "value": "Security"
+        },
+        {
+            "code": "Q",
+            "value": "Training"
+        },
+        {
+            "code": "R",
+            "value": "Reserve"
+        },
+        {
+            "code": "S",
+            "value": "RE/PAC"
+        },
+        {
+            "code": "T",
+            "value": "OTH MSNS"
+        }
+    ]
+}

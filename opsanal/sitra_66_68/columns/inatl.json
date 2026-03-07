@@ -1,0 +1,162 @@
+{
+    "table": "SITRA",
+    "column_id": "INATL",
+    "column": "INATL",
+    "definition": "Incident nation. Contains the code for the force/nationality involved in the small unit action.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "A",
+            "value": "RVN"
+        },
+        {
+            "code": "B",
+            "value": "Combined"
+        },
+        {
+            "code": "C",
+            "value": "Rep. China"
+        },
+        {
+            "code": "D",
+            "value": "Coast GRD"
+        },
+        {
+            "code": "E",
+            "value": "Enemy"
+        },
+        {
+            "code": "F",
+            "value": "U.S. Comb."
+        },
+        {
+            "code": "G",
+            "value": "Unspecified"
+        },
+        {
+            "code": "H",
+            "value": "N. Zealand"
+        },
+        {
+            "code": "I",
+            "value": "VNN"
+        },
+        {
+            "code": "J",
+            "value": "Air Force"
+        },
+        {
+            "code": "K",
+            "value": "ROK"
+        },
+        {
+            "code": "L",
+            "value": "Laos"
+        },
+        {
+            "code": "M",
+            "value": "Marine"
+        },
+        {
+            "code": "N",
+            "value": "Navy"
+        },
+        {
+            "code": "O",
+            "value": "Free World"
+        },
+        {
+            "code": "P",
+            "value": "Phillipines"
+        },
+        {
+            "code": "Q",
+            "value": "VNAF"
+        },
+        {
+            "code": "R",
+            "value": "VNMC"
+        },
+        {
+            "code": "S",
+            "value": "Australia"
+        },
+        {
+            "code": "T",
+            "value": "Thailand"
+        },
+        {
+            "code": "U",
+            "value": "US Military"
+        },
+        {
+            "code": "V",
+            "value": "Viet Cong"
+        },
+        {
+            "code": "W",
+            "value": "Army"
+        },
+        {
+            "code": "X",
+            "value": "N. Vietnam"
+        },
+        {
+            "code": "Y",
+            "value": "PF"
+        },
+        {
+            "code": "Z",
+            "value": "ANZAC"
+        },
+        {
+            "code": "1",
+            "value": "RF"
+        },
+        {
+            "code": "2",
+            "value": "CIDG"
+        },
+        {
+            "code": "3",
+            "value": "VNSF"
+        },
+        {
+            "code": "4",
+            "value": "Cambodia"
+        },
+        {
+            "code": "5",
+            "value": "Chi Comm"
+        },
+        {
+            "code": "6",
+            "value": "PFF"
+        },
+        {
+            "code": "7",
+            "value": "RVN CIV"
+        },
+        {
+            "code": "8",
+            "value": "US CIV"
+        },
+        {
+            "code": "9",
+            "value": "CBT Youth"
+        },
+        {
+            "code": "0",
+            "value": "RD PERS"
+        },
+        {
+            "code": "=",
+            "value": "RVN CIV Off"
+        },
+        {
+            "code": "(",
+            "value": "Ham MIL"
+        }
+    ]
+}

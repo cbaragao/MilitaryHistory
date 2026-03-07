@@ -1,0 +1,26 @@
+{
+    "table": "SITRA",
+    "column_id": "ICTZ",
+    "column": "ICTZ",
+    "definition": "Corps area. Contains the code for the corps area in which the incident occurred.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "RVN Corps Area 1"
+        },
+        {
+            "code": "2",
+            "value": "RVN Corps Area 2"
+        },
+        {
+            "code": "3",
+            "value": "RVN Corps Area 3"
+        },
+        {
+            "code": "4",
+            "value": "RVN Corps Area 4"
+        }
+    ]
+}

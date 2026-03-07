@@ -79,6 +79,9 @@ class DatasetProcessor:
         # Export to CSV and upload
         self.upload_to_datadotworld(df_transformed)
 
+        # Ingest into local SQL Server
+        self.ingest_to_sqlserver(df_transformed)
+
         # Cleanup
         self.processor.delete_file(f"{self.dataset}_tx.csv")
         self.processor.delete_file(f"{self.dataset}_schema.csv")
@@ -120,6 +123,51 @@ class DatasetProcessor:
                 row[lat_col], row[lon_col] = transformed[f"{lat_col}_wgs84"].iloc[0], transformed[f"{lon_col}_wgs84"].iloc[0]
         return row
 
+    def ingest_to_sqlserver(self, df: pd.DataFrame):
+        """Ingests the processed DataFrame into the local SQL Server 'vietnam' database."""
+        import pyodbc
+        import math
+
+        conn_str = (
+            "DRIVER={ODBC Driver 17 for SQL Server};"
+            "SERVER=localhost;"
+            "DATABASE=vietnam;"
+            "Trusted_Connection=yes;"
+        )
+
+        def sql_type(dtype):
+            s = str(dtype)
+            if 'int' in s:      return 'BIGINT'
+            if 'float' in s:    return 'FLOAT'
+            if 'bool' in s:     return 'BIT'
+            if 'datetime' in s: return 'DATETIME2'
+            return 'NVARCHAR(MAX)'
+
+        def clean_val(v):
+            if v is None:
+                return None
+            if isinstance(v, float) and math.isnan(v):
+                return None
+            if hasattr(v, 'item'):
+                return v.item()
+            return v
+
+        table = self.dataset
+        col_defs     = ', '.join(f'[{c}] {sql_type(t)}' for c, t in df.dtypes.items())
+        col_names    = ', '.join(f'[{c}]' for c in df.columns)
+        placeholders = ', '.join('?' for _ in df.columns)
+        records = [tuple(clean_val(v) for v in row) for row in df.itertuples(index=False)]
+
+        print(f"Ingesting {len(df):,} rows into SQL Server 'vietnam.dbo.{table}'...")
+        with pyodbc.connect(conn_str, autocommit=False) as conn:
+            cursor = conn.cursor()
+            cursor.fast_executemany = True
+            cursor.execute(f"IF OBJECT_ID('dbo.{table}', 'U') IS NOT NULL DROP TABLE dbo.{table}")
+            cursor.execute(f"CREATE TABLE dbo.{table} ({col_defs})")
+            cursor.executemany(f"INSERT INTO dbo.{table} ({col_names}) VALUES ({placeholders})", records)
+            conn.commit()
+        print(f"Successfully loaded '{table}' into SQL Server.")
+
     def upload_to_datadotworld(self, df: pd.DataFrame):
         """Uploads dataset and schema to Data.World."""
         csv_file = f"{self.dataset}_tx.csv"
@@ -127,7 +175,7 @@ class DatasetProcessor:
 
         # Clean string 'nan' values and convert to actual NaN
         import numpy as np
-        df_clean = df.replace('nan', np.nan).infer_objects(copy=False)
+        df_clean = df.replace('nan', np.nan).infer_objects()
 
         # Save to CSV with proper null handling
         df_clean.to_csv(csv_file, index=False, na_rep='')
@@ -141,7 +189,7 @@ class DatasetProcessor:
         # Save schema if it exists
         if schema_exists:
             schema_df = self.processor.execute(f"SELECT * FROM {self.dataset}_schema").fetchdf()
-            schema_df_clean = schema_df.replace('nan', np.nan).infer_objects(copy=False)
+            schema_df_clean = schema_df.replace('nan', np.nan).infer_objects()
             schema_df_clean.to_csv(schema_file, index=False, na_rep='')
             DDW([schema_file], owner_id="aragaocb").upload_to_dataset(self.datadotworld_project)
         else:

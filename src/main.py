@@ -59,6 +59,7 @@ class Main:
         """Creates base tables in DuckDB with JSON and NARA data."""
         self.process_all_files()
         nara_df = self.get_nara()
+        nara_df = nara_df.replace('nan', None)
 
         self.db.execute(f"DROP TABLE IF EXISTS {self.dataset}_nara")
         self.db.execute(f"CREATE TABLE {self.dataset}_nara AS SELECT * FROM nara_df")

@@ -501,6 +501,38 @@
         "catalog_url": "https://catalog.archives.gov/id/4658149",
         "available_online": true,
         "delimiter": "tab"
+      },
+        "sitra_66_68": {
+        "NAID": "1402152",
+        "file_name": "SITRA.TR.6668.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-218/SITRA/SITRA.TR.6668.txt",
+        "catalog_url": "https://catalog.archives.gov/id/1402152",
+        "available_online": true,
+        "delimiter": "width"
+      },
+        "sitra_69": {
+        "NAID": "1402568",
+        "file_name": "SITRA.TR.69.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-218/SITRA/SITRA.TR.69.txt",
+        "catalog_url": "https://catalog.archives.gov/id/1402568",
+        "available_online": true,
+        "delimiter": "width"
+      },
+        "sitra_70": {
+        "NAID": "1403723",
+        "file_name": "SITRA.TR.70.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-218/SITRA/SITRA.TR.70.txt",
+        "catalog_url": "https://catalog.archives.gov/id/1403723",
+        "available_online": true,
+        "delimiter": "width"
+      },
+        "sitra_71_73": {
+        "NAID": "1403731",
+        "file_name": "SITRA.TR.7173.txt",
+        "url": "https://s3.amazonaws.com/NARAprodstorage/lz/electronic-records/rg-218/SITRA/SITRA.TR.7173.txt",
+        "catalog_url": "https://catalog.archives.gov/id/1403731",
+        "available_online": true,
+        "delimiter": "width"
       }
     }
   ]

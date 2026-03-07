@@ -78,6 +78,7 @@ class PartitionedDatasetProcessor:
         
         # Shared resources (loaded once, used multiple times)
         self.db = None
+        self._sql_conn_str = None
         self.lookup_tables_loaded = False
         
     def log_message(self, message: str):
@@ -104,6 +105,10 @@ class PartitionedDatasetProcessor:
         self.log_message("   ⚙️  Loading SQL macros...")
         self._load_sql_macros()
         
+        # Create SQL Server engine
+        self.log_message("   🗄️  Connecting to SQL Server...")
+        self._init_sqlserver_engine()
+
         self.log_message("✅ Shared resources initialized successfully")
     
     def _load_sql_macros(self):
@@ -173,7 +178,10 @@ class PartitionedDatasetProcessor:
             
             # Upload to data.world with proper null handling
             self._upload_partition(df_transformed, output_name)
-            
+
+            # Ingest into local SQL Server
+            self._ingest_partition_to_sqlserver(df_transformed, output_name)
+
             # Cleanup CSV files
             self._cleanup_files(output_name)
             
@@ -196,7 +204,7 @@ class PartitionedDatasetProcessor:
         schema_file = f"{output_name}_schema.csv"
         
         # Clean string 'nan' values and convert to actual NaN
-        df_clean = df.replace('nan', np.nan).infer_objects(copy=False)
+        df_clean = df.replace('nan', np.nan).infer_objects()
         
         # Save to CSV with proper null handling
         df_clean.to_csv(csv_file, index=False, na_rep='')
@@ -210,12 +218,64 @@ class PartitionedDatasetProcessor:
             
             if schema_exists:
                 schema_df = self.db.execute(f"SELECT * FROM {self.dataset}_schema").fetchdf()
-                schema_df_clean = schema_df.replace('nan', np.nan).infer_objects(copy=False)
+                schema_df_clean = schema_df.replace('nan', np.nan).infer_objects()
                 schema_df_clean.to_csv(schema_file, index=False, na_rep='')
                 DDW(files=[schema_file], owner_id="aragaocb").upload_to_dataset(self.datadotworld_project)
         except Exception as e:
             self.log_message(f"      Schema upload failed (non-critical): {e}")
     
+    def _init_sqlserver_engine(self):
+        """Store the pyodbc connection string for the local SQL Server 'vietnam' database."""
+        self._sql_conn_str = (
+            "DRIVER={ODBC Driver 17 for SQL Server};"
+            "SERVER=localhost;"
+            "DATABASE=vietnam;"
+            "Trusted_Connection=yes;"
+        )
+
+    def _ingest_partition_to_sqlserver(self, df: pd.DataFrame, output_name: str):
+        """Ingest a partition DataFrame into the local SQL Server 'vietnam' database."""
+        import pyodbc
+        import math
+
+        if self._sql_conn_str is None:
+            self.log_message(f"      ⚠️  SQL Server not configured, skipping ingest for {output_name}")
+            return
+
+        self.log_message(f"      🗄️  Ingesting {len(df):,} rows into SQL Server 'vietnam.dbo.{output_name}'...")
+
+        def sql_type(dtype):
+            s = str(dtype)
+            if 'int' in s:      return 'BIGINT'
+            if 'float' in s:    return 'FLOAT'
+            if 'bool' in s:     return 'BIT'
+            if 'datetime' in s: return 'DATETIME2'
+            return 'NVARCHAR(MAX)'
+
+        def clean_val(v):
+            if v is None:
+                return None
+            if isinstance(v, float) and math.isnan(v):
+                return None
+            if hasattr(v, 'item'):  # numpy scalar → Python native
+                return v.item()
+            return v
+
+        col_defs    = ', '.join(f'[{c}] {sql_type(t)}' for c, t in df.dtypes.items())
+        col_names   = ', '.join(f'[{c}]' for c in df.columns)
+        placeholders = ', '.join('?' for _ in df.columns)
+        records = [tuple(clean_val(v) for v in row) for row in df.itertuples(index=False)]
+
+        with pyodbc.connect(self._sql_conn_str, autocommit=False) as conn:
+            cursor = conn.cursor()
+            cursor.fast_executemany = True
+            cursor.execute(f"IF OBJECT_ID('dbo.{output_name}', 'U') IS NOT NULL DROP TABLE dbo.{output_name}")
+            cursor.execute(f"CREATE TABLE dbo.{output_name} ({col_defs})")
+            cursor.executemany(f"INSERT INTO dbo.{output_name} ({col_names}) VALUES ({placeholders})", records)
+            conn.commit()
+
+        self.log_message(f"      ✅ SQL Server table '{output_name}' loaded.")
+
     def _cleanup_files(self, output_name: str):
         """Clean up temporary CSV files."""
         files_to_clean = [f"{output_name}_tx.csv", f"{output_name}_schema.csv"]
@@ -357,7 +417,6 @@ class PartitionedDatasetProcessor:
                 self.log_message("🧹 Cleaning up shared resources...")
                 self.db.close()
                 self.db = None
-    
     def cleanup(self):
         """Clean up resources."""
         if self.db:

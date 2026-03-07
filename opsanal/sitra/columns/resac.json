@@ -1,0 +1,18 @@
+{
+    "table": "SITRA",
+    "column_id": "RESAC",
+    "column": "RESAC",
+    "definition": "Reserve or active classification. Contains the classification of each unit participating in the operation.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "A",
+            "value": "Active"
+        },
+        {
+            "code": "R",
+            "value": "Reserve"
+        }
+    ]
+}

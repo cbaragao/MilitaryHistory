@@ -1,0 +1,66 @@
+{
+    "table": "SITRA",
+    "column_id": "SMTH",
+    "column": "SMTH",
+    "definition": "Size of unit. Contains the code for the size of the unit (company, battalion, etc.) involved in an action when the units are not specifically identified.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "F",
+            "value": "Fire Team"
+        },
+        {
+            "code": "S",
+            "value": "Squad"
+        },
+        {
+            "code": "P",
+            "value": "Platoon"
+        },
+        {
+            "code": "D",
+            "value": "Division"
+        },
+        {
+            "code": "A",
+            "value": "Squadron"
+        },
+        {
+            "code": "E",
+            "value": "Element"
+        },
+        {
+            "code": "C",
+            "value": "Company"
+        },
+        {
+            "code": "B",
+            "value": "Battalion"
+        },
+        {
+            "code": "R",
+            "value": "Regiment"
+        },
+        {
+            "code": "G",
+            "value": "Brigade"
+        },
+        {
+            "code": "X",
+            "value": "Unit"
+        },
+        {
+            "code": "Z",
+            "value": "Patrol"
+        },
+        {
+            "code": "U",
+            "value": "Unknown"
+        },
+        {
+            "code": "I",
+            "value": "Individual"
+        }
+    ]
+}

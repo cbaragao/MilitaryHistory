@@ -1,0 +1,30 @@
+{
+    "table": "SITRA",
+    "column_id": "PART",
+    "column": "PART",
+    "definition": "Part number. Each corps tactical zone is broken down into four or five parts representing the nationality of the force to which the data applies.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "1",
+            "value": "U.S. Forces"
+        },
+        {
+            "code": "2",
+            "value": "3rd Country Forces"
+        },
+        {
+            "code": "3",
+            "value": "South Vietnam Forces"
+        },
+        {
+            "code": "4",
+            "value": "Enemy Forces"
+        },
+        {
+            "code": "5",
+            "value": "Out-Country Operations"
+        }
+    ]
+}

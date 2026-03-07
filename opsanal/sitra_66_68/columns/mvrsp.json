@@ -1,0 +1,18 @@
+{
+    "table": "SITRA",
+    "column_id": "MVRSP",
+    "column": "MVRSP",
+    "definition": "Maneuver or support classification. Contains the classification of each unit participating in the operation.",
+    "field/group": "FIELD",
+    "length": 1,
+    "data": [
+        {
+            "code": "M",
+            "value": "Maneuver"
+        },
+        {
+            "code": "S",
+            "value": "Support"
+        }
+    ]
+}

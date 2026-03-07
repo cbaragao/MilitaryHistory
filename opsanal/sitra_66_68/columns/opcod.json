@@ -1,0 +1,194 @@
+{
+    "table": "SITRA",
+    "column_id": "OPCOD",
+    "column": "OPCOD",
+    "definition": "Operation type code for large scale operations only. Contains the code from the table FWOPS to indicate the type of operation conducted.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "AP",
+            "value": "DSRTR APPREH"
+        },
+        {
+            "code": "AT",
+            "value": "Attack"
+        },
+        {
+            "code": "CA",
+            "value": "Capture"
+        },
+        {
+            "code": "CH",
+            "value": "Clear & Hold"
+        },
+        {
+            "code": "CL",
+            "value": "Clearing"
+        },
+        {
+            "code": "CO",
+            "value": "Combat OPNS"
+        },
+        {
+            "code": "CS",
+            "value": "CORDON-Search"
+        },
+        {
+            "code": "DE",
+            "value": "Development"
+        },
+        {
+            "code": "DR",
+            "value": "Sch & Des Reg"
+        },
+        {
+            "code": "FD",
+            "value": "Fix-Destroy"
+        },
+        {
+            "code": "FR",
+            "value": "Rec In For Pac"
+        },
+        {
+            "code": "RE",
+            "value": "Large Recon"
+        },
+        {
+            "code": "RF",
+            "value": "REC In For"
+        },
+        {
+            "code": "RQ",
+            "value": "REC Force Search"
+        },
+        {
+            "code": "RV",
+            "value": "Reserve"
+        },
+        {
+            "code": "SC",
+            "value": "Search & Clear"
+        },
+        {
+            "code": "SD",
+            "value": "Search & Destroy"
+        },
+        {
+            "code": "SE",
+            "value": "Security"
+        },
+        {
+            "code": "SG",
+            "value": "Securing"
+        },
+        {
+            "code": "SL",
+            "value": "Sch & Des Loc"
+        },
+        {
+            "code": "SP",
+            "value": "Sch & Des Prov"
+        },
+        {
+            "code": "SR",
+            "value": "Search & RESCUE"
+        },
+        {
+            "code": "GE",
+            "value": "LRGE GD & ESCT"
+        },
+        {
+            "code": "LC",
+            "value": "CLear-Search"
+        },
+        {
+            "code": "NB",
+            "value": "Coastal Patrol"
+        },
+        {
+            "code": "NC",
+            "value": "Combat Support"
+        },
+        {
+            "code": "ND",
+            "value": "Static DEF"
+        },
+        {
+            "code": "NE",
+            "value": "Convoy Secty"
+        },
+        {
+            "code": "NL",
+            "value": "Log Support"
+        },
+        {
+            "code": "NP",
+            "value": "Prov Support"
+        },
+        {
+            "code": "NR",
+            "value": "River Patrol"
+        },
+        {
+            "code": "NS",
+            "value": "Sea Patrol"
+        },
+        {
+            "code": "NT",
+            "value": "Training"
+        },
+        {
+            "code": "NV",
+            "value": "Coast Surveil"
+        },
+        {
+            "code": "SS",
+            "value": "Sea Search"
+        },
+        {
+            "code": "SV",
+            "value": "Surveillance"
+        },
+        {
+            "code": "UA",
+            "value": "Ambush"
+        },
+        {
+            "code": "UC",
+            "value": "Recon"
+        },
+        {
+            "code": "UG",
+            "value": "Guard & Escort"
+        },
+        {
+            "code": "UN",
+            "value": "SM Unit No Con"
+        },
+        {
+            "code": "UP",
+            "value": "Patrol"
+        },
+        {
+            "code": "UR",
+            "value": "Raid"
+        },
+        {
+            "code": "US",
+            "value": "Search"
+        },
+        {
+            "code": "UT",
+            "value": "Security SML"
+        },
+        {
+            "code": "UU",
+            "value": "SM Unit OPN"
+        },
+        {
+            "code": "XX",
+            "value": "Other"
+        }
+    ]
+}

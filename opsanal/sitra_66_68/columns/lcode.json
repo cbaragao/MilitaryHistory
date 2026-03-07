@@ -1,0 +1,738 @@
+{
+    "table": "SITRA",
+    "column_id": "LCODE",
+    "column": "LCODE",
+    "definition": "Loss code. Group name for the two character loss code consisting of loss category and loss class fields, LSCAT and LSCLS.",
+    "field/group": "GROUP",
+    "length": 2,
+    "data": [
+        {
+            "code": "01",
+            "value": "Small Arms"
+        },
+        {
+            "code": "02",
+            "value": "Pistols"
+        },
+        {
+            "code": "03",
+            "value": "Carbines"
+        },
+        {
+            "code": "04",
+            "value": "Rifles"
+        },
+        {
+            "code": "05",
+            "value": "Mil Rifles"
+        },
+        {
+            "code": "06",
+            "value": "Shotguns"
+        },
+        {
+            "code": "07",
+            "value": "MAS-36"
+        },
+        {
+            "code": "08",
+            "value": "M-16"
+        },
+        {
+            "code": "09",
+            "value": "US-17"
+        },
+        {
+            "code": "10",
+            "value": "Auto Rifle"
+        },
+        {
+            "code": "11",
+            "value": "Bar"
+        },
+        {
+            "code": "12",
+            "value": "AR-15"
+        },
+        {
+            "code": "13",
+            "value": "Submach"
+        },
+        {
+            "code": "14",
+            "value": "Thmsn Sub"
+        },
+        {
+            "code": "15",
+            "value": "Mat-49"
+        },
+        {
+            "code": "16",
+            "value": "K50 Submg"
+        },
+        {
+            "code": "17",
+            "value": "Mach Guns"
+        },
+        {
+            "code": "18",
+            "value": "30 Cal MG"
+        },
+        {
+            "code": "19",
+            "value": "50 Cal MG"
+        },
+        {
+            "code": "20",
+            "value": "Mortars"
+        },
+        {
+            "code": "21",
+            "value": "60 MM Mort"
+        },
+        {
+            "code": "22",
+            "value": "81 MM Mort"
+        },
+        {
+            "code": "23",
+            "value": "Rec Rifle"
+        },
+        {
+            "code": "24",
+            "value": "105 MM RR"
+        },
+        {
+            "code": "25",
+            "value": "57 MM RR"
+        },
+        {
+            "code": "26",
+            "value": "75 MM RR"
+        },
+        {
+            "code": "27",
+            "value": "Artillery"
+        },
+        {
+            "code": "28",
+            "value": "C/S Weapons"
+        },
+        {
+            "code": "29",
+            "value": "Mines"
+        },
+        {
+            "code": "30",
+            "value": "WAT Mines"
+        },
+        {
+            "code": "31",
+            "value": "A/P Mines"
+        },
+        {
+            "code": "32",
+            "value": "A/T Mines"
+        },
+        {
+            "code": "33",
+            "value": "Claymore Mines"
+        },
+        {
+            "code": "34",
+            "value": "Footmine"
+        },
+        {
+            "code": "35",
+            "value": "Booby Trap"
+        },
+        {
+            "code": "36",
+            "value": "Bomb"
+        },
+        {
+            "code": "37",
+            "value": "Unknown WPNS"
+        },
+        {
+            "code": "38",
+            "value": "Gren Lnch"
+        },
+        {
+            "code": "39",
+            "value": "CBU"
+        },
+        {
+            "code": "40",
+            "value": "RKT LNCH"
+        },
+        {
+            "code": "41",
+            "value": "Rocket"
+        },
+        {
+            "code": "42",
+            "value": "Automatic WPN"
+        },
+        {
+            "code": "A0",
+            "value": "50 Cal ME"
+        },
+        {
+            "code": "A1",
+            "value": "60 MM Mort ME"
+        },
+        {
+            "code": "A2",
+            "value": "81/82MM Mort ME"
+        },
+        {
+            "code": "A3",
+            "value": "105 Mort ME"
+        },
+        {
+            "code": "A4",
+            "value": "57 REC Rifle ME"
+        },
+        {
+            "code": "A5",
+            "value": "75 REC Rifle ME"
+        },
+        {
+            "code": "A6",
+            "value": "40 3.5 RKT L ME"
+        },
+        {
+            "code": "A7",
+            "value": "155MM RDS"
+        },
+        {
+            "code": "A8",
+            "value": "HE RDS"
+        },
+        {
+            "code": "A9",
+            "value": "Grenades"
+        },
+        {
+            "code": "AA",
+            "value": "Hand Gren"
+        },
+        {
+            "code": "AC",
+            "value": "Small ARMS RDS"
+        },
+        {
+            "code": "AD",
+            "value": "Pistol RDS"
+        },
+        {
+            "code": "AE",
+            "value": "Carbine RDS"
+        },
+        {
+            "code": "AF",
+            "value": "Rifle RDS"
+        },
+        {
+            "code": "AG",
+            "value": "M1 RDS"
+        },
+        {
+            "code": "AH",
+            "value": "Shotgun RDS"
+        },
+        {
+            "code": "AI",
+            "value": "Mas. 36 RDS"
+        },
+        {
+            "code": "AJ",
+            "value": "M-16 RDS"
+        },
+        {
+            "code": "AK",
+            "value": "US-17 RDS"
+        },
+        {
+            "code": "AL",
+            "value": "Auto Rifle RDS"
+        },
+        {
+            "code": "AM",
+            "value": "Bar RDS"
+        },
+        {
+            "code": "AN",
+            "value": "AR-15 RDS"
+        },
+        {
+            "code": "AO",
+            "value": "Submach RDS"
+        },
+        {
+            "code": "AP",
+            "value": "Thmsn Sub RDS"
+        },
+        {
+            "code": "AQ",
+            "value": "Mat-49 RDS"
+        },
+        {
+            "code": "AR",
+            "value": "K50 Submg RDS"
+        },
+        {
+            "code": "AS",
+            "value": "Mach Gun RDS"
+        },
+        {
+            "code": "AT",
+            "value": "30 Cal MG RDS"
+        },
+        {
+            "code": "AU",
+            "value": "50 Cal MG RDS"
+        },
+        {
+            "code": "AV",
+            "value": "Mortar RDS"
+        },
+        {
+            "code": "AW",
+            "value": "60MM RDS"
+        },
+        {
+            "code": "AX",
+            "value": "81MM RDS"
+        },
+        {
+            "code": "AY",
+            "value": "REC Rifle RDS"
+        },
+        {
+            "code": "AZ",
+            "value": "105 MM RDS"
+        },
+        {
+            "code": "B0",
+            "value": "57MM RR RDS"
+        },
+        {
+            "code": "B1",
+            "value": "75MM RR RDS"
+        },
+        {
+            "code": "B2",
+            "value": "Artillery RDS"
+        },
+        {
+            "code": "B3",
+            "value": "C/S Weapons RDS"
+        },
+        {
+            "code": "B4",
+            "value": "Unknown Ammo"
+        },
+        {
+            "code": "AB",
+            "value": "Rifle Gren"
+        },
+        {
+            "code": "MA",
+            "value": "RE UNK MM Mort"
+        },
+        {
+            "code": "MB",
+            "value": "RE 60MM"
+        },
+        {
+            "code": "MC",
+            "value": "RE 81MM"
+        },
+        {
+            "code": "MD",
+            "value": "RE 82MM Mort"
+        },
+        {
+            "code": "ME",
+            "value": "RE 107MM"
+        },
+        {
+            "code": "MF",
+            "value": "RE 120MM"
+        },
+        {
+            "code": "MG",
+            "value": "RE 160MM"
+        },
+        {
+            "code": "MH",
+            "value": "RE 81/82MM Mort"
+        },
+        {
+            "code": "MI",
+            "value": "RE UNK MMRR"
+        },
+        {
+            "code": "MJ",
+            "value": "RE 57MM RR"
+        },
+        {
+            "code": "MK",
+            "value": "RE 75MM RR"
+        },
+        {
+            "code": "ML",
+            "value": "RE 82MM RR"
+        },
+        {
+            "code": "MM",
+            "value": "RE 106MM RR"
+        },
+        {
+            "code": "MN",
+            "value": "RE 107MM RR"
+        },
+        {
+            "code": "MO",
+            "value": "RE UNK MM RKT"
+        },
+        {
+            "code": "MU",
+            "value": "RE 240MM RKT"
+        },
+        {
+            "code": "MW",
+            "value": "RE 250MM RKT"
+        },
+        {
+            "code": "MX",
+            "value": "RE Unk MM Arty"
+        },
+        {
+            "code": "MY",
+            "value": "RE 70MM ARTY"
+        },
+        {
+            "code": "MZ",
+            "value": "RE 75MM ARTY"
+        },
+        {
+            "code": "SA",
+            "value": "RE 76MM ARTY"
+        },
+        {
+            "code": "SB",
+            "value": "RE 85MM ARTY"
+        },
+        {
+            "code": "SC",
+            "value": "RE 100MM ARTY"
+        },
+        {
+            "code": "SD",
+            "value": "RE 105MM ARTY"
+        },
+        {
+            "code": "SE",
+            "value": "RE 122MM ARTY"
+        },
+        {
+            "code": "SF",
+            "value": "RE 130MM ARTY"
+        },
+        {
+            "code": "SG",
+            "value": "RE 152MM ARTY"
+        },
+        {
+            "code": "SH",
+            "value": "RE 155MM ARTY"
+        },
+        {
+            "code": "SI",
+            "value": "RE 175MM ARTY"
+        },
+        {
+            "code": "SJ",
+            "value": "RE 8 INCH MM ARTY"
+        },
+        {
+            "code": "MP",
+            "value": "RE 102MM RKT"
+        },
+        {
+            "code": "MQ",
+            "value": "RE 107MM RKT"
+        },
+        {
+            "code": "MR",
+            "value": "RE 122MM RKT"
+        },
+        {
+            "code": "MS",
+            "value": "RE 140MM RKT"
+        },
+        {
+            "code": "MT",
+            "value": "RE 132MM RKT"
+        },
+        {
+            "code": "MU",
+            "value": "RE 200MM RKT"
+        },
+        {
+            "code": "SK",
+            "value": "RE RPG/7MM ARTY"
+        },
+        {
+            "code": "SL",
+            "value": "RE RPG/2MM ARTY"
+        },
+        {
+            "code": "SM",
+            "value": "RE RPGMM ARTY"
+        },
+        {
+            "code": "SN",
+            "value": "RE 60/82MM ARTY"
+        },
+        {
+            "code": "SO",
+            "value": "RE RPG/MORT MM MORT"
+        },
+        {
+            "code": "K0",
+            "value": "Trench"
+        },
+        {
+            "code": "K1",
+            "value": "Misc Material"
+        },
+        {
+            "code": "K2",
+            "value": "Personal gear"
+        },
+        {
+            "code": "K3",
+            "value": "Line of Comm"
+        },
+        {
+            "code": "K5",
+            "value": "Documents"
+        },
+        {
+            "code": "K6",
+            "value": "Clothing"
+        },
+        {
+            "code": "K7",
+            "value": "Stores"
+        },
+        {
+            "code": "K8",
+            "value": "Boats"
+        },
+        {
+            "code": "K9",
+            "value": "Tnt"
+        },
+        {
+            "code": "KA",
+            "value": "Storage Building"
+        },
+        {
+            "code": "KB",
+            "value": "Base Camps"
+        },
+        {
+            "code": "KC",
+            "value": "Hospitals"
+        },
+        {
+            "code": "KD",
+            "value": "Factories"
+        },
+        {
+            "code": "D0",
+            "value": "Type of Loss"
+        },
+        {
+            "code": "D1",
+            "value": "Bridge"
+        },
+        {
+            "code": "D2",
+            "value": "Base"
+        },
+        {
+            "code": "D3",
+            "value": "House"
+        },
+        {
+            "code": "D4",
+            "value": "Bunker"
+        },
+        {
+            "code": "D5",
+            "value": "Blockhouse"
+        },
+        {
+            "code": "D6",
+            "value": "Building"
+        },
+        {
+            "code": "D7",
+            "value": "Post"
+        },
+        {
+            "code": "D8",
+            "value": "Sec Fencing"
+        },
+        {
+            "code": "D9",
+            "value": "Outpost"
+        },
+        {
+            "code": "DA",
+            "value": "Unspec Structure"
+        },
+        {
+            "code": "DB",
+            "value": "Watchtower"
+        },
+        {
+            "code": "DC",
+            "value": "Military Structure"
+        },
+        {
+            "code": "DD",
+            "value": "Huts"
+        },
+        {
+            "code": "DE",
+            "value": "Tunnels"
+        },
+        {
+            "code": "C0",
+            "value": "Unspec"
+        },
+        {
+            "code": "C1",
+            "value": "H. Rice"
+        },
+        {
+            "code": "C2",
+            "value": "H. Grain"
+        },
+        {
+            "code": "C3",
+            "value": "H. L Stock"
+        },
+        {
+            "code": "C4",
+            "value": "H. Manioc"
+        },
+        {
+            "code": "C5",
+            "value": "K. Manioc"
+        },
+        {
+            "code": "C6",
+            "value": "K. Rice"
+        },
+        {
+            "code": "C7",
+            "value": "K. Grain"
+        },
+        {
+            "code": "C8",
+            "value": "K. Salt"
+        },
+        {
+            "code": "C9",
+            "value": "K. Sugar"
+        },
+        {
+            "code": "CA",
+            "value": "H. Cattle"
+        },
+        {
+            "code": "CB",
+            "value": "Pack Animals"
+        },
+        {
+            "code": "CC",
+            "value": "Met Tons Grain"
+        },
+        {
+            "code": "CD",
+            "value": "Met Tons Rice"
+        },
+        {
+            "code": "CE",
+            "value": "Water Buffalo"
+        },
+        {
+            "code": "CF",
+            "value": "Tons Salt"
+        },
+        {
+            "code": "CG",
+            "value": "Tons Sugar"
+        },
+        {
+            "code": "F0",
+            "value": "Unspec Radio"
+        },
+        {
+            "code": "F1",
+            "value": "Telephone"
+        },
+        {
+            "code": "F2",
+            "value": "HUT"
+        },
+        {
+            "code": "F3",
+            "value": "AN/PRC-6"
+        },
+        {
+            "code": "F4",
+            "value": "AN/PRC-10"
+        },
+        {
+            "code": "F5",
+            "value": "AN/PRC-9"
+        },
+        {
+            "code": "F6",
+            "value": "TR20"
+        },
+        {
+            "code": "F7",
+            "value": "TR6"
+        },
+        {
+            "code": "G0",
+            "value": "Medical Supplies"
+        },
+        {
+            "code": "E0",
+            "value": "Vehicles"
+        },
+        {
+            "code": "H0",
+            "value": "POL"
+        },
+        {
+            "code": "I0",
+            "value": "Money"
+        },
+        {
+            "code": "J0",
+            "value": "Personnel"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "table": "SITRA",
+    "column_id": "CNTRY",
+    "column": "CNTRY",
+    "definition": "Country code. Contains the code of the country in which the action occurred. The only entry currently being used is VS for South Vietnam.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "BM",
+            "value": "Burma"
+        },
+        {
+            "code": "CB",
+            "value": "Cambodia"
+        },
+        {
+            "code": "CH",
+            "value": "China"
+        },
+        {
+            "code": "LA",
+            "value": "Laos"
+        },
+        {
+            "code": "MF",
+            "value": "Malaya Federation"
+        },
+        {
+            "code": "TH",
+            "value": "Thailand"
+        },
+        {
+            "code": "VN",
+            "value": "Vietnam North"
+        },
+        {
+            "code": "VS",
+            "value": "Vietnam South"
+        }
+    ]
+}

@@ -87,7 +87,7 @@
             {
                 "title": "CTDAY",
                 "id": "CTDAY",
-                "field_group": "FIELD`",
+                "field_group": "FIELD",
                 "length": 1,
                 "code": "N/A",
                 "data_values": "Numeric",

@@ -1,0 +1,214 @@
+{
+    "table": "SITRA",
+    "column_id": "PRVC3",
+    "column": "PRVC3",
+    "definition": "Major province code for South Vietnam only. Contains the primary province code in which the objective lies.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "00",
+            "value": "Unknown"
+        },
+        {
+            "code": "01",
+            "value": "Quang Tri"
+        },
+        {
+            "code": "02",
+            "value": "Thua Thien"
+        },
+        {
+            "code": "03",
+            "value": "Quang Nam"
+        },
+        {
+            "code": "04",
+            "value": "Quang Tin"
+        },
+        {
+            "code": "05",
+            "value": "Quang Ngai"
+        },
+        {
+            "code": "06",
+            "value": "Kontum"
+        },
+        {
+            "code": "07",
+            "value": "Binh Dinh"
+        },
+        {
+            "code": "08",
+            "value": "Pleiku"
+        },
+        {
+            "code": "09",
+            "value": "Phu Yen"
+        },
+        {
+            "code": "10",
+            "value": "Darlac"
+        },
+        {
+            "code": "11",
+            "value": "Khank Hoa"
+        },
+        {
+            "code": "12",
+            "value": "Tuyen Duc"
+        },
+        {
+            "code": "13",
+            "value": "Quanc Duc"
+        },
+        {
+            "code": "14",
+            "value": "Phuoc Long"
+        },
+        {
+            "code": "15",
+            "value": "Lam Dong"
+        },
+        {
+            "code": "16",
+            "value": "Ninh Thuan"
+        },
+        {
+            "code": "17",
+            "value": "Binh Thuan"
+        },
+        {
+            "code": "18",
+            "value": "Binh Tuy"
+        },
+        {
+            "code": "19",
+            "value": "Long Khanh"
+        },
+        {
+            "code": "20",
+            "value": "Phuoc Thanh"
+        },
+        {
+            "code": "21",
+            "value": "Binh Long"
+        },
+        {
+            "code": "22",
+            "value": "Tay Ninh"
+        },
+        {
+            "code": "23",
+            "value": "Binh Duong"
+        },
+        {
+            "code": "24",
+            "value": "Gia Dinh"
+        },
+        {
+            "code": "25",
+            "value": "Bien Hoa"
+        },
+        {
+            "code": "26",
+            "value": "Phuoc Tuy"
+        },
+        {
+            "code": "27",
+            "value": "Long An"
+        },
+        {
+            "code": "28",
+            "value": "Kien Tuong"
+        },
+        {
+            "code": "29",
+            "value": "Kien Phong"
+        },
+        {
+            "code": "30",
+            "value": "Dinh Tuong"
+        },
+        {
+            "code": "31",
+            "value": "An Giang"
+        },
+        {
+            "code": "32",
+            "value": "Vinh Long"
+        },
+        {
+            "code": "33",
+            "value": "Kien Hoa"
+        },
+        {
+            "code": "34",
+            "value": "Vinh Binh"
+        },
+        {
+            "code": "35",
+            "value": "Phong Dinh"
+        },
+        {
+            "code": "36",
+            "value": "Kien Giang"
+        },
+        {
+            "code": "37",
+            "value": "Ghuong Thien"
+        },
+        {
+            "code": "38",
+            "value": "BA Xuyen"
+        },
+        {
+            "code": "39",
+            "value": "An Xuyen"
+        },
+        {
+            "code": "40",
+            "value": "Con Son"
+        },
+        {
+            "code": "41",
+            "value": "Phu Bon"
+        },
+        {
+            "code": "42",
+            "value": "Hau Nghia"
+        },
+        {
+            "code": "43",
+            "value": "Go Cong"
+        },
+        {
+            "code": "44",
+            "value": "Bac Lieu"
+        },
+        {
+            "code": "45",
+            "value": "Trung Phon"
+        },
+        {
+            "code": "46",
+            "value": "SA Dec"
+        },
+        {
+            "code": "47",
+            "value": "Chau Doc"
+        },
+        {
+            "code": "48",
+            "value": "Haut Chhlong"
+        },
+        {
+            "code": "49",
+            "value": "Phu Quoc Isl"
+        },
+        {
+            "code": "50",
+            "value": "DMZ"
+        }
+    ]
+}

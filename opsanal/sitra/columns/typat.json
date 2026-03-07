@@ -1,0 +1,238 @@
+{
+    "table": "SITRA",
+    "column_id": "TYPAT",
+    "column": "TYPAT",
+    "definition": "Operation type code. Describe the type of action for friendly small unit actions (does not include the summary) and for enemy initiated incidents.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "F1",
+            "value": "Ambush"
+        },
+        {
+            "code": "F2",
+            "value": "Attack"
+        },
+        {
+            "code": "F3",
+            "value": "Init OPNS"
+        },
+        {
+            "code": "F4",
+            "value": "Term OPNS"
+        },
+        {
+            "code": "F5",
+            "value": "Engage"
+        },
+        {
+            "code": "F6",
+            "value": "Contact"
+        },
+        {
+            "code": "F7",
+            "value": "SML Unit"
+        },
+        {
+            "code": "F8",
+            "value": "Assault"
+        },
+        {
+            "code": "F9",
+            "value": "Other"
+        },
+        {
+            "code": "U1",
+            "value": "Incident"
+        },
+        {
+            "code": "U2",
+            "value": "Mine Incident"
+        },
+        {
+            "code": "U3",
+            "value": "Discovery"
+        },
+        {
+            "code": "U4",
+            "value": "Accident"
+        },
+        {
+            "code": "U5",
+            "value": "Short RND"
+        },
+        {
+            "code": "U6",
+            "value": "Mech Fail"
+        },
+        {
+            "code": "U7",
+            "value": "RTN Fire"
+        },
+        {
+            "code": "U8",
+            "value": "Center Fire"
+        },
+        {
+            "code": "U9",
+            "value": "Investigate"
+        },
+        {
+            "code": "A1",
+            "value": "Perf Armed ATK"
+        },
+        {
+            "code": "A2",
+            "value": "ATKD By Frng On"
+        },
+        {
+            "code": "A3",
+            "value": "Ambushed"
+        },
+        {
+            "code": "A4",
+            "value": "Engaged"
+        },
+        {
+            "code": "A5",
+            "value": "Assaulted"
+        },
+        {
+            "code": "P1",
+            "value": "ACT Propaganda"
+        },
+        {
+            "code": "P2",
+            "value": "Propagandized"
+        },
+        {
+            "code": "P3",
+            "value": "Lectured"
+        },
+        {
+            "code": "P4",
+            "value": "Dist Leaflets To"
+        },
+        {
+            "code": "P5",
+            "value": "Demonstrate"
+        },
+        {
+            "code": "E1",
+            "value": "Covertly Entered"
+        },
+        {
+            "code": "E2",
+            "value": "Overtly Entered"
+        },
+        {
+            "code": "E3",
+            "value": "Entered"
+        },
+        {
+            "code": "H1",
+            "value": "PERF Harrass"
+        },
+        {
+            "code": "H2",
+            "value": "Harrass Fire On"
+        },
+        {
+            "code": "H3",
+            "value": "Bombed"
+        },
+        {
+            "code": "H4",
+            "value": "Harrassed"
+        },
+        {
+            "code": "H5",
+            "value": "Fired On ACFT"
+        },
+        {
+            "code": "H6",
+            "value": "Threw Grenade AT"
+        },
+        {
+            "code": "M1",
+            "value": "Mines/DET By"
+        },
+        {
+            "code": "M2",
+            "value": "Stopped"
+        },
+        {
+            "code": "M3",
+            "value": "Blocked"
+        },
+        {
+            "code": "M4",
+            "value": "Destroyed"
+        },
+        {
+            "code": "M5",
+            "value": "Damaged"
+        },
+        {
+            "code": "M6",
+            "value": "Stole"
+        },
+        {
+            "code": "M7",
+            "value": "Burned"
+        },
+        {
+            "code": "M8",
+            "value": "Booby Trapped"
+        },
+        {
+            "code": "M9",
+            "value": "Det Exp Against"
+        },
+        {
+            "code": "S1",
+            "value": "ACT Sabotage"
+        },
+        {
+            "code": "S2",
+            "value": "Sabotaged"
+        },
+        {
+            "code": "S3",
+            "value": "Sabotage W/Expl"
+        },
+        {
+            "code": "T1",
+            "value": "ACT Terrorism"
+        },
+        {
+            "code": "T2",
+            "value": "Terrorized"
+        },
+        {
+            "code": "T3",
+            "value": "Assassinated"
+        },
+        {
+            "code": "T4",
+            "value": "Murdered"
+        },
+        {
+            "code": "T5",
+            "value": "Kidnapped"
+        },
+        {
+            "code": "T6",
+            "value": "Capture"
+        },
+        {
+            "code": "X1",
+            "value": "Anticft"
+        },
+        {
+            "code": "X9",
+            "value": "Other"
+        }
+    ]
+}

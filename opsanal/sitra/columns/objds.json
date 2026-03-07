@@ -1,0 +1,86 @@
+{
+    "table": "SITRA",
+    "column_id": "OBJDS",
+    "column": "OBJDS",
+    "definition": "Objective description. Contains the code for the descriptive phase for a friendly small scale or enemy initiated action.",
+    "field/group": "FIELD",
+    "length": 2,
+    "data": [
+        {
+            "code": "10",
+            "value": "On Recon"
+        },
+        {
+            "code": "11",
+            "value": "On Patrol"
+        },
+        {
+            "code": "12",
+            "value": "On Guard DTY"
+        },
+        {
+            "code": "13",
+            "value": "On Work Party"
+        },
+        {
+            "code": "21",
+            "value": "Reinforce Ham"
+        },
+        {
+            "code": "22",
+            "value": "Reinforce UNT"
+        },
+        {
+            "code": "24",
+            "value": "On Escort"
+        },
+        {
+            "code": "50",
+            "value": "Trans Supply"
+        },
+        {
+            "code": "51",
+            "value": "Trans Arms"
+        },
+        {
+            "code": "52",
+            "value": "Trans Troops"
+        },
+        {
+            "code": "70",
+            "value": "In NRL Ham"
+        },
+        {
+            "code": "71",
+            "value": "NRL Ham Const"
+        },
+        {
+            "code": "72",
+            "value": "In a Village"
+        },
+        {
+            "code": "73",
+            "value": "In a Hamlet"
+        },
+        {
+            "code": "74",
+            "value": "In a Watchtwr"
+        },
+        {
+            "code": "75",
+            "value": "In a Mil Post"
+        },
+        {
+            "code": "76",
+            "value": "In a Bivouac"
+        },
+        {
+            "code": "77",
+            "value": "In a Convoy"
+        },
+        {
+            "code": "78",
+            "value": "On a Bus"
+        }
+    ]
+}
